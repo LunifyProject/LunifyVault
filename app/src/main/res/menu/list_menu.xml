@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_nodes"
+        android:orderInCategory="100"
+        android:title="@string/menu_nodes"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_language"
+        android:orderInCategory="200"
+        android:title="@string/menu_language"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_debug"
+        android:orderInCategory="225"
+        android:title="@string/enable_debug_info"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_mobile_miner"
+        android:orderInCategory="250"
+        android:title="@string/menu_mobileminer"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_license_info"
+        android:orderInCategory="300"
+        android:title="@string/menu_about"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_privacy_policy"
+        android:orderInCategory="400"
+        android:title="@string/menu_privacy"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_help_list"
+        android:icon="@drawable/ic_help_white_24dp"
+        android:orderInCategory="500"
+        android:title="@string/menu_help"
+        app:showAsAction="ifRoom" />
+
+</menu>

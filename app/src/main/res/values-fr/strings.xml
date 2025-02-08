@@ -1,0 +1,448 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="fr">
+    <string name="wallet_activity_name">Portefeuille</string>
+    <string name="menu_mobileminer">Mineur mobile</string>
+    <string name="menu_about">À Propos</string>
+    <string name="menu_privacy">Politique de Confidentialité</string>
+
+    <string name="menu_share">Partage</string>
+    <string name="menu_help">Aide</string>
+    <string name="menu_receive">Recevoir</string>
+    <string name="menu_rename">Renommer &#8230;</string>
+    <string name="menu_archive">Supprimer</string>
+    <string name="menu_backup">Sauvegarder</string>
+    <string name="menu_changepw">Modifier Phrase secrète</string>
+
+    <string name="password_weak">Continuez de taper &#8230;</string>
+    <string name="password_fair">Bof &#8230;</string>
+    <string name="password_good">Allez, vous pouvez mieux faire!</string>
+    <string name="password_strong">On y arrive &#8230;</string>
+    <string name="password_very_strong">Yeah baby, h4ck3r style !</string>
+
+    <string name="label_login_wallets">Portefeuilles</string>
+    <string name="label_credits">Crédits</string>
+    <string name="label_ok">OK</string>
+    <string name="label_cancel">Annuler</string>
+    <string name="label_close">Fermer</string>
+    <string name="label_wallet_advanced_details">Toucher pour plus d\'infos</string>
+
+    <string name="label_send_success">Envoi réussi</string>
+    <string name="label_send_done">Fait</string>
+
+    <string name="label_receive_info_gen_qr_code">Toucher pour le QR Code</string>
+
+    <string name="info_xlato_enabled">Paiement BTC activé, tapez pour plus d\'infos.</string>
+    <string name="info_ledger_enabled">Ledger activé, tapez pour plus d\'infos.</string>
+    <string name="info_send_xlato_success_order_label">Ordres XLA.TO</string>
+    <string name="info_send_xlato_success_btc">%1$s BTC</string>
+
+
+    <string name="info_send_xlato_paid">En Attente de Confirmation</string>
+    <string name="info_send_xlato_unpaid">En Attente de Paiement</string>
+    <string name="info_send_xlato_error">Erreur XLA.TO (%1$s)</string>
+    <string name="info_send_xlato_sent">BTC Envoyé !</string>
+    <string name="info_send_xlato_query">Interrogation &#8230;</string>
+
+    <string name="info_send_xlato_parms"><![CDATA[
+        <b>Vous pouvez envoyer %1$s &#8212; %2$s BTC</b>.<br/>
+        <i><b>XLA.TO</b> vous donne un taux de change de <b>%3$s BTC</b> <u>actuellement</u></i>.
+    ]]></string>
+    <string name="info_send_xlato_zeroconf"><![CDATA[
+        <i>Les montant n\'excédant pas <b>%1$s BTC</b> seront envoyés <u>immédiatement</u>!</i>
+    ]]></string>
+
+    <string name="send_available_btc">Solde : %2$s BTC (%1$s XLA)</string>
+
+    <string name="info_paymentid_integrated">&#x2714; ID de paiement intégré</string>
+    <string name="info_prepare_tx">Préparation de votre transaction</string>
+
+    <string name="label_send_progress_xlato_create">Création de l\'ordre XLA.TO</string>
+    <string name="label_send_progress_xlato_query">Interrogation de l\'ordre XLA.TO</string>
+    <string name="label_send_progress_create_tx">Préparation de la Transaction Scala</string>
+
+    <string name="label_send_progress_queryparms">Interrogation des paramètres xla.to</string>
+
+    <string name="label_generic_xlato_error">ERREUR XLA.TO</string>
+    <string name="text_generic_xlato_error">Code : %1$d</string>
+
+    <string name="text_retry">Touchez pour réessayer</string>
+    <string name="text_noretry_scala">Maintenant on est coincé ici !</string>
+    <string name="text_noretry">Oh-oh, XLA.TO n\'a pas l\'air disponible pour le moment !</string>
+
+    <string name="text_send_btc_amount">%1$s BTC = %2$s XLA</string>
+    <string name="text_send_btc_rate">(Taux : %1$s BTC/XLA)</string>
+
+    <string name="label_send_btc_xlato_info">Visitez xla.to pour l\'assistance &amp; le suivi</string>
+    <string name="label_send_btc_xlato_key_lb">Clef secrète\nXLA.TO</string>
+    <string name="label_send_btc_xlato_key">Clef secrète XLA.TO</string>
+    <string name="label_send_btc_address">Adresse BTC de destination</string>
+    <string name="label_send_btc_amount">Montant</string>
+
+    <string name="label_send_txid">ID de transaction</string>
+    <string name="label_send_address">Adresse de destination</string>
+    <string name="label_send_payment_id">ID de paiement</string>
+    <string name="label_send_notes">Notes</string>
+
+    <string name="backup_progress">Sauvegarde en cours</string>
+    <string name="archive_progress">Archivage en cours</string>
+    <string name="rename_progress">Renommage en cours</string>
+    <string name="changepw_progress">Modification du mot de passe en cours</string>
+
+    <string name="service_progress">Remise en ordre &#8230;\nCela peut prendre un moment !</string>
+
+    <string name="backup_success">Sauvegarde réussie</string>
+    <string name="backup_failed">Sauvegarde échouée !</string>
+    <string name="archive_failed">Archivage échouée !</string>
+    <string name="rename_failed">Renommage échoué !</string>
+    <string name="changepw_failed">Échec de modification du mot de passe !</string>
+    <string name="changepw_success">Modification du mot de passe réussie</string>
+
+    <string name="label_daemon">Nœud</string>
+    <string name="status_wallet_loading">Chargement du portefeuille &#8230;</string>
+    <string name="status_wallet_unloaded">Portefeuille sauvegardé</string>
+    <string name="status_wallet_unload_failed">Échec de sauvegarde du portefeuille !</string>
+    <string name="status_wallet_connecting">Connexion&#8230;</string>
+    <string name="status_wallet_connect_failed">Connexion au nœud échouée !\nVérifiez utilisateur/mot de passe</string>
+    <string name="status_wallet_node_invalid">Nœud invalide !\nEssayez un autre.</string>
+    <string name="status_wallet_connect_ioex">Nœud injoignable !\nEssayez à nouveau ou un autre.</string>
+
+    <string name="status_wallet_disconnected">Déconnecté</string>
+
+    <string name="status_transaction_failed">Transaction échouée : %1$s</string>
+
+    <string name="send_xlato_timeout">Vous avez attendu trop longtemps l\'ami !</string>
+
+    <string name="service_busy">Je suis toujours occupé avec votre dernier portefeuille &#8230;</string>
+
+    <string name="prompt_rename">Renommer %1$s</string>
+
+    <string name="prompt_changepw">Nouvelle Phase secrète pour %1$s</string>
+    <string name="prompt_changepwB">Répéter la Phase secrète pour %1$s</string>
+    <string name="prompt_password">Mot de passe pour %1$s (optionnel)</string>
+    <string name="prompt_fingerprint_auth">Vous pouvez également ouvrir le portefeuille avec votre empreinte digitale.\nMerci de toucher le capteur.</string>
+    <string name="prompt_send_password">Confirmez le mot de passe</string>
+    <string name="prompt_open_wallet">Ouverture du portefeuille &#8230;</string>
+    <string name="bad_fingerprint">Empreinte digitale non reconnue. Résessayez.</string>
+    <string name="bad_password">Mot de passe incorrect !</string>
+    <string name="bad_saved_password">Mot de passe sauvegardé incorrect.\nVeuillez entrer le mot de passe manuellement.</string>
+    <string name="bad_wallet">Portefeuille inexistant !</string>
+    <string name="prompt_daemon_missing">L\'adresse du démon ne peut pas être configurée !</string>
+    <string name="prompt_wrong_net">Portefeuille incompatible avec le réseau sélectionné</string>
+
+    <string name="label_watchonly">(Audit)</string>
+
+    <string name="label_wallet_receive">Recevoir</string>
+    <string name="label_wallet_send">Envoyer</string>
+
+    <string name="xla_unconfirmed_amount">%1$s XLA non confirmés</string>
+
+    <string name="service_description">Service Scala Vault</string>
+
+    <string name="status_synced">Synchronisé :</string>
+    <string name="status_remaining">blocs restants</string>
+    <string name="status_syncing">Analyse :</string>
+
+    <string name="message_strorage_not_writable">Stockage Externe non inscriptible ! Panique !</string>
+    <string name="message_strorage_not_permitted">On a vraiment besoin de ces permissions de Stockage Externe !</string>
+    <string name="message_camera_not_permitted">Pas de camera = Pas de Scan QR !</string>
+
+    <string name="label_copy_viewkey">Clef d\'Audit</string>
+    <string name="label_copy_address">Adresse Publique</string>
+    <string name="label_copy_xlatokey">Clef XLA.TO</string>
+    <string name="message_copy_viewkey">Clef d\'audit copiée !</string>
+    <string name="message_copy_xlatokey">Clef XLA.TO copiée !</string>
+    <string name="message_copy_address">Adresse du Portefeuille copiée !</string>
+    <string name="message_copy_txid">ID de Transaction copié !</string>
+    <string name="message_nocopy">Copie désactivée par sécurité !</string>
+
+    <string name="message_exchange_failed">Taux de change introuvable !\nUtilisez XLA/XLA ou essayez à nouveau</string>
+
+    <string name="generate_title">Créer un portefeuille</string>
+    <string name="generate_name_hint">Nom du portefeuille</string>
+    <string name="generate_password_hint">Mot de passe du portefeuille (optionnel)</string>
+    <string name="prompt_password_hint">Mot de passe (Laisser vide si aucun)</string>
+    <string name="generate_fingerprint_hint">Allow to open wallet using fingerprint</string>
+    <string name="generate_fingerprint_warn"><![CDATA[
+        <strong>Authentification par empreinte dgitale</strong>
+        <p>En activant l\'authentification par empreinte digitale, vous pouvez voir le solde de
+        votre portefeuille et recevoir des fonds sans entrer de mot de passe.</p>
+        <p>Mais pour plus de sécurité, monerujo continuera de vous demander votre mot de passe
+        lorsque vous afficherez les détails du portefeuille ou enverez des fonds.</p>
+        <strong>Avertissement de Sécurité</strong>
+        <p>Enfin, monerujo vous rappel que quiconque pouvant obtenir votre empreinte digitale
+        sera capable de jeter un coup d\'œil au solde de votre portefeuille.</p>
+        <p>Par exemple, un utilisateur malveillant à vos côtés pourrait ouvrir votre portefeuille
+        pendant votre sommeil.</p>
+        <strong>Êtes vous certain de vouloir activer cette fonctionnalité ?</strong>
+    ]]></string>
+    <string name="generate_bad_passwordB">Phrases secrètes non correspondantes</string>
+    <string name="generate_empty_passwordB">La Phrase secrète ne doit pas être vide</string>
+    <string name="generate_buttonGenerate">Faites moi un Portefeuille déjà !</string>
+    <string name="generate_button_accept">J\'ai noté ces 25 mots !</string>
+
+    <string name="generate_wallet_name">Donnez-moi un nom !</string>
+    <string name="generate_wallet_exists">Le portefeuille existe !</string>
+    <string name="generate_wallet_dot">Ne peut pas commencer par .</string>
+    <string name="generate_wallet_creating">Création du portefeuille</string>
+    <string name="generate_wallet_created">Portefeuille créé</string>
+
+    <string name="generate_restoreheight_error">Entrer un nombre ou une date (YYYY-MM-DD)</string>
+    <string name="generate_restoreheight_min_error">La date doit être supérieure ou égale à %1$s</string>
+    <string name="generate_wallet_type_key">Clefs</string>
+    <string name="generate_wallet_type_new">Nouveau</string>
+    <string name="generate_wallet_type_seed">Phrase mnémonique</string>
+    <string name="generate_wallet_type_view">Audit</string>
+
+    <string name="generate_address_hint">Adresse publique</string>
+    <string name="generate_viewkey_hint">Clef d\'audit</string>
+    <string name="generate_spendkey_hint">Clef de dépense</string>
+    <string name="generate_mnemonic_hint">Phrase mnémonique</string>
+    <string name="generate_restoreheight_hint">Hauteur ou date de restauration (YYYY-MM-DD)</string>
+
+    <string name="generate_address_label">Adresse publique</string>
+    <string name="generate_viewkey_label">Clef d\'audit</string>
+    <string name="generate_spendkey_label">Clef de dépense</string>
+    <string name="generate_mnemonic_label">Phrase mnémonique</string>
+    <string name="generate_crazypass_label">Mdp de restauration des fichiers Portefeuille</string>
+
+    <string name="generate_check_key">Entrez une clef valide</string>
+    <string name="generate_check_address">Entrez une adresse valide</string>
+    <string name="generate_check_mnemonic">Entrez votre phrase mnémonique</string>
+
+    <string name="send_amount_btc_xla">%1$s (indicatif)</string>
+
+    <string name="send_paymentid_hint">ID de paiement (optionnel)</string>
+    <string name="send_amount_hint">0.00</string>
+    <string name="send_notes_hint">Notes privées (optionnelles)</string>
+    <string name="send_generate_paymentid_hint">Générer</string>
+    <string name="send_qr_hint">Scanner</string>
+    <string name="send_send_label">Dépenser mes beaux Scala</string>
+    <string name="send_send_timed_label">Dépenser mes beaux Scala (%1$s)</string>
+    <string name="send_qr_invalid">QR Code invalide</string>
+    <string name="send_qr_address_invalid">QR code de paiement invalide</string>
+    <string name="send_address_invalid">Adresse invalide</string>
+    <string name="send_title">Envoi</string>
+    <string name="send_available">Solde : %1$s XLA</string>
+    <string name="send_address_title">Adresse</string>
+    <string name="send_amount_title">Montant</string>
+    <string name="send_confirm_title">Confirmation</string>
+    <string name="send_success_title">Terminé</string>
+
+    <string name="send_amount_label">Montant</string>
+    <string name="send_fee_btc_label">Frais (XLA)</string>
+    <string name="send_fee_label">Frais</string>
+    <string name="send_total_btc_label">Total (XLA)</string>
+    <string name="send_total_label">Total</string>
+
+    <string name="send_fee">+%1$s Frais</string>
+
+    <string name="send_create_tx_error_title">Erreur de création de transaction</string>
+
+    <string name="tx_list_fee">- Frais %1$s</string>
+    <string name="tx_list_amount_failed">(%1$s)</string>
+    <string name="tx_list_failed_text">Echoué</string>
+    <string name="tx_list_amount_negative">%1$s</string>
+    <string name="tx_list_amount_positive">%1$s</string>
+
+    <string name="tx_timestamp">Horodatage</string>
+    <string name="tx_id">ID TX</string>
+    <string name="tx_key">Clef TX</string>
+    <string name="tx_destination">Destination</string>
+    <string name="tx_destination_btc">Destination\n(BTC)</string>
+    <string name="tx_paymentId">ID de Paiement</string>
+    <string name="tx_blockheight">Bloc</string>
+    <string name="tx_amount">Montant</string>
+    <string name="tx_amount_btc">Montant\n(BTC)</string>
+    <string name="tx_fee">Frais</string>
+    <string name="tx_transfers">Transferts</string>
+    <string name="tx_notes">Notes</string>
+    <string name="tx_notes_hint">(optionnelles)</string>
+    <string name="tx_button_notes">Sauvegarder</string>
+    <string name="tx_notes_set_failed">Sauvegarde de Notes échouée</string>
+    <string name="tx_title">Détails de la Transaction</string>
+
+    <string name="tx_pending">EN ATTENTE</string>
+    <string name="tx_failed">ÉCHOUÉ</string>
+
+    <string name="receive_amount_hint">Montant</string>
+    <string name="receive_cannot_open">Ouverture du portefeuille impossible !</string>
+    <string name="receive_paymentid_invalid">16 caractères héxadécimaux (0&#8211;9,a&#8211;f)</string>
+    <string name="receive_integrated_paymentid_invalid">Doit être vide avec une adresse intégrée</string>
+
+    <string name="receive_amount_too_big">Max. %1$s</string>
+    <string name="receive_amount_negative">Min. 0</string>
+    <string name="receive_amount_nan">XLA pas un nombre</string>
+
+    <string name="details_alert_message">Des données sensible vont être affichées.\nRegardez autour de vous !</string>
+    <string name="details_alert_yes">Accepter</string>
+    <string name="details_alert_no">Annuler</string>
+    <string name="details_title">Détails</string>
+
+    <string name="archive_alert_message">Le portefeuille sera sauvegardé puis supprimé !</string>
+    <string name="archive_alert_yes">Accepter</string>
+    <string name="archive_alert_no">Annuler</string>
+
+    <string name="fab_create_new">Créer un nouveau portefeuille</string>
+    <string name="fab_restore_viewonly">Restaurer un portefeuille d\'audit</string>
+    <string name="fab_restore_key">Restaurer depuis la clef privée</string>
+    <string name="fab_restore_seed">Restaurer depuis la phrase mnémonique</string>
+
+    <string name="accounts_drawer_new">Créer un compte</string>
+    <string name="accounts_new">Nouveau Compte #%1$d ajouté</string>
+    <string name="tx_account">Compte #</string>
+
+    <string name="send_sweepall">Envoyer tous les fonds confirmés sur ce compte !</string>
+    <string name="tx_subaddress">Sous-adresse #%1$d</string>
+    <string name="generate_address_label_sub">Sous-adresse publique #%1$d</string>
+
+    <string name="fab_restore_ledger">Restaurer depuis Ledger Nano S</string>
+
+    <string name="progress_ledger_progress">Communication avec Ledger</string>
+    <string name="progress_ledger_confirm">Confirmation requise sur Ledger !</string>
+    <string name="progress_ledger_lookahead">Récupération des sous-adresses</string>
+    <string name="progress_ledger_verify">Vérification des clefs</string>
+    <string name="progress_ledger_opentx">En cours de calculs crazy</string>
+    <string name="progress_ledger_mlsag">Trucs de Hachage</string>
+    <string name="open_wallet_ledger_missing">Merci de (re)connecter le Ledger</string>
+
+    <string name="accounts_progress_new">Création du compte</string>
+
+    <string name="toast_ledger_attached">%1$s connecté</string>
+    <string name="toast_ledger_detached">%1$s déconnecté</string>
+
+    <string name="progress_nfc_write">Écriture du Tag</string>
+    <string name="nfc_write_failed">Échec de l\'écriture du Tag !</string>
+    <string name="nfc_write_successful">Tag écrit avec succès</string>
+    <string name="nfc_tag_unsupported">le Tag ne supporte pas NDEF !</string>
+    <string name="nfc_tag_size">Le Tag donne %1$d octets, mais il en faut %2$d !</string>
+    <string name="nfc_tag_read_undef">Je ne comprend pas le Tag !</string>
+    <string name="nfc_tag_read_what">Je ne sais pas ce que vous voulez !</string>
+    <string name="nfc_tag_read_success">Tag lut avec succès</string>
+    <string name="nfc_tag_tap">NFC Disponible !</string>
+
+    <string name="menu_language">Langue</string>
+    <string name="language_system_default">Utiliser la Langue du Système</string>
+    <string name="menu_nodes">Nœuds Distants</string>
+
+    <string name="receive_desc_hint">Description (optionnelle)</string>
+
+    <string name="send_address_not_openalias">Adresse OpenAlias indisponible</string>
+    <string name="send_address_openalias">Sécurisé OpenAlias &#x2714;</string>
+    <string name="send_address_resolve_openalias">Résolution OpenAlias&#8230;</string>
+    <string name="send_address_no_dnssec">OpenAlias sans DNSSEC - l\'adresse pourrait être usurpée !</string>
+
+    <string name="status_wallet_connect_wrongversion">Version du Nœud incompatible - merci de mettre à jour !</string>
+
+    <string name="menu_info">Montrer les secrets !</string><!--Changed to: Show Secrets!-->
+    <string name="menu_StealthMode">Mode furtif</string>
+
+    <string name="info_xlato" translatable="false">OBSOLÈTE</string>
+    <string name="info_mobile_miner">Commencez à miner sur votre appareil mobile avec Scala Miner. Appuyez ici pour plus d\'informations.</string>
+    <string name="info_nodes_enabled" translatable="false">OBSOLÈTE</string>
+    <string name="info_nodes_enabled_2">Scala Vault recherche les meilleurs nœuds disponibles. Appuyez ici pour plus d\'informations.</string>
+    <string name="node_height">Dernier bloc mis à jour : %1$s</string>
+    <string name="label_nodes">Nœuds</string>
+    <string name="node_name_hint">Nom du Nœud (Optionnel)</string>
+    <string name="node_address_hint">Nom d\'hôte</string>
+    <string name="node_port_hint">Port</string>
+    <string name="node_user_hint">Nom d\'utilisateur (Optionnel)</string>
+    <string name="node_pass_hint">Mot de passe (Optionnel)</string>
+    <string name="node_host_unresolved">L\'hôte ne peut pas être résolu</string>
+    <string name="node_host_empty">On a besoin de ça !</string>
+    <string name="node_port_numeric">Doit être un nombre</string>
+    <string name="node_port_range">Doit être de 1 à 65535</string>
+    <string name="node_fab_add">Ajouter un Nœud</string>
+    <string name="node_refresh_hint">Toucher pour raffraichir !</string>
+    <string name="node_test_error">ERREUR DE CONNEXION %1$d</string>
+    <string name="node_general_error">ERREUR DE CONNEXION</string>
+    <string name="node_auth_error">ÉCHEC D\'AUTHENTIFICATION</string>
+    <string name="node_result_label">Résultat du test :</string>
+    <string name="node_result">Hauteur : %1$s (v%2$d), Ping : %3$.0fms, IP : %4$s</string>
+    <string name="node_testing">Test de l\'IP : %1$s &#8230;</string>
+    <string name="node_refresh_wait">Patientez jusq\'à la fin de la recherche</string>
+    <string name="node_create_hint">Toucher pour sélectionner ou ajouter des nœuds</string>
+    <string name="node_pull_hint">Ajouter des nœuds manuellement ou faire glisser vers le bas pour rechercher</string>
+    <string name="node_scanning">Recherche de nœuds&#8230;</string>
+    <string name="node_nobookmark">%1$d meilleurs nœuds mis en favoris automatiquement</string>
+    <string name="label_test">Tester</string><!--note: as in "Test a network connection"-->
+
+    <string name="remote_nodes_subtitle">Faites glisser vers le bas pour scanner et sélectionner automatiquement le meilleur nœud disponible</string>
+    <string name="change_remote_node_conf">Changer le nœud distant vers %1$s ?</string>
+    <string name="send_address_resolve_bip70">Résolution de l\'URI de Paiement&#8230;</string>
+    <string name="send_address_not_bip70">Résolution de l\'URI de Paiement impossible</string>
+    <string name="send_address_bip70">URI de Paiement Résolue &#x2714;</string>
+    <!-- please verify this means "Receiver" or "Recipient" as in "Receiver in the transaction" -->
+    <string name="send_address_hint">Destinataire</string>
+
+    <string name="xlato_error_001">XLA.TO hors ligne - réessayer ultérieurement</string>
+    <string name="xlato_error_004">Montant BTC hors limites</string>
+    <string name="xlato_error_010">URL de Paiement invalide ou périmée</string>
+    <string name="xlato_error_012">Trop de requêtes</string>
+
+    <string name="street_sweep_amount">TOTALITÉ!</string> <!-- as in: "everything in the account" = "all the money" -->
+
+    <string name="menu_ledger_seed">Convertir mnémonique Ledger</string>
+    <string name="prompt_ledger_seed">Phrase mnémonique Ledger</string>
+    <string name="prompt_ledger_phrase">Mot de passe Ledger (optionnel)</string>
+    <string name="bad_ledger_seed">Phrase mnémonique Ledger invalide !</string>
+    <string name="prompt_ledger_seed_warn">Saisir votre phrase mnémonique Ledger ici est un risque majeur de sécurité !</string>
+
+    <string name="label_restoreheight">Hauteur de restauration</string> <!-- Restore Height -->
+
+    <string name="toast_ledger_start_app">Démarrer l\'application Scala sur %1$s</string>
+    <string name="menu_rescan">Rescanner!</string>
+    <string name="privacy_policy_intro">Nous nous soucions de votre vie privée. Pour en savoir plus, veuillez lire notre politique de confidentialité.</string>
+    <string name="privacy_policy_label">Politique de confidentialité</string>
+    <string name="primary_address">Adresse principale</string>
+    <string name="mm_url" translatable="false">https://github.com/scala-network/MobileMiner/releases</string>
+    <string name="connection_remote_daemon">Connexion au nœud distant&#8230;</string>
+    <string name="remote_nodes">Nœuds distants</string>
+    <string name="address_book">Carnet d\'adresses</string>
+    <string name="delete_contact_conf">Supprimer l\'entrée %1$s ?</string>
+    <string name="contact_value_empty">Nous avons besoin de cela !</string>
+    <string name="no_entry">Aucune entrée</string>
+    <string name="save_to_address_book">Enregistrer dans le carnet d\'adresses</string>
+    <string name="contact_name_empty_error">Le nom ne peut pas être vide !</string>
+    <string name="entry_name">Nom de l\'entrée</string>
+    <string name="start_mining">Commencez à miner sur votre appareil Android de manière sûre et efficace avec Scala Mobile Miner.</string>
+    <string name="mobile_miner">Mobile Miner</string>
+    <string name="download">Télécharger</string>
+    <string name="select_image">Sélectionner une image</string>
+    <string name="contact_avatar_hint">Une image qui représente cette entrée du carnet d\'adresses.</string>
+    <string name="upload">Télécharger</string>
+    <string name="delete">Supprimer</string>
+    <string name="edit">Modifier</string>
+    <string name="enable_debug_info">Activer les infos de débogage</string>
+    <string name="disable_debug_info">Désactiver les infos de débogage</string>
+    <string name="send_address_resolve_ud">Résolution de l\'adresse Unstoppable Domains&#8230;</string>
+    <string name="send_address_no_ud_records">Adresse Unstoppable Domains invalide</string>
+    <string name="transaction_history">Historique des transactions</string>
+    <string name="send">Envoyer</string>
+    <string name="receive">Recevoir</string>
+    <string name="balance">Solde</string>
+    <string name="balance_primary_address">Adresse principale</string>
+    <string name="balance_wallet_address">Adresse du portefeuille</string>
+    <string name="history_no_transaction">Aucune transaction</string>
+    <string name="mobileminer_scala_miner">SCALA MINER</string>
+    <string name="mobileminer_start_mining">Commencez à miner sur votre appareil Android de manière sûre et efficace.</string>
+    <string name="close">Fermer</string>
+    <string name="scala_logo" translatable="false">Logo Scala</string>
+    <string name="credits">Crédits</string>
+    <string name="credits_made_with">Fait avec </string>
+    <string name="credits_by"> par </string>
+    <string name="credits_forked_from">Basé sur </string>
+    <string name="credits_heart" translatable="false">icône de cœur</string>
+    <string name="wizard_home">Un portefeuille sécurisé et léger pour stocker vos pièces Scala</string>
+    <string name="wizard_home_description">Scala Vault fournit tout ce dont vous avez besoin pour gérer et utiliser les portefeuilles Scala sur Android</string>
+    <string name="wizard_home_create_new_wallet">Créer un nouveau portefeuille</string>
+    <string name="wizard_home_import_from_seed">Importer depuis la graine</string>
+    <string name="wizard_home_or">ou</string>
+    <string name="wizard_home_skip">Passer</string>
+    <string name="no_wallet">Pas de portefeuille</string>
+    <string name="wallet_address">Adresse du portefeuille</string>
+    <string name="subaddresses">Sous-adresses</string>
+    <string name="message_exchange_success">Prix de la devise mis à jour</string>
+    <string name="splashcreen_check_network" translatable="false">Vérification du réseau…</string>
+    <string name="splashcreen_check_network_success" translatable="false">Connecté à Internet, accès à Scala Vault</string>
+    <string name="splashcreen_check_network_failure" translatable="false">Cette application nécessite une connexion réseau pour fonctionner. Veuillez vérifier votre connexion Internet et réessayer…</string>
+
+</resources>

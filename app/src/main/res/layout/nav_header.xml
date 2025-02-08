@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="212dp"
+    android:background="@color/bg_body"
+    android:orientation="vertical"
+    android:paddingTop="40dp"
+    android:paddingStart="8dp">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_logo_colors" />
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/ScalaText.Large"
+        android:textColor="@color/c_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        tools:text="MyWallet" />
+
+    <TextView
+        android:id="@+id/tvBalance"
+        style="@style/ScalaLabel.Caps.White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="12.34 XLA" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        style="@style/ScalaLabel.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:text="@string/subaddresses" />
+
+</LinearLayout>

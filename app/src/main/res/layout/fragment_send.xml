@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_body">
+
+    <LinearLayout
+        android:id="@+id/llNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <EditText
+        android:id="@+id/etDummy"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <io.scalaproject.vault.layout.SpendViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llNavBar"
+        android:layout_below="@id/llNotice"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:id="@+id/llNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bPrev"
+            style="@style/ScalaButton.Lighter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="0dp"
+            android:drawableStart="@drawable/ic_navigate_prev_white_24dp"
+            tools:text="Back" />
+
+        <io.scalaproject.vault.widget.DotBar
+            android:id="@+id/dotBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/bg_lighter"
+            app:activeColor="@color/white"
+            app:activeDot="0"
+            app:dotSize="12dp"
+            app:inactiveColor="@color/bg_darker"
+            app:numberDots="3" />
+
+        <Button
+            android:id="@+id/bNext"
+            style="@style/ScalaButton.Lighter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="0dp"
+            android:drawableEnd="@drawable/ic_navigate_next_white_24dp"
+            tools:text="Next" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bDone"
+        style="@style/ScalaButton.Blue"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:text="@string/label_send_done"
+        app:cornerRadius="5dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

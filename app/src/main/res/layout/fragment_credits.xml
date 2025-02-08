@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:contentDescription="@string/scala_logo"
+            android:src="@mipmap/ic_logo_colors" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/credits"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/c_white"
+            android:textStyle="bold"
+            android:layout_marginTop="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/credits_made_with"
+                android:textColor="@color/txt_main"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:contentDescription="@string/credits_heart"
+                android:src="@drawable/ic_heart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/credits_by"
+                android:textColor="@color/txt_main"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/ScalaURL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text=""
+                android:textColor="@color/c_blue"
+                android:textColorLink="@color/c_blue"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="."
+                android:textColor="@color/txt_main"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/credits_forked_from"
+                android:textColor="@color/txt_main"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/monerujoURL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text=""
+                android:textColor="@color/c_blue"
+                android:textColorLink="@color/c_blue"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="."
+                android:textColor="@color/txt_main"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/mobile_miner"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/c_white"
+            android:textStyle="bold"
+            android:layout_marginTop="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/start_mining"
+            android:textColor="@color/txt_main"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btnDownloadMM"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/btn_bg_default"
+            android:insetLeft="2dp"
+            android:insetRight="2dp"
+            android:text="@string/download"
+            android:textSize="14sp"
+            android:textColor="@color/txt_button_filled"
+            android:textAllCaps="false"
+            app:cornerRadius="5dp"
+            app:iconPadding="10dp"
+            app:iconTint="@color/btn_icon_default"
+            app:icon="@drawable/ic_download"/>
+
+    </LinearLayout>
+</ScrollView>
