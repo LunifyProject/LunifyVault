@@ -4,12 +4,10 @@ on:
   push:
     paths-ignore:
       - 'docs/**'
-      - '**/FUNDING.yml'
       - '**/README.md'
   pull_request:
     paths-ignore:
       - 'docs/**'
-      - '**/FUNDING.yml'
       - '**/README.md'
   workflow_dispatch:
     inputs:
@@ -42,14 +40,14 @@ jobs:
         run: chmod +x ./gradlew
       - name: Build app bundle release
         run: ./gradlew assembleProdMainnet
+      - name: Remove JSON file
+        run: rm -rf app/build/outputs/apk/prodMainnet/release/*.json 
       - name: Upload APK Release
         uses: actions/upload-artifact@v4
         with:
           name: LunifyVault
           path: |
             app/build/outputs/apk/prodMainnet/release/
-          exclude: |
-            **/*.json
   
   download:
     name: Release Artifacts
@@ -66,7 +64,7 @@ jobs:
       id: create_release
       uses: softprops/action-gh-release@v2
       with:
-        name: LunifyVault Android
+        name: LunifyVault ${{ github.event.inputs.version_number }}
         tag_name: ${{ github.event.inputs.version_number }}
         draft: true
         prerelease: false
