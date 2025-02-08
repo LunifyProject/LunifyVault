@@ -1,23 +1,35 @@
-name: Generated APK AAB (Upload - Create Artifact To Github Action)
-
-env:
-  # The name of the main module repository
-  main_project_module: app
+name: Compilation
 
 on:
-
   push:
-    branches:
-      - 'release/**'
-
-  # Allows you to run this workflow manually from the Actions tab
+    paths-ignore:
+      - 'docs/**'
+      - '**/FUNDING.yml'
+      - '**/README.md'
+  pull_request:
+    paths-ignore:
+      - 'docs/**'
+      - '**/FUNDING.yml'
+      - '**/README.md'
   workflow_dispatch:
+    inputs:
+      run_release:
+        description: 'Release the Artifacts'
+        required: true
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+      version_number:
+        description: 'Release version'
+        required: true
+        default: 'v1.0.0'
 
 jobs:
   build:
-
+    name: Android ARM & x86
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: JDK Installation
@@ -38,3 +50,26 @@ jobs:
             app/build/outputs/apk/prodMainnet/release/
           exclude: |
             **/*.json
+  
+  download:
+    name: Release Artifacts
+    needs: ['build']
+    runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.run_release == 'true' }}
+    steps:
+    - name: Download All Artifacts
+      uses: actions/download-artifact@v4
+      with:
+        path: release
+        merge-multiple: false
+    - name: Create GitHub Release
+      id: create_release
+      uses: softprops/action-gh-release@v2
+      with:
+        name: LunifyVault Android
+        tag_name: ${{ github.event.inputs.version_number }}
+        draft: true
+        prerelease: false
+        files: release/LunifyVault/*
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
