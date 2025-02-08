@@ -20,36 +20,21 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
-      # Set Current Date As Env Variable
-      - name: Set current date as env variable
-        run: echo "date_today=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
-
-      # Set Repository Name As Env Variable
-      - name: Set repository name as env variable
-        run: echo "repository_name=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')" >> $GITHUB_ENV
-
-      - name: Set Up JDK
+      - name: JDK Installation
         uses: actions/setup-java@v4
         with:
-          distribution: 'zulu' # See 'Supported distributions' for available options
+          distribution: 'zulu'
           java-version: '17'
           cache: 'gradle'
-
       - name: Change wrapper permissions
         run: chmod +x ./gradlew
-
-      # Create Bundle AAB Release
-      # Noted for main module build [main_project_module]:bundleRelease
       - name: Build app bundle release
         run: ./gradlew assembleProdMainnet
-
-      - name: TEST
-        run: ls app/build/outputs
-        
-      - name: Upload APK Debug
+      - name: Upload APK Release
         uses: actions/upload-artifact@v4
         with:
           name: LunifyVault
           path: |
             app/build/outputs/apk/prodMainnet/release/
+          exclude: |
+            **/*.json
