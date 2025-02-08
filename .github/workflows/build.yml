@@ -52,4 +52,4 @@ jobs:
         with:
           name: LunifyVault
           path: |
-            app/build/outputs/apk/prodMainnetRelease/release/
+            app/build/outputs/apk/prodMainnet/release/
