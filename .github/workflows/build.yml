@@ -1,5 +1,8 @@
 name: Compilation
 
+env:
+  app_name: LunifyWallet
+  
 on:
   push:
     paths-ignore:
@@ -45,7 +48,7 @@ jobs:
       - name: Upload APK Release
         uses: actions/upload-artifact@v4
         with:
-          name: LunifyVault
+          name: ${{env.app_name}}
           path: |
             app/build/outputs/apk/prodMainnet/release/
   
@@ -64,10 +67,10 @@ jobs:
       id: create_release
       uses: softprops/action-gh-release@v2
       with:
-        name: LunifyVault ${{ github.event.inputs.version_number }}
+        name: ${{env.app_name}} ${{ github.event.inputs.version_number }}
         tag_name: ${{ github.event.inputs.version_number }}
         draft: true
         prerelease: false
-        files: release/LunifyVault/*
+        files: release/${{env.app_name}}/*
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
