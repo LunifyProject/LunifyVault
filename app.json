@@ -1,19 +1,12 @@
 {
-    "nodes": [{
-            "host": "remote.one.scala.network",
-            "port": "11812"
+    "nodes": [
+        {
+            "host": "lunify.xyz",
+            "port": "25252"
         },
         {
-            "host": "remote.two.scala.network",
-            "port": "11812"
-        },
-        {
-            "host": "scala.fastnode.eu",
-            "port": "11812"
-        },
-        {
-            "host": "164.68.115.234",
-            "port": "11812"
+            "host": "lunify.xyz",
+            "port": "25262"
         }
     ]
 }
