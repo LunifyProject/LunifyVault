@@ -59,7 +59,7 @@ extern "C"
 {
 #endif
 
-extern const char* const lunify_VERSION; // the actual Lunify core version
+extern const char* const scala_VERSION; // the actual Lunify core version
 
 // from Lunify-core crypto/hash-ops.h - avoid #including Lunify code here
 enum {
