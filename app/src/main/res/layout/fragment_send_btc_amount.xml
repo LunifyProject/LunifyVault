@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/tvFunds"
-        style="@style/ScalaText.Funds"
+        style="@style/LunifyText.Funds"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -43,7 +43,7 @@
 
             <TextView
                 android:id="@+id/tvxlaToParms"
-                style="@style/ScalaText.Info"
+                style="@style/LunifyText.Info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start|top"

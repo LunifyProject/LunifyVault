@@ -15,7 +15,7 @@
  *
  * ////////////////
  *
- * Copyright (c) 2020 Scala
+ * Copyright (c) 2025 Lunify
  *
  * Please see the included LICENSE file for more information.*/
 
@@ -60,15 +60,15 @@ JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *jvm, void *reserved) {
     class_ArrayList = reinterpret_cast<jclass>(jenv->NewGlobalRef(
             jenv->FindClass("java/util/ArrayList")));
     class_TransactionInfo = reinterpret_cast<jclass>(jenv->NewGlobalRef(
-            jenv->FindClass("io/scalaproject/vault/model/TransactionInfo")));
+            jenv->FindClass("xyz/lunify/vault/model/TransactionInfo")));
     class_Transfer = reinterpret_cast<jclass>(jenv->NewGlobalRef(
-            jenv->FindClass("io/scalaproject/vault/model/Transfer")));
+            jenv->FindClass("xyz/lunify/vault/model/Transfer")));
     class_WalletListener = reinterpret_cast<jclass>(jenv->NewGlobalRef(
-            jenv->FindClass("io/scalaproject/vault/model/WalletListener")));
+            jenv->FindClass("xyz/lunify/vault/model/WalletListener")));
     class_Ledger = reinterpret_cast<jclass>(jenv->NewGlobalRef(
-            jenv->FindClass("io/scalaproject/vault/ledger/Ledger")));
+            jenv->FindClass("xyz/lunify/vault/ledger/Ledger")));
     class_WalletStatus = reinterpret_cast<jclass>(jenv->NewGlobalRef(
-            jenv->FindClass("io/scalaproject/vault/model/Wallet$Status")));
+            jenv->FindClass("xyz/lunify/vault/model/Wallet$Status")));
     return JNI_VERSION_1_6;
 }
 #ifdef __cplusplus
@@ -101,7 +101,7 @@ void detachJVM(JNIEnv *jenv, int envStat) {
     }
 }
 
-struct MyWalletListener : scala::WalletListener {
+struct MyWalletListener : lunify::WalletListener {
     jobject jlistener;
 
     MyWalletListener(JNIEnv *env, jobject aListener) {
@@ -267,17 +267,17 @@ extern "C"
 /********** WalletManager *********/
 /**********************************/
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_WalletManager_createWalletJ(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_WalletManager_createWalletJ(JNIEnv *env, jobject instance,
                                                             jstring path, jstring password,
                                                             jstring language,
                                                             jint networkType) {
     const char *_path = env->GetStringUTFChars(path, nullptr);
     const char *_password = env->GetStringUTFChars(password, nullptr);
     const char *_language = env->GetStringUTFChars(language, nullptr);
-    auto _networkType = static_cast<scala::NetworkType>(networkType);
+    auto _networkType = static_cast<lunify::NetworkType>(networkType);
 
-    scala::Wallet *wallet =
-            scala::WalletManagerFactory::getWalletManager()->createWallet(
+    lunify::Wallet *wallet =
+            lunify::WalletManagerFactory::getWalletManager()->createWallet(
                     std::string(_path),
                     std::string(_password),
                     std::string(_language),
@@ -290,15 +290,15 @@ Java_io_scalaproject_vault_model_WalletManager_createWalletJ(JNIEnv *env, jobjec
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_WalletManager_openWalletJ(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_WalletManager_openWalletJ(JNIEnv *env, jobject instance,
                                                           jstring path, jstring password,
                                                           jint networkType) {
     const char *_path = env->GetStringUTFChars(path, nullptr);
     const char *_password = env->GetStringUTFChars(password, nullptr);
-    auto _networkType = static_cast<scala::NetworkType>(networkType);
+    auto _networkType = static_cast<lunify::NetworkType>(networkType);
 
-    scala::Wallet *wallet =
-            scala::WalletManagerFactory::getWalletManager()->openWallet(
+    lunify::Wallet *wallet =
+            lunify::WalletManagerFactory::getWalletManager()->openWallet(
                     std::string(_path),
                     std::string(_password),
                     _networkType);
@@ -309,7 +309,7 @@ Java_io_scalaproject_vault_model_WalletManager_openWalletJ(JNIEnv *env, jobject 
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_WalletManager_recoveryWalletJ(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_WalletManager_recoveryWalletJ(JNIEnv *env, jobject instance,
                                                               jstring path, jstring password,
                                                               jstring mnemonic,
                                                               jint networkType,
@@ -317,10 +317,10 @@ Java_io_scalaproject_vault_model_WalletManager_recoveryWalletJ(JNIEnv *env, jobj
     const char *_path = env->GetStringUTFChars(path, nullptr);
     const char *_password = env->GetStringUTFChars(password, nullptr);
     const char *_mnemonic = env->GetStringUTFChars(mnemonic, nullptr);
-    auto _networkType = static_cast<scala::NetworkType>(networkType);
+    auto _networkType = static_cast<lunify::NetworkType>(networkType);
 
-    scala::Wallet *wallet =
-            scala::WalletManagerFactory::getWalletManager()->recoveryWallet(
+    lunify::Wallet *wallet =
+            lunify::WalletManagerFactory::getWalletManager()->recoveryWallet(
                     std::string(_path),
                     std::string(_password),
                     std::string(_mnemonic),
@@ -334,7 +334,7 @@ Java_io_scalaproject_vault_model_WalletManager_recoveryWalletJ(JNIEnv *env, jobj
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_WalletManager_createWalletFromKeysJ(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_WalletManager_createWalletFromKeysJ(JNIEnv *env, jobject instance,
                                                                     jstring path, jstring password,
                                                                     jstring language,
                                                                     jint networkType,
@@ -345,13 +345,13 @@ Java_io_scalaproject_vault_model_WalletManager_createWalletFromKeysJ(JNIEnv *env
     const char *_path = env->GetStringUTFChars(path, nullptr);
     const char *_password = env->GetStringUTFChars(password, nullptr);
     const char *_language = env->GetStringUTFChars(language, nullptr);
-    auto _networkType = static_cast<scala::NetworkType>(networkType);
+    auto _networkType = static_cast<lunify::NetworkType>(networkType);
     const char *_addressString = env->GetStringUTFChars(addressString, nullptr);
     const char *_viewKeyString = env->GetStringUTFChars(viewKeyString, nullptr);
     const char *_spendKeyString = env->GetStringUTFChars(spendKeyString, nullptr);
 
-    scala::Wallet *wallet =
-            scala::WalletManagerFactory::getWalletManager()->createWalletFromKeys(
+    lunify::Wallet *wallet =
+            lunify::WalletManagerFactory::getWalletManager()->createWalletFromKeys(
                     std::string(_path),
                     std::string(_password),
                     std::string(_language),
@@ -374,7 +374,7 @@ Java_io_scalaproject_vault_model_WalletManager_createWalletFromKeysJ(JNIEnv *env
 // virtual void setSubaddressLookahead(uint32_t major, uint32_t minor) = 0;
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_WalletManager_createWalletFromDeviceJ(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_WalletManager_createWalletFromDeviceJ(JNIEnv *env, jobject instance,
                                                                       jstring path,
                                                                       jstring password,
                                                                       jint networkType,
@@ -383,12 +383,12 @@ Java_io_scalaproject_vault_model_WalletManager_createWalletFromDeviceJ(JNIEnv *e
                                                                       jstring subaddressLookahead) {
     const char *_path = env->GetStringUTFChars(path, nullptr);
     const char *_password = env->GetStringUTFChars(password, nullptr);
-    auto _networkType = static_cast<scala::NetworkType>(networkType);
+    auto _networkType = static_cast<lunify::NetworkType>(networkType);
     const char *_deviceName = env->GetStringUTFChars(deviceName, nullptr);
     const char *_subaddressLookahead = env->GetStringUTFChars(subaddressLookahead, nullptr);
 
-    scala::Wallet *wallet =
-            scala::WalletManagerFactory::getWalletManager()->createWalletFromDevice(
+    lunify::Wallet *wallet =
+            lunify::WalletManagerFactory::getWalletManager()->createWalletFromDevice(
                     std::string(_path),
                     std::string(_password),
                     _networkType,
@@ -404,24 +404,24 @@ Java_io_scalaproject_vault_model_WalletManager_createWalletFromDeviceJ(JNIEnv *e
 }
 
 JNIEXPORT jboolean JNICALL
-Java_io_scalaproject_vault_model_WalletManager_walletExists(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_WalletManager_walletExists(JNIEnv *env, jobject instance,
                                                            jstring path) {
     const char *_path = env->GetStringUTFChars(path, nullptr);
     bool exists =
-            scala::WalletManagerFactory::getWalletManager()->walletExists(std::string(_path));
+            lunify::WalletManagerFactory::getWalletManager()->walletExists(std::string(_path));
     env->ReleaseStringUTFChars(path, _path);
     return static_cast<jboolean>(exists);
 }
 
 JNIEXPORT jboolean JNICALL
-Java_io_scalaproject_vault_model_WalletManager_verifyWalletPassword(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_WalletManager_verifyWalletPassword(JNIEnv *env, jobject instance,
                                                                    jstring keys_file_name,
                                                                    jstring password,
                                                                    jboolean watch_only) {
     const char *_keys_file_name = env->GetStringUTFChars(keys_file_name, nullptr);
     const char *_password = env->GetStringUTFChars(password, nullptr);
     bool passwordOk =
-            scala::WalletManagerFactory::getWalletManager()->verifyWalletPassword(
+            lunify::WalletManagerFactory::getWalletManager()->verifyWalletPassword(
                     std::string(_keys_file_name), std::string(_password), watch_only);
     env->ReleaseStringUTFChars(keys_file_name, _keys_file_name);
     env->ReleaseStringUTFChars(password, _password);
@@ -430,13 +430,13 @@ Java_io_scalaproject_vault_model_WalletManager_verifyWalletPassword(JNIEnv *env,
 
 //virtual int queryWalletHardware(const std::string &keys_file_name, const std::string &password) const = 0;
 JNIEXPORT jint JNICALL
-Java_io_scalaproject_vault_model_WalletManager_queryWalletDeviceJ(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_WalletManager_queryWalletDeviceJ(JNIEnv *env, jobject instance,
                                                                  jstring keys_file_name,
                                                                  jstring password) {
     const char *_keys_file_name = env->GetStringUTFChars(keys_file_name, nullptr);
     const char *_password = env->GetStringUTFChars(password, nullptr);
-    scala::Wallet::Device device_type;
-    bool ok = scala::WalletManagerFactory::getWalletManager()->
+    lunify::Wallet::Device device_type;
+    bool ok = lunify::WalletManagerFactory::getWalletManager()->
             queryWalletDevice(device_type, std::string(_keys_file_name), std::string(_password));
     env->ReleaseStringUTFChars(keys_file_name, _keys_file_name);
     env->ReleaseStringUTFChars(password, _password);
@@ -447,11 +447,11 @@ Java_io_scalaproject_vault_model_WalletManager_queryWalletDeviceJ(JNIEnv *env, j
 }
 
 JNIEXPORT jobject JNICALL
-Java_io_scalaproject_vault_model_WalletManager_findWallets(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_WalletManager_findWallets(JNIEnv *env, jobject instance,
                                                           jstring path) {
     const char *_path = env->GetStringUTFChars(path, nullptr);
     std::vector<std::string> walletPaths =
-            scala::WalletManagerFactory::getWalletManager()->findWallets(std::string(_path));
+            lunify::WalletManagerFactory::getWalletManager()->findWallets(std::string(_path));
     env->ReleaseStringUTFChars(path, _path);
     return cpp2java(env, walletPaths);
 }
@@ -459,18 +459,18 @@ Java_io_scalaproject_vault_model_WalletManager_findWallets(JNIEnv *env, jobject 
 //TODO virtual bool checkPayment(const std::string &address, const std::string &txid, const std::string &txkey, const std::string &daemon_address, uint64_t &received, uint64_t &height, std::string &error) const = 0;
 
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_WalletManager_setDaemonAddressJ(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_WalletManager_setDaemonAddressJ(JNIEnv *env, jobject instance,
                                                                 jstring address) {
     const char *_address = env->GetStringUTFChars(address, nullptr);
-    scala::WalletManagerFactory::getWalletManager()->setDaemonAddress(std::string(_address));
+    lunify::WalletManagerFactory::getWalletManager()->setDaemonAddress(std::string(_address));
     env->ReleaseStringUTFChars(address, _address);
 }
 
 // returns whether the daemon can be reached, and its version number
 JNIEXPORT jint JNICALL
-Java_io_scalaproject_vault_model_WalletManager_getDaemonVersion(JNIEnv *env, jobject instance) {
+Java_xyz_lunify_vault_model_WalletManager_getDaemonVersion(JNIEnv *env, jobject instance) {
     uint32_t version;
-    bool isConnected = scala::WalletManagerFactory::getWalletManager()->connected(&version);
+    bool isConnected = lunify::WalletManagerFactory::getWalletManager()->connected(&version);
     if (!isConnected) version = 0;
 
     // Asegurate de que el valor de version este dentro del rango de jint
@@ -483,8 +483,8 @@ Java_io_scalaproject_vault_model_WalletManager_getDaemonVersion(JNIEnv *env, job
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_WalletManager_getBlockchainHeight(JNIEnv *env, jobject instance) {
-    uint64_t height = scala::WalletManagerFactory::getWalletManager()->blockchainHeight();
+Java_xyz_lunify_vault_model_WalletManager_getBlockchainHeight(JNIEnv *env, jobject instance) {
+    uint64_t height = lunify::WalletManagerFactory::getWalletManager()->blockchainHeight();
 
     // Asegurate de que el valor de height este dentro del rango de jlong
     if (height > static_cast<uint64_t>(std::numeric_limits<jlong>::max())) {
@@ -496,8 +496,8 @@ Java_io_scalaproject_vault_model_WalletManager_getBlockchainHeight(JNIEnv *env, 
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_WalletManager_getBlockchainTargetHeight(JNIEnv *env, jobject instance) {
-    uint64_t targetHeight = scala::WalletManagerFactory::getWalletManager()->blockchainTargetHeight();
+Java_xyz_lunify_vault_model_WalletManager_getBlockchainTargetHeight(JNIEnv *env, jobject instance) {
+    uint64_t targetHeight = lunify::WalletManagerFactory::getWalletManager()->blockchainTargetHeight();
 
     // Asegurate de que el valor de targetHeight este dentro del rango de jlong
     if (targetHeight > static_cast<uint64_t>(std::numeric_limits<jlong>::max())) {
@@ -509,8 +509,8 @@ Java_io_scalaproject_vault_model_WalletManager_getBlockchainTargetHeight(JNIEnv 
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_WalletManager_getNetworkDifficulty(JNIEnv *env, jobject instance) {
-    uint64_t difficulty = scala::WalletManagerFactory::getWalletManager()->networkDifficulty();
+Java_xyz_lunify_vault_model_WalletManager_getNetworkDifficulty(JNIEnv *env, jobject instance) {
+    uint64_t difficulty = lunify::WalletManagerFactory::getWalletManager()->networkDifficulty();
     if (difficulty > std::numeric_limits<jlong>::max()) {
         // Maneja el caso en que el valor es demasiado grande para jlong
         return std::numeric_limits<jlong>::max();
@@ -521,13 +521,13 @@ Java_io_scalaproject_vault_model_WalletManager_getNetworkDifficulty(JNIEnv *env,
 
 
 JNIEXPORT jdouble JNICALL
-Java_io_scalaproject_vault_model_WalletManager_getMiningHashRate(JNIEnv *env, jobject instance) {
-    return scala::WalletManagerFactory::getWalletManager()->miningHashRate();
+Java_xyz_lunify_vault_model_WalletManager_getMiningHashRate(JNIEnv *env, jobject instance) {
+    return lunify::WalletManagerFactory::getWalletManager()->miningHashRate();
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_WalletManager_getBlockTarget(JNIEnv *env, jobject instance) {
-    uint64_t blockTarget = scala::WalletManagerFactory::getWalletManager()->blockTarget();
+Java_xyz_lunify_vault_model_WalletManager_getBlockTarget(JNIEnv *env, jobject instance) {
+    uint64_t blockTarget = lunify::WalletManagerFactory::getWalletManager()->blockTarget();
 
     // Asegúrate de que el valor de `blockTarget` esté dentro del rango de `jlong`
     if (blockTarget > static_cast<uint64_t>(std::numeric_limits<jlong>::max())) {
@@ -539,18 +539,18 @@ Java_io_scalaproject_vault_model_WalletManager_getBlockTarget(JNIEnv *env, jobje
 }
 
 JNIEXPORT jboolean JNICALL
-Java_io_scalaproject_vault_model_WalletManager_isMining(JNIEnv *env, jobject instance) {
-    return static_cast<jboolean>(scala::WalletManagerFactory::getWalletManager()->isMining());
+Java_xyz_lunify_vault_model_WalletManager_isMining(JNIEnv *env, jobject instance) {
+    return static_cast<jboolean>(lunify::WalletManagerFactory::getWalletManager()->isMining());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_io_scalaproject_vault_model_WalletManager_startMining(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_WalletManager_startMining(JNIEnv *env, jobject instance,
                                                           jstring address,
                                                           jboolean background_mining,
                                                           jboolean ignore_battery) {
     const char *_address = env->GetStringUTFChars(address, nullptr);
     bool success =
-            scala::WalletManagerFactory::getWalletManager()->startMining(std::string(_address),
+            lunify::WalletManagerFactory::getWalletManager()->startMining(std::string(_address),
                                                                              background_mining,
                                                                              ignore_battery);
     env->ReleaseStringUTFChars(address, _address);
@@ -558,18 +558,18 @@ Java_io_scalaproject_vault_model_WalletManager_startMining(JNIEnv *env, jobject 
 }
 
 JNIEXPORT jboolean JNICALL
-Java_io_scalaproject_vault_model_WalletManager_stopMining(JNIEnv *env, jobject instance) {
-    return static_cast<jboolean>(scala::WalletManagerFactory::getWalletManager()->stopMining());
+Java_xyz_lunify_vault_model_WalletManager_stopMining(JNIEnv *env, jobject instance) {
+    return static_cast<jboolean>(lunify::WalletManagerFactory::getWalletManager()->stopMining());
 }
 
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_WalletManager_resolveOpenAlias(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_WalletManager_resolveOpenAlias(JNIEnv *env, jobject instance,
                                                                jstring address,
                                                                jboolean dnssec_valid) {
     const char *_address = env->GetStringUTFChars(address, nullptr);
     bool _dnssec_valid = (bool) dnssec_valid;
     std::string resolvedAlias =
-            scala::WalletManagerFactory::getWalletManager()->resolveOpenAlias(
+            lunify::WalletManagerFactory::getWalletManager()->resolveOpenAlias(
                     std::string(_address),
                     _dnssec_valid);
     env->ReleaseStringUTFChars(address, _address);
@@ -579,10 +579,10 @@ Java_io_scalaproject_vault_model_WalletManager_resolveOpenAlias(JNIEnv *env, job
 //TODO static std::tuple<bool, std::string, std::string, std::string, std::string> checkUpdates(const std::string &software, const std::string &subdir);
 
 JNIEXPORT jboolean JNICALL
-Java_io_scalaproject_vault_model_WalletManager_closeJ(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_WalletManager_closeJ(JNIEnv *env, jobject instance,
                                                      jobject walletInstance) {
-    auto *wallet = getHandle<scala::Wallet>(env, walletInstance);
-    bool closeSuccess = scala::WalletManagerFactory::getWalletManager()->closeWallet(wallet,
+    auto *wallet = getHandle<lunify::Wallet>(env, walletInstance);
+    bool closeSuccess = lunify::WalletManagerFactory::getWalletManager()->closeWallet(wallet,
                                                                                          false);
     if (closeSuccess) {
         auto *walletListener = getHandle<MyWalletListener>(env, walletInstance,
@@ -604,29 +604,29 @@ Java_io_scalaproject_vault_model_WalletManager_closeJ(JNIEnv *env, jobject insta
 /**********************************/
 
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_Wallet_getSeed(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getSeed(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     return env->NewStringUTF(wallet->seed().c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_Wallet_getSeedLanguage(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getSeedLanguage(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     return env->NewStringUTF(wallet->getSeedLanguage().c_str());
 }
 
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_Wallet_setSeedLanguage(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_setSeedLanguage(JNIEnv *env, jobject instance,
                                                        jstring language) {
     const char *_language = env->GetStringUTFChars(language, nullptr);
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     wallet->setSeedLanguage(std::string(_language));
     env->ReleaseStringUTFChars(language, _language);
 }
 
 JNIEXPORT jint JNICALL
-Java_io_scalaproject_vault_model_Wallet_getStatusJ(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getStatusJ(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     return wallet->status();
 }
 
@@ -641,8 +641,8 @@ jobject newWalletStatusInstance(JNIEnv *env, int status, const std::string &erro
 
 
 JNIEXPORT jobject JNICALL
-Java_io_scalaproject_vault_model_Wallet_statusWithErrorString(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_statusWithErrorString(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
 
     int status;
     std::string errorString;
@@ -652,33 +652,33 @@ Java_io_scalaproject_vault_model_Wallet_statusWithErrorString(JNIEnv *env, jobje
 }
 
 JNIEXPORT jboolean JNICALL
-Java_io_scalaproject_vault_model_Wallet_setPassword(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_setPassword(JNIEnv *env, jobject instance,
                                                    jstring password) {
     const char *_password = env->GetStringUTFChars(password, nullptr);
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     bool success = wallet->setPassword(std::string(_password));
     env->ReleaseStringUTFChars(password, _password);
     return static_cast<jboolean>(success);
 }
 
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_Wallet_getAddressJ(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_getAddressJ(JNIEnv *env, jobject instance,
                                                    jint accountIndex,
                                                    jint addressIndex) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     return env->NewStringUTF(
             wallet->address((uint32_t) accountIndex, (uint32_t) addressIndex).c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_Wallet_getPath(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getPath(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     return env->NewStringUTF(wallet->path().c_str());
 }
 
 JNIEXPORT jint JNICALL
-Java_io_scalaproject_vault_model_Wallet_nettype(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_nettype(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     return wallet->nettype();
 }
 
@@ -686,32 +686,32 @@ Java_io_scalaproject_vault_model_Wallet_nettype(JNIEnv *env, jobject instance) {
 //TODO virtual bool useForkRules(uint8_t version, int64_t early_blocks) const = 0;
 
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_Wallet_getIntegratedAddress(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_getIntegratedAddress(JNIEnv *env, jobject instance,
                                                             jstring payment_id) {
     const char *_payment_id = env->GetStringUTFChars(payment_id, nullptr);
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     std::string address = wallet->integratedAddress(_payment_id);
     env->ReleaseStringUTFChars(payment_id, _payment_id);
     return env->NewStringUTF(address.c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_Wallet_getSecretViewKey(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getSecretViewKey(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     return env->NewStringUTF(wallet->secretViewKey().c_str());
 }
 
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_Wallet_getSecretSpendKey(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getSecretSpendKey(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     return env->NewStringUTF(wallet->secretSpendKey().c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_io_scalaproject_vault_model_Wallet_store(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_store(JNIEnv *env, jobject instance,
                                              jstring path) {
     const char *_path = env->GetStringUTFChars(path, nullptr);
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     bool success = wallet->store(std::string(_path));
     if (!success) {
         LOGE("store() %s", wallet->errorString().c_str());
@@ -721,22 +721,22 @@ Java_io_scalaproject_vault_model_Wallet_store(JNIEnv *env, jobject instance,
 }
 
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_Wallet_getFilename(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getFilename(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     return env->NewStringUTF(wallet->filename().c_str());
 }
 
 //    virtual std::string keysFilename() const = 0;
 
 JNIEXPORT jboolean JNICALL
-Java_io_scalaproject_vault_model_Wallet_initJ(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_initJ(JNIEnv *env, jobject instance,
                                              jstring daemon_address,
                                              jlong upper_transaction_size_limit,
                                              jstring daemon_username, jstring daemon_password) {
     const char *_daemon_address = env->GetStringUTFChars(daemon_address, nullptr);
     const char *_daemon_username = env->GetStringUTFChars(daemon_username, nullptr);
     const char *_daemon_password = env->GetStringUTFChars(daemon_password, nullptr);
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     bool status = wallet->init(_daemon_address, (uint64_t) upper_transaction_size_limit,
                                _daemon_username,
                                _daemon_password);
@@ -749,15 +749,15 @@ Java_io_scalaproject_vault_model_Wallet_initJ(JNIEnv *env, jobject instance,
 //    virtual bool createWatchOnly(const std::string &path, const std::string &password, const std::string &language) const = 0;
 
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_Wallet_setRestoreHeight(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_setRestoreHeight(JNIEnv *env, jobject instance,
                                                         jlong height) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     wallet->setRefreshFromBlockHeight((uint64_t) height);
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_Wallet_getRestoreHeight(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getRestoreHeight(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     uint64_t restoreHeight = wallet->getRefreshFromBlockHeight();
 
     // Asegurate de que el valor de restoreHeight este dentro del rango de jlong
@@ -773,16 +773,16 @@ Java_io_scalaproject_vault_model_Wallet_getRestoreHeight(JNIEnv *env, jobject in
 //    virtual bool connectToDaemon() = 0;
 
 JNIEXPORT jint JNICALL
-Java_io_scalaproject_vault_model_Wallet_getConnectionStatusJ(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getConnectionStatusJ(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     return wallet->connected();
 }
 //TODO virtual void setTrustedDaemon(bool arg) = 0;
 //TODO virtual bool trustedDaemon() const = 0;
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_Wallet_getBalance(JNIEnv *env, jobject instance, jint accountIndex) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getBalance(JNIEnv *env, jobject instance, jint accountIndex) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     uint64_t balance = wallet->balance(static_cast<uint32_t>(accountIndex));
 
     // Asegurate de que el valor de balance este dentro del rango de jlong
@@ -795,8 +795,8 @@ Java_io_scalaproject_vault_model_Wallet_getBalance(JNIEnv *env, jobject instance
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_Wallet_getBalanceAll(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getBalanceAll(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     uint64_t balanceAll = wallet->balanceAll();
 
     // Asegurate de que el valor de balanceAll este dentro del rango de jlong
@@ -809,8 +809,8 @@ Java_io_scalaproject_vault_model_Wallet_getBalanceAll(JNIEnv *env, jobject insta
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_Wallet_getUnlockedBalance(JNIEnv *env, jobject instance, jint accountIndex) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getUnlockedBalance(JNIEnv *env, jobject instance, jint accountIndex) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     uint64_t unlockedBalance = wallet->unlockedBalance(static_cast<uint32_t>(accountIndex));
 
     // Asegurate de que el valor de unlockedBalance este dentro del rango de jlong
@@ -823,8 +823,8 @@ Java_io_scalaproject_vault_model_Wallet_getUnlockedBalance(JNIEnv *env, jobject 
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_Wallet_getUnlockedBalanceAll(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getUnlockedBalanceAll(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     uint64_t unlockedBalanceAll = wallet->unlockedBalanceAll();
 
     // Asegurate de que el valor de unlockedBalanceAll este dentro del rango de jlong
@@ -837,14 +837,14 @@ Java_io_scalaproject_vault_model_Wallet_getUnlockedBalanceAll(JNIEnv *env, jobje
 }
 
 JNIEXPORT jboolean JNICALL
-Java_io_scalaproject_vault_model_Wallet_isWatchOnly(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_isWatchOnly(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     return static_cast<jboolean>(wallet->watchOnly());
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_Wallet_getBlockChainHeight(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getBlockChainHeight(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     uint64_t blockChainHeight = wallet->blockChainHeight();
 
     // Asegurate de que el valor de blockChainHeight este dentro del rango de jlong
@@ -857,8 +857,8 @@ Java_io_scalaproject_vault_model_Wallet_getBlockChainHeight(JNIEnv *env, jobject
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_Wallet_getApproximateBlockChainHeight(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getApproximateBlockChainHeight(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     uint64_t approximateBlockChainHeight = wallet->approximateBlockChainHeight();
 
     // Asegurate de que el valor de approximateBlockChainHeight este dentro del rango de jlong
@@ -871,8 +871,8 @@ Java_io_scalaproject_vault_model_Wallet_getApproximateBlockChainHeight(JNIEnv *e
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_Wallet_getDaemonBlockChainHeight(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getDaemonBlockChainHeight(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     uint64_t daemonBlockChainHeight = wallet->daemonBlockChainHeight();
 
     // Asegurate de que el valor de daemonBlockChainHeight este dentro del rango de jlong
@@ -885,8 +885,8 @@ Java_io_scalaproject_vault_model_Wallet_getDaemonBlockChainHeight(JNIEnv *env, j
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_Wallet_getDaemonBlockChainTargetHeight(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getDaemonBlockChainTargetHeight(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     uint64_t daemonBlockChainTargetHeight = wallet->daemonBlockChainTargetHeight();
 
     // Asegurate de que el valor de daemonBlockChainTargetHeight este dentro del rango de jlong
@@ -899,21 +899,21 @@ Java_io_scalaproject_vault_model_Wallet_getDaemonBlockChainTargetHeight(JNIEnv *
 }
 
 JNIEXPORT jboolean JNICALL
-Java_io_scalaproject_vault_model_Wallet_isSynchronizedJ(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_isSynchronizedJ(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     return static_cast<jboolean>(wallet->synchronized());
 }
 
 JNIEXPORT jint JNICALL
-Java_io_scalaproject_vault_model_Wallet_getDeviceTypeJ(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
-    scala::Wallet::Device device_type = wallet->getDeviceType();
+Java_xyz_lunify_vault_model_Wallet_getDeviceTypeJ(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
+    lunify::Wallet::Device device_type = wallet->getDeviceType();
     return static_cast<jint>(device_type);
 }
 
 //void cn_slow_hash(const void *data, size_t length, char *hash); // from crypto/hash-ops.h
 JNIEXPORT jbyteArray JNICALL
-Java_io_scalaproject_vault_util_KeyStoreHelper_slowHash(JNIEnv *env, jclass clazz,
+Java_xyz_lunify_vault_util_KeyStoreHelper_slowHash(JNIEnv *env, jclass clazz,
                                                        jbyteArray data, jint brokenVariant) {
     char hash[HASH_SIZE];
     jsize size = env->GetArrayLength(data);
@@ -939,15 +939,15 @@ Java_io_scalaproject_vault_util_KeyStoreHelper_slowHash(JNIEnv *env, jclass claz
 }
 
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_Wallet_getDisplayAmount(JNIEnv *env, jclass clazz,
+Java_xyz_lunify_vault_model_Wallet_getDisplayAmount(JNIEnv *env, jclass clazz,
                                                         jlong amount) {
-    return env->NewStringUTF(scala::Wallet::displayAmount(amount).c_str());
+    return env->NewStringUTF(lunify::Wallet::displayAmount(amount).c_str());
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_Wallet_getAmountFromString(JNIEnv *env, jclass clazz, jstring amount) {
+Java_xyz_lunify_vault_model_Wallet_getAmountFromString(JNIEnv *env, jclass clazz, jstring amount) {
     const char *_amount = env->GetStringUTFChars(amount, nullptr);
-    uint64_t x = scala::Wallet::amountFromString(_amount);
+    uint64_t x = lunify::Wallet::amountFromString(_amount);
     env->ReleaseStringUTFChars(amount, _amount);
 
     // Asegurate de que el valor de x este dentro del rango de jlong
@@ -960,8 +960,8 @@ Java_io_scalaproject_vault_model_Wallet_getAmountFromString(JNIEnv *env, jclass 
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_Wallet_getAmountFromDouble(JNIEnv *env, jclass clazz, jdouble amount) {
-    uint64_t amountFromDouble = scala::Wallet::amountFromDouble(amount);
+Java_xyz_lunify_vault_model_Wallet_getAmountFromDouble(JNIEnv *env, jclass clazz, jdouble amount) {
+    uint64_t amountFromDouble = lunify::Wallet::amountFromDouble(amount);
 
     // Asegurate de que el valor de amountFromDouble esté dentro del rango de jlong
     if (amountFromDouble > static_cast<uint64_t>(std::numeric_limits<jlong>::max())) {
@@ -973,43 +973,43 @@ Java_io_scalaproject_vault_model_Wallet_getAmountFromDouble(JNIEnv *env, jclass 
 }
 
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_Wallet_generatePaymentId(JNIEnv *env, jclass clazz) {
-    return env->NewStringUTF(scala::Wallet::genPaymentId().c_str());
+Java_xyz_lunify_vault_model_Wallet_generatePaymentId(JNIEnv *env, jclass clazz) {
+    return env->NewStringUTF(lunify::Wallet::genPaymentId().c_str());
 }
 
 JNIEXPORT jboolean JNICALL
-Java_io_scalaproject_vault_model_Wallet_isPaymentIdValid(JNIEnv *env, jclass clazz,
+Java_xyz_lunify_vault_model_Wallet_isPaymentIdValid(JNIEnv *env, jclass clazz,
                                                         jstring payment_id) {
     const char *_payment_id = env->GetStringUTFChars(payment_id, nullptr);
-    bool isValid = scala::Wallet::paymentIdValid(_payment_id);
+    bool isValid = lunify::Wallet::paymentIdValid(_payment_id);
     env->ReleaseStringUTFChars(payment_id, _payment_id);
     return static_cast<jboolean>(isValid);
 }
 
 JNIEXPORT jboolean JNICALL
-Java_io_scalaproject_vault_model_Wallet_isAddressValid(JNIEnv *env, jclass clazz,
+Java_xyz_lunify_vault_model_Wallet_isAddressValid(JNIEnv *env, jclass clazz,
                                                       jstring address, jint networkType) {
     const char *_address = env->GetStringUTFChars(address, nullptr);
-    auto _networkType = static_cast<scala::NetworkType>(networkType);
-    bool isValid = scala::Wallet::addressValid(_address, _networkType);
+    auto _networkType = static_cast<lunify::NetworkType>(networkType);
+    bool isValid = lunify::Wallet::addressValid(_address, _networkType);
     env->ReleaseStringUTFChars(address, _address);
     return static_cast<jboolean>(isValid);
 }
 
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_Wallet_getPaymentIdFromAddress(JNIEnv *env, jclass clazz,
+Java_xyz_lunify_vault_model_Wallet_getPaymentIdFromAddress(JNIEnv *env, jclass clazz,
                                                                jstring address,
                                                                jint networkType) {
-    auto _networkType = static_cast<scala::NetworkType>(networkType);
+    auto _networkType = static_cast<lunify::NetworkType>(networkType);
     const char *_address = env->GetStringUTFChars(address, nullptr);
-    std::string payment_id = scala::Wallet::paymentIdFromAddress(_address, _networkType);
+    std::string payment_id = lunify::Wallet::paymentIdFromAddress(_address, _networkType);
     env->ReleaseStringUTFChars(address, _address);
     return env->NewStringUTF(payment_id.c_str());
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_Wallet_getMaximumAllowedAmount(JNIEnv *env, jclass clazz) {
-    uint64_t maxAllowedAmount = scala::Wallet::maximumAllowedAmount();
+Java_xyz_lunify_vault_model_Wallet_getMaximumAllowedAmount(JNIEnv *env, jclass clazz) {
+    uint64_t maxAllowedAmount = lunify::Wallet::maximumAllowedAmount();
 
     // Asegurate de que el valor de maxAllowedAmount este dentro del rango de jlong
     if (maxAllowedAmount > static_cast<uint64_t>(std::numeric_limits<jlong>::max())) {
@@ -1021,26 +1021,26 @@ Java_io_scalaproject_vault_model_Wallet_getMaximumAllowedAmount(JNIEnv *env, jcl
 }
 
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_Wallet_startRefresh(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_startRefresh(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     wallet->startRefresh();
 }
 
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_Wallet_pauseRefresh(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_pauseRefresh(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     wallet->pauseRefresh();
 }
 
 JNIEXPORT jboolean JNICALL
-Java_io_scalaproject_vault_model_Wallet_refresh(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_refresh(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     return static_cast<jboolean>(wallet->refresh());
 }
 
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_Wallet_refreshAsync(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_refreshAsync(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     wallet->refreshAsync();
 }
 
@@ -1048,8 +1048,8 @@ Java_io_scalaproject_vault_model_Wallet_refreshAsync(JNIEnv *env, jobject instan
 
 //virtual void rescanBlockchainAsync() = 0;
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_Wallet_rescanBlockchainAsyncJ(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_rescanBlockchainAsyncJ(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     wallet->rescanBlockchainAsync();
 }
 
@@ -1058,7 +1058,7 @@ Java_io_scalaproject_vault_model_Wallet_rescanBlockchainAsyncJ(JNIEnv *env, jobj
 //TODO virtual int autoRefreshInterval() const = 0;
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_Wallet_createTransactionJ(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_createTransactionJ(JNIEnv *env, jobject instance,
                                                           jstring dst_addr, jstring payment_id,
                                                           jlong amount, jint mixin_count,
                                                           jint priority,
@@ -1067,10 +1067,10 @@ Java_io_scalaproject_vault_model_Wallet_createTransactionJ(JNIEnv *env, jobject 
     const char *_dst_addr = env->GetStringUTFChars(dst_addr, nullptr);
     const char *_payment_id = env->GetStringUTFChars(payment_id, nullptr);
     auto _priority =
-            static_cast<scala::PendingTransaction::Priority>(priority);
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+            static_cast<lunify::PendingTransaction::Priority>(priority);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
 
-    scala::PendingTransaction *tx = wallet->createTransaction(_dst_addr, _payment_id,
+    lunify::PendingTransaction *tx = wallet->createTransaction(_dst_addr, _payment_id,
                                                                   amount, (uint32_t) mixin_count,
                                                                   _priority,
                                                                   (uint32_t) accountIndex);
@@ -1081,7 +1081,7 @@ Java_io_scalaproject_vault_model_Wallet_createTransactionJ(JNIEnv *env, jobject 
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_Wallet_createSweepTransaction(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_createSweepTransaction(JNIEnv *env, jobject instance,
                                                               jstring dst_addr, jstring payment_id,
                                                               jint mixin_count,
                                                               jint priority,
@@ -1090,12 +1090,12 @@ Java_io_scalaproject_vault_model_Wallet_createSweepTransaction(JNIEnv *env, jobj
     const char *_dst_addr = env->GetStringUTFChars(dst_addr, nullptr);
     const char *_payment_id = env->GetStringUTFChars(payment_id, nullptr);
     auto _priority =
-            static_cast<scala::PendingTransaction::Priority>(priority);
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+            static_cast<lunify::PendingTransaction::Priority>(priority);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
 
-    scala::optional<uint64_t> empty;
+    lunify::optional<uint64_t> empty;
 
-    scala::PendingTransaction *tx = wallet->createTransaction(_dst_addr, _payment_id,
+    lunify::PendingTransaction *tx = wallet->createTransaction(_dst_addr, _payment_id,
                                                                   empty, (uint32_t) mixin_count,
                                                                   _priority,
                                                                   (uint32_t) accountIndex);
@@ -1106,10 +1106,10 @@ Java_io_scalaproject_vault_model_Wallet_createSweepTransaction(JNIEnv *env, jobj
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_Wallet_createSweepUnmixableTransactionJ(JNIEnv *env,
+Java_xyz_lunify_vault_model_Wallet_createSweepUnmixableTransactionJ(JNIEnv *env,
                                                                         jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
-    scala::PendingTransaction *tx = wallet->createSweepUnmixableTransaction();
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
+    lunify::PendingTransaction *tx = wallet->createSweepUnmixableTransaction();
     return reinterpret_cast<jlong>(tx);
 }
 
@@ -1117,11 +1117,11 @@ Java_io_scalaproject_vault_model_Wallet_createSweepUnmixableTransactionJ(JNIEnv 
 //virtual bool submitTransaction(const std::string &fileName) = 0;
 
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_Wallet_disposeTransaction(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_disposeTransaction(JNIEnv *env, jobject instance,
                                                           jobject pendingTransaction) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     auto *_pendingTransaction =
-            getHandle<scala::PendingTransaction>(env, pendingTransaction);
+            getHandle<lunify::PendingTransaction>(env, pendingTransaction);
     wallet->disposeTransaction(_pendingTransaction);
 }
 
@@ -1131,17 +1131,17 @@ Java_io_scalaproject_vault_model_Wallet_disposeTransaction(JNIEnv *env, jobject 
 
 //virtual TransactionHistory * history() const = 0;
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_Wallet_getHistoryJ(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getHistoryJ(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     return reinterpret_cast<jlong>(wallet->history());
 }
 
 //virtual AddressBook * addressBook() const = 0;
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_Wallet_setListenerJ(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_setListenerJ(JNIEnv *env, jobject instance,
                                                     jobject javaListener) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     wallet->setListener(nullptr); // clear old listener
     // delete old listener
     auto *oldListener = getHandle<MyWalletListener>(env, instance,
@@ -1161,8 +1161,8 @@ Java_io_scalaproject_vault_model_Wallet_setListenerJ(JNIEnv *env, jobject instan
 }
 
 JNIEXPORT jint JNICALL
-Java_io_scalaproject_vault_model_Wallet_getDefaultMixin(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getDefaultMixin(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     uint32_t defaultMixin = wallet->defaultMixin();
 
     // Asegurate de que el valor de defaultMixin este dentro del rango de jint
@@ -1175,19 +1175,19 @@ Java_io_scalaproject_vault_model_Wallet_getDefaultMixin(JNIEnv *env, jobject ins
 }
 
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_Wallet_setDefaultMixin(JNIEnv *env, jobject instance, jint mixin) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_setDefaultMixin(JNIEnv *env, jobject instance, jint mixin) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     return wallet->setDefaultMixin(mixin);
 }
 
 JNIEXPORT jboolean JNICALL
-Java_io_scalaproject_vault_model_Wallet_setUserNote(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_setUserNote(JNIEnv *env, jobject instance,
                                                    jstring txid, jstring note) {
 
     const char *_txid = env->GetStringUTFChars(txid, nullptr);
     const char *_note = env->GetStringUTFChars(note, nullptr);
 
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
 
     bool success = wallet->setUserNote(_txid, _note);
 
@@ -1198,12 +1198,12 @@ Java_io_scalaproject_vault_model_Wallet_setUserNote(JNIEnv *env, jobject instanc
 }
 
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_Wallet_getUserNote(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_getUserNote(JNIEnv *env, jobject instance,
                                                    jstring txid) {
 
     const char *_txid = env->GetStringUTFChars(txid, nullptr);
 
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
 
     std::string note = wallet->getUserNote(_txid);
 
@@ -1212,12 +1212,12 @@ Java_io_scalaproject_vault_model_Wallet_getUserNote(JNIEnv *env, jobject instanc
 }
 
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_Wallet_getTxKey(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_getTxKey(JNIEnv *env, jobject instance,
                                                 jstring txid) {
 
     const char *_txid = env->GetStringUTFChars(txid, nullptr);
 
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
 
     std::string txKey = wallet->getTxKey(_txid);
 
@@ -1227,12 +1227,12 @@ Java_io_scalaproject_vault_model_Wallet_getTxKey(JNIEnv *env, jobject instance,
 
 //virtual void addSubaddressAccount(const std::string& label) = 0;
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_Wallet_addAccount(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_addAccount(JNIEnv *env, jobject instance,
                                                   jstring label) {
 
     const char *_label = env->GetStringUTFChars(label, nullptr);
 
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     wallet->addSubaddressAccount(_label);
 
     env->ReleaseStringUTFChars(label, _label);
@@ -1240,10 +1240,10 @@ Java_io_scalaproject_vault_model_Wallet_addAccount(JNIEnv *env, jobject instance
 
 //virtual std::string getSubaddressLabel(uint32_t accountIndex, uint32_t addressIndex) const = 0;
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_Wallet_getSubaddressLabel(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_getSubaddressLabel(JNIEnv *env, jobject instance,
                                                           jint accountIndex, jint addressIndex) {
 
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
 
     std::string label = wallet->getSubaddressLabel((uint32_t) accountIndex,
                                                    (uint32_t) addressIndex);
@@ -1253,13 +1253,13 @@ Java_io_scalaproject_vault_model_Wallet_getSubaddressLabel(JNIEnv *env, jobject 
 
 //virtual void setSubaddressLabel(uint32_t accountIndex, uint32_t addressIndex, const std::string &label) = 0;
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_Wallet_setSubaddressLabel(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_setSubaddressLabel(JNIEnv *env, jobject instance,
                                                           jint accountIndex, jint addressIndex,
                                                           jstring label) {
 
     const char *_label = env->GetStringUTFChars(label, nullptr);
 
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     wallet->setSubaddressLabel(accountIndex, addressIndex, _label);
 
     env->ReleaseStringUTFChars(label, _label);
@@ -1267,41 +1267,41 @@ Java_io_scalaproject_vault_model_Wallet_setSubaddressLabel(JNIEnv *env, jobject 
 
 // virtual size_t numSubaddressAccounts() const = 0;
 JNIEXPORT jint JNICALL
-Java_io_scalaproject_vault_model_Wallet_getNumAccounts(JNIEnv *env, jobject instance) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+Java_xyz_lunify_vault_model_Wallet_getNumAccounts(JNIEnv *env, jobject instance) {
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     return static_cast<jint>(wallet->numSubaddressAccounts());
 }
 
 //virtual size_t numSubaddresses(uint32_t accountIndex) const = 0;
 JNIEXPORT jint JNICALL
-Java_io_scalaproject_vault_model_Wallet_getNumSubaddresses(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_getNumSubaddresses(JNIEnv *env, jobject instance,
                                                           jint accountIndex) {
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     return static_cast<jint>(wallet->numSubaddresses(accountIndex));
 }
 
 //virtual void addSubaddress(uint32_t accountIndex, const std::string &label) = 0;
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_Wallet_addSubaddress(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_addSubaddress(JNIEnv *env, jobject instance,
                                                      jint accountIndex,
                                                      jstring label) {
 
     const char *_label = env->GetStringUTFChars(label, nullptr);
-    auto *wallet = getHandle<scala::Wallet>(env, instance);
+    auto *wallet = getHandle<lunify::Wallet>(env, instance);
     wallet->addSubaddress(accountIndex, _label);
     env->ReleaseStringUTFChars(label, _label);
 }
 
 /*JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_Wallet_getLastSubaddress(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_Wallet_getLastSubaddress(JNIEnv *env, jobject instance,
                                                          jint accountIndex) {
 
-    scala::Wallet *wallet = getHandle<scala::Wallet>(env, instance);
+    lunify::Wallet *wallet = getHandle<lunify::Wallet>(env, instance);
     size_t num = wallet->numSubaddresses(accountIndex);
     //wallet->subaddress()->getAll()[num]->getAddress().c_str()
-    scala::Subaddress *s = wallet->subaddress();
+    lunify::Subaddress *s = wallet->subaddress();
     s->refresh(accountIndex);
-    std::vector<scala::SubaddressRow *> v = s->getAll();
+    std::vector<lunify::SubaddressRow *> v = s->getAll();
     return env->NewStringUTF(v[num - 1]->getAddress().c_str());
 }
 */
@@ -1314,8 +1314,8 @@ Java_io_scalaproject_vault_model_Wallet_getLastSubaddress(JNIEnv *env, jobject i
 
 // TransactionHistory
 JNIEXPORT jint JNICALL
-Java_io_scalaproject_vault_model_TransactionHistory_getCount(JNIEnv *env, jobject instance) {
-    auto *history = getHandle<scala::TransactionHistory>(env,
+Java_xyz_lunify_vault_model_TransactionHistory_getCount(JNIEnv *env, jobject instance) {
+    auto *history = getHandle<lunify::TransactionHistory>(env,
                                                                                       instance);
     return history->count();
 }
@@ -1329,8 +1329,8 @@ jobject newTransferInstance(JNIEnv *env, uint64_t amount, const std::string &add
     return transfer;
 }
 
-jobject newTransferList(JNIEnv *env, scala::TransactionInfo *info) {
-    const std::vector<scala::TransactionInfo::Transfer> &transfers = info->transfers();
+jobject newTransferList(JNIEnv *env, lunify::TransactionInfo *info) {
+    const std::vector<lunify::TransactionInfo::Transfer> &transfers = info->transfers();
     if (transfers.empty()) { // don't create empty Lists
         return nullptr;
     }
@@ -1340,7 +1340,7 @@ jobject newTransferList(JNIEnv *env, scala::TransactionInfo *info) {
                                                          "(Ljava/lang/Object;)Z");
     jobject result = env->NewObject(class_ArrayList, java_util_ArrayList_, static_cast<jint> (transfers.size()));
     // create Transfer objects and stick them in the List
-    for (const scala::TransactionInfo::Transfer &s: transfers) {
+    for (const lunify::TransactionInfo::Transfer &s: transfers) {
         jobject element = newTransferInstance(env, s.amount, s.address);
         env->CallBooleanMethod(result, java_util_ArrayList_add, element);
         env->DeleteLocalRef(element);
@@ -1348,7 +1348,7 @@ jobject newTransferList(JNIEnv *env, scala::TransactionInfo *info) {
     return result;
 }
 
-jobject newTransactionInfo(JNIEnv *env, scala::TransactionInfo *info) {
+jobject newTransactionInfo(JNIEnv *env, lunify::TransactionInfo *info) {
     jmethodID c = env->GetMethodID(class_TransactionInfo, "<init>",
                                    "(IZZJJJLjava/lang/String;JLjava/lang/String;IIJLjava/lang/String;Ljava/util/List;)V");
     jobject transfers = newTransferList(env, info);
@@ -1356,7 +1356,7 @@ jobject newTransactionInfo(JNIEnv *env, scala::TransactionInfo *info) {
     jstring _paymentId = env->NewStringUTF(info->paymentId().c_str());
     jstring _label = env->NewStringUTF(info->label().c_str());
     uint32_t subaddrIndex = 0;
-    if (info->direction() == scala::TransactionInfo::Direction_In)
+    if (info->direction() == lunify::TransactionInfo::Direction_In)
         subaddrIndex = *(info->subaddrIndex().begin());
     jobject result = env->NewObject(class_TransactionInfo, c,
                                     info->direction(),
@@ -1382,14 +1382,14 @@ jobject newTransactionInfo(JNIEnv *env, scala::TransactionInfo *info) {
 #include <stdio.h>
 #include <stdlib.h>
 
-jobject cpp2java(JNIEnv *env, const std::vector<scala::TransactionInfo *>& vector) {
+jobject cpp2java(JNIEnv *env, const std::vector<lunify::TransactionInfo *>& vector) {
 
     jmethodID java_util_ArrayList_ = env->GetMethodID(class_ArrayList, "<init>", "(I)V");
     jmethodID java_util_ArrayList_add = env->GetMethodID(class_ArrayList, "add",
                                                          "(Ljava/lang/Object;)Z");
 
     jobject arrayList = env->NewObject(class_ArrayList, java_util_ArrayList_, static_cast<jint> (vector.size()));
-    for (scala::TransactionInfo *s: vector) {
+    for (lunify::TransactionInfo *s: vector) {
         jobject info = newTransactionInfo(env, s);
         env->CallBooleanMethod(arrayList, java_util_ArrayList_add, info);
         env->DeleteLocalRef(info);
@@ -1398,8 +1398,8 @@ jobject cpp2java(JNIEnv *env, const std::vector<scala::TransactionInfo *>& vecto
 }
 
 JNIEXPORT jobject JNICALL
-Java_io_scalaproject_vault_model_TransactionHistory_refreshJ(JNIEnv *env, jobject instance) {
-    auto *history = getHandle<scala::TransactionHistory>(env,instance);
+Java_xyz_lunify_vault_model_TransactionHistory_refreshJ(JNIEnv *env, jobject instance) {
+    auto *history = getHandle<lunify::TransactionHistory>(env,instance);
     history->refresh();
     return cpp2java(env, history->getAll());
 }
@@ -1407,25 +1407,25 @@ Java_io_scalaproject_vault_model_TransactionHistory_refreshJ(JNIEnv *env, jobjec
 // TransactionInfo is implemented in Java - no need here
 
 JNIEXPORT jint JNICALL
-Java_io_scalaproject_vault_model_PendingTransaction_getStatusJ(JNIEnv *env, jobject instance) {
-    auto *tx = getHandle<scala::PendingTransaction>(env, instance);
+Java_xyz_lunify_vault_model_PendingTransaction_getStatusJ(JNIEnv *env, jobject instance) {
+    auto *tx = getHandle<lunify::PendingTransaction>(env, instance);
     return tx->status();
 }
 
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_PendingTransaction_getErrorString(JNIEnv *env, jobject instance) {
-    auto *tx = getHandle<scala::PendingTransaction>(env, instance);
+Java_xyz_lunify_vault_model_PendingTransaction_getErrorString(JNIEnv *env, jobject instance) {
+    auto *tx = getHandle<lunify::PendingTransaction>(env, instance);
     return env->NewStringUTF(tx->errorString().c_str());
 }
 
 // commit transaction or save to file if filename is provided.
 JNIEXPORT jboolean JNICALL
-Java_io_scalaproject_vault_model_PendingTransaction_commit(JNIEnv *env, jobject instance,
+Java_xyz_lunify_vault_model_PendingTransaction_commit(JNIEnv *env, jobject instance,
                                                           jstring filename, jboolean overwrite) {
 
     const char *_filename = env->GetStringUTFChars(filename, nullptr);
 
-    auto *tx = getHandle<scala::PendingTransaction>(env, instance);
+    auto *tx = getHandle<lunify::PendingTransaction>(env, instance);
     bool success = tx->commit(_filename, overwrite);
 
     env->ReleaseStringUTFChars(filename, _filename);
@@ -1434,8 +1434,8 @@ Java_io_scalaproject_vault_model_PendingTransaction_commit(JNIEnv *env, jobject 
 
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_PendingTransaction_getAmount(JNIEnv *env, jobject instance) {
-    auto *tx = getHandle<scala::PendingTransaction>(env, instance);
+Java_xyz_lunify_vault_model_PendingTransaction_getAmount(JNIEnv *env, jobject instance) {
+    auto *tx = getHandle<lunify::PendingTransaction>(env, instance);
     uint64_t amount = tx->amount();
 
     // Asegurate de que el valor de amount este dentro del rango de jlong
@@ -1448,8 +1448,8 @@ Java_io_scalaproject_vault_model_PendingTransaction_getAmount(JNIEnv *env, jobje
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_PendingTransaction_getDust(JNIEnv *env, jobject instance) {
-    auto *tx = getHandle<scala::PendingTransaction>(env, instance);
+Java_xyz_lunify_vault_model_PendingTransaction_getDust(JNIEnv *env, jobject instance) {
+    auto *tx = getHandle<lunify::PendingTransaction>(env, instance);
     uint64_t dust = tx->dust();
 
     // Asegurate de que el valor de dust este dentro del rango de jlong
@@ -1462,8 +1462,8 @@ Java_io_scalaproject_vault_model_PendingTransaction_getDust(JNIEnv *env, jobject
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_PendingTransaction_getFee(JNIEnv *env, jobject instance) {
-    auto *tx = getHandle<scala::PendingTransaction>(env, instance);
+Java_xyz_lunify_vault_model_PendingTransaction_getFee(JNIEnv *env, jobject instance) {
+    auto *tx = getHandle<lunify::PendingTransaction>(env, instance);
     uint64_t fee = tx->fee();
 
     // Asegurate de que el valor de fee este dentro del rango de jlong
@@ -1478,8 +1478,8 @@ Java_io_scalaproject_vault_model_PendingTransaction_getFee(JNIEnv *env, jobject 
 
 // TODO this returns a vector of strings - deal with this later - for now return first one
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_PendingTransaction_getFirstTxIdJ(JNIEnv *env, jobject instance) {
-    auto *tx = getHandle<scala::PendingTransaction>(env, instance);
+Java_xyz_lunify_vault_model_PendingTransaction_getFirstTxIdJ(JNIEnv *env, jobject instance) {
+    auto *tx = getHandle<lunify::PendingTransaction>(env, instance);
     std::vector<std::string> txids = tx->txid();
     if (!txids.empty())
         return env->NewStringUTF(txids.front().c_str());
@@ -1488,8 +1488,8 @@ Java_io_scalaproject_vault_model_PendingTransaction_getFirstTxIdJ(JNIEnv *env, j
 }
 
 JNIEXPORT jlong JNICALL
-Java_io_scalaproject_vault_model_PendingTransaction_getTxCount(JNIEnv *env, jobject instance) {
-    auto *tx = getHandle<scala::PendingTransaction>(env, instance);
+Java_xyz_lunify_vault_model_PendingTransaction_getTxCount(JNIEnv *env, jobject instance) {
+    auto *tx = getHandle<lunify::PendingTransaction>(env, instance);
     uint64_t txCount = tx->txCount();
 
     // Asegurate de que el valor de txCount este dentro del rango de jlong
@@ -1502,87 +1502,87 @@ Java_io_scalaproject_vault_model_PendingTransaction_getTxCount(JNIEnv *env, jobj
 }
 
 
-// these are all in scala::Wallet - which I find wrong, so they are here!
+// these are all in lunify::Wallet - which I find wrong, so they are here!
 //static void init(const char *argv0, const char *default_log_base_name);
 //static void debug(const std::string &category, const std::string &str);
 //static void info(const std::string &category, const std::string &str);
 //static void warning(const std::string &category, const std::string &str);
 //static void error(const std::string &category, const std::string &str);
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_WalletManager_initLogger(JNIEnv *env, jclass clazz,
+Java_xyz_lunify_vault_model_WalletManager_initLogger(JNIEnv *env, jclass clazz,
                                                          jstring argv0,
                                                          jstring default_log_base_name) {
 
     const char *_argv0 = env->GetStringUTFChars(argv0, nullptr);
     const char *_default_log_base_name = env->GetStringUTFChars(default_log_base_name, nullptr);
 
-    scala::Wallet::init(_argv0, _default_log_base_name);
+    lunify::Wallet::init(_argv0, _default_log_base_name);
 
     env->ReleaseStringUTFChars(argv0, _argv0);
     env->ReleaseStringUTFChars(default_log_base_name, _default_log_base_name);
 }
 
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_WalletManager_logDebug(JNIEnv *env, jclass clazz,
+Java_xyz_lunify_vault_model_WalletManager_logDebug(JNIEnv *env, jclass clazz,
                                                        jstring category, jstring message) {
 
     const char *_category = env->GetStringUTFChars(category, nullptr);
     const char *_message = env->GetStringUTFChars(message, nullptr);
 
-    scala::Wallet::debug(_category, _message);
+    lunify::Wallet::debug(_category, _message);
 
     env->ReleaseStringUTFChars(category, _category);
     env->ReleaseStringUTFChars(message, _message);
 }
 
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_WalletManager_logInfo(JNIEnv *env, jclass clazz,
+Java_xyz_lunify_vault_model_WalletManager_logInfo(JNIEnv *env, jclass clazz,
                                                       jstring category, jstring message) {
 
     const char *_category = env->GetStringUTFChars(category, nullptr);
     const char *_message = env->GetStringUTFChars(message, nullptr);
 
-    scala::Wallet::info(_category, _message);
+    lunify::Wallet::info(_category, _message);
 
     env->ReleaseStringUTFChars(category, _category);
     env->ReleaseStringUTFChars(message, _message);
 }
 
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_WalletManager_logWarning(JNIEnv *env, jclass clazz,
+Java_xyz_lunify_vault_model_WalletManager_logWarning(JNIEnv *env, jclass clazz,
                                                          jstring category, jstring message) {
 
     const char *_category = env->GetStringUTFChars(category, nullptr);
     const char *_message = env->GetStringUTFChars(message, nullptr);
 
-    scala::Wallet::warning(_category, _message);
+    lunify::Wallet::warning(_category, _message);
 
     env->ReleaseStringUTFChars(category, _category);
     env->ReleaseStringUTFChars(message, _message);
 }
 
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_WalletManager_logError(JNIEnv *env, jclass clazz,
+Java_xyz_lunify_vault_model_WalletManager_logError(JNIEnv *env, jclass clazz,
                                                        jstring category, jstring message) {
 
     const char *_category = env->GetStringUTFChars(category, nullptr);
     const char *_message = env->GetStringUTFChars(message, nullptr);
 
-    scala::Wallet::error(_category, _message);
+    lunify::Wallet::error(_category, _message);
 
     env->ReleaseStringUTFChars(category, _category);
     env->ReleaseStringUTFChars(message, _message);
 }
 
 JNIEXPORT void JNICALL
-Java_io_scalaproject_vault_model_WalletManager_setLogLevel(JNIEnv *env, jclass clazz,
+Java_xyz_lunify_vault_model_WalletManager_setLogLevel(JNIEnv *env, jclass clazz,
                                                           jint level) {
-    scala::WalletManagerFactory::setLogLevel(level);
+    lunify::WalletManagerFactory::setLogLevel(level);
 }
 
 JNIEXPORT jstring JNICALL
-Java_io_scalaproject_vault_model_WalletManager_scalaVersion(JNIEnv *env, jclass clazz) {
-    return env->NewStringUTF(scala_VERSION);
+Java_xyz_lunify_vault_model_WalletManager_lunifyVersion(JNIEnv *env, jclass clazz) {
+    return env->NewStringUTF(lunify_VERSION);
 }
 
 //

@@ -8,7 +8,7 @@
     android:background="@color/bg_lighter">
 
     <TextView
-        style="@style/ScalaLabel"
+        style="@style/LunifyLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -17,7 +17,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        style="@style/ScalaLabel"
+        style="@style/LunifyLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -33,7 +33,7 @@
         app:errorEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
-            style="@style/ScalaEdit"
+            style="@style/LunifyEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/prompt_ledger_seed"
@@ -50,7 +50,7 @@
         app:errorEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
-            style="@style/ScalaEdit"
+            style="@style/LunifyEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/prompt_ledger_phrase"

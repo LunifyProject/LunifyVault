@@ -43,7 +43,7 @@
                         android:visibility="invisible">
 
                         <TextView
-                            style="@style/ScalaText.Confirm.Label"
+                            style="@style/LunifyText.Confirm.Label"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="8dp"
@@ -54,7 +54,7 @@
 
                         <TextView
                             android:id="@+id/tvTxxlaToKey"
-                            style="@style/ScalaText"
+                            style="@style/LunifyText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@color/dotGray"
@@ -68,7 +68,7 @@
                             tools:text="XLA.TO-d2KQ" />
 
                         <TextView
-                            style="@style/ScalaText.Medium"
+                            style="@style/LunifyText.Medium"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
@@ -76,7 +76,7 @@
                             android:text="@string/label_send_btc_xlato_info" />
 
                         <TextView
-                            style="@style/ScalaText.Confirm.Label"
+                            style="@style/LunifyText.Confirm.Label"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="8dp"
@@ -86,7 +86,7 @@
 
                         <TextView
                             android:id="@+id/tvTxBtcAddress"
-                            style="@style/ScalaText"
+                            style="@style/LunifyText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAlignment="textStart"
@@ -120,7 +120,7 @@
                         android:visibility="invisible">
 
                         <TextView
-                            style="@style/ScalaText.Confirm.Label"
+                            style="@style/LunifyText.Confirm.Label"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="8dp"
@@ -129,7 +129,7 @@
 
                         <TextView
                             android:id="@+id/tvTxBtcAmount"
-                            style="@style/ScalaText"
+                            style="@style/LunifyText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAlignment="textStart"
@@ -137,7 +137,7 @@
 
                         <TextView
                             android:id="@+id/tvTxBtcRate"
-                            style="@style/ScalaLabel.Gray"
+                            style="@style/LunifyLabel.Gray"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAlignment="textStart"
@@ -176,7 +176,7 @@
                     android:weightSum="3">
 
                     <TextView
-                        style="@style/ScalaLabel.Gray"
+                        style="@style/LunifyLabel.Gray"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -186,7 +186,7 @@
 
                     <TextView
                         android:id="@+id/tvTxFee"
-                        style="@style/ScalaText.Gray"
+                        style="@style/LunifyText.Gray"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
@@ -203,7 +203,7 @@
                     android:weightSum="3">
 
                     <TextView
-                        style="@style/ScalaLabel.Caps.Black"
+                        style="@style/LunifyLabel.Caps.Black"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -213,7 +213,7 @@
 
                     <TextView
                         android:id="@+id/tvTxTotal"
-                        style="@style/ScalaText.Black"
+                        style="@style/LunifyText.Black"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
@@ -234,7 +234,7 @@
 
             <Button
                 android:id="@+id/bSend"
-                style="@style/ScalaButton.Green"
+                style="@style/LunifyButton.Green"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginTop="8dp"

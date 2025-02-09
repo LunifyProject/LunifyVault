@@ -42,7 +42,7 @@
                     app:errorEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        style="@style/ScalaEdit"
+                        style="@style/LunifyEdit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="10"
@@ -61,7 +61,7 @@
 
                     <ImageButton
                         android:id="@+id/bPasteAddress"
-                        style="@style/ScalaText.Button.Small"
+                        style="@style/LunifyText.Button.Small"
                         android:layout_width="wrap_content"
                         android:layout_height="56dp"
                         android:layout_marginStart="8dp"
@@ -71,7 +71,7 @@
 
                     <ImageButton
                         android:id="@+id/bAddressBook"
-                        style="@style/ScalaText.Button.Small"
+                        style="@style/LunifyText.Button.Small"
                         android:layout_width="wrap_content"
                         android:layout_height="56dp"
                         android:layout_marginStart="8dp"
@@ -83,7 +83,7 @@
 
             <TextView
                 android:id="@+id/tvPaymentIdIntegrated"
-                style="@style/ScalaText.Info"
+                style="@style/LunifyText.Info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start|center_vertical"
@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    style="@style/ScalaEdit"
+                    style="@style/LunifyEdit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/send_notes_hint"
@@ -124,7 +124,7 @@
                 android:visibility="gone">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    style="@style/ScalaEdit"
+                    style="@style/LunifyEdit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/entry_name"
@@ -154,7 +154,7 @@
                 card_view:contentPadding="16dp">
 
                 <TextView
-                    style="@style/ScalaText.Button"
+                    style="@style/LunifyText.Button"
                     android:layout_width="96dp"
                     android:layout_height="96dp"
                     android:background="@drawable/ic_scan"

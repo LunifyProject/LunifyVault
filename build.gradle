@@ -31,7 +31,7 @@ tasks.register('clean', Delete) {
 }
 
 ext {
-    apkName = 'scala vault'
+    apkName = 'Lunify Vault'
     okHttpVersion = '3.12.0'
     junitVersion = '4.12'
     mockitoVersion = '1.10.19'

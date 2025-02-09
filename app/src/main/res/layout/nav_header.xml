@@ -17,7 +17,7 @@
 
     <TextView
         android:id="@+id/tvName"
-        style="@style/ScalaText.Large"
+        style="@style/LunifyText.Large"
         android:textColor="@color/c_white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
 
     <TextView
         android:id="@+id/tvBalance"
-        style="@style/ScalaLabel.Caps.White"
+        style="@style/LunifyLabel.Caps.White"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -40,7 +40,7 @@
         android:layout_weight="1" />
 
     <TextView
-        style="@style/ScalaLabel.Small"
+        style="@style/LunifyLabel.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"

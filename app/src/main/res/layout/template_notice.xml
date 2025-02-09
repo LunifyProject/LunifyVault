@@ -21,7 +21,7 @@
 
     <TextView
         android:id="@+id/tvNotice"
-        style="@style/ScalaLabel.Heading.Small"
+        style="@style/LunifyLabel.Heading.Small"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"

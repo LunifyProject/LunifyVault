@@ -62,7 +62,7 @@
 
     <string name="label_send_progress_xlato_create">Δημιουργία εντολής με XLA.TO</string>
     <string name="label_send_progress_xlato_query">Αίτηση εντολής στο XLA.TO</string>
-    <string name="label_send_progress_create_tx">Προετοιμασά συναλλαγής Scala</string>
+    <string name="label_send_progress_create_tx">Προετοιμασά συναλλαγής Lunify</string>
 
     <string name="label_send_progress_queryparms">Αίτηση στο xla.to για παραμέτρους</string>
 
@@ -70,7 +70,7 @@
     <string name="text_generic_xlato_error">Κωδικός σφάλματος: %1$d</string>
 
     <string name="text_retry">Πάτησε για να προσπαθήσεις ξανά</string>
-    <string name="text_noretry_scala">Τώρα έχουμε κολλήσει εδώ!</string>
+    <string name="text_noretry_lunify">Τώρα έχουμε κολλήσει εδώ!</string>
     <string name="text_noretry">Ωχ,το XLA.TO φαίνεται να μην ειναι προσωρινά διαθέσιμο!</string>
 
     <string name="text_send_btc_amount">%1$s BTC = %2$s XLA</string>
@@ -131,7 +131,7 @@
 
     <string name="xla_unconfirmed_amount">%1$s XLA μη επιβεβαιωμένα</string>
 
-    <string name="service_description">Υπηρεσία Scala Vault</string>
+    <string name="service_description">Υπηρεσία Lunify Vault</string>
 
     <string name="status_synced">Συγχρονισμένα:</string>
     <string name="status_remaining">Μπλοκς που απομένουν</string>
@@ -192,8 +192,8 @@
     <string name="send_amount_hint">0.00</string>
     <string name="send_notes_hint">Προσωπικές σημειώσεις (προαιρετικό)</string>
     <string name="send_generate_paymentid_hint">Δημιουργία</string>
-    <string name="send_send_label">Ξόδεψε τα γλυκά μου Scala</string>
-    <string name="send_send_timed_label">Ξόδεψε τα γλυκά μου Scala (%1$s)</string>
+    <string name="send_send_label">Ξόδεψε τα γλυκά μου Lunify</string>
+    <string name="send_send_timed_label">Ξόδεψε τα γλυκά μου Lunify (%1$s)</string>
     <string name="send_qr_invalid">Δεν είναι QR κώδικας</string>
     <string name="send_qr_address_invalid">Δεν είναι έγκυρος κωδικός QR πληρωμής</string>
     <string name="send_address_invalid">Δεν είναι έγκυρη η διεύθυνση</string>
@@ -278,10 +278,10 @@
         <strong>Fingerprint Authentication</strong>
         <p>With fingerprint authentication enabled, you can view wallet balance and receive funds
         without entering password.</p>
-        <p>But for additional security, Scala Vault will still require you to enter password when
+        <p>But for additional security, Lunify Vault will still require you to enter password when
         viewing wallet details or sending funds.</p>
         <strong>Security Warning</strong>
-        <p>Finally, Scala Vault wants to remind you that anyone who can get your fingerprint will be
+        <p>Finally, Lunify Vault wants to remind you that anyone who can get your fingerprint will be
         able to peep into your wallet balance.</p>
         <p>For instance, a malicious user around you can open your wallet when you are asleep.</p>
         <strong>Are you sure to enable this function?</strong>
@@ -386,13 +386,13 @@
 
     <string name="label_restoreheight">Ύψος ανάκτησης</string> <!-- "Restore Height" -->
 
-    <string name="toast_ledger_start_app">Start Scala App on %1$s</string>
+    <string name="toast_ledger_start_app">Start Lunify App on %1$s</string>
 
     <string name="menu_rescan">Rescan!</string>
     <string name="privacy_policy_intro">We care about your privacy. To learn more, please read our Privacy Policy.</string>
     <string name="privacy_policy_label">Privacy Policy</string>
     <string name="primary_address">Primary Address</string>
-    <string name="mm_url">https://github.com/scala-network/MobileMiner/releases</string>
+    <string name="mm_url">https://github.com/LunifyProject/MobileMiner/releases</string>
     <string name="connection_remote_daemon">Connecting to remote node…</string>
     <string name="remote_nodes">Remote Nodes</string>
     <string name="address_book">Address Book</string>
@@ -402,7 +402,7 @@
     <string name="save_to_address_book">Save to address book</string>
     <string name="contact_name_empty_error">Name cannot be empty!</string>
     <string name="entry_name">Entry Name</string>
-    <string name="start_mining">Start mining on your Android device safely and efficiently with the Scala Mobile Miner.</string>
+    <string name="start_mining">Start mining on your Android device safely and efficiently with the Lunify Mobile Miner.</string>
     <string name="mobile_miner">Mobile Miner</string>
     <string name="download">Download</string>
     <string name="select_image">Select Image</string>

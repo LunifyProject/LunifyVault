@@ -6,16 +6,16 @@
     <string name="credits_text"><![CDATA[
         <b>Créditos</b>
         <br/>
-        Scala Team
+        Lunify Team
         <br/><br/>
-        <a href="https://scala.network/">scala.network</a>
+        <a href="https://lunify.xyz/">lunify.xyz</a>
         ]]></string>
 
     <string name="privacy_policy"><![CDATA[
         <h1>Política de Privacidad</h1>
         <p>Esta página le informa de nuestras políticas con respecto a la recopilación, uso
         y divulgación de la información personal que recibimos de los usuarios de nuestra app
-        (Scala Vault).
+        (Lunify Vault).
         </p>
         <p>Al usar esta app, acepta la recopilación y uso de información en acuerdo con
         esta política.
@@ -23,27 +23,27 @@
         <h2>Datos Recopilados</h2>
         <p>Los datos personales son cualquier tipo de dato que podrían identificar a un individuo.
         </p>
-        <p>Las claves y direcciones públicas de Scala son recopiladas y procesadas por la app
+        <p>Las claves y direcciones públicas de Lunify son recopiladas y procesadas por la app
         localmente con el propósito de procesar la transacciones y transmitirlas en la red de
-        Scala de forma cifrada.
+        Lunify de forma cifrada.
         </p>
         <p>Otros datos personales no son recopilados por la app.</p>
-        <p>Si utiliza la funcionalidad de cambio (opcional), Scala Vault obtiene la tasa
+        <p>Si utiliza la funcionalidad de cambio (opcional), Lunify Vault obtiene la tasa
         de cambio a través de la API pública de coinmarketcap.com.
         Vea su política de privadad en https://coinmarketcap.com/privacy para conocer más
         detalles acerca de como se recopilan los datos de sus peticiones.</p>
         <h2>Permisos de la App</h2>
         <ul>
-        <li>INTERNET : Conectar a la red de Scala a través de un Daemon Nodo de Scala</li>
+        <li>INTERNET : Conectar a la red de Lunify a través de un Daemon Nodo de Lunify</li>
         <li>READ_EXTERNAL_STORAGE : Leer los ficheros de la cartera almacenados en el dispositivo</li>
         <li>WRITE_EXTERNAL_STORAGE : Escribir los ficheros de la cartera almacenados en el dispositivo</li>
         <li>WAKE_LOCK : Mantener el dispositivo despierto durante la sincronización</li>
-        <li>CAMERA : Escanear códigos QR para recibir Scala</li>
+        <li>CAMERA : Escanear códigos QR para recibir Lunify</li>
         </ul>
         <h2>Cambios a esta Política de Privacidad</h2>
         <p>Es posible que actualicemos esta política de privacidad de vez en cuando. Le
         notificaremos de cualquier cambio publicando la nueva política de privacidad en la app
-        y en el sitio web (www.scala.network)
+        y en el sitio web (www.lunify.xyz)
         Le aconsejamos que revise esta política de privacidad periódicamente para cualquier
         cambio.
         <p>Esta Política de Privacidad fue actualizada por última vez: 10 de Noviembre de 2017.
@@ -51,7 +51,7 @@
         <h2>Contáctanos</h2>
         <p>Si tiene cualquier cuestión sobre nuestra política de privacidad,
         o sobre como sus datos están siendo recolectados y procesados,
-        por favor escríbanos a hello@scala.network
+        por favor escríbanos a hello@lunify.xyz
         </p>
         ]]></string>
 </resources>

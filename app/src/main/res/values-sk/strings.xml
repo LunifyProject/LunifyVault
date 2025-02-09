@@ -64,7 +64,7 @@
 
     <string name="label_send_progress_xlato_create">Vytváram objednávku na XLA.TO</string>
     <string name="label_send_progress_xlato_query">Pýtam sa na objednávku XLA.TO</string>
-    <string name="label_send_progress_create_tx">Pripravujem Scala transakciu</string>
+    <string name="label_send_progress_create_tx">Pripravujem Lunify transakciu</string>
 
     <string name="label_send_progress_queryparms">Posielam XLA.TO parametre</string>
 
@@ -72,7 +72,7 @@
     <string name="text_generic_xlato_error">Kód chyby: %1$d</string>
 
     <string name="text_retry">Klepni pre opakovanie</string>
-    <string name="text_noretry_scala">Uviazli sme tu!</string>
+    <string name="text_noretry_lunify">Uviazli sme tu!</string>
     <string name="text_noretry">Myslím, že služba XLA.TO nie je momentálne dostupná!</string>
 
     <string name="text_send_btc_amount">%1$s BTC = %2$s XLA</string>
@@ -141,7 +141,7 @@
 
     <string name="xla_unconfirmed_amount">%1$s XLA nepotvrdených</string>
 
-    <string name="service_description">Scala Vault Service</string>
+    <string name="service_description">Lunify Vault Service</string>
 
     <string name="status_synced">Synchronizované:</string>
     <string name="status_remaining">zostávajúcich blokov</string>
@@ -169,9 +169,9 @@
     <string name="generate_fingerprint_warn"><![CDATA[
         <strong>Overenie odtlačkom prsta</strong>
         <p>Pomocou overenia odtlačkom prsta, môžeš vidieť zostatok a prijímať prostriedky, bez zadávania hesla.</p>
-        <p>Avšak kvôli zvýšeniu bezpečnosti, Scala Vault bude stále vyžadovať heslo na zobrazenie detailov peňaženky a posielanie.</p>
+        <p>Avšak kvôli zvýšeniu bezpečnosti, Lunify Vault bude stále vyžadovať heslo na zobrazenie detailov peňaženky a posielanie.</p>
         <strong>Bezpečnostné Varovanie</strong>
-        <p>Scala Vault Ti chce pripomenúť, že ktokoľvek kto získa prístup k Tvojim odtlačkom, bude schopný nazrieť do tvojej peňaženky.</p>
+        <p>Lunify Vault Ti chce pripomenúť, že ktokoľvek kto získa prístup k Tvojim odtlačkom, bude schopný nazrieť do tvojej peňaženky.</p>
         <p>Napríklad záškodník niekde v blízkosti môže otvoriť Tvoju peňaženku keď spíš.</p>
         <strong>Si si istý, že chceš povoliť túto funkciu?</strong>
     ]]></string>
@@ -215,8 +215,8 @@
     <string name="send_amount_hint">0.00</string>
     <string name="send_notes_hint">Súkromné Poznámky (voliteľné)</string>
     <string name="send_generate_paymentid_hint">Generuj</string>
-    <string name="send_send_label">Odošli Scala</string>
-    <string name="send_send_timed_label">Odošli Scala (%1$s)</string>
+    <string name="send_send_label">Odošli Lunify</string>
+    <string name="send_send_timed_label">Odošli Lunify (%1$s)</string>
     <string name="send_qr_invalid">Neplatný QR Kód</string>
     <string name="send_qr_address_invalid">Neplatný QR Kód Platby</string>
     <string name="send_address_invalid">Neplatná Adresa</string>
@@ -387,13 +387,13 @@
 
     <string name="label_restoreheight">Výška</string> <!-- Restore Height -->
 
-    <string name="toast_ledger_start_app">Start Scala App on %1$s</string>
+    <string name="toast_ledger_start_app">Start Lunify App on %1$s</string>
 
     <string name="menu_rescan">Rescan!</string>
     <string name="privacy_policy_intro">We care about your privacy. To learn more, please read our Privacy Policy.</string>
     <string name="privacy_policy_label">Privacy Policy</string>
     <string name="primary_address">Primary Address</string>
-    <string name="mm_url">https://github.com/scala-network/MobileMiner/releases</string>
+    <string name="mm_url">https://github.com/LunifyProject/MobileMiner/releases</string>
     <string name="connection_remote_daemon">Connecting to remote node...</string>
     <string name="remote_nodes">Remote Nodes</string>
     <string name="address_book">Address Book</string>
@@ -403,7 +403,7 @@
     <string name="save_to_address_book">Save to address book</string>
     <string name="contact_name_empty_error">Name cannot be empty!</string>
     <string name="entry_name">Entry Name</string>
-    <string name="start_mining">Start mining on your Android device safely and efficiently with the Scala Mobile Miner.</string>
+    <string name="start_mining">Start mining on your Android device safely and efficiently with the Lunify Mobile Miner.</string>
     <string name="mobile_miner">Mobile Miner</string>
     <string name="download">Download</string>
     <string name="select_image">Select Image</string>

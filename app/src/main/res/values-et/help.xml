@@ -2,7 +2,7 @@
 <resources>
     <string name="help_create_new"><![CDATA[
         <h1>Uus rahakoti loomine</h1>
-        <p>Kui vajate uut Scala aadressi!</p>
+        <p>Kui vajate uut Lunify aadressi!</p>
         <p>Sisestage ainulaadne rahakoti nimi ja parool.
         Parool on kasutusel teie rahakoti andmete turvamiseks seadmes. Kasutage tugevat parooli -
         veel parem, kasutage paroolifraasi.</p>
@@ -22,7 +22,7 @@
 
     <string name="help_create_seed"><![CDATA[
         <h1>Rahakoti loomine - Seemne</h1>
-        <p>Kui teil on juba Scala aadress ja soovite taastada tehingud plokiahelalt!</p>
+        <p>Kui teil on juba Lunify aadress ja soovite taastada tehingud plokiahelalt!</p>
         <p>Sisestage ainulaadne rahakoti nimi ja parool. Parool on kasutusel teie rahakoti andmete turvamiseks seadmes.
         Kasutage tugevat parooli - veel parem, kasutage paroolifraasi.</p>
         <p>Sisestage oma seemne väljale "Mnemonic Seed".<p>
@@ -48,7 +48,7 @@
         <p>Kui taastate oma rahakoti kasutades võtmeid!</p>
         <p>Sisestage ainulaadne rahakoti nimi ja parool. Parool on kasutusel teie rahakoti andmete turvamiseks seadmes.
         Kasutage tugevat parooli - veel parem, kasutage paroolifraasi.<p>
-        <p>Sisestage oma Scala aadress väljale "Avalik aadress" ja täitke "Vaatevõti" ja "Kuluvõti".</p>
+        <p>Sisestage oma Lunify aadress väljale "Avalik aadress" ja täitke "Vaatevõti" ja "Kuluvõti".</p>
         <p>Sisestage ploki number, millal seda aadressi esmakordselt kasutati,
         väljale "Taastamise kõrgus". Võite kasutada ka kuupäeva formaadis AAAA-KK-PP. Kui te pole kindel,
         sisestage ligikaudne kuupäev/plokikõrgus <em>enne</em> selle rahakoti aadressi esmakordset kasutamist.</p>
@@ -59,7 +59,7 @@
         <p>Kui soovite lihtsalt jälgida sissetulevaid tehinguid rahakotti!</p>
         <p>Sisestage ainulaadne rahakoti nimi ja parool. Parool on kasutusel teie rahakoti andmete turvamiseks seadmes.
         Kasutage tugevat parooli - veel parem, kasutage paroolifraasi.<p>
-        <p>Sisestage oma Scala aadress väljale "Avalik aadress" ja täitke "Vaatevõti".</p>
+        <p>Sisestage oma Lunify aadress väljale "Avalik aadress" ja täitke "Vaatevõti".</p>
         <p>Sisestage ploki number, millal seda aadressi esmakordselt kasutati,
         väljale "Taastamise kõrgus". Võite kasutada ka kuupäeva formaadis AAAA-KK-PP. Kui te pole kindel,
         sisestage ligikaudne kuupäev/plokikõrgus <em>enne</em> selle rahakoti aadressi esmakordset kasutamist.</p>
@@ -69,11 +69,11 @@
         <h1>Rahakoti üksikasjad</h1>
         <h2>Avalik aadress</h2>
         Teie avalik aadress on nagu teie pangakonto number, mida saate kõigiga jagada ilma
-        Scala kaotuse pärast kartmata. Inimesed saadavad Scala teie rahakoti aadressile.
+        Lunify kaotuse pärast kartmata. Inimesed saadavad Lunify teie rahakoti aadressile.
         <h2>Mnemonic Seed</h2>
         See on ainus teave, mida vajate hiljem rahakoti taastamiseks ja oma
         vahendite täielikuks kasutamiseks. Selle privaatne ja turvaline hoidmine on väga oluline,
-        sest see annab <em>kõigile</em> täieliku ligipääsu teie Scalale! Kui te pole seda kuskile
+        sest see annab <em>kõigile</em> täieliku ligipääsu teie Lunifyle! Kui te pole seda kuskile
         ohutusse kohta üles kirjutanud, tehke seda kohe!
         <h2>Rahakoti failide taastamise parool</h2>
         Veenduge, et kirjutate selle parooli üles. Kui lähtestate oma seadme või desinstallite rakenduse,
@@ -90,7 +90,7 @@
         uue paroolifraasi sisestamist (võib-olla isegi sama kui varem) genereerib rakendus teile
         CrAzYpass\'i ja turvab teie rahakoti failid sellega. Kirjutage see üles!
         <h3>CrAzYpass rahakotid</h3>
-        Kui peate kunagi Scala Vault\'i uuesti installima (näiteks pärast telefoni lähtestamist või
+        Kui peate kunagi Lunify Vault\'i uuesti installima (näiteks pärast telefoni lähtestamist või
         uuele seadmele üleminekut) või soovite oma rahakoti faile kasutada teises seadmes või arvutis,
         peate kasutama seda Taastamisparooli, et taas juurdepääsu oma rahakotile.<br/>
         Valides menüüst \"Muuda paroolifraasi\", saate valida teise paroolifraasi. Pidage meeles,
@@ -99,29 +99,29 @@
         Teie vaatevõtit saab kasutada sissetulevate tehingute jälgimiseks teie rahakotti ilma
         andmata luba rahakoti sees olevate vahendite kulutamiseks.
         <h2>Kuluvõti</h2>
-        Teie kuluvõti võimaldab kellelgi kulutada teie rahakotiga seotud Scala, nii et ärge
+        Teie kuluvõti võimaldab kellelgi kulutada teie rahakotiga seotud Lunify, nii et ärge
         jagage seda võtme, hoidke seda turvaliselt nagu oma Mnemonic Seed.
     ]]></string>
 
     <string name="help_list"><![CDATA[
         <h1>Rahakottide nimekiri</h1>
         <h2>Sõlm</h2>
-        <p>Scala Vault kasutab kaugserverit suhtlemiseks Scala võrgu ilma vajaduseta
-        alla laadida ja salvestada kogu plokiahela koopiat. Populaarsete kaugserverite nimekirja leiate või oma kaugserveri käivitamise kohta lisateavet leiate siit: https://scala.network/<p>
-        <p>Scala Vaultil on mõned kaugserverid eelnevalt määratud. See jätab meelde viimased viis kasutatud sõlme.</p>
+        <p>Lunify Vault kasutab kaugserverit suhtlemiseks Lunify võrgu ilma vajaduseta
+        alla laadida ja salvestada kogu plokiahela koopiat. Populaarsete kaugserverite nimekirja leiate või oma kaugserveri käivitamise kohta lisateavet leiate siit: https://lunify.xyz/<p>
+        <p>Lunify Vaultil on mõned kaugserverid eelnevalt määratud. See jätab meelde viimased viis kasutatud sõlme.</p>
         <h2>Rahakotid</h2>
-        <p>Siin näete oma rahakotte. Need asuvad teie seadme sisemälus <tt>scala vault</tt> kaustas. Saate kasutada failihalduri rakendust nende nägemiseks.
+        <p>Siin näete oma rahakotte. Need asuvad teie seadme sisemälus <tt>Lunify Vault</tt> kaustas. Saate kasutada failihalduri rakendust nende nägemiseks.
         Peaksite regulaarselt varundama selle kausta seadmevälisele mälule juhuks, kui teie seade plahvatab või varastatakse.</p>
         <p>Valige rahakott selle avamiseks või vajutage \"+\", et luua uus.
         Või valige üks rahakoti toimingutest:</p>
         <h3>Üksikasjad</h3>
         <p>Kuva rahakoti üksikasjad, seeme &amp; võtmed.</p>
         <h3>Võta vastu</h3>
-        <p>Looge QR-kood Scala saamiseks.</p>
+        <p>Looge QR-kood Lunify saamiseks.</p>
         <h3>Ümber nimetada</h3>
         <p>Rahakoti ümbernimetamine. Varukoopiaid ei nimetata ümber.</p>
         <h3>Varundamine</h3>
-        <p>Tehke koopia rahakotist kausta <tt>backups</tt> kausta <tt>scala vault</tt> sees,
+        <p>Tehke koopia rahakotist kausta <tt>backups</tt> kausta <tt>Lunify Vault</tt> sees,
         kirjutades üle eelnevad koopiad seal.</p>
         <h3>Arhiiv</h3>
         <p>Tehke varukoopia ja seejärel kustutage rahakott. Koopia jääb <tt>backups</tt> kausta. Kui te oma varukoopiaid enam ei vaja, peaksite need failihalduri või turvalise kustutamise rakendusega kustutama.</p>
@@ -130,14 +130,14 @@
     <string name="help_tx_details"><![CDATA[
         <h1>Tehingu üksikasjad</h1>
         <h2>Sihtkoht</h2>
-        See on rahakoti avalik aadress, kuhu saatsite Scala
+        See on rahakoti avalik aadress, kuhu saatsite Lunify
         <h2>MakseID</h2>
-        Makse ID-d saate kasutada Scala saatmise põhjuse tuvastamiseks kahe osapoole vahel,
+        Makse ID-d saate kasutada Lunify saatmise põhjuse tuvastamiseks kahe osapoole vahel,
         see on täielikult vabatahtlik ja privaatne. Näiteks võimaldab see ettevõttel seostada
         teie tehingu ostetud esemega.
         <h2>Tehingu ID</h2>
-        See on teie tehingu ID, mida saate kasutada oma varjatud tehingu tuvastamiseks Scala
-        Blockchain explorer\'is nagu <a href="https://explorer.scala.network/">https://explorer.scala.network/</a>
+        See on teie tehingu ID, mida saate kasutada oma varjatud tehingu tuvastamiseks Lunify
+        Blockchain explorer\'is nagu <a href="https://explorer.lunify.xyz/">https://explorer.lunify.xyz/</a>
         <h2>Tehingu võti (TX KEY)</h2>
         See on teie tehingu privaatvõti, hoidke seda turvaliselt, kuna kolmandale osapoolele avaldamine
         avalikustab, milline allkiri ringis on teie oma, muutes teie tehingu läbipaistvaks.
@@ -155,7 +155,7 @@
     <string name="help_send"><![CDATA[
         <h1>Saada</h1>
         <h2>Saaja aadress</h2>
-        <p>See on rahakoti avalik aadress, kuhu te saadate Scala. Saate selle kopeerida oma
+        <p>See on rahakoti avalik aadress, kuhu te saadate Lunify. Saate selle kopeerida oma
         lõikelaualt, skannida QR-koodi või sisestada käsitsi. Veenduge, et kontrollite seda kolmekordselt
         et veenduda, et te ei saada münte valesse aadressi.</p>
         <p>Lisaks XLA aadressi kasutamisele saate kasutada ka:
@@ -164,7 +164,7 @@
             <li>Unstoppable Domains domeeni</li>
         </ul></p>
         <h2>Makse ID</h2>
-        <p>Saate kasutada makse ID-d, et tuvastada Scala saatmise põhjus kahe osapoole vahel. See
+        <p>Saate kasutada makse ID-d, et tuvastada Lunify saatmise põhjus kahe osapoole vahel. See
         on täielikult vabatahtlik ja privaatne. Näiteks võimaldab see ettevõttel seostada teie
         tehingu ostetud esemega.</p>
     ]]></string>
@@ -172,9 +172,9 @@
     <string name="help_xlato"><![CDATA[
         <h1>BTC saatmine</h1>
         <h2>XLA.TO</h2>
-        <p>XLA.TO on kolmanda osapoole teenus, mis toimib vahetuspunktina Scala ja Bitcoini vahel.
-        Kasutame Scala Vaulti Bitcoini maksete integreerimiseks XLA.TO API-d. Palun vaadake
-        https://xla.to ja otsustage ise, kas see on midagi, mida soovite kasutada. Scala Vaulti
+        <p>XLA.TO on kolmanda osapoole teenus, mis toimib vahetuspunktina Lunify ja Bitcoini vahel.
+        Kasutame Lunify Vaulti Bitcoini maksete integreerimiseks XLA.TO API-d. Palun vaadake
+        https://xla.to ja otsustage ise, kas see on midagi, mida soovite kasutada. Lunify Vaulti
         meeskond ei ole seotud XLA.TO-ga ja ei saa teid nende teenusega aidata.</p>
         <h2>XLA.TO vahetuskurss</h2>
         <p>\"Summa\" ekraanil kuvatakse teile XLA.TO teenuse praegused parameetrid. Need
@@ -186,7 +186,7 @@
         piiratud aja - võite märgata \"Kulu\" nupul tagasiarvestust. Vahetuskurss võib
         erineda eelmistel ekraanidel näidatust.</p>
         <h2>XLA.TO salajane võti</h2>
-        <p>Kuna Scala Vault käsitleb ainult tehingu Scala osa, saab teie XLA.TO salajast võtit
+        <p>Kuna Lunify Vault käsitleb ainult tehingu Lunify osa, saab teie XLA.TO salajast võtit
         kasutada tellimuse Bitcoini osa jälgimiseks XLA.TO kodulehel.</p>
         <p>Pange tähele, et see salajane võti kehtib ainult 24 tundi pärast tehingu algust!</p>
         <h2>XLA.TO tagasiarvestus!</h2>
@@ -200,26 +200,26 @@
         <p>Tänavarežiimi saab lubada/keelata menüüs või Guntheri pea ikoonil. Selles režiimis teie
         saldo ei kuvata ühelgi ekraanil, nii et saate oma rahakotti tänaval, pubis või
         muus avalikus kohas ohutult kasutada. Varasemad tehingud on samuti peidetud. Uued tehingud kuvatakse,
-        nii et näete, et olete saadanud/vastuvõtnud Scala!</p>
+        nii et näete, et olete saadanud/vastuvõtnud Lunify!</p>
         <h2>Skaneerimine</h2>
-        Kuna Scala armastab asju privaatsena hoida, siis iga kord, kui avate Scala Vaulti rahakoti, peame
-        skaneerima plokiahelat, et näha, kas teie rahakotti on saadetud uusi Scala. See
+        Kuna Lunify armastab asju privaatsena hoida, siis iga kord, kui avate Lunify Vaulti rahakoti, peame
+        skaneerima plokiahelat, et näha, kas teie rahakotti on saadetud uusi Lunify. See
         salvestab ainult teie rahakoti teabe teie telefoni. Mõnikord võib see aega võtta,
         sest te pole pikka aega sünkroniseerinud.
         <h2>Saldo</h2>
         <p><b>Appi! Minu rahakoti saldo on kadunud või on kinnitamata!</b><br/>
         Ärge paanitsege! Kui saadate vahendeid oma rahakotist, siis osa teie saldost näidatakse ajutiselt
         kui kinnitamata.
-        See juhtub, kuna Scala vahetatakse plokiahelas ja kuidas muudatused toimivad.
+        See juhtub, kuna Lunify vahetatakse plokiahelas ja kuidas muudatused toimivad.
         <h2>Tehingute nimekiri</h2>
         <p>Rahakoti tehingute nimekiri. Vaateraamatus on kuvatud ainult sissetulevad tehingud.</p>
     ]]></string>
 
     <string name="help_mobile_miner"><![CDATA[
-        <h1>Scala kaevandaja</h1>
+        <h1>Lunify kaevandaja</h1>
         <p>Alustage kaevandamist kõigil uusimatel Android-seadmetel turvaliselt ja tõhusalt!</p>
-        <p>Scala Miner pakub kasulikku teavet teie kaevandamistegevuste kohta ja hoiab ära seadme ülekuumenemise.</p>
-        <p>Laadige see alla siit: <a href="https://github.com/scala-network/MobileMiner/releases">Scala Miner</a>
+        <p>Lunify Miner pakub kasulikku teavet teie kaevandamistegevuste kohta ja hoiab ära seadme ülekuumenemise.</p>
+        <p>Laadige see alla siit: <a href="https://github.com/LunifyProject/MobileMiner/releases">Lunify Miner</a>
     ]]></string>
 
     <string name="help_node">Aegunud</string>
@@ -227,19 +227,19 @@
     <string name="help_node_2"><![CDATA[
         <h1>Sõlmed</h1>
         <h2>TL;DR</h2>
-        <p>Värskendage sõlmede loendit alla tõmmates ja Scala Vault ühendab automaatselt parima saadaolevaga!</p>
+        <p>Värskendage sõlmede loendit alla tõmmates ja Lunify Vault ühendab automaatselt parima saadaolevaga!</p>
         <h2>Mis on sõlm?</h2>
-        <p>Scala Vault kasutab kaugserverit (mõnikord nimetatakse ka Daemoniks), et suhelda
-        Scala võrguga ilma, et peaks alla laadima ja salvestama kogu plokiahela koopiat.<p>
+        <p>Lunify Vault kasutab kaugserverit (mõnikord nimetatakse ka Daemoniks), et suhelda
+        Lunify võrguga ilma, et peaks alla laadima ja salvestama kogu plokiahela koopiat.<p>
         <h2>Sõlmede nimekiri</h2>
-        <p>Kui nimekiri on tühi, saate kas lisada uusi sõlme käsitsi või lasta Scala Vaultil
+        <p>Kui nimekiri on tühi, saate kas lisada uusi sõlme käsitsi või lasta Lunify Vaultil
         valida teie jaoks parim saadaolev sõlm. Või mõlemad. Loe edasi&#8230;</p>
         <p>Sõlmede nimekiri näitab kõiki praegu teadaolevaid sõlmi. Lisaks kuvatakse iga sõlme all viimase teadaoleva ploki ajatempel. Iga sõlme kõrval kuvatakse ikoon, mis näitab sõlme vastuse käitumist
         (mis näitab oodatava ühenduvuse taset).</p>
-        <p>Scala Vault valib iga kord optimaalse sõlme.
+        <p>Lunify Vault valib iga kord optimaalse sõlme.
         See kontrollib ploki kõrgust (kui ajakohane
         on sõlm?) ja vastuse käitumist (kui kiiresti sõlm päringutele reageerib?).</p>
-        <p>Loend on sorteeritud nende omaduste järgi, seega oleks nimekirja ülaosas sõlm, mille Scala Vault
+        <p>Loend on sorteeritud nende omaduste järgi, seega oleks nimekirja ülaosas sõlm, mille Lunify Vault
         valiks praegu. Loendi allosas kuvatakse väga aeglased või kättesaamatud sõlmed.</p>
         <h2>Sõlme lisamine</h2>
         <p>Puudutades allosas nuppu &quot;Lisa sõlm&quot;, palutakse teil
@@ -253,13 +253,13 @@
         &quot;Testi tulemused&quot; kuvavad ploki kõrguse, reageerimisaja ja kasutatud tegeliku IP.
         Tulemuseks võib olla ka viga - tavaliselt seetõttu, et antud hostinimi pole
         mõistliku aja jooksul kättesaadav või mandaadid on valed.
-        Või ei osuta hostinime/pordi kombinatsioon tegelikule Scala sõlmele!
+        Või ei osuta hostinime/pordi kombinatsioon tegelikule Lunify sõlmele!
         Kui test läbib (ei vea) - olete valmis vajutama &quot;OK&quot; selle sõlme salvestamiseks.</p>
     ]]></string>
 
     <string name="help_uri"><![CDATA[
         <h1>Makse lingi kasutamine</h1>
-        <p>Olete käivitanud Scala Vaulti makse lingiga. Fondide saatmiseks tehke järgmist:</p>
+        <p>Olete käivitanud Lunify Vaulti makse lingiga. Fondide saatmiseks tehke järgmist:</p>
         <p>
         1. Avage rahakott, millest soovite kulutada<br>
         2. Oodake, kuni rahakott on sünkroniseeritud ja kuvatakse nupp "Anna"<br>

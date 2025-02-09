@@ -63,7 +63,7 @@
 
     <string name="label_send_progress_xlato_create">Kreante mendon al XLA.TO</string>
     <string name="label_send_progress_xlato_query">Petante XLA.TO-mendon </string>
-    <string name="label_send_progress_create_tx">Preparante la Scala-transakcion</string>
+    <string name="label_send_progress_create_tx">Preparante la Lunify-transakcion</string>
 
     <string name="label_send_progress_queryparms">Petante la XLA.TO-parametrojn</string>
 
@@ -71,7 +71,7 @@
     <string name="text_generic_xlato_error">kodo: %1$d</string>
 
     <string name="text_retry">Tuŝu por reprovi</string>
-    <string name="text_noretry_scala">Ni blokiĝis ĉi tie!</string>
+    <string name="text_noretry_lunify">Ni blokiĝis ĉi tie!</string>
     <string name="text_noretry">Uh-oh, ŝajne XLA.TO ne disponas momente!</string>
 
     <string name="text_send_btc_amount">%1$s BTC = %2$s XLA</string>
@@ -142,7 +142,7 @@
 
     <string name="xla_unconfirmed_amount">%1$s XLA nekonfirmite</string>
 
-    <string name="service_description">Scala Vault Servo</string>
+    <string name="service_description">Lunify Vault Servo</string>
 
     <string name="status_synced">Sinkronizas:</string>
     <string name="status_remaining">Restaj blokoj</string>
@@ -171,7 +171,7 @@
         <strong>Aŭtentiĝi per fingropremaĵo</strong>
         <p>Per la fringra aŭtentiĝo, vi povos vidi la saldon de la monujo kaj ricevi monon, sen
         entajpi vian pasvorton.</p>
-        <p>Sed por plia sekureco, Scala Vault petos vin, ke vi retajpu vian pasvorton por vidi
+        <p>Sed por plia sekureco, Lunify Vault petos vin, ke vi retajpu vian pasvorton por vidi
         monujdetalojn aŭ por elspezi.</p>
         <strong>Sekureca atentigo</strong>
         <p>Ankoraŭ indas scii, ke iu ajn, posedante vian fingropremaĵon, kapablos eltrovi la
@@ -219,8 +219,8 @@
     <string name="send_amount_hint">0.00</string>
     <string name="send_notes_hint">Privataj notoj (opcia)</string>
     <string name="send_generate_paymentid_hint">Generate</string>
-    <string name="send_send_label">Elspezi miajn dolĉajn Scalan</string>
-    <string name="send_send_timed_label">Elspezi miajn dolĉajn Scalan (%1$s)</string>
+    <string name="send_send_label">Elspezi miajn dolĉajn Lunifyn</string>
+    <string name="send_send_timed_label">Elspezi miajn dolĉajn Lunifyn (%1$s)</string>
     <string name="send_qr_invalid">Tio ne estas QR-kodo</string>
     <string name="send_qr_address_invalid">Tio ne estas kongrua paga QR-kodo</string>
     <string name="send_address_invalid">Tio ne estas valida adreso</string>
@@ -386,13 +386,13 @@
 
     <string name="label_restoreheight">Restaŭralteco</string> <!-- Restore Height -->
 
-    <string name="toast_ledger_start_app">Start Scala App on %1$s</string>
+    <string name="toast_ledger_start_app">Start Lunify App on %1$s</string>
 
     <string name="menu_rescan">Rescan!</string>
     <string name="privacy_policy_intro">We care about your privacy. To learn more, please read our Privacy Policy.</string>
     <string name="privacy_policy_label">Privacy Policy</string>
     <string name="primary_address">Primary Address</string>
-    <string name="mm_url">https://github.com/scala-network/MobileMiner/releases</string>
+    <string name="mm_url">https://github.com/LunifyProject/MobileMiner/releases</string>
     <string name="connection_remote_daemon">Connecting to remote node...</string>
     <string name="remote_nodes">Remote Nodes</string>
     <string name="address_book">Address Book</string>
@@ -402,7 +402,7 @@
     <string name="save_to_address_book">Save to address book</string>
     <string name="contact_name_empty_error">Name cannot be empty!</string>
     <string name="entry_name">Entry Name</string>
-    <string name="start_mining">Start mining on your Android device safely and efficiently with the Scala Mobile Miner.</string>
+    <string name="start_mining">Start mining on your Android device safely and efficiently with the Lunify Mobile Miner.</string>
     <string name="mobile_miner">Mobile Miner</string>
     <string name="download">Download</string>
     <string name="select_image">Select Image</string>

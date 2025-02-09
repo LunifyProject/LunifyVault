@@ -58,7 +58,7 @@
 
     <string name="label_send_progress_xlato_create">XLA.TO megrendelés létrehozása</string>
     <string name="label_send_progress_xlato_query">XLA.TO megrendelés lekérdezése</string>
-    <string name="label_send_progress_create_tx">Scala-tranzakció előkészítése</string>
+    <string name="label_send_progress_create_tx">Lunify-tranzakció előkészítése</string>
 
     <string name="label_send_progress_queryparms">XLA.TO paraméterek lekérdezése</string>
 
@@ -66,7 +66,7 @@
     <string name="text_generic_xlato_error">Kód: %1$d</string>
 
     <string name="text_retry">Koppints az újrapróbálkozáshoz</string>
-    <string name="text_noretry_scala">Itt most elakadtunk!</string>
+    <string name="text_noretry_lunify">Itt most elakadtunk!</string>
     <string name="text_noretry">Ajjaj! Úgy néz ki, az XLA.TO most nem elérhető!</string>
 
     <string name="text_send_btc_amount">%1$s BTC = %2$s XLA</string>
@@ -135,7 +135,7 @@
 
     <string name="xla_unconfirmed_amount">%1$s XLA függőben</string>
 
-    <string name="service_description">Scala Vault szolgáltatás</string>
+    <string name="service_description">Lunify Vault szolgáltatás</string>
 
     <string name="status_synced">Szinkronizálva:</string>
     <string name="status_remaining">blokk van hátra</string>
@@ -164,10 +164,10 @@
         <strong>Ujjlenyomat-azonosítás</strong>
         <p>Az ujjlenyomat-azonosítás engedélyezésével jelszó megadása nélkül tekintheted meg a
         tárcaegyenleget és fogadhatsz pénzösszegeket.</p>
-        <p>A további biztonság érdekében ugyanakkor a Scala Vault továbbra is jelszót fog kérni a
+        <p>A további biztonság érdekében ugyanakkor a Lunify Vault továbbra is jelszót fog kérni a
         tárca részletes adatainak megtekintése és a pénzküldés esetén.</p>
         <strong>Biztonsági figyelmeztetés</strong>
-        <p>A Scala Vault felhívja a figyelmed arra, hogy az ujjlenyomatoddal rendelkező személy(ek)
+        <p>A Lunify Vault felhívja a figyelmed arra, hogy az ujjlenyomatoddal rendelkező személy(ek)
         megtekinthetik a tárcaegyenleged.</p>
         <p>Egy rosszhiszemű személy például megnyithatja a tárcádat míg te alszol.</p>
         <strong>Biztosan engedélyezni szeretnéd ezt a funckiót?</strong>
@@ -212,8 +212,8 @@
     <string name="send_amount_hint">0.00</string>
     <string name="send_notes_hint">Privát közlemény (opcionális)</string>
     <string name="send_generate_paymentid_hint">Generálás</string>
-    <string name="send_send_label">Édes, drága Scala elköltése</string>
-    <string name="send_send_timed_label">Édes, drága Scala elköltése (%1$s)</string>
+    <string name="send_send_label">Édes, drága Lunify elköltése</string>
+    <string name="send_send_timed_label">Édes, drága Lunify elköltése (%1$s)</string>
     <string name="send_qr_invalid">Ez nem egy QR-kód</string>
     <string name="send_address_invalid">Érvénytelen cím</string>
     <string name="send_qr_address_invalid">Érvénytelen QR-kód</string>
@@ -383,13 +383,13 @@
 
     <string name="label_restoreheight">Visszaállítási lánchossz</string> <!-- Restore Height -->
 
-    <string name="toast_ledger_start_app">Start Scala App on %1$s</string>
+    <string name="toast_ledger_start_app">Start Lunify App on %1$s</string>
 
     <string name="menu_rescan">Rescan!</string>
     <string name="privacy_policy_intro">We care about your privacy. To learn more, please read our Privacy Policy.</string>
     <string name="privacy_policy_label">Privacy Policy</string>
     <string name="primary_address">Primary Address</string>
-    <string name="mm_url">https://github.com/scala-network/MobileMiner/releases</string>
+    <string name="mm_url">https://github.com/LunifyProject/MobileMiner/releases</string>
     <string name="connection_remote_daemon">Connecting to remote node...</string>
     <string name="remote_nodes">Remote Nodes</string>
     <string name="address_book">Address Book</string>
@@ -399,7 +399,7 @@
     <string name="save_to_address_book">Save to address book</string>
     <string name="contact_name_empty_error">Name cannot be empty!</string>
     <string name="entry_name">Entry Name</string>
-    <string name="start_mining">Start mining on your Android device safely and efficiently with the Scala Mobile Miner.</string>
+    <string name="start_mining">Start mining on your Android device safely and efficiently with the Lunify Mobile Miner.</string>
     <string name="mobile_miner">Mobile Miner</string>
     <string name="download">Download</string>
     <string name="select_image">Select Image</string>

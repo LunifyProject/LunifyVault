@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="ja">
     <string name="wallet_activity_name">ウォレット</string>
     <string name="menu_mobileminer">モバイルマイナー</string>
-    <string name="menu_about">Scala Vaultについて</string>
+    <string name="menu_about">Lunify Vaultについて</string>
     <string name="menu_privacy">プライバシーポリシー</string>
 
     <string name="menu_share">共有</string>
@@ -71,7 +71,7 @@
     <string name="text_generic_xlato_error">コード: %1$d</string>
 
     <string name="text_retry">タッチして再試行</string>
-    <string name="text_noretry_scala">私達はここで立ち往生のようです!</string>
+    <string name="text_noretry_lunify">私達はここで立ち往生のようです!</string>
     <string name="text_noretry">あーあ、 XLA.TO は現在利用不能のようです!</string>
 
     <string name="text_send_btc_amount">%1$s BTC = %2$s XLA</string>
@@ -143,7 +143,7 @@
 
     <string name="xla_unconfirmed_amount">%1$s XLA が未承認</string>
 
-    <string name="service_description">Scala Vault のサービス</string>
+    <string name="service_description">Lunify Vault のサービス</string>
 
     <string name="status_synced">同期済み:</string>
     <string name="status_remaining">残りのブロック</string>
@@ -171,7 +171,7 @@
     <string name="generate_fingerprint_warn"><![CDATA[
         <strong>指紋認証</strong>
         <p>指紋認証を有効化すると、あなたはウォレット残高の閲覧と資産の受取をパスワード無しで行なえます。</p>
-        <p>しかしセキュリティのため、Scala Vaultはウォレットの詳細の閲覧と送金にはパスワードを要します。</p>
+        <p>しかしセキュリティのため、Lunify Vaultはウォレットの詳細の閲覧と送金にはパスワードを要します。</p>
         <strong>セキュリティ警告</strong>
         <p>そして最後に、あなたの指紋を入手できる人間は誰でもあなたのウォレット残高を覗くことができます。</p>
         <p>例えば、あなたの周りの邪悪な人間が、あなたが寝ている間にウォレットを開くかもしれません。</p>
@@ -386,13 +386,13 @@
 
     <string name="label_restoreheight">Restore Height</string>
 
-    <string name="toast_ledger_start_app">Start Scala App on %1$s</string>
+    <string name="toast_ledger_start_app">Start Lunify App on %1$s</string>
 
     <string name="menu_rescan">Rescan!</string>
     <string name="privacy_policy_intro">We care about your privacy. To learn more, please read our Privacy Policy.</string>
     <string name="privacy_policy_label">Privacy Policy</string>
     <string name="primary_address">Primary Address</string>
-    <string name="mm_url">https://github.com/scala-network/MobileMiner/releases</string>
+    <string name="mm_url">https://github.com/LunifyProject/MobileMiner/releases</string>
     <string name="connection_remote_daemon">Connecting to remote node...</string>
     <string name="remote_nodes">Remote Nodes</string>
     <string name="address_book">Address Book</string>
@@ -402,7 +402,7 @@
     <string name="save_to_address_book">Save to address book</string>
     <string name="contact_name_empty_error">Name cannot be empty!</string>
     <string name="entry_name">Entry Name</string>
-    <string name="start_mining">Start mining on your Android device safely and efficiently with the Scala Mobile Miner.</string>
+    <string name="start_mining">Start mining on your Android device safely and efficiently with the Lunify Mobile Miner.</string>
     <string name="mobile_miner">Mobile Miner</string>
     <string name="download">Download</string>
     <string name="select_image">Select Image</string>

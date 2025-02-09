@@ -64,7 +64,7 @@
 
     <string name="label_send_progress_xlato_create">Создание заказа XLA.TO</string>
     <string name="label_send_progress_xlato_query">Запрос заказа XLA.TO</string>
-    <string name="label_send_progress_create_tx">Подготовка транзакции Scala</string>
+    <string name="label_send_progress_create_tx">Подготовка транзакции Lunify</string>
 
     <string name="label_send_progress_queryparms">Запрос параметров XLA.TO</string>
 
@@ -72,7 +72,7 @@
     <string name="text_generic_xlato_error">Код: %1$d</string>
 
     <string name="text_retry">Нажмите, чтобы повторить попытку</string>
-    <string name="text_noretry_scala">Теперь мы застряли здесь!</string>
+    <string name="text_noretry_lunify">Теперь мы застряли здесь!</string>
     <string name="text_noretry">Ой-ой! Кажется XLA.TO недоступен в данный момент!</string>
 
     <string name="text_send_btc_amount">%1$s BTC = %2$s XLA</string>
@@ -141,7 +141,7 @@
 
     <string name="xla_unconfirmed_amount">%1$s XLA неподтвержденно</string>
 
-    <string name="service_description">Служба Scala Vault</string>
+    <string name="service_description">Служба Lunify Vault</string>
 
     <string name="status_synced">Синхронизировано:</string>
     <string name="status_remaining">Блоков осталось</string>
@@ -170,10 +170,10 @@
         <strong>Аутентификация по отпечаткам пальцев</strong>
         <p>С поддержкой аутентификации по отпечаткам пальцев, вы можете просматривать баланс и получать средства
         без ввода пароля.</p>
-        <p>Но для дополнительной безопасности, Scala Vault потребует от вас ввести пароль при
+        <p>Но для дополнительной безопасности, Lunify Vault потребует от вас ввести пароль при
         просмотре деталей кошелька или отправке средств.</p>
         <strong>Предупреждение системы безопасности</strong>
-        <p>Scala Vault хочет напомнить вам, что любой, кто может получить ваш отпечаток пальца, будет
+        <p>Lunify Vault хочет напомнить вам, что любой, кто может получить ваш отпечаток пальца, будет
         обладать возможностью, заглянуть в баланс вашего кошелька.</p>
         <p>Например, злоумышленник может заглянуть в ваш кошелек, когда вы спите.</p>
         <strong>Вы уверены, что хотите включить эту функцию?</strong>
@@ -218,8 +218,8 @@
     <string name="send_amount_hint">0.00</string>
     <string name="send_notes_hint">Персональная заметка (необязательно)</string>
     <string name="send_generate_paymentid_hint">Генерация</string>
-    <string name="send_send_label">Потратьте мои сладкие Scala</string>
-    <string name="send_send_timed_label">Потратьте мои сладкие Scala (%1$s)</string>
+    <string name="send_send_label">Потратьте мои сладкие Lunify</string>
+    <string name="send_send_timed_label">Потратьте мои сладкие Lunify (%1$s)</string>
     <string name="send_qr_invalid">Это не QR-код</string>
     <string name="send_qr_address_invalid">Недопустимый платеж по QR-коду</string>
     <string name="send_address_invalid">Недопустимый адрес</string>
@@ -390,12 +390,12 @@
 
     <string name="label_restoreheight">Восстановить высоту</string> <!-- Restore Height -->
 
-    <string name="toast_ledger_start_app">Запуск приложения Scala на %1$s</string>
+    <string name="toast_ledger_start_app">Запуск приложения Lunify на %1$s</string>
     <string name="menu_rescan">Пересканировать!</string>
     <string name="privacy_policy_intro">Мы заботимся о вашей конфиденциальности. Чтобы узнать больше, пожалуйста, прочитайте нашу Политику конфиденциальности.</string>
     <string name="privacy_policy_label">Политика конфиденциальности</string>
     <string name="primary_address">Основной адрес</string>
-    <string name="mm_url" translatable="false">https://github.com/scala-network/MobileMiner/releases</string>
+    <string name="mm_url" translatable="false">https://github.com/LunifyProject/MobileMiner/releases</string>
     <string name="connection_remote_daemon">Подключение к удаленному узлу&#8230;</string>
     <string name="remote_nodes">Удаленные узлы</string>
     <string name="address_book">Адресная книга</string>
@@ -405,7 +405,7 @@
     <string name="save_to_address_book">Сохранить в адресную книгу</string>
     <string name="contact_name_empty_error">Имя не может быть пустым!</string>
     <string name="entry_name">Название записи</string>
-    <string name="start_mining">Начните майнинг на вашем устройстве Android безопасно и эффективно с Scala Mobile Miner.</string>
+    <string name="start_mining">Начните майнинг на вашем устройстве Android безопасно и эффективно с Lunify Mobile Miner.</string>
     <string name="mobile_miner">Мобильный Майнер</string>
     <string name="download">Скачать</string>
     <string name="select_image">Выбрать изображение</string>
@@ -424,17 +424,17 @@
     <string name="balance_primary_address">Основной адрес</string>
     <string name="balance_wallet_address">Адрес кошелька</string>
     <string name="history_no_transaction">Нет транзакций</string>
-    <string name="mobileminer_scala_miner">SCALA МАЙНЕР</string>
+    <string name="mobileminer_lunify_miner">Lunify МАЙНЕР</string>
     <string name="mobileminer_start_mining">Начните майнинг на вашем устройстве Android безопасно и эффективно.</string>
     <string name="close">Закрыть</string>
-    <string name="scala_logo" translatable="false">Логотип Scala</string>
+    <string name="lunify_logo" translatable="false">Логотип Lunify</string>
     <string name="credits">Кредиты</string>
     <string name="credits_made_with">Сделано с </string>
     <string name="credits_by"> от </string>
     <string name="credits_forked_from">Ветвь от </string>
     <string name="credits_heart" translatable="false">иконка сердца</string>
-    <string name="wizard_home">Безопасный и легкий кошелек для хранения ваших монет Scala</string>
-    <string name="wizard_home_description">Scala Vault предоставляет все необходимое для управления и использования кошельков Scala на Android</string>
+    <string name="wizard_home">Безопасный и легкий кошелек для хранения ваших монет Lunify</string>
+    <string name="wizard_home_description">Lunify Vault предоставляет все необходимое для управления и использования кошельков Lunify на Android</string>
     <string name="wizard_home_create_new_wallet">Создать новый кошелек</string>
     <string name="wizard_home_import_from_seed">Импортировать из seed</string>
     <string name="wizard_home_or">или</string>
@@ -444,7 +444,7 @@
     <string name="subaddresses">Подадреса</string>
     <string name="message_exchange_success">Цена валюты обновлена</string>
     <string name="splashcreen_check_network">Проверка сети…</string>
-    <string name="splashcreen_check_network_success">Подключено к интернету, доступ к Scala Vault</string>
+    <string name="splashcreen_check_network_success">Подключено к интернету, доступ к Lunify Vault</string>
     <string name="splashcreen_check_network_failure">Для работы этого приложения требуется подключение к сети. Пожалуйста, проверьте свое интернет-соединение и попробуйте снова…</string>
 
 </resources>

@@ -30,7 +30,7 @@
 
                 <TextView
                     android:id="@+id/tvTxAmount"
-                    style="@style/ScalaText.PosAmount"
+                    style="@style/LunifyText.PosAmount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:selectAllOnFocus="true"
@@ -39,7 +39,7 @@
 
                 <TextView
                     android:id="@+id/tvTxFee"
-                    style="@style/ScalaText.PosFee"
+                    style="@style/LunifyText.PosFee"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:selectAllOnFocus="true"
@@ -49,7 +49,7 @@
 
             <TextView
                 android:id="@+id/tvTxTimestamp"
-                style="@style/ScalaText.PosDate"
+                style="@style/LunifyText.PosDate"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -78,7 +78,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style="@style/ScalaText.Medium"
+                    style="@style/LunifyText.Medium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -95,7 +95,7 @@
                     <TableRow>
 
                         <TextView
-                            style="@style/ScalaLabel.Small"
+                            style="@style/LunifyLabel.Small"
                             android:layout_gravity="center_vertical"
                             android:gravity="end"
                             android:padding="8dp"
@@ -103,7 +103,7 @@
 
                         <TextView
                             android:id="@+id/tvTxAmountBtc"
-                            style="@style/ScalaText"
+                            style="@style/LunifyText"
                             android:gravity="start"
                             android:padding="8dp"
                             android:selectAllOnFocus="true"
@@ -115,7 +115,7 @@
                     <TableRow>
 
                         <TextView
-                            style="@style/ScalaLabel.Small"
+                            style="@style/LunifyLabel.Small"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="top"
@@ -125,7 +125,7 @@
 
                         <TextView
                             android:id="@+id/tvDestinationBtc"
-                            style="@style/ScalaText"
+                            style="@style/LunifyText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="start"
@@ -138,7 +138,7 @@
                     <TableRow>
 
                         <TextView
-                            style="@style/ScalaLabel.Small"
+                            style="@style/LunifyLabel.Small"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -150,7 +150,7 @@
 
                             <TextView
                                 android:id="@+id/tvTxxlaToKey"
-                                style="@style/ScalaText"
+                                style="@style/LunifyText"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@color/dotGray"
@@ -178,7 +178,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/ScalaLabel.Small"
+                    style="@style/LunifyLabel.Small"
                     android:layout_gravity="top"
                     android:gravity="end"
                     android:padding="8dp"
@@ -190,7 +190,7 @@
 
                     <TextView
                         android:id="@+id/tvAccount"
-                        style="@style/ScalaText"
+                        style="@style/LunifyText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
@@ -205,7 +205,7 @@
 
                     <TextView
                         android:id="@+id/tvAddress"
-                        style="@style/ScalaText"
+                        style="@style/LunifyText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/tvAccount"
@@ -222,7 +222,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/ScalaLabel.Small"
+                    style="@style/LunifyLabel.Small"
                     android:layout_gravity="top"
                     android:gravity="end"
                     android:padding="8sp"
@@ -235,10 +235,10 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etTxNotes"
-                        style="@style/ScalaEdit"
+                        style="@style/LunifyEdit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="@color/scalaGray"
+                        android:backgroundTint="@color/lunifyGray"
                         android:hint="@string/tx_notes_hint"
                         android:inputType="textMultiLine" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -247,7 +247,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/ScalaLabel.Small"
+                    style="@style/LunifyLabel.Small"
                     android:layout_gravity="top"
                     android:gravity="end"
                     android:padding="8dp"
@@ -255,7 +255,7 @@
 
                 <TextView
                     android:id="@+id/tvDestination"
-                    style="@style/ScalaText"
+                    style="@style/LunifyText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"
@@ -265,7 +265,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/ScalaLabel.Small"
+                    style="@style/LunifyLabel.Small"
                     android:layout_gravity="top"
                     android:gravity="end"
                     android:padding="8dp"
@@ -273,7 +273,7 @@
 
                 <TextView
                     android:id="@+id/tvTxPaymentId"
-                    style="@style/ScalaText"
+                    style="@style/LunifyText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"
@@ -283,7 +283,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/ScalaLabel.Small"
+                    style="@style/LunifyLabel.Small"
                     android:layout_gravity="top"
                     android:gravity="end"
                     android:padding="8dp"
@@ -291,7 +291,7 @@
 
                 <TextView
                     android:id="@+id/tvTxId"
-                    style="@style/ScalaText"
+                    style="@style/LunifyText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:textIsSelectable="true" />
@@ -300,7 +300,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/ScalaLabel.Small"
+                    style="@style/LunifyLabel.Small"
                     android:layout_gravity="top"
                     android:gravity="end"
                     android:padding="8dp"
@@ -308,7 +308,7 @@
 
                 <TextView
                     android:id="@+id/tvTxKey"
-                    style="@style/ScalaText"
+                    style="@style/LunifyText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"
@@ -318,7 +318,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/ScalaLabel.Small"
+                    style="@style/LunifyLabel.Small"
                     android:layout_gravity="top"
                     android:gravity="end"
                     android:padding="8dp"
@@ -326,7 +326,7 @@
 
                 <TextView
                     android:id="@+id/tvTxBlockheight"
-                    style="@style/ScalaText"
+                    style="@style/LunifyText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"
@@ -336,7 +336,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/ScalaLabel.Small"
+                    style="@style/LunifyLabel.Small"
                     android:layout_gravity="top"
                     android:gravity="end"
                     android:padding="8dp"
@@ -344,7 +344,7 @@
 
                 <TextView
                     android:id="@+id/tvTxTransfers"
-                    style="@style/ScalaText"
+                    style="@style/LunifyText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"
@@ -356,7 +356,7 @@
 
         <Button
             android:id="@+id/bOK"
-            style="@style/ScalaButton.Blue"
+            style="@style/LunifyButton.Blue"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginTop="8dp"

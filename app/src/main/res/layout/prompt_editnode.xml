@@ -30,7 +30,7 @@
                 app:errorEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    style="@style/ScalaEdit"
+                    style="@style/LunifyEdit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/node_address_hint"
@@ -50,7 +50,7 @@
                 app:errorEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    style="@style/ScalaEdit"
+                    style="@style/LunifyEdit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/node_port_hint"
@@ -70,7 +70,7 @@
             android:layout_marginTop="@dimen/data_top">
 
             <com.google.android.material.textfield.TextInputEditText
-                style="@style/ScalaEdit"
+                style="@style/LunifyEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/node_name_hint"
@@ -96,7 +96,7 @@
                 android:layout_weight="1">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    style="@style/ScalaEdit"
+                    style="@style/LunifyEdit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/node_user_hint"
@@ -115,7 +115,7 @@
                 android:layout_weight="1">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    style="@style/ScalaEdit"
+                    style="@style/LunifyEdit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/node_pass_hint"
@@ -129,7 +129,7 @@
 
         <TextView
             android:id="@+id/tvResultLabel"
-            style="@style/ScalaLabel.Small"
+            style="@style/LunifyLabel.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -138,7 +138,7 @@
 
         <TextView
             android:id="@+id/tvResult"
-            style="@style/ScalaText.Small"
+            style="@style/LunifyText.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"

@@ -19,7 +19,7 @@
 
         <EditText
             android:id="@+id/etAmountA"
-            style="@style/ScalaText.Small"
+            style="@style/LunifyText.Small"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center|start"
@@ -51,7 +51,7 @@
 
         <TextView
             android:id="@+id/tvAmountB"
-            style="@style/ScalaText.Small"
+            style="@style/LunifyText.Small"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center|start"
@@ -89,4 +89,3 @@
     </LinearLayout>
 
 </merge>
-

@@ -2,7 +2,7 @@
 <resources>
     <string name="help_create_new"><![CDATA[
         <h1>Vytvoriť Peňaženku - Novú</h1>
-        <p>Ak Ti treba novú Scala adresu!</p>
+        <p>Ak Ti treba novú Lunify adresu!</p>
         <p>Vlož unikátny názov a heslo peňaženky.
         Heslo je určené na zabezpečenie dát peňaženky v tomto zariadení. 
 		Používaj silné heslo - alebo ešte lepšie je použiť frázu.</p>
@@ -18,7 +18,7 @@
 
     <string name="help_create_seed"><![CDATA[
         <h1>Vytvoriť Peňaženku - Seed</h1>
-        <p>Ak už máš Scala adresu a chceš obnoviť transakcie z blockchain!</p>
+        <p>Ak už máš Lunify adresu a chceš obnoviť transakcie z blockchain!</p>
         <p>Vlož unikátny názov a heslo peňaženky. 
 		Heslo je určené na zabezpečenie dát peňaženky v tomto zariadení. 
 		Používaj silné heslo - alebo ešte lepšie je použiť frázu.</p>
@@ -33,7 +33,7 @@
         <p>Vlož unikátny názov a heslo peňaženky. 
 		Heslo je určené na zabezpečenie dát peňaženky v tomto zariadení. 
 		Používaj silné heslo - alebo ešte lepšie je použiť frázu.<p>
-		<p>Vlož svoju Scala adresu do poľa \"Verejná Adresa\" a vyplň \"Prezerací Kľúč\" and  \"Platobný Kľúč\".</p>
+		<p>Vlož svoju Lunify adresu do poľa \"Verejná Adresa\" a vyplň \"Prezerací Kľúč\" and  \"Platobný Kľúč\".</p>
         <p>Ak poznáš číslo bloku svojej prvej transakcie pre túto adresu, vlož ho do poľa \"Obnov Výšku\" - zanechaním prázdneho poľa budeš skenovať <em>celú</em> blockchain,
 		aby si našiel transakcie prislúchajúce tejto adrese. To môže trvať <em>veľmi</em> dlho.</p>
 		<p>Vlož sem číslo bloku prvej transakcie pre túto adresu do políčka \"Obnov Výšku\". Môžeš tiež použiť dátum vo formáte YYYY-MM-DD. 
@@ -55,7 +55,7 @@
         <p>Ak chceš iba sledovať prichádzajúce transakcie!</p>
         <p>Vlož unikátny názov a heslo peňaženky. Heslo je určené na zabezpečenie dát peňaženky v tomto zariadení. 
         Používaj silné heslo - alebo ešte lepšie je použiť frázu.<p>
-        <p>Vlož svoju Scala adresu do poľa \"Verejná Adresa\" a vyplň \"Prezerací Kľúč\".</p>
+        <p>Vlož svoju Lunify adresu do poľa \"Verejná Adresa\" a vyplň \"Prezerací Kľúč\".</p>
         <p>Ak poznáš číslo bloku svojej prvej transakcie pre túto adresu, vlož ho do poľa \"Obnov Výšku\". Môžeš tiež použiť dátum vo formáte YYYY-MM-DD. 
 		Ak to nevieš naisto, vlož približný dátum/číslo bloku <em>pred</em> tým ako si prvýkrát použil danú adresu.
 		Zanechaním prázdneho poľa budeš skenovať <em>celú</em> blockchain, aby si našiel transakcie prislúchajúce tejto adrese. To môže trvať <em>veľmi</em> dlho.</p>
@@ -65,7 +65,7 @@
         <h1>Detaily Peňaženky</h1>
         <h2>Verejná Adresa</h2>
         Vaša verejná adresa je niečo ako číslo bakového účtu, ktoré môžte zdieľať bez toho aby ste sa báli,
-		že prídete o svoje Scala. Ľudia vám budú posielať Scala práve na túto adresu.
+		že prídete o svoje Lunify. Ľudia vám budú posielať Lunify práve na túto adresu.
         <h2>Mnemotechnický Seed</h2>
         Tieto dáta sú potrebné len na obnovu peňaženky a získanie plného prístupu k vašim prostriedkom.
 		Bezpečné uloženie a utajenie týchto dát je veľmi dôležité, keďže pomocou nich <em>hocikto</em> môže získať kontrolu nad vašimi XLA!
@@ -84,7 +84,7 @@
 		Po vložení novej prístupovej frázy (aj pri tej istej ako predtým), aplikácia ti vygeneruje
 		CrAzYpass a zabezpečí s ním súbory peňaženky. Zapísať!
         <h3>CrAzYpass peňaženky</h3>
-        Ak budeš potrebovať niekedy preinštalovať Scala Vault (napríklad po resetovaní telefónu alebo pri výmene za iný),
+        Ak budeš potrebovať niekedy preinštalovať Lunify Vault (napríklad po resetovaní telefónu alebo pri výmene za iný),
 		alebo ak chceš použiť súbory peňaženky na inom zariadení či PC, budeš musieť
 		použiť toto heslo pre obnovu na opätovný prístup do svojej peňaženky.<br/>
         Označením \"Zmeň Frázu\ z menu, môžeš vybrať inú prístupovú frázu. Tu pozor, pretože to vygenereuje nové heslo pre obnovu.
@@ -93,19 +93,19 @@
         Tvoj prezerací kľúč (view key) môžeš používať na sledovanie prichádzajúcich transakcií do peňaženky,
 		zatiaľ čo míňať prostriedky tento prezerací kľúč neumožňuje.
 		<h2>Platobný Kľúč</h2>
-        Platobný Kľúč (spend key) umožňuje míňať Scala prislúchajúce danej peňaženke,
+        Platobný Kľúč (spend key) umožňuje míňať Lunify prislúchajúce danej peňaženke,
 		takže ho nikomu nepredrádzaj a uchovaj rovnako bezpečne ako svoj mnemotechnický seed.
 	]]></string>
 
     <string name="help_list"><![CDATA[
         <h1>Zoznam Peňaženiek</h1>
         <h2>Uzol</h2>
-        <p>Scala Vault používa vzdialené uzly na komunikáciu so sieťou Scala. Nie je tak potrebné sťahovať
+        <p>Lunify Vault používa vzdialené uzly na komunikáciu so sieťou Lunify. Nie je tak potrebné sťahovať
 		a ukladať celú blockchain ako takú. Zoznam populárnych uzlov spolu s návodmi ako ich rozbehať môžeš nájsť na 
-		https://scala.network/<p>
-        <p>Scala Vault prichádza s niekoľkými prednastavenými uzlami. Pamätá si posledných 5 použitých uzlov.</p>
+		https://lunify.xyz/<p>
+        <p>Lunify Vault prichádza s niekoľkými prednastavenými uzlami. Pamätá si posledných 5 použitých uzlov.</p>
         <h2>Peňaženky</h2>
-        <p>Tu vidíš svoje peňaženky. Sú umiestnené v adresári <tt>scala vault</tt> na internom úložisku Tvojho zariadenia.
+        <p>Tu vidíš svoje peňaženky. Sú umiestnené v adresári <tt>Lunify Vault</tt> na internom úložisku Tvojho zariadenia.
         Môžeš použiť súborový manažér telefónu na ich vyhľadanuie a zobrazenie.
 		Mal by si robiť pravidelné zálohy týchto adresárov a umiestniť ich mimo zariadenie pre prípad straty, či poškodenia.</p>
         <p>Označ Peňaženku alebo stlač \"+\" pre vytvorenie novej.
@@ -113,11 +113,11 @@
         <h3>Detaily</h3>
         <p>ukáže detaily peňaženky, seed &amp; kľúče.</p>
         <h3>Prijať</h3>
-        <p>Vytvorí QR kód na prijímanie Scala.</p>
+        <p>Vytvorí QR kód na prijímanie Lunify.</p>
         <h3>Premenuj</h3>
         <p>Premenuje peňaženku. Zálohy nie sú premenované.</p>
         <h3>Záloha</h3>
-        <p>Vytvorí kópiu peňaženky v adresári <tt>backups</tt> vnútri <tt>scala vault</tt>
+        <p>Vytvorí kópiu peňaženky v adresári <tt>backups</tt> vnútri <tt>Lunify Vault</tt>
         prepísaním predchádzajúcich kópií.</p>
         <h3>Archivovať</h3>
         <p>Vytvorí zálohu s následným zmazaním peňaženky. Kópia zostáva v adresári <tt>backups</tt>
@@ -129,12 +129,12 @@
     <string name="help_tx_details"><![CDATA[
         <h1>Detaily Transakcie</h1>
         <h2>Destinácia</h2>
-        Toto je verejná adresa peňaženky kde chceš poslať Scala.
+        Toto je verejná adresa peňaženky kde chceš poslať Lunify.
 		<h2>ID Platby</h2>
         Môžeš použiť ID Platby na identifikáciu platby medzi dvoma stranami. Nie je to síce povinný, ale je to súkromný údaj.
-		Tak napríklad s týmto môžeš zosúladiť svoj biznis s kúpenou položkou. Táto funkcia bude v Scala nahradená podadresami.
+		Tak napríklad s týmto môžeš zosúladiť svoj biznis s kúpenou položkou. Táto funkcia bude v Lunify nahradená podadresami.
         <h2>TX ID</h2>
-        Toto je ID transakcie, ktoré slúži na identifikáciu transakcie v Scala blockchain exploreri, ako napr. <a href="https://explorer.scala.network/">https://explorer.scala.network/</a>
+        Toto je ID transakcie, ktoré slúži na identifikáciu transakcie v Lunify blockchain exploreri, ako napr. <a href="https://explorer.lunify.xyz/">https://explorer.lunify.xyz/</a>
         <h2>TX KĽÚČ (Transaction Key)</h2>
         Toto je Tvoj súkromný kľúč transakcie, uchovaj ho bezpečne a neposkytuj ho tretím stranám,
 		aby nemohli identifikovať tvoj podpis v kruhovom podpise a spraviť tak transakciu verejnú a transparentnú.		
@@ -146,7 +146,7 @@
     <string name="help_send"><![CDATA[
         <h1>Poslať</h1>
         <h2>Adresa Príjemcu</h2>
-        <p>Toto je verejná adresa peňaženky kam posielaš Scala. Môžeš ju kopírovať zo schránky, skenovať QR kód alebo vložiť manuálne.
+        <p>Toto je verejná adresa peňaženky kam posielaš Lunify. Môžeš ju kopírovať zo schránky, skenovať QR kód alebo vložiť manuálne.
 		Trikrát sa uisti, že neposielaš mince na zlú adresu.</p>
         <p>Okrem XLA adries, môžte použiť tiež
         <ul>
@@ -161,20 +161,20 @@
         Môžeš tak napríklad prelinkovať transakciu s tovarom, alebo so svojim biznisom.<p>
         <h1>Posielanie BTC</h1>
         <h2>XLA.TO</h2>
-        <p>XLA.TO je služba tretej strany, ktorá umožňuje zámenu z Scala na Bitcoin.
-        Používame XLA.TO API na integráciu Bitcoin platieb do Scala Vault. Prosím mrkni na
+        <p>XLA.TO je služba tretej strany, ktorá umožňuje zámenu z Lunify na Bitcoin.
+        Používame XLA.TO API na integráciu Bitcoin platieb do Lunify Vault. Prosím mrkni na
 		https://xla.to a rozhodni sa sám, či je to naozaj služba, ktorú chceš používať.
-		Tím Scala Vault nie je nijako spojený so službou XLA.TO a teda nemôže pomôcť s prípadnými problémami s touto službou.</p>
+		Tím Lunify Vault nie je nijako spojený so službou XLA.TO a teda nemôže pomôcť s prípadnými problémami s touto službou.</p>
         <h2>XLA.TO Výmenný Kurz<h2>
         <p>Na obrazovke \"Množstvo\" uvidíš aktuálne parametre služby XLA.TO, vrátane aktuálneho kurzu BTC, hornej a dolnej hranice.
 		Podotýkame, že tento kurz nie je garantovaný.
-		Tiež tam možno vidieť množstvo BTC, ktoré budú zamieňané instantne bez čakania na potvrdenia v Scala sieti.
+		Tiež tam možno vidieť množstvo BTC, ktoré budú zamieňané instantne bez čakania na potvrdenia v Lunify sieti.
 	    (pozri XLA.TO FAQ ). XLA.TO si neúčtuje ďalšie extra poplatky za transakciu. - No nie je to cool?</p>
         <h2>XLA.TO Objednávka<h2>
         <p>Na obrazovke \"Potvrdiť\", uvidíš aktuálnu objednávku v XLA.TO. Táto objednávka je platná iba obmedzený čas - ako si môžeš všimnúť odpočítavanie na tlačítku \"Minúť\".
 		Výmenný kurz sa môže líšiť od toho, ktorý bol na predošlých obrazovkách.</p>
         <h2>XLA.TO Tajný Kľúč<h2>
-        <p>Keďže Scala Vault dbá len na tú časť transakcie, ktorá pracuje s Scala,
+        <p>Keďže Lunify Vault dbá len na tú časť transakcie, ktorá pracuje s Lunify,
 		tento XLA.TO Tajný Kľúč sa môže využívať na sledovanie Bitcoinovej časti transakcie a objednávky
 		na domovskej stránke XLA.TO</p>
         <p>Ber na vedomie, že tento Tajný Kľúč je platný iba 24 hodín od začiatku transakcie!</p>
@@ -185,21 +185,21 @@
     <string name="help_xlato"><![CDATA[
         <h1>Posielanie BTC</h1>
         <h2>XLA.TO</h2>
-        <p>XLA.TO  je služba tretej strany umožňujúca zámenu Scala na Bitcoin.
-        Používame XLA.TO API na integráciu Bitcoin platieb do Scala Vault. Prosím mrkni na https://xla.to
+        <p>XLA.TO  je služba tretej strany umožňujúca zámenu Lunify na Bitcoin.
+        Používame XLA.TO API na integráciu Bitcoin platieb do Lunify Vault. Prosím mrkni na https://xla.to
 		a rozhodni sa sám, či to je niečo, čo chceš používať. 
-		Tím Scala Vault nie je nijako spojený so službou XLA.TO a teda nemôže pomôcť s prípadnými problémami s touto službou.</p>
+		Tím Lunify Vault nie je nijako spojený so službou XLA.TO a teda nemôže pomôcť s prípadnými problémami s touto službou.</p>
         <h2>XLA.TO Výmenný Kurz<h2>
         <p>na obrazovke \"Množstvo\" uvidíš aktuálne parametre služby XLA.TO, vrátane aktuálneho kurzu BTC, hornej a dolnej hranice.
 		Pamätaj, že tento kurz nie je garantovaný. Tiež tam možno vidieť množstvo BTC,
-		ktoré budú zamieňané instantne bez čakania na potvrdenia v Scala sieti.
+		ktoré budú zamieňané instantne bez čakania na potvrdenia v Lunify sieti.
 		(pozri XLA.TO FAQ ). XLA.TO si neúčtuje ďalšie extra poplatky za transakciu. - No nie je to cool?</p>
         <h2>XLA.TO Objednávka<h2>
         <p>Na obrazovke \"Potvrdiť\" , uvidíš aktuálnu objednávku v XLA.TO.
 		Táto objednávka je platná iba obmedzený čas - ako si môžeš všimnúť odpočítavanie na tlačítku \"Minúť\".
 		Výmenný kurz sa môže líšiť od toho, ktorý bol na predošlých obrazovkách.</p>
 		<h2>XLA.TO Tajný Kľúč<h2>
-        <p>Keďže Scala Vault dbá len na tú časť transakcie, ktorá pracuje s Scala,
+        <p>Keďže Lunify Vault dbá len na tú časť transakcie, ktorá pracuje s Lunify,
 		tento XLA.TO Tajný Kľúč sa môže využívať na sledovanie Bitcoinovej časti transakcie a objednávky
 		na domovskej stránke XLA.TO</p>
         <p>Ber na vedomie, že tento Tajný Kľúč je platný iba 24 hodín od začiatku transakcie!</p>
@@ -216,13 +216,13 @@
 		aby ste mohli vidieť či vám odoslalo a dorazilo všetko správne.</p>
 
         <h2>Skenovanie</h2>
-        Keďže Scala obľubuje súkromie, zakaždým pri otváraní Scala Vault musíme skenovať blockchain aby sme videli, či nedorazili nové Monerá.
-		Scala Vault uchováva len tie informácie, ktoré prislúchajú vašej peňaženke. Pokiaľ nemáte sychronizovanú peňaženku dlhší čas, synchronizácia môže trvať dlho.
+        Keďže Lunify obľubuje súkromie, zakaždým pri otváraní Lunify Vault musíme skenovať blockchain aby sme videli, či nedorazili nové Monerá.
+		Lunify Vault uchováva len tie informácie, ktoré prislúchajú vašej peňaženke. Pokiaľ nemáte sychronizovanú peňaženku dlhší čas, synchronizácia môže trvať dlho.
         <h2>Zostatok</h2>
         <p><b>Pomóc! Zostatok v mojej peňaženke zmizol, alebo je nepotvrdený!</b><br/>
         Nestresuj! Keď odosielaš prostriedky zo svojej peňaženky, časť zostatku sa dočasne ukáže ako nepotvrdená.
 
-        Súvisí to s tým, ako je Scala navrhnuté a ako funguje zmena v blockchain.
+        Súvisí to s tým, ako je Lunify navrhnuté a ako funguje zmena v blockchain.
         <h2>Zoznam Transakcií</h2>
         <p>Zoznam transakcií v peňaženke. V prípade prezeracej peňaženky budú zobrazené iba prichádzajúce transakcie.</p>
     ]]></string>
@@ -230,16 +230,16 @@
     <string name="help_node"><![CDATA[
         <h1>Uzly</h1>
         <h2>TL;DR</h2>
-        <p>Aktuálny zoznam uzlov získaš tak, že potiahneš a pridáš do záložiek 5 uzlov, z ktorých si Scala Vault jeden vyberie.</p>
+        <p>Aktuálny zoznam uzlov získaš tak, že potiahneš a pridáš do záložiek 5 uzlov, z ktorých si Lunify Vault jeden vyberie.</p>
         <h2>Čo je Uzol?</h2>
-        <p>Scala Vault používa vzdialený uzol (Remote Node, niekedy nazývaný aj Daemon) a peňaženka tak môže komunikovať so sieťou Scala bez toho, aby bolo potrebné sťahovať celú blockchain.<p>
+        <p>Lunify Vault používa vzdialený uzol (Remote Node, niekedy nazývaný aj Daemon) a peňaženka tak môže komunikovať so sieťou Lunify bez toho, aby bolo potrebné sťahovať celú blockchain.<p>
         <h2>Zoznam Uzlov</h2>
-        <p>Ak je zoznam prázdny, môžeš zadať adresu uzla manuálne, alebo môžeš nechať Scala Vault preskúmať celú sieť. Prípadne oboje. Čítaj ďalej&#8230;</p>
+        <p>Ak je zoznam prázdny, môžeš zadať adresu uzla manuálne, alebo môžeš nechať Lunify Vault preskúmať celú sieť. Prípadne oboje. Čítaj ďalej&#8230;</p>
         <p>Zoznam uzlov zobrazuje všetky momentálne známe uzly. Pod každým uzlom je zobrazená časová pečiatka jeho posledného bloku.
 		Vedľa je ikonka nodu, ktorá indikuje úroveň pripojenia.</p>
         <p>Ktorýkoľvek uzol v zozname si môžte pridať do záložiek pre budúce použitie. Uzly, ktoré nebudú uložené, sa z pamäte vymažú.<p>
-        <p>Scala Vault vyberie jeden z uložených uzlov pri každom použití. Skontroluje výšku bloku (blockheight) týchto uzlov a zistí, ktorý uzol je ako aktualizovaný, ako dlho trvá odpoveď a podľa toho vyberie pre vás optimálny uzol.</p>
-        <p>Podľa týchto charakteristík je dané aj zoradenie v zozname. Prvý uzol bude ten, ktorý Scala Vault vybral práve teraz. Naspodku bude veľmi pomalý uzol s pomalou odozvou, alebo nedostupné uzly.</p>
+        <p>Lunify Vault vyberie jeden z uložených uzlov pri každom použití. Skontroluje výšku bloku (blockheight) týchto uzlov a zistí, ktorý uzol je ako aktualizovaný, ako dlho trvá odpoveď a podľa toho vyberie pre vás optimálny uzol.</p>
+        <p>Podľa týchto charakteristík je dané aj zoradenie v zozname. Prvý uzol bude ten, ktorý Lunify Vault vybral práve teraz. Naspodku bude veľmi pomalý uzol s pomalou odozvou, alebo nedostupné uzly.</p>
         <h2>Pridať Uzol</h2>
         <p>Dotykom na tlačítko &quot;Pridať Uzol&quot; vložíte detaily vlastného uzla.
         &quot;Adresa&quot; je hostname alebo IP-adresa uzla. Je to jediné povinné pole.
@@ -249,17 +249,17 @@
         To by malo stačiť na testovanie týchto nastavení. &quot;Test&quot;
         &quot;Výsledky Testu&quot; zobrazia výšku, čas odozvy a aktuálnu IP adresu uzla.
         Vo výsledku môže byť tiež chyba - zvyčajne preto, že uzol nie je dostupný, neodpovedá v požadovanom čase, alebo prihlasovacie údaje nie sú správne.
-		Prípadne kombinácia zadanej adresy a portu neprislúcha žiadnemu uzlu Scala siete!
+		Prípadne kombinácia zadanej adresy a portu neprislúcha žiadnemu uzlu Lunify siete!
         Akonáhle test skončí úspešne (žiadna chyba sa neobjaví) - klepni na &quot;OK&quot; a ulož si daný uzol.</p>
         <h2>Vyhľadať Uzol</h2>
-        <p>Táto funkcia umožní vyhľadať uzol skenovaním Scala siete. Scala Vault začne skenovať sieť a vyhľadávať vzdialené uzly na porte 18089.
-		Začína tým, že sa opýta uzlov vo vašich záložkách na ďalšie uzly v P2P sieti Scala, ktoré sú s nimi spojené, tých sa opýta zas na ďalšie uzly atď.
-		V prípade, že nemáte žiadne uzly vo svojich záložkách, Scala Vault bude skúšať uzly (seed nodes) natvrdo zapísané v kóde Scala. Vyhľadávanie končí ak Scala Vault nájde aspoň 10 vzdialených uzlov.</p>
+        <p>Táto funkcia umožní vyhľadať uzol skenovaním Lunify siete. Lunify Vault začne skenovať sieť a vyhľadávať vzdialené uzly na porte 18089.
+		Začína tým, že sa opýta uzlov vo vašich záložkách na ďalšie uzly v P2P sieti Lunify, ktoré sú s nimi spojené, tých sa opýta zas na ďalšie uzly atď.
+		V prípade, že nemáte žiadne uzly vo svojich záložkách, Lunify Vault bude skúšať uzly (seed nodes) natvrdo zapísané v kóde Lunify. Vyhľadávanie končí ak Lunify Vault nájde aspoň 10 vzdialených uzlov.</p>
     ]]></string>
 
     <string name="help_uri"><![CDATA[
         <h1>Používanie platobného linku</h1>
-        <p>Scala Vault je spustené z platobného linku. Ak chceš posielať prostriedky, postupuj nasledovne:</p>
+        <p>Lunify Vault je spustené z platobného linku. Ak chceš posielať prostriedky, postupuj nasledovne:</p>
         <p>
         1. Otvor peňaženku z ktorej chceš platiť<br>
         2. Počkaj kým sa peňaženka zosynchronizuje a zobrazí sa tlačítko "Poslať" <br>

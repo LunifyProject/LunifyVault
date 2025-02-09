@@ -53,7 +53,7 @@
 
                 <TextView
                     android:id="@+id/tx_amount"
-                    style="@style/ScalaText.PosAmount"
+                    style="@style/LunifyText.PosAmount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/c_green"
@@ -61,7 +61,7 @@
 
                 <TextView
                     android:id="@+id/tx_fee"
-                    style="@style/ScalaText.PosFee"
+                    style="@style/LunifyText.PosFee"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:text="Fee 1.22" />
@@ -82,7 +82,7 @@
 
         <TextView
             android:id="@+id/tx_paymentid"
-            style="@style/ScalaText.PaymentID"
+            style="@style/LunifyText.PaymentID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="PaymendId"
@@ -90,7 +90,7 @@
 
         <TextView
             android:id="@+id/tx_datetime"
-            style="@style/ScalaText.PosDate"
+            style="@style/LunifyText.PosDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="2020-08-19 21:32" />

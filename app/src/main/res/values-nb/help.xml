@@ -2,7 +2,7 @@
 <resources>
     <string name="help_create_new"><![CDATA[
         <h1>Lage lommebok - Ny</h1>
-        <p>Hvis du trenger en ny Scala addresse!</p>
+        <p>Hvis du trenger en ny Lunify addresse!</p>
         <p>Skriv inn et unikt lommebok navn og passord.
         Passordet blir brukt til å sikre lommebokdataene på enheten. Bruk et sterkt passord -
         helst en passordfrase.</p>
@@ -22,7 +22,7 @@
 
     <string name="help_create_seed"><![CDATA[
         <h1>Lage lommebook - Seed</h1>
-        <p>Hvis du allerede har en Scala addresse og vil gjennoprette transaksjonene fra blokkjeden!</p>
+        <p>Hvis du allerede har en Lunify addresse og vil gjennoprette transaksjonene fra blokkjeden!</p>
         <p>Skriv inn et unikt lommebok navn og passord. Passordet er brukt for å sikre lommebokdataene på denne enheten.
         Bruk et sterkt passord, helst en passordfrase.</p>
         <p>Skriv inn seedet ditt i feltet \"Mnemonisk Seed\".<p>
@@ -36,7 +36,7 @@
         <p>Hvis du gjenoppretter lommeboka di ved hjelp av nøkler!</p>
         <p>Skriv inn et unikt lommebok navn og passord. Passordet er brukt for å sikre lommebokdataene på denne enheten.
         Bruk et sterkt passord, helst en passordfrase.<p>
-        <p>Skriv inn Scala-addressen din i feltet \"Offentlig Addresse\" og fyll ut \"View Key\" and \"Spend Key\".</p>
+        <p>Skriv inn Lunify-addressen din i feltet \"Offentlig Addresse\" og fyll ut \"View Key\" and \"Spend Key\".</p>
         <p>Hvis du kjenner til blokkhøyden til den første transaksjonen til denne addressen,
 		skriv det inn i feltet \"Gjenopprettelseshøyde\" - hvis det er tomt vil <em>hele</em> blokkjeden skannes etter
         transaksjoner som hører til denne addressen. Dette tar <em>veldig</em> lang tid.<</p>
@@ -47,7 +47,7 @@
         <p>Hvis du bare vil følge med på innkommende transaksjoner til en lommebok!</p>
         <p>Skriv inn et unikt lommebok navn og passord. Passordet er brukt for å sikre lommebokdataene på denne enheten.
         Bruk et sterkt passord, helst en passordfrase.<p>
-        <p>Skriv inn Scala-addressen din i feltet \"Offentlig Addresse\" og fyll ut \"View-nøkkel\".</p>
+        <p>Skriv inn Lunify-addressen din i feltet \"Offentlig Addresse\" og fyll ut \"View-nøkkel\".</p>
         <p>Hvis du kjenner til blokkhøyden til den første transaksjonen til denne addressen,
 		skriv det inn i feltet \"Gjenopprettelseshøyde\" - hvis det er tomt vil <em>hele</em> blokkjeden skannes etter
         transaksjoner som hører til denne addressen. Dette tar <em>veldig</em> lang tid.</p>
@@ -57,11 +57,11 @@
         <h1>Lommebokdetaljer</h1>
         <h2>Offentlig nøkkel</h2>
         Den offentlige addressen din er som bankkontonummeret ditt, som du kan dele med folk
-		uten å være redd for å miste penger. Det er denne folk sender Scala til.
+		uten å være redd for å miste penger. Det er denne folk sender Lunify til.
         <h2>Mnemonisk Seed</h2>
         Dette er den eneste dataen du trenger for å gjenoprette lommeboka di senere,
 		og få full tilgang til pengene dine. Å holde denne privat er veldig viktig, siden den gir <em>hvem som helst</em> full
-        tilgang til dine Scala! Hvis du ikke har skrevet den ned, vær så snill og gjør det!
+        tilgang til dine Lunify! Hvis du ikke har skrevet den ned, vær så snill og gjør det!
         <h2>Lommebokfiler gjenoprettelsespassord</h2>
         Vær sikker på at du skriver ned dette passordet. Hvis du nullstiller enheten eller avinstallerer appen, vil
         du trenge tilgang til lommeboka di igjen.<br/>
@@ -77,7 +77,7 @@
         ett nytt passord (kanskje til og med det samme som før) vil appen generere et CrAzYpass for
         deg og sikre lommebokfilene dine med det. Skriv det ned!
         <h3>CrAzYpass lommebøker</h3>
-        Hvis du noen gang trenger å reinstallere Scala Vault (for eksempel etter å ha nullstilt enheten eller bytta
+        Hvis du noen gang trenger å reinstallere Lunify Vault (for eksempel etter å ha nullstilt enheten eller bytta
         til en ny en) eller du vil bruke lommebokfilene dine på en annen enhet eller PC, må du bruke
         dette gjenoppretelsespassordet for å få tilgang til lommeboka di igjen.<br/>
         Ved å velge \"Change Passphrase\" fra menyen, kan du velge et annet passord. Vær oppmerksom
@@ -86,19 +86,19 @@
         View-nøkkelen din gir andre tilgang til å se innkommende transaksjoner, uten å gi dem
 		tilgang til å bruke penger.
         <h2>Spend-nøkkel</h2>
-        Spend-nøkkelen gir alle tillatelse til å bruke scalaene dine, så hold den like
+        Spend-nøkkelen gir alle tillatelse til å bruke Lunifyene dine, så hold den like
 		trygt som det mnemoniske seedet ditt!
     ]]></string>
 
     <string name="help_list"><![CDATA[
         <h1>Lommebokliste</h1>
         <h2>Node</h2>
-        <p>Scala Vault bruker en ekstern node for å kommunisere med Scala-nettverket, uten å måtte
+        <p>Lunify Vault bruker en ekstern node for å kommunisere med Lunify-nettverket, uten å måtte
         laste ned og oppbevare en kopi av blokkjeden selv. Du kan finne en liste over populære
-        eksterne noder eller lære hvordan du driver din egen eksterne node her: https://scala.network/<p>
-        <p>Scala Vault kommer med noen eksterne noder lagt inn. Den husker de fem siste nodene du har brukt.</p>
+        eksterne noder eller lære hvordan du driver din egen eksterne node her: https://lunify.xyz/<p>
+        <p>Lunify Vault kommer med noen eksterne noder lagt inn. Den husker de fem siste nodene du har brukt.</p>
         <h2>Lommebøker</h2>
-        <p>Her ser du lommebøkene dine. De ligger i <tt>scala vault</tt> mappa
+        <p>Her ser du lommebøkene dine. De ligger i <tt>Lunify Vault</tt> mappa
         på den interne lagringa for enheten din. Du kan bruke en filutforsker for å se dem.
         Du burde ta backup av denne mappa en gang i blant til en ekstern enhet i tilfelle
         enheten din eksploderer eller blir stjelt.</p>
@@ -107,11 +107,11 @@
         <h3>Detaljer</h3>
         <p>Viser lommebokdetaljene, seed og nøkler.</p>
         <h3>Motta</h3>
-        <p>Lag en QR-kode for å motta Scala.</p>
+        <p>Lag en QR-kode for å motta Lunify.</p>
         <h3>Gi nytt navn</h3>
         <p>Gi nytt navn til lommeboka. Backuper blir ikke omgjort.</p>
         <h3>Backup</h3>
-        <p>Lag en kopi av lommeboka til <tt>backups</tt> mappa inni <tt>scala vault</tt>
+        <p>Lag en kopi av lommeboka til <tt>backups</tt> mappa inni <tt>Lunify Vault</tt>
         og overskriv tidligere kopier.</p>
         <h3>Arkiver</h3>
         <p>Lag en backup og slett lommeboka etterpå. Kopien blir igjen i <tt>backups</tt>
@@ -122,14 +122,14 @@
     <string name="help_tx_details"><![CDATA[
         <h1>Transaksjonsdetaljer</h1>
         <h2>Destinasjon</h2>
-        Dette er den offentlige adressen til lommeboka du sendte Scala til.
+        Dette er den offentlige adressen til lommeboka du sendte Lunify til.
         <h2>Betalings-ID</h2>
-        Du kan bruke betalings-ID til å identifisere hvorfor du sendte Scala mellom to parter. Dette er
+        Du kan bruke betalings-ID til å identifisere hvorfor du sendte Lunify mellom to parter. Dette er
         helt frivillig og privat. For eksempel lar det en bedrift tilknytte transaksjonen din med
 		en vare du har kjøpt.
         <h2>TX-ID</h2>
-        Dette er transaksjons-IDen din, som du kan bruke til å identifisere transaksjonen din på den obfuskerte Scala blokkjeden, ved å bruke en
-        blokkjedeutforsker som <a href="https://explorer.scala.network/">https://explorer.scala.network/</a>
+        Dette er transaksjons-IDen din, som du kan bruke til å identifisere transaksjonen din på den obfuskerte Lunify blokkjeden, ved å bruke en
+        blokkjedeutforsker som <a href="https://explorer.lunify.xyz/">https://explorer.lunify.xyz/</a>
         <h2>TX-nøkkel (Transaksjonsnøkkel)</h2>
         Dette er din private transaksjonsnøkkel. Hold den privat, siden å gi den til en tredjepart
         avslører hvilken signatur i ringen som er din, og gjør derfor transaksjonen din gjennomsiktig.
@@ -140,16 +140,16 @@
     <string name="help_send"><![CDATA[
         <h1>Send</h1>
         <h2>Mottakers adresse</h2>
-        <p>Dette er den offentlige adressen til lommeboka du skal sende Scala til, som du kan
+        <p>Dette er den offentlige adressen til lommeboka du skal sende Lunify til, som du kan
 		kopiere fra utklippstavla, skanne fra en QR-kode eller skrive inn manuellt. Vær sikker på at du trippelsjekker dette
-        for å forsikre deg om at du ikke sender Scala til feil adresse.</p>
+        for å forsikre deg om at du ikke sender Lunify til feil adresse.</p>
         <p>In addition to using an XLA address, you can also use
         <ul>
             <li>an ENS domain</li>
             <li>an Unstoppable Domains domain</li>
         </u>
         <h2>Payment ID</h2>
-        <p>You can use a Payment ID to identify the reason you sent Scala between two parties. This
+        <p>You can use a Payment ID to identify the reason you sent Lunify between two parties. This
         is fully optional and private. For example it can allow a business to reconcile your
         transaction with an item you bought.</p>
 ]]></string>
@@ -157,9 +157,9 @@
     <string name="help_xlato"><![CDATA[
         <h1>Å sende BTC</h1>
         <h2>XLA.TO</h2>
-        <p>XLA.TO er en tredjepartstjeneste som lar deg veksle Scala til Bitcoin.
-        Vi bruker XLA.TO-APIen til å integrere BTC-betalinger i Scala Vault. Sjekk ut
-        https://xla.to og bestem for deg selv om dette er noe du vil bruke. Scala Vault-utviklerne
+        <p>XLA.TO er en tredjepartstjeneste som lar deg veksle Lunify til Bitcoin.
+        Vi bruker XLA.TO-APIen til å integrere BTC-betalinger i Lunify Vault. Sjekk ut
+        https://xla.to og bestem for deg selv om dette er noe du vil bruke. Lunify Vault-utviklerne
         er ikke assosierte med XLA.TO og kan ikke hjelpe deg med deres tjeneste.</p>
         <h2>XLA.TO vekslingskurs<h2>
         <p>På \"Mengde\" skjermen vil du bli vist de nåværende parametrene til XLA.TO-tjenesten. Disse
@@ -173,7 +173,7 @@
         en begrensa tid - du legger kanskje til en nedtelling på \"Bruk\" knappen. Veklingskursen kan være
         enn den veiledende kursen vist på de tidligere skjermene.</p>
         <h2>XLA.TO hemmelig nøkkel<h2>
-        <p>Fordi Scala Vault bare håndterer XLA delen av transaksjonen din, kan din XLA.TO hemmelige nøkkel
+        <p>Fordi Lunify Vault bare håndterer XLA delen av transaksjonen din, kan din XLA.TO hemmelige nøkkel
         bli brukt til å spore BTC-transaksjonen på XLA.TO sine hjemmesider.</p>
         <p>Vær oppmerksom på at denne nøkkelen kun er tilgjengelig for 24-timer etter transaksjonen
 		har blitt utført!</p>
@@ -200,17 +200,17 @@
         <p>Street mode can be enabled/disabled in the menu or Gunther\'s head icon. In this mode, your
         balance is not shown on any screen so you can safely use your wallet on the street, a pub or
         other public place. Previous transactions are also hidden. New transactions will be shown, so
-        you can see that you have sent/received sweet Scala!</p>
+        you can see that you have sent/received sweet Lunify!</p>
         <h2>Skanning</h2>
-        Fordi Scala liker å holde ting privat, må vi hver gang du åpner en lommebok i Scala Vault
-        skanne blokkjeden for å se om noen nye Scala har blitt sendt til lommeboka di, som bare
+        Fordi Lunify liker å holde ting privat, må vi hver gang du åpner en lommebok i Lunify Vault
+        skanne blokkjeden for å se om noen nye Lunify har blitt sendt til lommeboka di, som bare
         lagrer informasjon til telefonen din som tilhører lommeboka. Noen ganger kan det ta litt
 		tid fordi du ikke har synkronisert på en stund.
         <h2>Saldo</h2>
         <p><b>Hjelp! Kontosaldoen min har blitt borte, eller noe er ubekrefta!</b><br/>
         Ikke få panikk! Når du sender penger fra lommeboka di, vil noe av saldoen din bli
 		vist som ubekrefta en liten periode.
-        Dette er et resultat av hvordan Scala veksles på blokkjeden og hvordan vekslepenger funker.
+        Dette er et resultat av hvordan Lunify veksles på blokkjeden og hvordan vekslepenger funker.
         <h2>Transaksjonsliste</h2>
         <p>En liste over lommeboktransaksjonene. In view lommebøker, kan man bare se innkommende transaksjoner.</p>
     ]]></string>
@@ -218,14 +218,14 @@
     <string name="help_node"><![CDATA[
         <h1>Nodes</h1>
         <h2>TL;DR</h2>
-        <p>Refresh the nodes list by pulling down &amp; bookmark 3&#8211;5 nodes to allow Scala Vault
+        <p>Refresh the nodes list by pulling down &amp; bookmark 3&#8211;5 nodes to allow Lunify Vault
         to choose the best one for you!</p>
         <h2>What&apos;s a Node?</h2>
-        <p>Scala Vault uses a Remote Node (sometimes also called Daemon) to communicate with
-        the Scala Network without having to download and store a copy of the
+        <p>Lunify Vault uses a Remote Node (sometimes also called Daemon) to communicate with
+        the Lunify Network without having to download and store a copy of the
         whole blockchain itself.<p>
         <h2>Node List</h2>
-        <p>If the list is empty, you can either add new nodes manually or let Scala Vault
+        <p>If the list is empty, you can either add new nodes manually or let Lunify Vault
         scan the network for you. Or both. Read on&#8230;</p>
         <p>The node list shows all currently known nodes. Additionally, the timestamp
         of the latest block known to each node is shown under the node name. An icon
@@ -234,10 +234,10 @@
         is shown next to each node.</p>
         <p>Any node in the list can be bookmarked for later use.
         Nodes which are not bookmarked will be forgotten.<p>
-        <p>Scala Vault will choose the optimal bookmarked node each time you use it.
+        <p>Lunify Vault will choose the optimal bookmarked node each time you use it.
         It does this by checking the blockheight (how up-to-date
         is the node?) as well as the response behaviour (how fast does the node respond to requests?).</p>
-        <p>The list is sorted by these characteristics, so the top node would be the one Scala Vault
+        <p>The list is sorted by these characteristics, so the top node would be the one Lunify Vault
         would choose right now. The bottom of the list would show very slow or unavailable nodes.</p>
         <h2>Add a Node</h2>
         <p>By touching the &quot;Add Node&quot; button at the bottom, you will be asked to
@@ -251,16 +251,16 @@
         The &quot;Test Results&quot; will display the blockheight, response time and actual IP used.
         The result may also be an error - usually because the hostname provided is
         not reachable in a sensible amount of time or the credentials are incorrect.
-        Or the hostname/port combination does not point to an actual Scala Node!
+        Or the hostname/port combination does not point to an actual Lunify Node!
         Once the test passes (no error) - you&apos;re set to press &quot;OK&quot; to save &amp;
         bookmark this node.</p>
         <h2>Scan for Nodes</h2>
-        <p>Additionally, you can scan the network for nodes. Scala Vault will start
+        <p>Additionally, you can scan the network for nodes. Lunify Vault will start
         scanning the network for Remote Nodes on port 18089. It begins by asking your
-        bookmarked nodes for other peers in the Scala P2P network and then continues
+        bookmarked nodes for other peers in the Lunify P2P network and then continues
         by asking those for their peers, and so on. If you have no bookmarked nodes
         (or they don&apos;t tell us about their peers),
-        Scala Vault will go straight to the Scala seed nodes hardcoded into Scala. The
+        Lunify Vault will go straight to the Lunify seed nodes hardcoded into Lunify. The
         scan stops when it finds 10 remote nodes in total.</p>
     ]]></string>
 
@@ -268,7 +268,7 @@
 
     <string name="help_uri"><![CDATA[
         <h1>Using a payment link</h1>
-        <p>You have started Scala Vault with a payment link. In order to send funds, please do the following:</p>
+        <p>You have started Lunify Vault with a payment link. In order to send funds, please do the following:</p>
         <p>
         1. Open the wallet you want to spend from<br>
         2. Wait until the wallet is synced &amp; the "Give" button appears<br>

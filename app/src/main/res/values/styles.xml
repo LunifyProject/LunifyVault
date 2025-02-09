@@ -16,8 +16,8 @@
         <item name="android:textColorPrimary">@color/txt_main</item>
         <item name="android:textColorSecondary">@color/btn_icon_default</item>
 
-        <item name="android:spinnerItemStyle">@style/ScalaSpinnerItem</item>
-        <item name="android:spinnerStyle">@style/ScalaSpinner</item>
+        <item name="android:spinnerItemStyle">@style/LunifySpinnerItem</item>
+        <item name="android:spinnerStyle">@style/LunifySpinner</item>
 
         <item name="actionMenuTextColor">@color/txt_main</item>
 
@@ -71,137 +71,137 @@
         <item name="android:textColor">@color/c_white</item>
     </style>
 
-    <style name="ScalaLabel" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+    <style name="LunifyLabel" parent="@android:style/TextAppearance.DeviceDefault.Medium">
         <item name="android:textColor">?colorPrimary</item>
         <item name="android:textColorHint">@color/txt_inactive</item>
     </style>
 
-    <style name="ScalaLabel.Small">
+    <style name="LunifyLabel.Small">
         <item name="android:textSize">14sp</item>
     </style>
 
-    <style name="ScalaLabel.Gray">
+    <style name="LunifyLabel.Gray">
         <item name="android:textColor">@color/c_grey</item>
     </style>
 
-    <style name="ScalaLabel.Caps">
+    <style name="LunifyLabel.Caps">
         <item name="android:textAllCaps">true</item>
     </style>
 
-    <style name="ScalaLabel.Caps.White">
+    <style name="LunifyLabel.Caps.White">
         <item name="android:textColor">@color/c_white</item>
     </style>
 
-    <style name="ScalaLabel.Caps.Black">
+    <style name="LunifyLabel.Caps.Black">
         <item name="android:textColor">@color/c_dark_grey</item>
     </style>
 
-    <style name="ScalaText.Funds">
+    <style name="LunifyText.Funds">
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/txt_main</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="ScalaText.Info">
+    <style name="LunifyText.Info">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/txt_main</item>
     </style>
 
-    <style name="ScalaText.Balance">
+    <style name="LunifyText.Balance">
         <item name="android:textSize">32sp</item>
         <item name="android:textColor">@color/c_white</item>
         <item name="android:textStyle">normal</item>
     </style>
 
-    <style name="ScalaText.Balance.Success">
+    <style name="LunifyText.Balance.Success">
         <item name="android:textColor">@color/c_green</item>
     </style>
 
-    <style name="ScalaText.Unconfirmed">
+    <style name="LunifyText.Unconfirmed">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/txt_main</item>
         <item name="android:textStyle">normal</item>
     </style>
 
-    <style name="ScalaText.ItemTitle">
+    <style name="LunifyText.ItemTitle">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/c_white</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="ScalaText.ItemSubtitle">
+    <style name="LunifyText.ItemSubtitle">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/txt_main</item>
         <item name="android:textStyle">normal</item>
     </style>
 
-    <style name="ScalaText.PaymentID">
+    <style name="LunifyText.PaymentID">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/txt_main</item>
         <item name="android:textStyle">normal</item>
     </style>
 
-    <style name="ScalaText.PosAmount">
+    <style name="LunifyText.PosAmount">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/c_white</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="ScalaText.PosFee">
+    <style name="LunifyText.PosFee">
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/txt_main</item>
         <item name="android:textStyle">italic</item>
     </style>
 
-    <style name="ScalaText.PosNote">
+    <style name="LunifyText.PosNote">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/txt_secondary</item>
         <item name="android:textStyle">italic</item>
     </style>
 
-    <style name="ScalaText.Wallet">
+    <style name="LunifyText.Wallet">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/c_white</item>
         <item name="android:textStyle">normal</item>
     </style>
 
-    <style name="ScalaText.PosDate">
+    <style name="LunifyText.PosDate">
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/txt_secondary</item>
         <item name="android:textStyle">normal</item>
     </style>
 
     <!-- textSize is in dp here to match the layout of the numpad-->
-    <style name="ScalaLabel.NumPad">
+    <style name="LunifyLabel.NumPad">
         <item name="android:textSize">36sp</item>
         <item name="android:textColor">@color/txt_main</item>
         <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
         <item name="android:gravity">center</item>
     </style>
 
-    <style name="ScalaLabel.Title">
+    <style name="LunifyLabel.Title">
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/txt_headline</item>
     </style>
 
-    <style name="ScalaLabel.Subtitle">
+    <style name="LunifyLabel.Subtitle">
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/txt_secondary</item>
     </style>
 
-    <style name="ScalaLabel.Heading">
+    <style name="LunifyLabel.Heading">
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/txt_headline</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="ScalaLabel.Heading.Small">
+    <style name="LunifyLabel.Heading.Small">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/txt_headline</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="ScalaLabel.Heading.Donation">
+    <style name="LunifyLabel.Heading.Donation">
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/txt_inactive</item>
         <item name="android:textStyle">bold</item>
@@ -223,147 +223,147 @@
         <item name="android:textColor">@color/txt_secondary</item>
     </style>
 
-    <style name="ScalaFab" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+    <style name="LunifyFab" parent="@android:style/TextAppearance.DeviceDefault.Medium">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/c_white</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="ScalaText" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+    <style name="LunifyText" parent="@android:style/TextAppearance.DeviceDefault.Medium">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">?colorPrimary</item>
         <item name="android:textColorHint">@color/txt_inactive</item>
     </style>
 
-    <style name="ScalaText.Gray">
+    <style name="LunifyText.Gray">
         <item name="android:textColor">@color/txt_inactive</item>
     </style>
 
-    <style name="ScalaText.Black">
+    <style name="LunifyText.Black">
         <item name="android:textColor">@color/txt_main</item>
     </style>
 
-    <style name="ScalaText.Monospace">
+    <style name="LunifyText.Monospace">
         <item name="android:fontFamily">monospace</item>
     </style>
 
-    <style name="ScalaText.Monospace.Mnemonic">
+    <style name="LunifyText.Monospace.Mnemonic">
         <item name="android:textColor">@color/c_white</item>
         <item name="android:lineSpacingMultiplier">1.2</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="ScalaText.Label">
+    <style name="LunifyText.Label">
         <item name="android:textSize">16sp</item>
     </style>
 
-    <style name="ScalaText.Confirm">
+    <style name="LunifyText.Confirm">
         <item name="android:textSize">14sp</item>
     </style>
 
-    <style name="ScalaText.Confirm.Label">
+    <style name="LunifyText.Confirm.Label">
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="ScalaText.Small">
+    <style name="LunifyText.Small">
         <item name="android:textSize">14sp</item>
     </style>
 
-    <style name="ScalaText.Medium">
+    <style name="LunifyText.Medium">
         <item name="android:textSize">16sp</item>
     </style>
 
-    <style name="ScalaText.Large">
+    <style name="LunifyText.Large">
         <item name="android:textSize">20sp</item>
     </style>
 
 
-    <style name="ScalaText.Success">
+    <style name="LunifyText.Success">
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/txt_main</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="ScalaText.Gray.SuccessFee">
+    <style name="LunifyText.Gray.SuccessFee">
         <item name="android:textSize">16sp</item>
     </style>
 
-    <style name="ScalaText.Button" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+    <style name="LunifyText.Button" parent="@android:style/TextAppearance.DeviceDefault.Medium">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/btn_icon_default</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAllCaps">true</item>
     </style>
 
-    <style name="ScalaText.Button.Small">
+    <style name="LunifyText.Button.Small">
         <item name="android:textSize">12sp</item>
     </style>
 
-    <style name="ScalaButton" parent="@style/TextAppearance.AppCompat.Button">
+    <style name="LunifyButton" parent="@style/TextAppearance.AppCompat.Button">
         <item name="android:textColor">@color/txt_button_filled</item>
-        <item name="android:textAppearance">@style/ScalaLabel</item>
+        <item name="android:textAppearance">@style/LunifyLabel</item>
         <item name="android:textAllCaps">false</item>
     </style>
 
-    <style name="ScalaButton.Blue">
+    <style name="LunifyButton.Blue">
         <item name="backgroundTint">@color/bg_blue</item>
     </style>
 
-    <style name="ScalaButton.Grey">
+    <style name="LunifyButton.Grey">
         <item name="backgroundTint">@color/btn_bg_default</item>
     </style>
 
-    <style name="ScalaButton.Lighter">
+    <style name="LunifyButton.Lighter">
         <item name="backgroundTint">@color/bg_lighter</item>
     </style>
 
-    <style name="ScalaButton.Green">
+    <style name="LunifyButton.Green">
         <item name="android:background">@drawable/button_selector_green</item>
     </style>
 
-    <style name="ScalaButton.Small">
+    <style name="LunifyButton.Small">
         <item name="android:textSize">12sp</item>
     </style>
 
-    <style name="ScalaButton.Take">
+    <style name="LunifyButton.Take">
         <item name="android:background">@color/c_green</item>
     </style>
 
-    <style name="ScalaButton.Give">
+    <style name="LunifyButton.Give">
         <item name="android:background">@color/c_orange</item>
     </style>
 
-    <style name="ScalaEdit" parent="ScalaText">
+    <style name="LunifyEdit" parent="LunifyText">
         <item name="android:textColor">?colorPrimary</item>
         <item name="android:textSize">14sp</item>
     </style>
 
 
-    <style name="ScalaSpinner" parent="@style/Widget.AppCompat.Spinner">
+    <style name="LunifySpinner" parent="@style/Widget.AppCompat.Spinner">
         <item name="android:background">@drawable/backgound_spinner</item>
     </style>
 
-    <style name="ScalaSpinnerItem" parent="android:Widget.TextView.SpinnerItem">
-        <item name="android:textAppearance">@style/ScalaTextAppearanceSpinnerItem</item>
+    <style name="LunifySpinnerItem" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/LunifyTextAppearanceSpinnerItem</item>
     </style>
 
-    <style name="ScalaTextAppearanceSpinnerItem" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+    <style name="LunifyTextAppearanceSpinnerItem" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
         <item name="android:textColor">@color/txt_button_outlined</item>
     </style>
 
-    <style name="ScalaSpinnerItem.Balance">
+    <style name="LunifySpinnerItem.Balance">
         <item name="android:textSize">32sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="ScalaSpinnerGray" parent="@style/Widget.AppCompat.Spinner">
+    <style name="LunifySpinnerGray" parent="@style/Widget.AppCompat.Spinner">
         <item name="android:background">@drawable/backgound_spinner_gray</item>
     </style>
 
-    <style name="ExtendedFAB" parent="ScalaButton">
+    <style name="ExtendedFAB" parent="LunifyButton">
         <item name="android:textSize">16sp</item>
     </style>
 

@@ -36,7 +36,7 @@
 
         <Button
             android:id="@+id/bPrev"
-            style="@style/ScalaButton.Lighter"
+            style="@style/LunifyButton.Lighter"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -61,7 +61,7 @@
 
         <Button
             android:id="@+id/bNext"
-            style="@style/ScalaButton.Lighter"
+            style="@style/LunifyButton.Lighter"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -74,7 +74,7 @@
 
     <Button
         android:id="@+id/bDone"
-        style="@style/ScalaButton.Blue"
+        style="@style/LunifyButton.Blue"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_margin="8dp"

@@ -2,7 +2,7 @@
 <resources>
     <string name="help_create_new"><![CDATA[
         <h1>Créer un Portefeuille - Nouveau</h1>
-        <p>Si vous avez besoin d’une nouvelle adresse Scala !</p>
+        <p>Si vous avez besoin d’une nouvelle adresse Lunify !</p>
         <p>Entrez un nom et un mot de passe unique pour le portefeuille.
         Le mot de passe permet de sécuriser les données de votre portefeuille sur votre appareil.
         Utilisez un mot de passe fort - mieux, utilisez une phrase secrète.</p>
@@ -23,7 +23,7 @@
 
     <string name="help_create_seed"><![CDATA[
         <h1>Créer un Portefeuille - Phrase Mnémonique</h1>
-        <p>Si vous avez déjà une adresse Scala et que vus voulez reécupérer vos transactions depuis la chaïne de blocs !</p>
+        <p>Si vous avez déjà une adresse Lunify et que vus voulez reécupérer vos transactions depuis la chaïne de blocs !</p>
         <p>Entrez un nom et un mot de passe unique pour le portefeuille.
         Le mot de passe permet de sécuriser les données de votre portefeuille sur votre appareil.
         Utilisez un mot de passe fort - mieux, utilisez une phrase secrète.</p>
@@ -40,7 +40,7 @@
         <p>Entrez un nom et un mot de passe unique pour le portefeuille.
         Le mot de passe permet de sécuriser les données de votre portefeuille sur votre appareil.
         Utilisez un mot de passe fort - mieux, utilisez une phrase secrète.<p>
-        <p>Entrez votre adresse Scala dans le champ \"Adresse Publique\" et remplissez \"Clef d’Audit\" et \"Clef de dépense\".</p>
+        <p>Entrez votre adresse Lunify dans le champ \"Adresse Publique\" et remplissez \"Clef d’Audit\" et \"Clef de dépense\".</p>
         <p>Entrez le numéro du bloc de la première transaction utilisée pour cette adresse dans le
         champ \"Hauteur de restauration\". Vous pouvez également utiliser une date au format AAA-MM-JJ.
         Si vous n\'êtes pas sûr, entrer une date / hauteur de block approximative <em>avant</em> que vous
@@ -53,7 +53,7 @@
         <p>Entrez un nom et un mot de passe unique pour le portefeuille.
         Le mot de passe permet de sécuriser les données de votre portefeuille sur votre appareil.
         Utilisez un mot de passe fort - mieux, utilisez une phrase secrète.<p>
-        <p>Entrez votre adresse Scala dans le champ \"Adresse Publique\" et remplissez la \"Clef d’Audit\".</p>
+        <p>Entrez votre adresse Lunify dans le champ \"Adresse Publique\" et remplissez la \"Clef d’Audit\".</p>
         <p>Entrez le numéro du bloc de la première transaction utilisée pour cette adresse dans le
         champ \"Hauteur de restauration\". Vous pouvez également utiliser une date au format AAA-MM-JJ.
         Si vous n\'êtes pas sûr, entrer une date / hauteur de block approximative <em>avant</em> que vous
@@ -71,11 +71,11 @@
         <h1>Détails du Portefeuille</h1>
         <h2>Adresse Publique</h2>
         Votre adresse publique est comme votre numéro de compte en banque, vous pouvez la partager avec n’importe qui sans
-        craindre de perdre vos Scala. On porra envoyer des Scala dans votre portefeuille en utilisant cette adresse.
+        craindre de perdre vos Lunify. On porra envoyer des Lunify dans votre portefeuille en utilisant cette adresse.
         <h2>Phrase Mnémonique</h2>
         C’est la seule donée nécessaire pour récupérer votre portefeuille ultérieurement et obtenir l’accès à
         vos fonds. Il est très imprtant de la garder sécurisée et confidentielle, car elle donne <em>à quiconque</em>
-        le contrôle total de vos Scala ! Si vous ne l’avez pas écrite à un emplacement sécurisé, faites-le !
+        le contrôle total de vos Lunify ! Si vous ne l’avez pas écrite à un emplacement sécurisé, faites-le !
         <h2>Mdp de restauration des fichiers du Portefeuille</h2>
         Assurez vous de noter ce mot de passe. Si vous réinitialisez votre appareil ou désinstallez l’application,
         vous en aurez besoin pour accéder de nouveau à votre portefeuille.<br/>
@@ -91,7 +91,7 @@
         Après avoir renseigné une nouvelle phrase secrète (voire la même que précédemment) l’application va générer
         un CrAzYpass pour vous et sécuriser les fichiers de votre portefeuille avec. Notez-le !
         <h3>Portefeuilles CrAzYpass</h3>
-        Si vous avez un jour besoin de réinstaller Scala Vault (par exemple après réinitialisation de votre téléphone, ou
+        Si vous avez un jour besoin de réinstaller Lunify Vault (par exemple après réinitialisation de votre téléphone, ou
         remplacement de celui-ci) ou si vous voulez utiliser vos fichiers de portefeuille sur un appareil différent ou
         un PC, vous devrez utiliser ce Mot de Passe de Restauration adin d’accéder de nouveau à votre portefeuille.<br/>
         En choisissant \"Modifier Phrase Secrète\" à partir du menu, vous pouvez choisir une nouvelle phrase secrète.
@@ -100,20 +100,20 @@
         Votre clef d’Audit peut vous servir à surveiller les transactions entrantes sur votre portefeuille sans autoriser
         la dépense de vos fonds dans votre portefeuille.
         <h2>Clefs de dépense</h2>
-        Votre clef de dépense permet à quiconque de dépenser les Scala associés à votre portefeuille, alors ne la
+        Votre clef de dépense permet à quiconque de dépenser les Lunify associés à votre portefeuille, alors ne la
         communiquez à personne, gardez-la en sécurité comme votre phrase Mnémonique.
     ]]></string>
 
     <string name="help_list"><![CDATA[
         <h1>Liste des Portefeuilles</h1>
         <h2>Nœud</h2>
-        <p>Scala Vault utilise un nœud distant pour communiquer avec le réseau Scala sans avoir à
+        <p>Lunify Vault utilise un nœud distant pour communiquer avec le réseau Lunify sans avoir à
         télécharger et stocker une copie complète de la chaîne de bloc. vous pourrez trouver une
         liste de nœud distant populaire ou apprendre comment faire fonctionner votre propre nœud
-        distant ici https://scala.network/<p>
-        <p>Scala Vault est fourni avec quelques Nœuds distants préenregistrés. Les cinq derniers nœuds utilisé sont sauvegardés.</p>
+        distant ici https://lunify.xyz/<p>
+        <p>Lunify Vault est fourni avec quelques Nœuds distants préenregistrés. Les cinq derniers nœuds utilisé sont sauvegardés.</p>
         <h2>Portefeuilles</h2>
-        <p>Ici vous pouvez voir vos Portefeuilles. Ils se trouvent dans le dossier <tt>scala vault</tt>
+        <p>Ici vous pouvez voir vos Portefeuilles. Ils se trouvent dans le dossier <tt>Lunify Vault</tt>
         du stockage interne de votre appareil. Vous pouvez utiliser une application d’explorateur
         de fichiers pour les vois. Vous devriez faire des sauvegardes régulières de ce répertoire
         sur un stockage externe au cas où votre appareil exploserait ou serait volé.</p>
@@ -122,11 +122,11 @@
         <h3>Détails</h3>
         <p>Affichez les détails du portefeuille, phrase mnémonique &amp; Clefs.</p>
         <h3>Recevoir</h3>
-        <p>Faites un QR code pour recevoir des Scala.</p>
+        <p>Faites un QR code pour recevoir des Lunify.</p>
         <h3>Renommer</h3>
         <p>Renommez le portefeuille. Les sauvegardes ne sont pas renommées.</p>
         <h3>Sauvegarde</h3>
-        <p>Faites une copie du portefeuille dans le sous-répertoire <tt>backups</tt> de <tt>scala vault</tt>
+        <p>Faites une copie du portefeuille dans le sous-répertoire <tt>backups</tt> de <tt>Lunify Vault</tt>
         remplaçant les copies précédentes s’y trouvant.</p>
         <h3>Archivage</h3>
         <p>Faites une sauvegarde du portefeuille suivi de sa suppression. La copie reste dans le répertoire
@@ -137,15 +137,15 @@
     <string name="help_tx_details"><![CDATA[
         <h1>Détails de la Transaction</h1>
         <h2>Destination</h2>
-        C’est l’adresse publique du portefeuille auquel vous avez envoyé des Scala
+        C’est l’adresse publique du portefeuille auquel vous avez envoyé des Lunify
         <h2>ID de Paiement</h2>
         Vous pouvez utiliser un ID de paiement pour identifier la raison pour laquelle vous avez
-        envoyé des Scala entre deux parties. C’est totallement privé et optionnel. Il permet par
+        envoyé des Lunify entre deux parties. C’est totallement privé et optionnel. Il permet par
         exemple à une société de faire concorder votre transaction avec un article que vous avez
         acheté.
         <h2>ID TX</h2>
         C’est votre ID de transaction, vous pouvez l’utiliser pour identifier vos transaction masquées
-        sur un explorateur de la chaîne de blocs Scala comme <a href="https://explorer.scala.network/">https://explorer.scala.network/</a>
+        sur un explorateur de la chaîne de blocs Lunify comme <a href="https://explorer.lunify.xyz/">https://explorer.lunify.xyz/</a>
         <h2>Clef TX (Clef de Transaction)</h2>
         C’est la clef privée de votre transaction, conservez là en sécurité car la révéler à un
         tiers révèlerait quelle signature est la votre dans un cercle, et donc rendrait votre
@@ -157,7 +157,7 @@
     <string name="help_send"><![CDATA[
         <h1>Envoyer</h1>
         <h2>Adresse de Destinataire</h2>
-        <p>C’est l’adresse publique du portefeuille auquel vous allez envoyer des Scala, vous pouvez
+        <p>C’est l’adresse publique du portefeuille auquel vous allez envoyer des Lunify, vous pouvez
         la copier/coller, scanner un QR code ou la saisir manuellement. Vérifiez là bien trois fois
         afin de vous assurer que vous n’envoyez pas de pièces à la mauvaise adresse.</p>
         <p>En complément de l’utilisation d’une adresse XLA, vous pouvez aussi utiliser
@@ -170,14 +170,14 @@
         plus de détails). Voir la rubrique sur l’envoi de BTC plus bas.</p>
         <h2>ID de Paiement</h2>
         <p>Vous pouvez utiliser un ID de paiement pour identifier la raison pour laquelle vous avez
-        envoyé des Scala entre deux parties. C’est totallement privé et optionnel. Il permet par
+        envoyé des Lunify entre deux parties. C’est totallement privé et optionnel. Il permet par
         exemple à une société de faire concorder votre transaction avec un article que vous avez
         acheté.</p>
         <h1>Envoyer des BTC</h1>
         <h2>XLA.TO</h2>
-        <p>XLA.TO est un service tierce-partie qui agit commme un change depuis Scala vers Bitcoin.
-        Nous utilisons l’API XLA.TO pour intégrer les paiements Bitcoin dans Scala Vault. Veuillez
-        consulter https://xla.to et décidez vous-même si vous souhaitez l’utiliser. L’équipe Scala Vault
+        <p>XLA.TO est un service tierce-partie qui agit commme un change depuis Lunify vers Bitcoin.
+        Nous utilisons l’API XLA.TO pour intégrer les paiements Bitcoin dans Lunify Vault. Veuillez
+        consulter https://xla.to et décidez vous-même si vous souhaitez l’utiliser. L’équipe Lunify Vault
         n’est pas affiliée à XLA.TO et ne peut pas vous aider concernant leurs services.</p>
         <h2>Taux de change XLA.TO<h2>
         <p>Sur l’écran \"Montant\" vous seront indiqué les paramètres actuels du serive XLA.TO. Cela
@@ -190,7 +190,7 @@
         un temps limité - vous pouvez remarquer le compte à rebours sur le bouton \"Dépenser\". Ce taux
         de change peut être différent du taux indicatif de l’écran précédent.</p>
         <h2>Clef Secrète XLA.TO<h2>
-        <p>Comme Scala Vault ne traite que le volet Scala de votre transaction, votre clef secrète
+        <p>Comme Lunify Vault ne traite que le volet Lunify de votre transaction, votre clef secrète
         XLA.TO peut être utilisée pour suivre le volet Bitcoin de votre ordre sur la page d’accueil
         de XLA.TO.</p>
         <p>Veuillez noter que cette clef secrète est seulement valable 24h après le lancement de la
@@ -203,9 +203,9 @@
     <string name="help_xlato"><![CDATA[
         <h1>Envoyer des BTC</h1>
         <h2>XLA.TO</h2>
-        <p>XLA.TO est un service tierce-partie qui agit commme un change depuis Scala vers Bitcoin.
-        Nous utilisons l’API XLA.TO pour intégrer les paiements Bitcoin dans Scala Vault. Veuillez
-        consulter https://xla.to et décidez vous-même si vous souhaitez l’utiliser. L’équipe Scala Vault
+        <p>XLA.TO est un service tierce-partie qui agit commme un change depuis Lunify vers Bitcoin.
+        Nous utilisons l’API XLA.TO pour intégrer les paiements Bitcoin dans Lunify Vault. Veuillez
+        consulter https://xla.to et décidez vous-même si vous souhaitez l’utiliser. L’équipe Lunify Vault
         n’est pas affiliée à XLA.TO et ne peut pas vous aider concernant leurs services.</p>
         <h2>Taux de change XLA.TO<h2>
         <p>Sur l’écran \"Montant\" vous seront indiqué les paramètres actuels du serive XLA.TO. Cela
@@ -218,7 +218,7 @@
         un temps limité - vous pouvez remarquer le compte à rebours sur le bouton \"Dépenser\". Ce taux
         de change peut être différent du taux indicatif de l’écran précédent.</p>
         <h2>Clef Secrète XLA.TO<h2>
-        <p>Comme Scala Vault ne traite que le volet Scala de votre transaction, votre clef secrète
+        <p>Comme Lunify Vault ne traite que le volet Lunify de votre transaction, votre clef secrète
         XLA.TO peut être utilisée pour suivre le volet Bitcoin de votre ordre sur la page d’accueil
         de XLA.TO.</p>
         <p>Veuillez noter que cette clef secrète est seulement valable 24h après le lancement de la
@@ -249,10 +249,10 @@
         ce mode, votre solde n\’est visible sur aucun écran afin que vous puissiez utiliser votre
         portefeuille en toute sécurité dans la rue, un bar ou autre lieu public. Les transactions
         précédentes sont également masquées. Les nouvelles transactions seront affichées, afin que vous
-        puissiez voir que vous avez envoyé ou reçu vos doux Scala !</p>
+        puissiez voir que vous avez envoyé ou reçu vos doux Lunify !</p>
         <h2>Analyse</h2>
-        Comme Scala aime garder les choses confidentielles, nous devons scanner la chaîne de blocs
-        chaque fois que vous ouvrez un portefeuille Scala Vault pour voir si de nouveaux Scala ont été
+        Comme Lunify aime garder les choses confidentielles, nous devons scanner la chaîne de blocs
+        chaque fois que vous ouvrez un portefeuille Lunify Vault pour voir si de nouveaux Lunify ont été
         envoyés à votre portefeuille, cela ne stocke sur votre appareil que les informations appartenant
         à votre portefeuille. Parfois cela peut prendre un moment si vous n\’avez pas synchronisé depuis
         longtemps.
@@ -260,8 +260,8 @@
         <p><b>Au secours ! Le solde de mon portefeuille a disparu ou est non confirmé !</b><br/>
         Ne paniquez pas ! Lorsque vous envoyez des fonds sur votre portefeuille, une partie de votre
         solde sera temporairement affichée comme non confirmée.
-        Cela se produit à cause de la façon dont Scala est échangé sur la chaîne de blocs et du
-        fonctionnement de la monnaie dans Scala. Apprenez-en plus à propos de la monnaie dans Scala
+        Cela se produit à cause de la façon dont Lunify est échangé sur la chaîne de blocs et du
+        fonctionnement de la monnaie dans Lunify. Apprenez-en plus à propos de la monnaie dans Lunify
         <h2>Liste des Transactions</h2>
         <p>Une listes des transactions du portefeuille. Dans un portefeuille d\’Audit, seules les
         transactions entrantes sont affichées.</p>
@@ -272,23 +272,23 @@
     <string name="help_node_2"><![CDATA[
         <h1>Nœuds</h1>
         <h2>TL;DR</h2>
-        <p>Actualisez la liste des nœuds en tirant vers le bas et Scala Vault se connectera automatiquement au meilleur disponible !</p>
+        <p>Actualisez la liste des nœuds en tirant vers le bas et Lunify Vault se connectera automatiquement au meilleur disponible !</p>
         <h2>Qu\'est-ce qu\'un nœud ?</h2>
-        <p>Scala Vault utilise un nœud distant (parfois aussi appelé Daemon) pour communiquer avec
-        le réseau Scala sans avoir à télécharger et stocker une copie de
+        <p>Lunify Vault utilise un nœud distant (parfois aussi appelé Daemon) pour communiquer avec
+        le réseau Lunify sans avoir à télécharger et stocker une copie de
         toute la blockchain elle-même.</p>
         <h2>Liste des nœuds</h2>
-        <p>Si la liste est vide, vous pouvez soit ajouter de nouveaux nœuds manuellement, soit laisser Scala Vault
+        <p>Si la liste est vide, vous pouvez soit ajouter de nouveaux nœuds manuellement, soit laisser Lunify Vault
         choisir le meilleur nœud disponible pour vous. Ou les deux. Continuez à lire…</p>
         <p>La liste des nœuds affiche tous les nœuds actuellement connus. De plus, l\'horodatage
         du dernier bloc connu de chaque nœud est affiché sous le nom du nœud. Une icône
         représentant le comportement de réponse du nœud
         (qui indique le niveau de connectivité à prévoir)
         est affichée à côté de chaque nœud.</p>
-        <p>Scala Vault choisira le nœud optimal chaque fois que vous l\'utiliserez.
+        <p>Lunify Vault choisira le nœud optimal chaque fois que vous l\'utiliserez.
         Il le fait en vérifiant la hauteur du bloc (à quel point
         le nœud est-il à jour ?) ainsi que le comportement de réponse (à quelle vitesse le nœud répond-il aux requêtes ?).</p>
-        <p>La liste est triée selon ces caractéristiques, donc le nœud en haut serait celui que Scala Vault
+        <p>La liste est triée selon ces caractéristiques, donc le nœud en haut serait celui que Lunify Vault
         choisirait en ce moment. Le bas de la liste afficherait les nœuds très lents ou indisponibles.</p>
         <h2>Ajouter un nœud</h2>
         <p>En touchant le bouton « Ajouter un nœud » en bas, vous serez invité à
@@ -302,22 +302,22 @@
         Les « Résultats du test » afficheront la hauteur du bloc, le temps de réponse et l\'adresse IP réelle utilisée.
         Le résultat peut également être une erreur - généralement parce que le nom d\'hôte fourni est
         inaccessible dans un délai raisonnable ou que lesIdentifiants sont incorrects.
-        Ou la combinaison nom d\'hôte/port ne pointe pas vers un véritable nœud Scala !
+        Ou la combinaison nom d\'hôte/port ne pointe pas vers un véritable nœud Lunify !
         Une fois le test réussi (pas d\'erreur) - vous êtes prêt à appuyer sur « OK » pour enregistrer ce nœud.</p>
     ]]></string>
 
     <string name="help_mobile_miner"><![CDATA[
-        <h1>Scala Miner</h1>
+        <h1>Lunify Miner</h1>
         <p>Commencez à miner sur tous les derniers appareils Android en toute sécurité et efficacité !</p>
-        <p>Scala Miner fournit des informations utiles sur vos activités de minage et empêche votre appareil de surchauffer.</p>
-        <p>Téléchargez-le ici : <a href="https://github.com/scala-network/MobileMiner/releases">Scala Miner</a>
+        <p>Lunify Miner fournit des informations utiles sur vos activités de minage et empêche votre appareil de surchauffer.</p>
+        <p>Téléchargez-le ici : <a href="https://github.com/LunifyProject/MobileMiner/releases">Lunify Miner</a>
     ]]></string>
 
     <!-- Note for translators: new/changed text also in help_send -->
 
     <string name="help_uri"><![CDATA[
         <h1>Utiliser un lien de paiement</h1>
-        <p>Vous avez démarré Scala Vault avec un lien de paiement. Afin d’envoyer des fonds, merci de procéder comme suit :</p>
+        <p>Vous avez démarré Lunify Vault avec un lien de paiement. Afin d’envoyer des fonds, merci de procéder comme suit :</p>
         <p>
         1. Ouvrez le portefeuille à partir duquel vous souhaitez envoyer des fonds<br>
         2. Attendez que le portefeuille soit synchronisé &amp; que le bouton "Envoyer" apparaisse<br>

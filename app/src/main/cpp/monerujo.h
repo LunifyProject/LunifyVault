@@ -15,7 +15,7 @@
  *
  * ////////////////
  *
- * Copyright (c) 2020 Scala
+ * Copyright (c) 2025 Lunify
  *
  * Please see the included LICENSE file for more information.*/
 
@@ -59,9 +59,9 @@ extern "C"
 {
 #endif
 
-extern const char* const scala_VERSION; // the actual scala core version
+extern const char* const lunify_VERSION; // the actual Lunify core version
 
-// from scala-core crypto/hash-ops.h - avoid #including scala code here
+// from Lunify-core crypto/hash-ops.h - avoid #including Lunify code here
 enum {
     HASH_SIZE = 32,
     HASH_DATA_AREA = 136

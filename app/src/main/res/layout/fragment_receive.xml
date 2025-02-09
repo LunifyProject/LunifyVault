@@ -34,7 +34,7 @@
 
             <TextView
                 android:id="@+id/tvAddressLabel"
-                style="@style/ScalaLabel.Heading"
+                style="@style/LunifyLabel.Heading"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -59,7 +59,7 @@
 
             <TextView
                 android:id="@+id/tvAddress"
-                style="@style/ScalaText.Medium"
+                style="@style/LunifyText.Medium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -69,7 +69,7 @@
 
             <Button
                 android:id="@+id/bSubaddress"
-                style="@style/ScalaText.Button.Small"
+                style="@style/LunifyText.Button.Small"
                 android:layout_width="55dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -78,7 +78,7 @@
                 android:text="Generate"
                 android:background="?android:attr/selectableItemBackgroundBorderless"
                 android:drawableTop="@drawable/ic_settings_blue_24dp"
-                android:textColor="@color/scalaGray"
+                android:textColor="@color/lunifyGray"
                 android:visibility="gone" />
 
         </LinearLayout>
@@ -99,7 +99,7 @@
             android:textColorHint="@color/txt_inactive">
 
             <com.google.android.material.textfield.TextInputEditText
-                style="@style/ScalaEdit"
+                style="@style/LunifyEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/receive_desc_hint"
@@ -127,7 +127,7 @@
 
                 <TextView
                     android:id="@+id/tvQrCode"
-                    style="@style/ScalaFab"
+                    style="@style/LunifyFab"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

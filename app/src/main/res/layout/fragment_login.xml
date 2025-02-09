@@ -19,7 +19,7 @@
             android:orientation="vertical"/>
 
         <TextView
-            style="@style/ScalaLabel.Heading"
+            style="@style/LunifyLabel.Heading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -74,20 +74,20 @@
 
                     <TextView
                         android:id="@+id/tvNodeName"
-                        style="@style/ScalaText.ItemTitle"
+                        style="@style/LunifyText.ItemTitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:drawablePadding="8dp"
-                        tools:text="scalanode.com" />
+                        tools:text="lunify.xyz" />
 
                     <TextView
                         android:id="@+id/tvNodeAddress"
-                        style="@style/ScalaText.ItemSubtitle"
+                        style="@style/LunifyText.ItemSubtitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
-                        tools:text="128.130.233.151:18089" />
+                        tools:text="" />
                 </LinearLayout>
             </FrameLayout>
 
@@ -109,7 +109,7 @@
             android:layout_height="0dp" />
 
         <TextView
-            style="@style/ScalaLabel.Heading"
+            style="@style/LunifyLabel.Heading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"

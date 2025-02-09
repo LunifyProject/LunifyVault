@@ -30,7 +30,7 @@
             app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                style="@style/ScalaEdit"
+                style="@style/LunifyEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="start"
@@ -49,7 +49,7 @@
 
         <Spinner
             android:id="@+id/sCurrencyB"
-            style="@style/ScalaSpinnerGray"
+            style="@style/LunifySpinnerGray"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -60,7 +60,7 @@
 
         <TextView
             android:id="@+id/tvAmountB"
-            style="@style/ScalaText"
+            style="@style/LunifyText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center|start"

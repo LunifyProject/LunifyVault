@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="about_close">Fechar</string>
-    <string name="about_whoami">Scala Vault</string>
+    <string name="about_whoami">Lunify Vault</string>
     <string name="about_version">Versão %1$s (%2$d)</string>
 
     <string name="credits_text"><![CDATA[
         <b>Créditos</b>
         <br/>
-        Scala Team
+        Lunify Team
         <br/><br/>
-        <a href="https://scala.network/">scala.network</a>
+        <a href="https://lunify.xyz/">lunify.xyz</a>
         ]]></string>
 
     <string name="privacy_policy"><![CDATA[
         <h1>Política de Privacidade</h1>
         <p>Esta página contém informação acerca das nossas políticas de recolha, uso
         e divulgação das informações pessoais que recebemos dos utilizadores
-        da nossa app (Scala Vault).
+        da nossa app (Lunify Vault).
         </p>
         <p>Ao utilizar esta app está a concordar com a recolha e uso de
         informação de acordo com esta política.
@@ -24,35 +24,35 @@
         <h2>Dados Recolhidos</h2>
         <p> Dados pessoais são todo o tipo de dados que permitem identificar um indivíduo.
         </p>
-        <p>As chaves e endereços Scala são recolhidos e processados pela app localmente
-        para o propósito de processar transacções e transmiti-las à rede Scala de forma
+        <p>As chaves e endereços Lunify são recolhidos e processados pela app localmente
+        para o propósito de processar transacções e transmiti-las à rede Lunify de forma
         encriptada.
         </p>
         <p>Quaisquer outros dados pessoais não são recolhidos pela app.</p>
-        <p>Se utilizar a conversão para USD/EUR, o Scala Vault obtém as taxas de conversão a
+        <p>Se utilizar a conversão para USD/EUR, o Lunify Vault obtém as taxas de conversão a
         partir da API pública do kraken.com.
         Confirme a política de privacidade deste serviço em https://www.kraken.com/legal/privacy para
         mais detalhes em como estes pedidos são processados (especialmente a
         secção "Informação que recolhemos automaticament").</p>
         <h2>Permissões da app</h2>
         <ul>
-        <li>INTERNET : Ligar à rede Scala</li>
-        <li>READ_EXTERNAL_STORAGE : Ler as carteiras Scala guardadas no dispositivo</li>
-        <li>WRITE_EXTERNAL_STORAGE : Escrever as carteiras Scala no dispositivo</li>
+        <li>INTERNET : Ligar à rede Lunify</li>
+        <li>READ_EXTERNAL_STORAGE : Ler as carteiras Lunify guardadas no dispositivo</li>
+        <li>WRITE_EXTERNAL_STORAGE : Escrever as carteiras Lunify no dispositivo</li>
         <li>WAKE_LOCK : Manter o dispositivo ligado enquanto sincroniza</li>
-        <li>CAMERA : Ler códigos QR para receber Scala</li>
+        <li>CAMERA : Ler códigos QR para receber Lunify</li>
         </ul>
         <h2>Alterações a esta política de privacidade</h2>
         <p>Nós podemos alterar esta política de privacidade de tempos em temps. Iremos notificar
         quaisquer alterações actualizando esta política de privacidade na app e no
-        website oficial (www.scala.network)
+        website oficial (www.lunify.xyz)
         É aconselhável que reveja esta política de privacidade periodicamente para conferir quaisquer alterações.
         <p>A última actualização à política de privacidade foi em: 10 de Novembro de 2017.
         </p>
         <h2>Contacte-nos</h2>
         <p>Se tiver alguma questão acerca da nossa política de privacidade,
         ou sobre como os seus dados são recolhidos e processados,
-        por favor envie um email para hello@scala.network.
+        por favor envie um email para hello@lunify.xyz.
         </p>
         ]]></string>
 </resources>

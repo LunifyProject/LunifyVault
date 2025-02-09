@@ -15,7 +15,7 @@
         android:orientation="vertical">
 
         <TextView
-            style="@style/ScalaText.Confirm.Label"
+            style="@style/LunifyText.Confirm.Label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/label_send_address"
@@ -23,7 +23,7 @@
 
         <TextView
             android:id="@+id/tvTxAddress"
-            style="@style/ScalaText"
+            style="@style/LunifyText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -38,7 +38,7 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/ScalaText.Confirm.Label"
+                style="@style/LunifyText.Confirm.Label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_send_notes"
@@ -46,7 +46,7 @@
 
             <TextView
                 android:id="@+id/tvTxNotes"
-                style="@style/ScalaText.Confirm"
+                style="@style/LunifyText.Confirm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -72,7 +72,7 @@
 
             <TextView
                 android:id="@+id/tvPaymentIdIntegrated"
-                style="@style/ScalaText.Info"
+                style="@style/LunifyText.Info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -93,7 +93,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    style="@style/ScalaLabel.Gray"
+                    style="@style/LunifyLabel.Gray"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -102,7 +102,7 @@
 
                 <TextView
                     android:id="@+id/tvTxAmount"
-                    style="@style/ScalaText.Gray"
+                    style="@style/LunifyText.Gray"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -118,7 +118,7 @@
                 android:weightSum="3">
 
                 <TextView
-                    style="@style/ScalaLabel.Gray"
+                    style="@style/LunifyLabel.Gray"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -127,7 +127,7 @@
 
                 <TextView
                     android:id="@+id/tvTxFee"
-                    style="@style/ScalaText.Gray"
+                    style="@style/LunifyText.Gray"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -143,7 +143,7 @@
                 android:weightSum="3">
 
                 <TextView
-                    style="@style/ScalaLabel.Caps.Black"
+                    style="@style/LunifyLabel.Caps.Black"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -152,7 +152,7 @@
 
                 <TextView
                     android:id="@+id/tvTxTotal"
-                    style="@style/ScalaText.Black"
+                    style="@style/LunifyText.Black"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"

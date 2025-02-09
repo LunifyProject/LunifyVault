@@ -63,7 +63,7 @@
 
     <string name="label_send_progress_xlato_create">A criar um pedido XLA.TO</string>
     <string name="label_send_progress_xlato_query">A actualizar o pedido XLA.TO</string>
-    <string name="label_send_progress_create_tx">A preparar a transacção Scala</string>
+    <string name="label_send_progress_create_tx">A preparar a transacção Lunify</string>
 
     <string name="label_send_progress_queryparms">A obter os parâmetros xla.to</string>
 
@@ -71,7 +71,7 @@
     <string name="text_generic_xlato_error">Código: %1$d</string>
 
     <string name="text_retry">Toca para voltar a tentar</string>
-    <string name="text_noretry_scala">Agora estamos emperrados aqui!</string>
+    <string name="text_noretry_lunify">Agora estamos emperrados aqui!</string>
     <string name="text_noretry">Ups, XLA.TO não parece estar disponível neste momento!</string>
 
     <string name="text_send_btc_amount">%1$s BTC = %2$s XLA</string>
@@ -138,7 +138,7 @@
 
     <string name="xla_unconfirmed_amount">%1$s XLA não confirmado</string>
 
-    <string name="service_description">Serviço Scala Vault</string>
+    <string name="service_description">Serviço Lunify Vault</string>
 
     <string name="status_synced">Sincronizado:</string>
     <string name="status_remaining">Blocos remanescentes</string>
@@ -168,10 +168,10 @@
         <strong>Autenticação por impressão digital</strong>
         <p> Com a autenticação através da impressão digital, podes ver o teu saldo e receber fundos
             sem introduzir a palavra passe.</p>
-        <p>Mas para segurança adicional, o Scala Vault vai sempre pedir para introduzir a palavra passe
+        <p>Mas para segurança adicional, o Lunify Vault vai sempre pedir para introduzir a palavra passe
         para ver os detalhes da carteira ou enviar fundos.</p>
         <strong>Aviso de segurança</strong>
-        <p> Finalmente, o Scala Vault quer relembrar que qualquer pessoa que consiga obter a tua
+        <p> Finalmente, o Lunify Vault quer relembrar que qualquer pessoa que consiga obter a tua
         impressão digital vai conseguir cuscar o teu saldo da carteira.</p>
         <p> Por exemplo, um utilizador malicioso pode abrir a tua carteira enquanto estiveres a dormir.</p>
         <strong>Tens a certeza que queres activar esta funcionalidade?</strong>
@@ -218,8 +218,8 @@
     <string name="send_notes_hint">Notas privadas (opcional)</string>
     <string name="send_generate_paymentid_hint">Gerar</string>
     <string name="send_qr_hint">Scanear</string>
-    <string name="send_send_label">Gasta os meus queridos Scala</string>
-    <string name="send_send_timed_label">Gasta os meus queridos Scala (%1$s)</string>
+    <string name="send_send_label">Gasta os meus queridos Lunify</string>
+    <string name="send_send_timed_label">Gasta os meus queridos Lunify (%1$s)</string>
     <string name="send_qr_invalid">Não é um código QR</string>
     <string name="send_qr_address_invalid">Não é um código QR válido</string>
     <string name="send_address_invalid">Não é um endereço válido</string>
@@ -342,8 +342,8 @@
     <string name="menu_StealthMode">Modo furtivo</string>
 
     <string name="info_nodes_enabled">Node-o-matiC ativado, tocar para mais info.</string>
-    <string name="info_mobile_miner">Comece a minerar no seu dispositivo móvel com Scala Miner. Toque aqui para mais informações.</string>
-    <string name="info_nodes_enabled_2">Scala Vault procura os melhores nós disponíveis. Toque aqui para mais informações.</string>
+    <string name="info_mobile_miner">Comece a minerar no seu dispositivo móvel com Lunify Miner. Toque aqui para mais informações.</string>
+    <string name="info_nodes_enabled_2">Lunify Vault procura os melhores nós disponíveis. Toque aqui para mais informações.</string>
     <string name="node_height">Ultimo bloco actualizado: %1$s</string>
     <string name="label_nodes">Nós</string>
     <string name="node_name_hint">Nome do Nó (Opcional)</string>
@@ -394,14 +394,14 @@
 
     <string name="label_restoreheight">Restaurar de Altura</string> <!-- Restore Height -->
 
-    <string name="toast_ledger_start_app">Start Scala App on %1$s</string>
+    <string name="toast_ledger_start_app">Start Lunify App on %1$s</string>
     <string name="node_wrong_net">A verificação de nós é apenas para a rede principal!</string>
 
     <string name="menu_rescan">Reexaminar!</string>
     <string name="privacy_policy_intro">Nós nos preocupamos com a sua privacidade. Para saber mais, por favor leia a nossa Política de Privacidade.</string>
     <string name="privacy_policy_label">Política de Privacidade</string>
     <string name="primary_address">Endereço Primário</string>
-    <string name="mm_url">https://github.com/scala-network/MobileMiner/releases</string>
+    <string name="mm_url">https://github.com/LunifyProject/MobileMiner/releases</string>
     <string name="connection_remote_daemon">Ligando ao nó remoto…</string>
     <string name="remote_nodes">Nodos Remotos</string>
     <string name="address_book">Livro de Endereços</string>
@@ -411,7 +411,7 @@
     <string name="save_to_address_book">Guardar no livro de endereços</string>
     <string name="contact_name_empty_error">O nome não pode estar vazio!</string>
     <string name="entry_name">Nome da Entrada</string>
-    <string name="start_mining">Comece a minerar no seu dispositivo Android de forma segura e eficiente com o Scala Mobile Miner.</string>
+    <string name="start_mining">Comece a minerar no seu dispositivo Android de forma segura e eficiente com o Lunify Mobile Miner.</string>
     <string name="mobile_miner">Minerador Móvel</string>
     <string name="download">Descarregar</string>
     <string name="select_image">Selecionar Imagem</string>
@@ -430,15 +430,15 @@
     <string name="balance_primary_address">Endereço Principal</string>
     <string name="balance_wallet_address">Endereço da Carteira</string>
     <string name="history_no_transaction">Sem transações</string>
-    <string name="mobileminer_scala_miner">SCALA MINER</string>
+    <string name="mobileminer_lunify_miner">Lunify Miner</string>
     <string name="mobileminer_start_mining">Comece a minerar no seu dispositivo Android de forma segura e eficiente.</string>
     <string name="close">Fechar</string>
     <string name="credits">Créditos</string>
     <string name="credits_made_with">Feito com </string>
     <string name="credits_by"> por </string>
     <string name="credits_forked_from">Derivado de </string>
-    <string name="wizard_home">Uma carteira segura e leve para guardar as suas moedas Scala</string>
-    <string name="wizard_home_description">Scala Vault fornece tudo o que você precisa para gerir e usar carteiras Scala no Android</string>
+    <string name="wizard_home">Uma carteira segura e leve para guardar as suas moedas Lunify</string>
+    <string name="wizard_home_description">Lunify Vault fornece tudo o que você precisa para gerir e usar carteiras Lunify no Android</string>
     <string name="wizard_home_create_new_wallet">Criar nova carteira</string>
     <string name="wizard_home_import_from_seed">Importar de semente</string>
     <string name="wizard_home_or">ou</string>
@@ -448,7 +448,7 @@
     <string name="subaddresses">Subendereços</string>
     <string name="message_exchange_success">Preço da moeda atualizado</string>
     <string name="splashcreen_check_network">Verificando a Rede…</string>
-    <string name="splashcreen_check_network_success">Conectado à internet, acessando o Scala Vault</string>
+    <string name="splashcreen_check_network_success">Conectado à internet, acessando o Lunify Vault</string>
     <string name="splashcreen_check_network_failure">Este aplicativo requer conexão com a internet para funcionar. Por favor, verifique sua conexão e tente novamente…</string>
 
 </resources>

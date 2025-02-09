@@ -23,7 +23,7 @@
 
         <TextView
             android:id="@+id/tvCode"
-            style="@style/ScalaText.Confirm.Label"
+            style="@style/LunifyText.Confirm.Label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
@@ -31,7 +31,7 @@
 
         <TextView
             android:id="@+id/tvMessage"
-            style="@style/ScalaText.Confirm"
+            style="@style/LunifyText.Confirm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
@@ -39,11 +39,10 @@
 
         <TextView
             android:id="@+id/tvSolution"
-            style="@style/ScalaText.Confirm.Label"
+            style="@style/LunifyText.Confirm.Label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
             tools:text="Touch to retry" />
     </LinearLayout>
 </merge>
-

@@ -2,7 +2,7 @@
 <resources>
     <string name="help_create_new"><![CDATA[
         <h1>Crear Portamonedes - New</h1>
-        <p>Per si necessiteu una nova adreça de Scala!</p>
+        <p>Per si necessiteu una nova adreça de Lunify!</p>
         <p>Introduïu un nom i contrasenya únics del portamonedes.
          La contrasenya s’utilitza per protegir les dades del seu portamonedes en el dispositiu. Utilitzeu una contrasenya sòlida - encara millor si utiliza una frase.</p>
         <h2>Apunteu la vostra llavor mnemotècnica!</h2>
@@ -15,7 +15,7 @@
 
     <string name="help_create_seed"><![CDATA[
         <h1>Crear Portamonedes - Llavor</h1>
-        <p>Si ja teniu una adreça Scala i voleu recuperar les transaccions de la blockchain!</p>
+        <p>Si ja teniu una adreça Lunify i voleu recuperar les transaccions de la blockchain!</p>
         <p>Introduïu un nom i contrasenya únics del portamonedes.
          La contrasenya s’utilitza per protegir les dades del seu portamonedes en el dispositiu. Utilitzeu una contrasenya sòlida - encara millor si utiliza una frase.</p>
         <p>Introduïu la Llavor en el camp \"Llavor Mnemotècnica\".<p>
@@ -34,7 +34,7 @@
         <h1>Crear Portamonedes - Claus</h1>
         <p>Si voleu recuperar el vostre portamonedes fent servir les vostres claus!</p>
         <p>Introduïu un nom i contrasenya únics del portamonedes. La contrasenya s’utilitza per protegir les dades de la seva cartera al dispositiu. Utilitzeu una contrasenya sòlida 	- encara millor si utiliza una frase.<p>
-        <p>Introduïu la vostra Adreça Scala en el camp \"Adreça Pública\" i ompliu \"Clau de Visualització\" i  \"Clau de Despesa\" </p>
+        <p>Introduïu la vostra Adreça Lunify en el camp \"Adreça Pública\" i ompliu \"Clau de Visualització\" i  \"Clau de Despesa\" </p>
         <p>Introduïu el número de bloc de la primera transacció realitzada en aquesta adreça en el
          camp "Restaurar Alçada". També podeu utilitzar una data en el format AAAA-MM-DD. Si no esteu segurs, introduïu una data / alçada de bloc aproximada <em> abans </em> d’haver 	fer servir aquesta adreça del portamonedes.</p>
     ]]></string>
@@ -43,14 +43,14 @@
         <h1>Crear Portamonedes - Només de Lectura</h1>
         <p>Si només voleu monitoritzar les transaccions entrants del portamonedes!</p>
         <p>Introduïu un nom i contrasenya únics del portamonedes. La contrasenya s’utilitza per protegir les dades de la seva cartera al dispositiu. Utilitzeu una contrasenya sòlida 	- encara millor si utiliza una frase.<p>
-        <p>Introduïu la vostra Adreça Scala en el camp \"Adreça Pública\" i ompliu \"Clau de Visualització\".</p>
+        <p>Introduïu la vostra Adreça Lunify en el camp \"Adreça Pública\" i ompliu \"Clau de Visualització\".</p>
         <p>Introduïu el número de bloc de la primera transacció realitzada en aquesta adreça en el camp "Restaurar Alçada". També podeu utilitzar una data en el format AAAA-MM-DD. 	Si no esteu segurs, introduïu una data / alçada de bloc aproximada <em> abans </em> d’haver fer servir aquesta adreça del portamonedes.</p>
     ]]></string>
 
     <string name="help_details"><![CDATA[
         <h1>Detalls del portamonedes</h1>
         <h2>Adreça pública</h2>
-        La vostra adreça pública és com el vostre número de compte bancari que podeu compartir amb qualsevol persona sense haver de tenir por de perdre el vostres Scala. La gent 	enviarà Scala al seu portamonedes mitjançant aquesta adreça.
+        La vostra adreça pública és com el vostre número de compte bancari que podeu compartir amb qualsevol persona sense haver de tenir por de perdre el vostres Lunify. La gent 	enviarà Lunify al seu portamonedes mitjançant aquesta adreça.
         <h2>Clau Mnemotècnica</h2>
        	Aquestes són les úniques dades necessàries per a recuperar el vostre portamonedes i obtenir accés total als vostres fons.
          Mantenir-la segura i privada és molt important ja que permet que <em> qualsevol persona</em> tingui accés total als vostres fons! Si no us heu escrit en cap lloc segur, 	feu-ho!
@@ -63,33 +63,33 @@
         <h3>Contrasenya de Llegat</h3>
 	Si veieu la vostra contrasenya aquí, els fitxers del portamonedes no estan tan segurs com quan s’utilitza la CrAzYsenya. Per solucionar-ho, seleccioneu \"Canviar 		Contrasenya\" des del menú. Després d’entrar una nova contrasenya (potser fins i tot la mateixa que abans) l’aplicació generarà una CrAzYsenya per a protegir els vostres 	arxius del portamonedes. Anoteu-la!
         <h3>CrAzYsenya del Portamonedes</h3>
-	Si mai necessiteu tornar a instal·lar Scala Vault (per exemple, després de restablir el telèfon o canviar-lo per un de nou) o voleu utilitzar els arxius del portamonedes en un 	altre dispositiu o PC, cal que ho feu utilitzant aquesta Contrasenya de Recuperació (CrAzYsenya) per tornar a accedir al vostre portamonedes. <br/>
+	Si mai necessiteu tornar a instal·lar Lunify Vault (per exemple, després de restablir el telèfon o canviar-lo per un de nou) o voleu utilitzar els arxius del portamonedes en un 	altre dispositiu o PC, cal que ho feu utilitzant aquesta Contrasenya de Recuperació (CrAzYsenya) per tornar a accedir al vostre portamonedes. <br/>
         En seleccionar \"Canviar Contrasenya\" des del menú, podeu triar una nova contrasenya. Aneu amb compte que això generarà una nova Contrasenya de Recuperació (CrAzYsenya). 	Anoteu-la!
         <h2>Clau de Visualització</h2>
    	La vostra clau de visualització es pot utilitzar per monitoritzar les transaccions entrants al vostre portamonedes sense donar-ne permís per gastar els fons a dins seu.
         <h2>Clau de Despesa</h2>
-        La vostra clau de despesa permet a qualsevol persona gastar els Scala associats al seu portamonedes, així que no ho compartiu amb ningú, mantingueu-la segura com la vostra 	Llavor Mnemotècnica.
+        La vostra clau de despesa permet a qualsevol persona gastar els Lunify associats al seu portamonedes, així que no ho compartiu amb ningú, mantingueu-la segura com la vostra 	Llavor Mnemotècnica.
     ]]></string>
 
     <string name="help_list"><![CDATA[
         <h1>Llista de Portamonedes</h1>
         <h2>Node</h2>
-        <p>Scala Vault utilitza un node remot per comunicar-se amb la xarxa Scala sense necessitat
-         de descarregar i emmagatzemar una còpia de tota la blockchain sencera. Podeu trobar una llista dels nodes remots més populars o aprendre a configurar el vostre propi node 	remot aquí https://scala.network/<p>
-        <p>Scala Vault té alguns Nodes remots incorporats. Se’n recorda dels últims cinc nodes empleats.</p>
+        <p>Lunify Vault utilitza un node remot per comunicar-se amb la xarxa Lunify sense necessitat
+         de descarregar i emmagatzemar una còpia de tota la blockchain sencera. Podeu trobar una llista dels nodes remots més populars o aprendre a configurar el vostre propi node 	remot aquí https://lunify.xyz/<p>
+        <p>Lunify Vault té alguns Nodes remots incorporats. Se’n recorda dels últims cinc nodes empleats.</p>
         <h2>Portamonedes</h2>
-        <p>Aquí podeu veure els portamonedes. Es troben a la carpeta <tt> Scala Vault </tt>
+        <p>Aquí podeu veure els portamonedes. Es troben a la carpeta <tt> Lunify Vault </tt>
          dins l’emmagatzematge intern del dispositiu. Podeu utilitzar una aplicació d’exploració d’arxius per veure’ls. Haurieu de fer còpies de seguretat d’aquesta carpeta de 	manera regular en un emmagatzematge extern al dispositiu en cas que el vostre dispositiu exploti o el robin.</p>
         <p>Seleccioneu una portamonedes per obrir-lo o premeu el botó "+" per crear-ne un de nou.
          O seleccioneu una de les operacions del portamonedes:</p>
         <h3>Detalls</h3>
         <p>Mostra els detalls del portamonedes, la llavor i les seves claus.</p>
         <h3>Rebre</h3>
-        <p>Crea un codi QR per rebre Scala.</p>
+        <p>Crea un codi QR per rebre Lunify.</p>
         <h3>Canvi de Nom</h3>
         <p>Canvia el nom del portamonedes. El canvi de nom no afecta a les còpies de seguretat.</p>
         <h3>Còpia de Seguretat</h3>
-        <p>Feu una còpia del portamonedes en la carpeta <tt> backups </tt> dins del <tt> Scala Vault </tt>
+        <p>Feu una còpia del portamonedes en la carpeta <tt> backups </tt> dins del <tt> Lunify Vault </tt>
          per a sobreescriure còpies anteriors.</p>
         <h3>Arxiu</h3>
         <p>Feu una còpia de seguretat i a continuació elimineu el portamonedes. La còpia es mantindrà a la carpeta <tt> backups </tt>. Si ja no necessiteu les vostres còpies de 	seguretat les haureu d’eliminar amb un explorador d’arxius o una aplicació segura.</p>
@@ -98,21 +98,21 @@
     <string name="help_tx_details"><![CDATA[
         <h1>Detalls de Transacció</h1>
         <h2>Destí</h2>
-        Aquesta és l’adreça pública del portamonedes on esteu enviant els Scala.
+        Aquesta és l’adreça pública del portamonedes on esteu enviant els Lunify.
         <h2>ID de Pagament</h2>
-	Podeu utilitzar un ID de pagament per identificar el motiu pel qual heu enviat a Scala entre dues parts. Això és totalment opcional i privat. Per exemple, això pot permetre 	a una empresa associar la transacció amb un article que heu comprat.
+	Podeu utilitzar un ID de pagament per identificar el motiu pel qual heu enviat a Lunify entre dues parts. Això és totalment opcional i privat. Per exemple, això pot permetre 	a una empresa associar la transacció amb un article que heu comprat.
         <h2>ID de Transacció</h2>
-	Aquest és el vostre ID de transacció que podeu utilitzar per identificar la vostra transacció oculta en un Explorador de Blockchain de Scala com <a href="https://		xlachain.net/"> https://explorer.scala.network/ </a>
+	Aquest és el vostre ID de transacció que podeu utilitzar per identificar la vostra transacció oculta en un Explorador de Blockchain de Lunify com <a href="https://		xlachain.net/"> https://explorer.lunify.xyz/ </a>
         <h2>Clau de Transacció</h2>
         Aquesta és la vostra clau privada de transacció, manteniu-la segureta ja que mostrar-la a tercers els revelia quina signatura dins un anell és la vostra, fent que la vostra 	transacció sigui transparent.
         <h2>Bloc</h2>
-        Aquest és el bloc de la cadena de Scala on la vostra transacció ha estat inclosa.
+        Aquest és el bloc de la cadena de Lunify on la vostra transacció ha estat inclosa.
     ]]></string>
 
     <string name="help_send"><![CDATA[
         <h1>Enviar</h1>
         <h2>Adreça del Receptor</h2>
-        <p>Aquesta és l’adreça pública del portamonedes a la qual esteu enviant Scala. Podeu copiar-la al porta-retalls, escanejar un codi QR o introduir-la manualment. Assegureu-	vos de confirmar-ho a consciencia i que no estigueu enviant monedes a la direcció incorrecta.</p>
+        <p>Aquesta és l’adreça pública del portamonedes a la qual esteu enviant Lunify. Podeu copiar-la al porta-retalls, escanejar un codi QR o introduir-la manualment. Assegureu-	vos de confirmar-ho a consciencia i que no estigueu enviant monedes a la direcció incorrecta.</p>
         <p>A més d’utilitzar una adreça XLA, també podeu utilitzar
         <ul>
             <li>un OpenAlias per XLA o BTC</li>
@@ -121,11 +121,11 @@
         </u>
         Tingueu en compte que l’enviament de BTC es duu a terme a través del servei XLA.TO (consulteu https://xla.to per a més detalls). Consulteu la secció sobre l’enviament de BTC 	més avall.</p>
         <h2>ID de Pagament</h2>
-        <p>Podeu utilitzar un ID de pagament per identificar el motiu pel qual heu enviat a Scala entre dues parts. Això és totalment opcional i privat. Per exemple, això pot 	permetre a una empresa associar la transacció amb un article que heu comprat.<p>
+        <p>Podeu utilitzar un ID de pagament per identificar el motiu pel qual heu enviat a Lunify entre dues parts. Això és totalment opcional i privat. Per exemple, això pot 	permetre a una empresa associar la transacció amb un article que heu comprat.<p>
         <h1>Enviant BTC</h1>
         <h2>XLA.TO</h2>
-        <p>XLA.TO és un servei de tercers que fa proporciona el canvi de Scala a Bitcoin.
-         Nosaltres fem servir l’API XLA.TO per integrar els pagaments de Bitcoin a Scala Vault. Si us plau, doneu un cop d’ull a https://xla.to i decidiu vosaltres mateixos si és una 	cosa que volgueu utilitzar. L’equip de 	Scala Vault no està associat amb XLA.TO i no pot oferir assistència amb el seu servei.</p>
+        <p>XLA.TO és un servei de tercers que fa proporciona el canvi de Lunify a Bitcoin.
+         Nosaltres fem servir l’API XLA.TO per integrar els pagaments de Bitcoin a Lunify Vault. Si us plau, doneu un cop d’ull a https://xla.to i decidiu vosaltres mateixos si és una 	cosa que volgueu utilitzar. L’equip de 	Lunify Vault no està associat amb XLA.TO i no pot oferir assistència amb el seu servei.</p>
         <h2>Tipus de Canvi XLA.TO<h2>
         <p>A la pantalla \"Quantitat\" es mostraran els paràmetres actuals del servei XLA.TO. Aquests
          inclouen el tipus de canvi actual, així com els límits de BTC superiors i inferiors. Tingueu en compte que la tarifa no està garantida en aquell mateix moment. També veureu
@@ -136,7 +136,7 @@
          un temps limitat: és possible que veieu un compte enrere en el botó \"Gastar\". El tipus de canvi pot
          ser diferent del mostrat en pantalles anteriors.</p>
         <h2>Clau Secreta XLA.TO<h2>
-        <p>Com que Scala Vault només gestiona la part Scala de la vostra transacció, la vostra clau secreta per XLA.TO es pot utilitzar per fer el seguiment de la part de Bitcoin de 	la vostra comanda a la pàgina principal de XLA.TO.</p>
+        <p>Com que Lunify Vault només gestiona la part Lunify de la vostra transacció, la vostra clau secreta per XLA.TO es pot utilitzar per fer el seguiment de la part de Bitcoin de 	la vostra comanda a la pàgina principal de XLA.TO.</p>
         <p>Tingueu en compte que aquesta clau secreta només és vàlida durant 24 hores després que la transacció
          ha començat!</p>
         <h2>Compte enrere XLA.TO!</h2>
@@ -146,8 +146,8 @@
     <string name="help_xlato"><![CDATA[
         <h1>Enviant BTC</h1>
         <h2>XLA.TO</h2>
-        <p>XLA.TO és un servei de tercers que fa proporciona el canvi de Scala a Bitcoin.
-         Nosaltres fem servir l’API XLA.TO per integrar els pagaments de Bitcoin a Scala Vault. Si us plau, doneu un cop d’ull a https://xla.to i decidiu vosaltres mateixos si és una 	cosa que volgueu utilitzar. L’equip de 	Scala Vault no està associat amb XLA.TO i no pot oferir assistència amb el seu servei.</p>
+        <p>XLA.TO és un servei de tercers que fa proporciona el canvi de Lunify a Bitcoin.
+         Nosaltres fem servir l’API XLA.TO per integrar els pagaments de Bitcoin a Lunify Vault. Si us plau, doneu un cop d’ull a https://xla.to i decidiu vosaltres mateixos si és una 	cosa que volgueu utilitzar. L’equip de 	Lunify Vault no està associat amb XLA.TO i no pot oferir assistència amb el seu servei.</p>
         <h2>Tipus de Canvi XLA.TO<h2>
         <p>A la pantalla \"Quantitat\" es mostraran els paràmetres actuals del servei XLA.TO. Aquests
          inclouen el tipus de canvi actual, així com els límits de BTC superiors i inferiors. Tingueu en compte que la tarifa no està garantida en aquell mateix moment. També veureu
@@ -158,7 +158,7 @@
          un temps limitat: és possible que veieu un compte enrere en el botó \"Gastar\". El tipus de canvi pot
          ser diferent del mostrat en pantalles anteriors.</p>
         <h2>Clau Secreta XLA.TO<h2>
-        <p>Com que Scala Vault només gestiona la part Scala de la vostra transacció, la vostra clau secreta per XLA.TO es pot utilitzar per fer el seguiment de la part de Bitcoin de 	la vostra comanda a la pàgina principal de XLA.TO.</p>
+        <p>Com que Lunify Vault només gestiona la part Lunify de la vostra transacció, la vostra clau secreta per XLA.TO es pot utilitzar per fer el seguiment de la part de Bitcoin de 	la vostra comanda a la pàgina principal de XLA.TO.</p>
         <p>Tingueu en compte que aquesta clau secreta només és vàlida durant 24 hores després que la transacció
          ha començat!</p>
         <h2>Compte enrere XLA.TO!</h2>
@@ -168,13 +168,13 @@
     <string name="help_wallet"><![CDATA[
         <h1>El Portamonedes</h1>
         <h2>Mode de carrer</h2>
-        <p>El mode de carrer es pot habilitar / desactivar des del menú o a la icona principal de Gunther. En aquest mode, el vostre balanç no es mostra a cap pantalla perquè pugueu 	utilitzar la vostra cartera amb seguretat al carrer, al pub o qualsevol lloc públic. Les transaccions anteriors també estan ocultes. Es mostraran les noves transaccions 	perquè pogueu veure que heu enviat / rebut els vostres estimats Scala!</p>
+        <p>El mode de carrer es pot habilitar / desactivar des del menú o a la icona principal de Gunther. En aquest mode, el vostre balanç no es mostra a cap pantalla perquè pugueu 	utilitzar la vostra cartera amb seguretat al carrer, al pub o qualsevol lloc públic. Les transaccions anteriors també estan ocultes. Es mostraran les noves transaccions 	perquè pogueu veure que heu enviat / rebut els vostres estimats Lunify!</p>
         <h2>Escanejant</h2>
-        Perquè a Scala li agrada mantenir les coses privades, cada cop que obri un portamonedes Scala Vault hem d’escanejar la blockchain per veure si s’han enviat nous Scala al seu 	portamonedes. Això només emmagatzema l’informació al telèfon que pertany al seu portamonedes. De vegades pot trigar una estona perquè no s’ha sincronitzat en molt de temps.
+        Perquè a Lunify li agrada mantenir les coses privades, cada cop que obri un portamonedes Lunify Vault hem d’escanejar la blockchain per veure si s’han enviat nous Lunify al seu 	portamonedes. Això només emmagatzema l’informació al telèfon que pertany al seu portamonedes. De vegades pot trigar una estona perquè no s’ha sincronitzat en molt de temps.
         <h2>El Balanç</h2>
         <p><b>Ajuda! El balanç del meu portamonedes ha desaparegut o consta com a no confirmat!</b><br/>
         No patiu! Quan envieu fons desde el vostre portamonedes part del balanç apareixerà com a no confirmat de forma temporal.        
-	Això succeeix pel fet de com Scala és intercanviat a través de la blockchain i com es produeix el canvi.
+	Això succeeix pel fet de com Lunify és intercanviat a través de la blockchain i com es produeix el canvi.
         <h2>Llista de Transacció</h2>
         <p>Llistat de les transaccions del portamonedes. Els portamonedes de visualització només mostraran les transaccions entrants.</p>
     ]]></string>
@@ -182,14 +182,14 @@
     <string name="help_node"><![CDATA[
         <h1>Nodes</h1>
         <h2>TL;DR</h2>
-        <p>Actualitzeu la llista de nodes prement cap avall; marqueu 3&#8211;5 nodes per permetre a Scala Vault
+        <p>Actualitzeu la llista de nodes prement cap avall; marqueu 3&#8211;5 nodes per permetre a Lunify Vault
          triar el millor per a tu!</p>
         <h2>Què és un Node?</h2>
-        <p>Scala Vault utilitza un Node Remot (de vegades també anomenat daemon) per comunicar-se
-         la xarxa Scala sense haver de descarregar i emmagatzemar una còpia de
+        <p>Lunify Vault utilitza un Node Remot (de vegades també anomenat daemon) per comunicar-se
+         la xarxa Lunify sense haver de descarregar i emmagatzemar una còpia de
          tota la blockchain mateixa.<p>
         <h2>Llista de Nodes</h2>
-        <p>Si la llista està buida, podeu afegir nous nodes manualment o deixar que Scala Vault
+        <p>Si la llista està buida, podeu afegir nous nodes manualment o deixar que Lunify Vault
          escanegi la xarxa per vostè. O ambdós. Llegiu &#8230;</p>
         <p>La llista de nodes mostra tots els nodes coneguts. A més, la marca de temps
          de l’últim bloc conegut per a cada node es mostra sota el nom del node. La icona
@@ -198,10 +198,10 @@
          es mostra al costat de cada node.</p>
         <p>Es pot marcar qualsevol node de la llista per utilitzar-lo més endevant.
          Es descartaràn els nodes que no hagin estat seleccionats.<p>
-        <p>Scala Vault escollirà el node òptim (marcat) cada vegada que l’utilitzeu.
+        <p>Lunify Vault escollirà el node òptim (marcat) cada vegada que l’utilitzeu.
          Això ho fa mitjançant la comprovació de l’alçada de bloc (com d’actualitzat
          està el node?), així com el temps de resposta (què tan ràpidament respon el node a les peticions?).</p>
-        <p>La llista s’ordena per aquestes característiques, de manera que el node superior seria el que Scala Vault
+        <p>La llista s’ordena per aquestes característiques, de manera que el node superior seria el que Lunify Vault
          triaria ara mateix. La part inferior de la llista mostraria els nodes més lents o no disponibles.</p>
         <h2>Afegir Node</h2>
         <p>Si premeu el botó &quot;Afegir Node&quot; a la part inferior, se us demanarà
@@ -215,22 +215,22 @@
         Els &quot;Resultats de les Proves&quot; mostraran l’alçada de bloc, el temps de resposta i l’IP real.
         El resultat també pot ser un error - generalment perquè el nom del servidor proporcionat no és
         accessible dins d’un temps raonable o les credencials són incorrectes.
-        O la combinació de nom del servidor/port no apunta cap a un node real de Scala!
+        O la combinació de nom del servidor/port no apunta cap a un node real de Lunify!
         Un cop aprovada la prova (sense error), ja estás llest per prémer &quot;D’acord&quot; per desar iamp;
         marcar aquest node.</p>
         <h2>Escanejar Nodes</h2>
-        <p>A més, podeu escanejar la xarxa per buscar nodes. Scala Vault començarà
+        <p>A més, podeu escanejar la xarxa per buscar nodes. Lunify Vault començarà
          escanejant la xarxa per als nodes remots al port 18089. Començarà per preguntar als vostres
-         nodes marcats per altres companys de la xarxa P2P de Scala, i després continuarà
+         nodes marcats per altres companys de la xarxa P2P de Lunify, i després continuarà
          preguntant-los per als seus companys, etc. Si no teniu cap node marcat
          (o no ens informen sobre els seus companys),
-         Scala Vault anirà directament als nodes de llavor de Scala codificats a dins de Scala.
+         Lunify Vault anirà directament als nodes de llavor de Lunify codificats a dins de Lunify.
          L’escaneig s’atura quan troba un total de 10 nodes remots.</p>
     ]]></string>
 
     <string name="help_uri"><![CDATA[
         <h1>Fer servir un enllaç de pagament</h1>
-        <p>Heu iniciat Scala Vault amb un enllaç de pagament. Per enviar fons, feu el següent:</p>
+        <p>Heu iniciat Lunify Vault amb un enllaç de pagament. Per enviar fons, feu el següent:</p>
         <p>
         1. Obrir el portamonedes desde la qual voleu gastar els fons<br>
         2. Espereu fins que es sincronitzi el portamonedes i el botó de "Donar" apareixi<br>

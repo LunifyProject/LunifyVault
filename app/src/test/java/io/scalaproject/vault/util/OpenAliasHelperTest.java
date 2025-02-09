@@ -15,7 +15,7 @@
  *
  * ////////////////
  *
- * Copyright (c) 2020 Scala
+ * Copyright (c) 2025 Lunify
  *
  * Please see the included LICENSE file for more information.*/
 
@@ -36,7 +36,8 @@ import static org.junit.Assert.assertTrue;
 
 public class OpenAliasHelperTest {
 
-    private final static String MONERUJO = "oa1:xla recipient_address=4AdkPJoxn7JCvAby9szgnt93MSEwdnxdhaASxbTBm6x5dCwmsDep2UYN4FhStDn5i11nsJbpU7oj59ahg8gXb1Mg3viqCuk; recipient_name=Scala Vault Development; tx_description=Donation to Scala Vault Core Team;";
+    // Donation address
+    private final static String MONERUJO = "oa1:xla recipient_address=4AdkPJoxn7JCvAby9szgnt93MSEwdnxdhaASxbTBm6x5dCwmsDep2UYN4FhStDn5i11nsJbpU7oj59ahg8gXb1Mg3viqCuk; recipient_name=Lunify Vault Development; tx_description=Donation to Lunify Vault Core Team;";
 
     @Rule
     public ExpectedException thrown = ExpectedException.none();
@@ -45,7 +46,7 @@ public class OpenAliasHelperTest {
     public void asset() {
         Map<String, String> attrs = OpenAliasHelper.parse(MONERUJO);
         assertNotNull(attrs);
-        assertTrue(BarcodeData.OA_XLA_ASSET.equals(attrs.get(OpenAliasHelper.OA1_ASSET)));
+        assertTrue(BarcodeData.OA_LFI_ASSET.equals(attrs.get(OpenAliasHelper.OA1_ASSET)));
     }
 
     @Test

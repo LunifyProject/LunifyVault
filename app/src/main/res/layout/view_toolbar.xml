@@ -22,7 +22,7 @@
         android:layout_gravity="top"
         android:gravity="center"
         android:visibility="invisible"
-        tools:text="Scala Vault" />
+        tools:text="Lunify Vault" />
 
     <ImageView
         android:id="@+id/toolbarImage"
@@ -30,6 +30,6 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_marginTop="-8dp"
-        android:src="@drawable/ic_scala_logo_round"
+        android:src="@drawable/ic_lunify_logo_round"
         android:visibility="invisible" />
 </LinearLayout>

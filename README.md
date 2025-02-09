@@ -1,7 +1,7 @@
 
-# Scala Vault
+# Lunify Vault
 
-A secure and light weight wallet to store your Scala coins on any Android device.
+A secure and light weight wallet to store your Lunify coins on any Android device.
 
 <img src="https://i.imgur.com/5LWw5p9.jpg" alt="" data-canonical-src="https://i.imgur.com/5LWw5p9.jpg" width="200" height="400" /> <img src="https://i.imgur.com/hW0NBhq.jpg" alt="" data-canonical-src="https://i.imgur.com/hW0NBhq.jpg" width="200" height="400" /> <img src="https://i.imgur.com/hs6l68l.jpg" alt="" data-canonical-src="https://i.imgur.com/hs6l68l.jpg" width="200" height="400" />
 
@@ -18,15 +18,15 @@ A secure and light weight wallet to store your Scala coins on any Android device
 * Forked from [monerujo](https://github.com/m2049r/xmrwallet)
 
 ## Contacts
-* [Website](https://scala.network/)
-* [hello@scala.network](mailto:hello@scala.network)
+* [Website](https://lunify.xyz/)
+* [hello@lunify.xyz](mailto:hello@lunify.xyz)
 * [Discord](https://discord.gg/djAFVvy)
 * [Telegram](https://t.me/scalaofficial)
 * [Twitter](https://twitter.com/scalahq)
 
 # License
 
-See [LICENSE](https://github.com/scala-network/ScalaVault/blob/master/LICENSE).
+See [LICENSE](https://github.com/LunifyProject/LunifyVault/blob/main/LICENSE).
 
 # Sponsors
 

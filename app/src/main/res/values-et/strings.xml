@@ -35,7 +35,7 @@
 
     <string name="info_xlato"><![CDATA[
         <b>Sa sisestasid Bitcoini aadressi.</b><br/>
-        <i>See tähendab, et sa saadad Scalasid ning kohale jõuavad Bitcoinid kasutades XLA.TO teenust.</i>
+        <i>See tähendab, et sa saadad Lunifysid ning kohale jõuavad Bitcoinid kasutades XLA.TO teenust.</i>
     ]]></string>
 
     <string name="info_send_xlato_success_order_label">XLA.TO tellimus</string>
@@ -63,7 +63,7 @@
 
     <string name="label_send_progress_xlato_create">Loon XLA.TO tellimust</string>
     <string name="label_send_progress_xlato_query">Küsin XLA.TO tellimust</string>
-    <string name="label_send_progress_create_tx">Valmistan ette Scala ülekannet</string>
+    <string name="label_send_progress_create_tx">Valmistan ette Lunify ülekannet</string>
 
     <string name="label_send_progress_queryparms">Küsin XLA.TO parameetreid</string>
 
@@ -71,7 +71,7 @@
     <string name="text_generic_xlato_error">Kood: %1$d</string>
 
     <string name="text_retry">Puuduta uuesti proovimiseks</string>
-    <string name="text_noretry_scala">Nüüd jõudsime küll tupikusse!</string>
+    <string name="text_noretry_lunify">Nüüd jõudsime küll tupikusse!</string>
     <string name="text_noretry">Oh ei, XLA.TO ei ole hetkel saadaval!</string>
 
     <string name="text_send_btc_amount">%1$s BTC = %2$s XLA</string>
@@ -140,7 +140,7 @@
 
     <string name="xla_unconfirmed_amount">%1$s XLA kinnitamata</string>
 
-    <string name="service_description">Scala Vault teenus</string>
+    <string name="service_description">Lunify Vault teenus</string>
 
     <string name="status_synced">Uuendatud:</string>
     <string name="status_remaining">Plokki veel</string>
@@ -170,7 +170,7 @@
         <p>Kui sõrmejäljega avamine on sisse lülitatud, saad kontoseisu vaadata ja raha vastu võtta ilma parooli sisestamata.</p>
         <p>Kuid kõrgema turvalisuse nimel palutakse sul sisestada parool siis, kui vaatad rahakoti infot või saadad raha.</p>
         <strong>Turvahoiatus</strong>
-        <p>Lõpetuseks, Scala Vault tahab sulle meelde tuletada, et igaüks, kes pääseb ligi sinu sõrmejäljele, saab vaadata su kontoseisu.</p>
+        <p>Lõpetuseks, Lunify Vault tahab sulle meelde tuletada, et igaüks, kes pääseb ligi sinu sõrmejäljele, saab vaadata su kontoseisu.</p>
         <p>Näiteks on võimalik pahatahtlikel inimestel nii avada su rahakott, kui sa magad.</p>
         <strong>Oled kindel, et soovid selle aktiveerida?</strong>
     ]]></string>
@@ -215,8 +215,8 @@
     <string name="send_amount_hint">0.00</string>
     <string name="send_notes_hint">Privaatsed kommentaarid (valikuline)</string>
     <string name="send_generate_paymentid_hint">Genereeri</string>
-    <string name="send_send_label">Saada mu kallid Scalad teele</string>
-    <string name="send_send_timed_label">Saada mu kallid Scalad (%1$s)</string>
+    <string name="send_send_label">Saada mu kallid Lunifyd teele</string>
+    <string name="send_send_timed_label">Saada mu kallid Lunifyd (%1$s)</string>
     <string name="send_qr_invalid">See pole QR kood</string>
     <string name="send_qr_address_invalid">See pole sobiv QR kood</string>
     <string name="send_address_invalid">See pole sobiv aadress</string>
@@ -383,15 +383,15 @@
 
     <string name="label_restoreheight">Taastamise plokinumber</string> <!-- Restore Height -->
 
-    <string name="toast_ledger_start_app">Käivitage Scala rakendus %1$s seadmes</string>
+    <string name="toast_ledger_start_app">Käivitage Lunify rakendus %1$s seadmes</string>
 
     <string name="menu_rescan">Käivita uuesti!</string>
     <string name="privacy_policy_intro">Me hoolime teie privaatsusest. Lisateabe saamiseks lugege meie privaatsuseeskirju.</string>
-    <string name="info_mobile_miner">Alusta kaevandamist oma mobiilseadmes Scala Miner\'iga. Lisateabe saamiseks puudutage siia.</string>
-    <string name="info_nodes_enabled_2">Scala Vault otsib parimaid saadaolevaid sõlmi. Lisateabe saamiseks puudutage siia.</string>
+    <string name="info_mobile_miner">Alusta kaevandamist oma mobiilseadmes Lunify Miner\'iga. Lisateabe saamiseks puudutage siia.</string>
+    <string name="info_nodes_enabled_2">Lunify Vault otsib parimaid saadaolevaid sõlmi. Lisateabe saamiseks puudutage siia.</string>
     <string name="privacy_policy_label">Privaatsuseeskirjad</string>
     <string name="primary_address">Primaarne aadress</string>
-    <string name="mm_url">https://github.com/scala-network/MobileMiner/releases</string>
+    <string name="mm_url">https://github.com/LunifyProject/MobileMiner/releases</string>
     <string name="connection_remote_daemon">Ühendamine kaugserveriga&#8230;</string>
     <string name="remote_nodes">Kaugserverid</string>
     <string name="address_book">Aadressiraamat</string>
@@ -401,7 +401,7 @@
     <string name="save_to_address_book">Salvesta aadressiraamatusse</string>
     <string name="contact_name_empty_error">Nimi ei tohi olla tühi!</string>
     <string name="entry_name">Kirje nimi</string>
-    <string name="start_mining">Käivitage Scala Mobile Miner turvaliselt ja tõhusalt oma Android-seadmes.</string>
+    <string name="start_mining">Käivitage Lunify Mobile Miner turvaliselt ja tõhusalt oma Android-seadmes.</string>
     <string name="mobile_miner">Mobiilne kaevandaja</string>
     <string name="download">Lae alla</string>
     <string name="select_image">Vali pilt</string>
@@ -420,15 +420,15 @@
     <string name="balance_primary_address">Esmane aadress</string>
     <string name="balance_wallet_address">Rahakoti aadress</string>
     <string name="history_no_transaction">Tehing puudub</string>
-    <string name="mobileminer_scala_miner">SCALA KAIVANDAMISE</string>
+    <string name="mobileminer_lunify_miner">Lunify KAIVANDAMISE</string>
     <string name="mobileminer_start_mining">Alusta kaevandamist oma Android-seadmes turvaliselt ja tõhusalt.</string>
     <string name="close">Sulge</string>
     <string name="credits">Autorid</string>
     <string name="credits_made_with">Valmistatud </string>
     <string name="credits_by"> poolt </string>
     <string name="credits_forked_from">Hargitatud </string>
-    <string name="wizard_home">Turvaline ja kerge rahakott teie Scala müntide hoidmiseks</string>
-    <string name="wizard_home_description">Scala Vault pakub kõike, mida vajate Scala rahakottide haldamiseks ja kasutamiseks Android-seadmes</string>
+    <string name="wizard_home">Turvaline ja kerge rahakott teie Lunify müntide hoidmiseks</string>
+    <string name="wizard_home_description">Lunify Vault pakub kõike, mida vajate Lunify rahakottide haldamiseks ja kasutamiseks Android-seadmes</string>
     <string name="wizard_home_create_new_wallet">Loo uus rahakott</string>
     <string name="wizard_home_import_from_seed">Impordi seemnest</string>
     <string name="wizard_home_or">või</string>
@@ -438,6 +438,6 @@
     <string name="subaddresses">Alamaadressid</string>
     <string name="message_exchange_success">Valuuta hind uuendatud</string>
     <string name="splashcreen_check_network">Võrgu kontrollimine…</string>
-    <string name="splashcreen_check_network_success">Internetiga ühendatud, Scala Vaulti sisenemine</string>
+    <string name="splashcreen_check_network_success">Internetiga ühendatud, Lunify Vaulti sisenemine</string>
     <string name="splashcreen_check_network_failure">See rakendus vajab toimimiseks võrguühendust. Palun kontrollige oma internetiühendust ja proovige uuesti…</string>
 </resources>

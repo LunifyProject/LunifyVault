@@ -57,7 +57,7 @@
 
     <string name="label_send_progress_xlato_create">Création de l\'ordre XLA.TO</string>
     <string name="label_send_progress_xlato_query">Interrogation de l\'ordre XLA.TO</string>
-    <string name="label_send_progress_create_tx">Préparation de la Transaction Scala</string>
+    <string name="label_send_progress_create_tx">Préparation de la Transaction Lunify</string>
 
     <string name="label_send_progress_queryparms">Interrogation des paramètres xla.to</string>
 
@@ -65,7 +65,7 @@
     <string name="text_generic_xlato_error">Code : %1$d</string>
 
     <string name="text_retry">Touchez pour réessayer</string>
-    <string name="text_noretry_scala">Maintenant on est coincé ici !</string>
+    <string name="text_noretry_lunify">Maintenant on est coincé ici !</string>
     <string name="text_noretry">Oh-oh, XLA.TO n\'a pas l\'air disponible pour le moment !</string>
 
     <string name="text_send_btc_amount">%1$s BTC = %2$s XLA</string>
@@ -135,7 +135,7 @@
 
     <string name="xla_unconfirmed_amount">%1$s XLA non confirmés</string>
 
-    <string name="service_description">Service Scala Vault</string>
+    <string name="service_description">Service Lunify Vault</string>
 
     <string name="status_synced">Synchronisé :</string>
     <string name="status_remaining">blocs restants</string>
@@ -215,8 +215,8 @@
     <string name="send_notes_hint">Notes privées (optionnelles)</string>
     <string name="send_generate_paymentid_hint">Générer</string>
     <string name="send_qr_hint">Scanner</string>
-    <string name="send_send_label">Dépenser mes beaux Scala</string>
-    <string name="send_send_timed_label">Dépenser mes beaux Scala (%1$s)</string>
+    <string name="send_send_label">Dépenser mes beaux Lunify</string>
+    <string name="send_send_timed_label">Dépenser mes beaux Lunify (%1$s)</string>
     <string name="send_qr_invalid">QR Code invalide</string>
     <string name="send_qr_address_invalid">QR code de paiement invalide</string>
     <string name="send_address_invalid">Adresse invalide</string>
@@ -336,9 +336,9 @@
     <string name="menu_StealthMode">Mode furtif</string>
 
     <string name="info_xlato" translatable="false">OBSOLÈTE</string>
-    <string name="info_mobile_miner">Commencez à miner sur votre appareil mobile avec Scala Miner. Appuyez ici pour plus d\'informations.</string>
+    <string name="info_mobile_miner">Commencez à miner sur votre appareil mobile avec Lunify Miner. Appuyez ici pour plus d\'informations.</string>
     <string name="info_nodes_enabled" translatable="false">OBSOLÈTE</string>
-    <string name="info_nodes_enabled_2">Scala Vault recherche les meilleurs nœuds disponibles. Appuyez ici pour plus d\'informations.</string>
+    <string name="info_nodes_enabled_2">Lunify Vault recherche les meilleurs nœuds disponibles. Appuyez ici pour plus d\'informations.</string>
     <string name="node_height">Dernier bloc mis à jour : %1$s</string>
     <string name="label_nodes">Nœuds</string>
     <string name="node_name_hint">Nom du Nœud (Optionnel)</string>
@@ -388,12 +388,12 @@
 
     <string name="label_restoreheight">Hauteur de restauration</string> <!-- Restore Height -->
 
-    <string name="toast_ledger_start_app">Démarrer l\'application Scala sur %1$s</string>
+    <string name="toast_ledger_start_app">Démarrer l\'application Lunify sur %1$s</string>
     <string name="menu_rescan">Rescanner!</string>
     <string name="privacy_policy_intro">Nous nous soucions de votre vie privée. Pour en savoir plus, veuillez lire notre politique de confidentialité.</string>
     <string name="privacy_policy_label">Politique de confidentialité</string>
     <string name="primary_address">Adresse principale</string>
-    <string name="mm_url" translatable="false">https://github.com/scala-network/MobileMiner/releases</string>
+    <string name="mm_url" translatable="false">https://github.com/LunifyProject/MobileMiner/releases</string>
     <string name="connection_remote_daemon">Connexion au nœud distant&#8230;</string>
     <string name="remote_nodes">Nœuds distants</string>
     <string name="address_book">Carnet d\'adresses</string>
@@ -403,7 +403,7 @@
     <string name="save_to_address_book">Enregistrer dans le carnet d\'adresses</string>
     <string name="contact_name_empty_error">Le nom ne peut pas être vide !</string>
     <string name="entry_name">Nom de l\'entrée</string>
-    <string name="start_mining">Commencez à miner sur votre appareil Android de manière sûre et efficace avec Scala Mobile Miner.</string>
+    <string name="start_mining">Commencez à miner sur votre appareil Android de manière sûre et efficace avec Lunify Mobile Miner.</string>
     <string name="mobile_miner">Mobile Miner</string>
     <string name="download">Télécharger</string>
     <string name="select_image">Sélectionner une image</string>
@@ -422,17 +422,17 @@
     <string name="balance_primary_address">Adresse principale</string>
     <string name="balance_wallet_address">Adresse du portefeuille</string>
     <string name="history_no_transaction">Aucune transaction</string>
-    <string name="mobileminer_scala_miner">SCALA MINER</string>
+    <string name="mobileminer_lunify_miner">Lunify Miner</string>
     <string name="mobileminer_start_mining">Commencez à miner sur votre appareil Android de manière sûre et efficace.</string>
     <string name="close">Fermer</string>
-    <string name="scala_logo" translatable="false">Logo Scala</string>
+    <string name="lunify_logo" translatable="false">Logo Lunify</string>
     <string name="credits">Crédits</string>
     <string name="credits_made_with">Fait avec </string>
     <string name="credits_by"> par </string>
     <string name="credits_forked_from">Basé sur </string>
     <string name="credits_heart" translatable="false">icône de cœur</string>
-    <string name="wizard_home">Un portefeuille sécurisé et léger pour stocker vos pièces Scala</string>
-    <string name="wizard_home_description">Scala Vault fournit tout ce dont vous avez besoin pour gérer et utiliser les portefeuilles Scala sur Android</string>
+    <string name="wizard_home">Un portefeuille sécurisé et léger pour stocker vos pièces Lunify</string>
+    <string name="wizard_home_description">Lunify Vault fournit tout ce dont vous avez besoin pour gérer et utiliser les portefeuilles Lunify sur Android</string>
     <string name="wizard_home_create_new_wallet">Créer un nouveau portefeuille</string>
     <string name="wizard_home_import_from_seed">Importer depuis la graine</string>
     <string name="wizard_home_or">ou</string>
@@ -442,7 +442,7 @@
     <string name="subaddresses">Sous-adresses</string>
     <string name="message_exchange_success">Prix de la devise mis à jour</string>
     <string name="splashcreen_check_network" translatable="false">Vérification du réseau…</string>
-    <string name="splashcreen_check_network_success" translatable="false">Connecté à Internet, accès à Scala Vault</string>
+    <string name="splashcreen_check_network_success" translatable="false">Connecté à Internet, accès à Lunify Vault</string>
     <string name="splashcreen_check_network_failure" translatable="false">Cette application nécessite une connexion réseau pour fonctionner. Veuillez vérifier votre connexion Internet et réessayer…</string>
 
 </resources>

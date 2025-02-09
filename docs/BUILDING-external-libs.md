@@ -80,7 +80,7 @@ ln -sf /opt/android/build/openssl/x86_64/lib/*.so /opt/android/tool/x86_64/sysro
 ## Build Boost
 ```Shell
 cd /opt/android
-wget https://sourceforge.net/projects/boost/files/boost/1.58.0/boost_1_58_0.tar.gz/download -O boost_1_58_0.tar.gz
+wget https://sourceforge.net/projects/boost/files/boost/1.84.0/boost_1_84_0.tar.gz/download -O boost_1_84_0.tar.gz
 tar xfz boost_1_58_0.tar.gz
 cd boost_1_58_0
 ./bootstrap.sh
@@ -109,7 +109,7 @@ PATH=/opt/android/tool/x86_64/x86_64-linux-android/bin:/opt/android/tool/x86_64/
 ln -sf ../include /opt/android/build/boost/x86_64
 ```
 
-## And finally: Build Scala
+## And finally: Build Lunify
 ```Shell
 cd /opt/android
 git clone https://github.com/m2049r/scala.git
@@ -121,7 +121,7 @@ git checkout release-v0.12.3
 
 # Bringing it all together
 - Copy all .a libraries into the appropriate `external-libs` folders.
-- Copy `/opt/android/scala/src/wallet/api/wallet2_api.h` into `external-libs/scala/include`
+- Copy `/opt/android/scala/src/wallet/api/wallet2_api.h` into `external-libs/lunify/include`
 
 If using default locations, this would mean:
 ```Shell

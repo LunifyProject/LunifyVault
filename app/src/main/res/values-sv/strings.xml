@@ -55,7 +55,7 @@
 
     <string name="label_send_progress_xlato_create">Skapar XLA.TO-beställning</string>
     <string name="label_send_progress_xlato_query">Frågar XLA.TO-beställningen</string>
-    <string name="label_send_progress_create_tx">Förbereder Scala-transaktion</string>
+    <string name="label_send_progress_create_tx">Förbereder Lunify-transaktion</string>
 
     <string name="label_send_progress_queryparms">Frågar xla.to-parametrar</string>
 
@@ -63,7 +63,7 @@
     <string name="text_generic_xlato_error">Kod: %1$d</string>
 
     <string name="text_retry">Tryck för att försöka igen</string>
-    <string name="text_noretry_scala">Nu har vi kört fast!</string>
+    <string name="text_noretry_lunify">Nu har vi kört fast!</string>
     <string name="text_noretry">Åh nej, XLA.TO verkar inte vara tillgänglig just nu!</string>
 
     <string name="text_send_btc_amount">%1$s BTC = %2$s XLA</string>
@@ -131,7 +131,7 @@
 
     <string name="xla_unconfirmed_amount">%1$s XLA obekräftade</string>
 
-    <string name="service_description">Scala Vault-tjänsten</string>
+    <string name="service_description">Lunify Vault-tjänsten</string>
 
     <string name="status_synced">Synkade:</string>
     <string name="status_remaining">Återstående block</string>
@@ -156,7 +156,7 @@
     <string name="generate_name_hint">Plånbokens namn</string>
     <string name="generate_password_hint">Plånbokens lösenfras</string>
     <string name="generate_fingerprint_hint">Tillåt öppning av plånboken med fingeravtryck</string>
-    <string name="generate_fingerprint_warn"><![CDATA[<strong>Autentisering med fingeravtryck</strong> <p>När fingeravtrycksautentisering är aktiverad kan du se plånbokens saldo och ta emot pengar utan att ange lösenord.</p> <p>Men för ytterligare säkerhet kräver Scala Vault ändå att du anger lösenord för att granska information om plånboken eller skicka pengar.</p> <strong>Säkerhetsvarning</strong> <p>Slutligen vill monerujo påminna dig att vem som helst som kan komma åt ditt fingeravtryck kan se saldot i din plånbok.</p> <p>En elak användare i din närhet kan till exempel öppna din plånbok när du sover.</p> <strong>Är det säkert att du vill aktivera denna funktion?</strong>]]></string>
+    <string name="generate_fingerprint_warn"><![CDATA[<strong>Autentisering med fingeravtryck</strong> <p>När fingeravtrycksautentisering är aktiverad kan du se plånbokens saldo och ta emot pengar utan att ange lösenord.</p> <p>Men för ytterligare säkerhet kräver Lunify Vault ändå att du anger lösenord för att granska information om plånboken eller skicka pengar.</p> <strong>Säkerhetsvarning</strong> <p>Slutligen vill monerujo påminna dig att vem som helst som kan komma åt ditt fingeravtryck kan se saldot i din plånbok.</p> <p>En elak användare i din närhet kan till exempel öppna din plånbok när du sover.</p> <strong>Är det säkert att du vill aktivera denna funktion?</strong>]]></string>
     <string name="generate_bad_passwordB">Lösenfraserna matchar inte</string>
     <string name="generate_empty_passwordB">Lösenfrasen får inte vara tom</string>
     <string name="generate_buttonGenerate">Skapa min plånbok nu då!</string>
@@ -197,8 +197,8 @@
     <string name="send_amount_hint">0,00</string>
     <string name="send_notes_hint">Privat anteckning (valfri)</string>
     <string name="send_generate_paymentid_hint">Skapa</string>
-    <string name="send_send_label">Spendera mina Scala</string>
-    <string name="send_send_timed_label">Spendera mina Scala (%1$s)</string>
+    <string name="send_send_label">Spendera mina Lunify</string>
+    <string name="send_send_timed_label">Spendera mina Lunify (%1$s)</string>
     <string name="send_qr_invalid">Inte en QR-kod</string>
     <string name="send_qr_address_invalid">Inte en giltig QR-kod för betalning</string>
     <string name="send_address_invalid">Inte en giltig adress</string>
@@ -322,9 +322,9 @@
 
     <string name="node_wrong_net" translatable="false">Nodskanning endast för mainnet!</string>
 
-    <string name="info_mobile_miner">Starta mining på din mobila enhet med Scala Miner. Tryck här för mer information.</string>
+    <string name="info_mobile_miner">Starta mining på din mobila enhet med Lunify Miner. Tryck här för mer information.</string>
     <string name="info_nodes_enabled" translatable="false">UTGÅTT</string>
-    <string name="info_nodes_enabled_2">Scala Vault söker efter de bästa tillgängliga noderna. Tryck här för mer information.</string>
+    <string name="info_nodes_enabled_2">Lunify Vault söker efter de bästa tillgängliga noderna. Tryck här för mer information.</string>
     <string name="node_height">Senast uppdaterad block: %1$s</string>
     <string name="label_nodes">Noder</string>
     <string name="node_name_hint">Namn på nod (Valfritt)</string>
@@ -378,13 +378,13 @@
 
     <string name="label_restoreheight">Återställ Höjd</string>
 
-    <string name="toast_ledger_start_app">Starta Scala App på %1$s</string>
+    <string name="toast_ledger_start_app">Starta Lunify App på %1$s</string>
 
     <string name="menu_rescan">Skanna om!</string>
     <string name="privacy_policy_intro">Vi bryr oss om din integritet. För att lära dig mer, vänligen läs vår Integritetspolicy.</string>
     <string name="privacy_policy_label">Integritetspolicy</string>
     <string name="primary_address">Primäradress</string>
-    <string name="mm_url" translatable="false">https://github.com/scala-network/MobileMiner/releases</string>
+    <string name="mm_url" translatable="false">https://github.com/LunifyProject/MobileMiner/releases</string>
     <string name="connection_remote_daemon">Ansluter till fjärrnod&#8230;</string>
     <string name="remote_nodes">Fjärrnoder</string>
     <string name="address_book">Adressbok</string>
@@ -394,7 +394,7 @@
     <string name="save_to_address_book">Spara i adressbok</string>
     <string name="contact_name_empty_error">Namnet får inte vara tomt!</string>
     <string name="entry_name">Postnamn</string>
-    <string name="start_mining">Starta mining på din Android-enhet säkert och effektivt med Scala Mobile Miner.</string>
+    <string name="start_mining">Starta mining på din Android-enhet säkert och effektivt med Lunify Mobile Miner.</string>
     <string name="mobile_miner">Mobil Miner</string>
     <string name="download">Ladda ner</string>
     <string name="select_image">Välj Bild</string>
@@ -413,17 +413,17 @@
     <string name="balance_primary_address">Primäradress</string>
     <string name="balance_wallet_address">Plånboksadress</string>
     <string name="history_no_transaction">Ingen transaktion</string>
-    <string name="mobileminer_scala_miner">SCALA MINER</string>
+    <string name="mobileminer_lunify_miner">Lunify Miner</string>
     <string name="mobileminer_start_mining">Starta mining på din Android-enhet säkert och effektivt.</string>
     <string name="close">Stäng</string>
-    <string name="scala_logo" translatable="false">Scala-logotyp</string>
+    <string name="lunify_logo" translatable="false">Lunify-logotyp</string>
     <string name="credits">Tack</string>
     <string name="credits_made_with">Gjort med </string>
     <string name="credits_by"> av </string>
     <string name="credits_forked_from">Forkad från </string>
     <string name="credits_heart" translatable="false">hjärta ikon</string>
-    <string name="wizard_home">En säker och lätt plånbok för att förvara dina Scala-mynt</string>
-    <string name="wizard_home_description">Scala Vault ger dig allt du behöver för att hantera och använda Scala-plånböcker på Android</string>
+    <string name="wizard_home">En säker och lätt plånbok för att förvara dina Lunify-mynt</string>
+    <string name="wizard_home_description">Lunify Vault ger dig allt du behöver för att hantera och använda Lunify-plånböcker på Android</string>
     <string name="wizard_home_create_new_wallet">Skapa ny plånbok</string>
     <string name="wizard_home_import_from_seed">Importera från seed</string>
     <string name="wizard_home_or">eller</string>
@@ -433,7 +433,7 @@
     <string name="subaddresses">Underadresser</string>
     <string name="message_exchange_success">Valutakurs uppdaterad</string>
     <string name="splashcreen_check_network">Kontrollerar Nätverk…</string>
-    <string name="splashcreen_check_network_success">Ansluten till internet, får åtkomst till Scala Vault</string>
+    <string name="splashcreen_check_network_success">Ansluten till internet, får åtkomst till Lunify Vault</string>
     <string name="splashcreen_check_network_failure">Den här appen kräver nätverksanslutning för att fungera. Kontrollera din internetanslutning och försök igen…</string>
 
 </resources>

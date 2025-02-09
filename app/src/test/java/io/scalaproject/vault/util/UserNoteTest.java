@@ -15,7 +15,7 @@
  *
  * ////////////////
  *
- * Copyright (c) 2020 Scala
+ * Copyright (c) 2025 Lunify
  *
  * Please see the included LICENSE file for more information.*/
 

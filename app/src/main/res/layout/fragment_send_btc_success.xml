@@ -32,7 +32,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style="@style/ScalaText.Success"
+                    style="@style/LunifyText.Success"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -40,7 +40,7 @@
 
                 <TextView
                     android:id="@+id/tvTxAmount"
-                    style="@style/ScalaText.Balance.Success"
+                    style="@style/LunifyText.Balance.Success"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -49,7 +49,7 @@
 
                 <TextView
                     android:id="@+id/tvTxFee"
-                    style="@style/ScalaText.Gray.SuccessFee"
+                    style="@style/LunifyText.Gray.SuccessFee"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -66,7 +66,7 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/ScalaText.Confirm.Label"
+                style="@style/LunifyText.Confirm.Label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_send_txid"
@@ -84,7 +84,7 @@
 
         <TextView
             android:id="@+id/tvTxId"
-            style="@style/ScalaText"
+            style="@style/LunifyText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -92,7 +92,7 @@
             tools:text="fcb12cbe9f43d4e8b9ee54f48d450a89a6937946db856506820df0539571801d" />
 
         <TextView
-            style="@style/ScalaText.Confirm.Label"
+            style="@style/LunifyText.Confirm.Label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -101,7 +101,7 @@
 
         <TextView
             android:id="@+id/tvTxAddress"
-            style="@style/ScalaText"
+            style="@style/LunifyText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -141,7 +141,7 @@
                             android:layout_gravity="center"
                             android:backgroundTintMode="src_in"
                             android:indeterminate="true"
-                            android:indeterminateTint="@color/scalaFab" />
+                            android:indeterminateTint="@color/lunifyFab" />
 
                         <ImageView
                             android:id="@+id/ivxlaToStatus"
@@ -164,13 +164,13 @@
                             android:layout_gravity="top|start"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="0dp"
-                            android:src="@drawable/ic_scala_logo_round" />
+                            android:src="@drawable/ic_lunify_logo_round" />
 
                     </FrameLayout>
 
                     <TextView
                         android:id="@+id/tvxlaToStatus"
-                        style="@style/ScalaText"
+                        style="@style/LunifyText"
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/flxlatoProgress"
@@ -189,7 +189,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        style="@style/ScalaText"
+                        style="@style/LunifyText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/info_send_xlato_success_order_label"
@@ -198,7 +198,7 @@
 
                     <TextView
                         android:id="@+id/tvxlaToAmount"
-                        style="@style/ScalaText.Balance.Success"
+                        style="@style/LunifyText.Balance.Success"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
@@ -207,7 +207,7 @@
 
                     <TextView
                         android:id="@+id/tvTxxlaToKey"
-                        style="@style/ScalaText"
+                        style="@style/LunifyText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@color/dotGray"
@@ -221,7 +221,7 @@
                         tools:text="XLA.TO-d2KQ" />
 
                     <TextView
-                        style="@style/ScalaText"
+                        style="@style/LunifyText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"

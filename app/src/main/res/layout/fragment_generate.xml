@@ -20,7 +20,7 @@
             app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                style="@style/ScalaEdit"
+                style="@style/LunifyEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/generate_name_hint"
@@ -39,7 +39,7 @@
             app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                style="@style/ScalaEdit"
+                style="@style/LunifyEdit"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/generate_password_hint"
@@ -82,7 +82,7 @@
             app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                style="@style/ScalaEdit"
+                style="@style/LunifyEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/generate_mnemonic_hint"
@@ -104,7 +104,7 @@
             app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                style="@style/ScalaEdit"
+                style="@style/LunifyEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/generate_address_hint"
@@ -126,7 +126,7 @@
             app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                style="@style/ScalaEdit"
+                style="@style/LunifyEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/generate_viewkey_hint"
@@ -148,7 +148,7 @@
             app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                style="@style/ScalaEdit"
+                style="@style/LunifyEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/generate_spendkey_hint"
@@ -168,7 +168,7 @@
             app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                style="@style/ScalaEdit"
+                style="@style/LunifyEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/generate_restoreheight_hint"
@@ -180,7 +180,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/bGenerate"
-            style="@style/ScalaButton"
+            style="@style/LunifyButton"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             app:backgroundTint="@color/bg_blue"

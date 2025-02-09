@@ -29,7 +29,7 @@
             android:layout_marginTop="@dimen/header_top">
 
             <TextView
-                style="@style/ScalaLabel.Heading"
+                style="@style/LunifyLabel.Heading"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -47,7 +47,7 @@
 
         <TextView
             android:id="@+id/tvWalletAddress"
-            style="@style/ScalaText.Monospace"
+            style="@style/LunifyText.Monospace"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/data_top"
@@ -63,7 +63,7 @@
             android:visibility="gone">
 
             <TextView
-                style="@style/ScalaLabel.Heading"
+                style="@style/LunifyLabel.Heading"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -71,7 +71,7 @@
 
             <TextView
                 android:id="@+id/tvWalletMnemonic"
-                style="@style/ScalaText.Monospace.Mnemonic"
+                style="@style/LunifyText.Monospace.Mnemonic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/data_top"
@@ -89,7 +89,7 @@
             android:visibility="visible">
 
             <TextView
-                style="@style/ScalaLabel.Heading"
+                style="@style/LunifyLabel.Heading"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -97,7 +97,7 @@
 
             <TextView
                 android:id="@+id/tvWalletHeight"
-                style="@style/ScalaText.Monospace.Mnemonic"
+                style="@style/LunifyText.Monospace.Mnemonic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/data_top"
@@ -115,7 +115,7 @@
             android:visibility="gone">
 
             <TextView
-                style="@style/ScalaLabel.Heading"
+                style="@style/LunifyLabel.Heading"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -123,7 +123,7 @@
 
             <TextView
                 android:id="@+id/tvWalletPassword"
-                style="@style/ScalaText.Monospace"
+                style="@style/LunifyText.Monospace"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/data_top"
@@ -133,7 +133,7 @@
 
         <Button
             android:id="@+id/bAccept"
-            style="@style/ScalaButton.Blue"
+            style="@style/LunifyButton.Blue"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginTop="@dimen/section_top"
@@ -142,7 +142,7 @@
 
         <Button
             android:id="@+id/bAdvancedInfo"
-            style="@style/ScalaButton.Grey"
+            style="@style/LunifyButton.Grey"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_gravity="center"
@@ -174,7 +174,7 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        style="@style/ScalaLabel.Heading"
+                        style="@style/LunifyLabel.Heading"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
@@ -192,7 +192,7 @@
 
                 <TextView
                     android:id="@+id/tvWalletViewKey"
-                    style="@style/ScalaText.Monospace"
+                    style="@style/LunifyText.Monospace"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/data_top"
@@ -209,7 +209,7 @@
                 android:visibility="gone">
 
                 <TextView
-                    style="@style/ScalaLabel.Heading"
+                    style="@style/LunifyLabel.Heading"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -217,7 +217,7 @@
 
                 <TextView
                     android:id="@+id/tvWalletSpendKey"
-                    style="@style/ScalaText.Monospace"
+                    style="@style/LunifyText.Monospace"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/data_top"

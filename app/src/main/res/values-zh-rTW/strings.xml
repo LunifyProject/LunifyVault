@@ -65,7 +65,7 @@
 
     <string name="label_send_progress_xlato_create">建立 XLA.TO 訂單</string>
     <string name="label_send_progress_xlato_query">查詢 XLA.TO 訂單</string>
-    <string name="label_send_progress_create_tx">正在準備 Scala 交易</string>
+    <string name="label_send_progress_create_tx">正在準備 Lunify 交易</string>
 
     <string name="label_send_progress_queryparms">正在查詢 XLA.TO 參數</string>
 
@@ -73,7 +73,7 @@
     <string name="text_generic_xlato_error">錯誤代碼：%1$d</string>
 
     <string name="text_retry">點選以重試</string>
-    <string name="text_noretry_scala">我們卡住了！</string>
+    <string name="text_noretry_lunify">我們卡住了！</string>
     <string name="text_noretry">不好，XLA.TO 現在似乎無法提供服務！</string>
 
     <string name="text_send_btc_amount">%1$s BTC = %2$s XLA</string>
@@ -143,7 +143,7 @@
 
     <string name="xla_unconfirmed_amount">%1$s 未確認的 XLA </string>
 
-    <string name="service_description">Scala Vault 服務</string>
+    <string name="service_description">Lunify Vault 服務</string>
 
     <string name="status_synced">已同步區塊：</string>
     <string name="status_remaining">剩餘區塊</string>
@@ -173,7 +173,7 @@
         <p>啟用指紋驗證後，無需輸入密碼，就可以查看錢包餘額並接收資金。</p>
         <p>但為安全起見，查看錢包詳細資訊或發送資金時，仍須輸入密碼。</p>
         <strong>安全警告</strong>
-        <p>最後，Scala Vault 提醒您，任何可以取得您指紋的人都能夠窺視您的錢包餘額。</p>
+        <p>最後，Lunify Vault 提醒您，任何可以取得您指紋的人都能夠窺視您的錢包餘額。</p>
         <p>例如，您身邊的惡意使用者可以趁您睡著時使用您的指紋開啟錢包。</p>
         <strong>您確定要啟用本功能嗎？</strong>
     ]]></string>
@@ -217,8 +217,8 @@
     <string name="send_amount_hint">0.00</string>
     <string name="send_notes_hint">註記 (選填)</string>
     <string name="send_generate_paymentid_hint">產生</string>
-    <string name="send_send_label">發送我的 Scala</string>
-    <string name="send_send_timed_label">發送我的 Scala (%1$s)</string>
+    <string name="send_send_label">發送我的 Lunify</string>
+    <string name="send_send_timed_label">發送我的 Lunify (%1$s)</string>
     <string name="send_qr_invalid">這不是 QR 碼</string>
     <string name="send_qr_address_invalid">這不是有效的付款 QR 碼</string>
     <string name="send_address_invalid">這不是有效的地址</string>
@@ -379,13 +379,13 @@
 
     <string name="label_restoreheight">Restore Height</string>
 
-    <string name="toast_ledger_start_app">Start Scala App on %1$s</string>
+    <string name="toast_ledger_start_app">Start Lunify App on %1$s</string>
 
     <string name="menu_rescan">Rescan!</string>
     <string name="privacy_policy_intro">We care about your privacy. To learn more, please read our Privacy Policy.</string>
     <string name="privacy_policy_label">Privacy Policy</string>
     <string name="primary_address">Primary Address</string>
-    <string name="mm_url">https://github.com/scala-network/MobileMiner/releases</string>
+    <string name="mm_url">https://github.com/LunifyProject/MobileMiner/releases</string>
     <string name="connection_remote_daemon">Connecting to remote node...</string>
     <string name="remote_nodes">Remote Nodes</string>
     <string name="address_book">Address Book</string>
@@ -395,7 +395,7 @@
     <string name="save_to_address_book">Save to address book</string>
     <string name="contact_name_empty_error">Name cannot be empty!</string>
     <string name="entry_name">Entry Name</string>
-    <string name="start_mining">Start mining on your Android device safely and efficiently with the Scala Mobile Miner.</string>
+    <string name="start_mining">Start mining on your Android device safely and efficiently with the Lunify Mobile Miner.</string>
     <string name="mobile_miner">Mobile Miner</string>
     <string name="download">Download</string>
     <string name="select_image">Select Image</string>

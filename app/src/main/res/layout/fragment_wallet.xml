@@ -24,7 +24,7 @@
 
                     <TextView
                         android:id="@+id/tvWalletName"
-                        style="@style/ScalaText.Medium"
+                        style="@style/LunifyText.Medium"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
@@ -101,7 +101,7 @@
                         android:layout_weight="1" />
 
                     <TextView
-                        style="@style/ScalaText.Medium"
+                        style="@style/LunifyText.Medium"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/header_top_first"
@@ -116,7 +116,7 @@
 
                         <TextView
                             android:id="@+id/tvStreetView"
-                            style="@style/ScalaText.Balance"
+                            style="@style/LunifyText.Balance"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/header_top_first"
@@ -161,7 +161,7 @@
 
                             <TextView
                                 android:id="@+id/tvBalance"
-                                style="@style/ScalaText.Balance"
+                                style="@style/LunifyText.Balance"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
@@ -186,7 +186,7 @@
 
                     <TextView
                         android:id="@+id/tvUnconfirmedAmount"
-                        style="@style/ScalaText.Unconfirmed"
+                        style="@style/LunifyText.Unconfirmed"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/header_top_first"
@@ -215,7 +215,7 @@
 
                         <TextView
                             android:id="@+id/tvAddressType"
-                            style="@style/ScalaText.Wallet"
+                            style="@style/LunifyText.Wallet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
@@ -229,7 +229,7 @@
 
                         <TextView
                             android:id="@+id/tvWalletAddress"
-                            style="@style/ScalaText.Wallet"
+                            style="@style/LunifyText.Wallet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -301,7 +301,7 @@
         android:orientation="vertical">
 
         <TextView
-            style="@style/ScalaText.Medium"
+            style="@style/LunifyText.Medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"

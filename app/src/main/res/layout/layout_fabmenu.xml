@@ -21,7 +21,7 @@
 
             <TextView
                 android:id="@+id/fabNewT"
-                style="@style/ScalaFab"
+                style="@style/LunifyFab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -54,7 +54,7 @@
 
             <TextView
                 android:id="@+id/fabViewT"
-                style="@style/ScalaFab"
+                style="@style/LunifyFab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -87,7 +87,7 @@
 
             <TextView
                 android:id="@+id/fabKeyT"
-                style="@style/ScalaFab"
+                style="@style/LunifyFab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -120,7 +120,7 @@
 
             <TextView
                 android:id="@+id/fabSeedT"
-                style="@style/ScalaFab"
+                style="@style/LunifyFab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -154,7 +154,7 @@
 
             <TextView
                 android:id="@+id/fabLedgerT"
-                style="@style/ScalaFab"
+                style="@style/LunifyFab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
