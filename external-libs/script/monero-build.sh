@@ -4,7 +4,7 @@ set -e
 
 source script/env.sh
 
-cd $EXTERNAL_LIBS_BUILD_ROOT/scala
+cd $EXTERNAL_LIBS_BUILD_ROOT/lunify
 
 orig_path=$PATH
 base_dir=`pwd`
@@ -46,7 +46,7 @@ for arch in ${archs[@]}; do
             ;;
     esac
 
-    TARGET_LIB_DIR=$lib_root/scala/$arch/lib
+    TARGET_LIB_DIR=$lib_root/lunify/$arch/lib
     if [ -f "$TARGET_LIB_DIR/libwallet_api.a" ]; then
       continue
     fi
@@ -90,7 +90,7 @@ for arch in ${archs[@]}; do
     mkdir -p $TARGET_LIB_DIR
     cp $OUTPUT_DIR/lib/*.a $TARGET_LIB_DIR
 
-    TARGET_INC_DIR=$lib_root/scala/include
+    TARGET_INC_DIR=$lib_root/lunify/include
     rm -rf $TARGET_INC_DIR
     mkdir -p $TARGET_INC_DIR
     cp -a $base_dir/src/wallet/api/wallet2_api.h $TARGET_INC_DIR
