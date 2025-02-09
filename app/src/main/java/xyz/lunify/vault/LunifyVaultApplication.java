@@ -1,0 +1,71 @@
+/*
+ * Copyright (c) 2017 m2049r et al.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * ////////////////
+ *
+ * Copyright (c) 2025 Lunify
+ *
+ * Please see the included LICENSE file for more information.*/
+
+package xyz.lunify.vault;
+
+
+import android.app.Application;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
+
+import androidx.annotation.NonNull;
+
+import xyz.lunify.vault.model.NetworkType;
+import xyz.lunify.vault.util.LocaleHelper;
+
+public class LunifyVaultApplication extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        SharedPreferences preferences = getSharedPreferences(getPackageName() + "_preferences", MODE_PRIVATE);
+        Config.initialize(preferences);
+
+        /*if (BuildConfig.DEBUG) {
+            Timber.plant(new Timber.DebugTree());
+        }*/
+    }
+
+    @Override
+    protected void attachBaseContext(Context context) {
+        super.attachBaseContext(LocaleHelper.setLocale(context, LocaleHelper.getLocale(context)));
+
+        SharedPreferences preferences = getSharedPreferences(getPackageName() + "_preferences", MODE_PRIVATE);
+        Config.initialize(preferences);
+    }
+
+    @Override
+    public void onConfigurationChanged(@NonNull Configuration configuration) {
+        super.onConfigurationChanged(configuration);
+        LocaleHelper.updateSystemDefaultLocale(configuration.locale);
+        LocaleHelper.setLocale(LunifyVaultApplication.this, LocaleHelper.getLocale(LunifyVaultApplication.this));
+    }
+
+    static public NetworkType getNetworkType() {
+        return switch (BuildConfig.FLAVOR_net) {
+            case "mainnet" -> NetworkType.NetworkType_Mainnet;
+            case "stagenet" -> NetworkType.NetworkType_Stagenet;
+            case "testnet" -> NetworkType.NetworkType_Testnet;
+            default ->
+                    throw new IllegalStateException("unknown net flavor " + BuildConfig.FLAVOR_net);
+        };
+    }
+}
