@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault;
+package xyz.lunify.vault;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -51,14 +51,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import io.scalaproject.levin.scanner.Dispatcher;
-import io.scalaproject.vault.data.Node;
-import io.scalaproject.vault.data.NodeInfo;
-import io.scalaproject.vault.layout.NodeInfoAdapter;
-import io.scalaproject.vault.model.NetworkType;
-import io.scalaproject.vault.model.WalletManager;
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.util.Notice;
-import io.scalaproject.vault.widget.Toolbar;
+import xyz.lunify.vault.data.Node;
+import xyz.lunify.vault.data.NodeInfo;
+import xyz.lunify.vault.layout.NodeInfoAdapter;
+import xyz.lunify.vault.model.NetworkType;
+import xyz.lunify.vault.model.WalletManager;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.util.Notice;
+import xyz.lunify.vault.widget.Toolbar;
 
 import java.io.File;
 import java.net.UnknownHostException;

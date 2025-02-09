@@ -21,7 +21,7 @@
 
 // based on https://code.tutsplus.com/tutorials/creating-compound-views-on-android--cms-22889
 
-package io.scalaproject.vault.widget;
+package xyz.lunify.vault.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -30,10 +30,10 @@ import android.os.Looper;
 import android.util.AttributeSet;
 import android.widget.Spinner;
 
-import io.scalaproject.vault.R;
-import io.scalaproject.vault.service.exchange.api.ExchangeCallback;
-import io.scalaproject.vault.service.exchange.api.ExchangeRate;
-import io.scalaproject.vault.util.Helper;
+import xyz.lunify.vault.R;
+import xyz.lunify.vault.service.exchange.api.ExchangeCallback;
+import xyz.lunify.vault.service.exchange.api.ExchangeRate;
+import xyz.lunify.vault.util.Helper;
 
 import java.util.ArrayList;
 import java.util.List;

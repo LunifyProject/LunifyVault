@@ -21,7 +21,7 @@
 
 package io.scalaproject.levin.scanner;
 
-import io.scalaproject.vault.data.NodeInfo;
+import xyz.lunify.vault.data.NodeInfo;
 
 import java.util.Collection;
 import java.util.HashSet;

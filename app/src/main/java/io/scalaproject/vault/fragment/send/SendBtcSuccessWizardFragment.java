@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.fragment.send;
+package xyz.lunify.vault.fragment.send;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -31,16 +31,16 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import io.scalaproject.vault.R;
-import io.scalaproject.vault.data.PendingTx;
-import io.scalaproject.vault.data.TxDataBtc;
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.util.OkHttpHelper;
-import io.scalaproject.vault.xlato.XlaToException;
-import io.scalaproject.vault.xlato.api.QueryOrderStatus;
-import io.scalaproject.vault.xlato.api.XlaToApi;
-import io.scalaproject.vault.xlato.api.XlaToCallback;
-import io.scalaproject.vault.xlato.network.XlaToApiImpl;
+import xyz.lunify.vault.R;
+import xyz.lunify.vault.data.PendingTx;
+import xyz.lunify.vault.data.TxDataBtc;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.util.OkHttpHelper;
+import xyz.lunify.vault.xlato.XlaToException;
+import xyz.lunify.vault.xlato.api.QueryOrderStatus;
+import xyz.lunify.vault.xlato.api.XlaToApi;
+import xyz.lunify.vault.xlato.api.XlaToCallback;
+import xyz.lunify.vault.xlato.network.XlaToApiImpl;
 
 import java.text.NumberFormat;
 import java.util.Locale;

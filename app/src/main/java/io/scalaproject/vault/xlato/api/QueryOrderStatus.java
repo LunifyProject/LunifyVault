@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.xlato.api;
+package xyz.lunify.vault.xlato.api;
 
 import java.util.Date;
 

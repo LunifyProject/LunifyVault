@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault;
+package xyz.lunify.vault;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -34,7 +34,7 @@ import android.widget.Toast;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.Result;
-import io.scalaproject.vault.data.BarcodeData;
+import xyz.lunify.vault.data.BarcodeData;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 import timber.log.Timber;

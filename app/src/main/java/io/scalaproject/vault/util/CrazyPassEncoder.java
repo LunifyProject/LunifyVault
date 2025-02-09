@@ -1,6 +1,6 @@
-package io.scalaproject.vault.util;
+package xyz.lunify.vault.util;
 
-import io.scalaproject.vault.model.WalletManager;
+import xyz.lunify.vault.model.WalletManager;
 
 import java.math.BigInteger;
 

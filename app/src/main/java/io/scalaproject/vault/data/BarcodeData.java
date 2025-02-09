@@ -19,14 +19,14 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.data;
+package xyz.lunify.vault.data;
 
 import android.net.Uri;
 
-import io.scalaproject.vault.model.Wallet;
-import io.scalaproject.vault.util.BitcoinAddressValidator;
-import io.scalaproject.vault.util.OpenAliasHelper;
-import io.scalaproject.vault.util.PaymentProtocolHelper;
+import xyz.lunify.vault.model.Wallet;
+import xyz.lunify.vault.util.BitcoinAddressValidator;
+import xyz.lunify.vault.util.OpenAliasHelper;
+import xyz.lunify.vault.util.PaymentProtocolHelper;
 
 import com.unstoppabledomains.exceptions.ns.NamingServiceException;
 import com.unstoppabledomains.resolution.DomainResolution;

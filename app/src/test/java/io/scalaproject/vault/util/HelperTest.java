@@ -1,4 +1,4 @@
-package io.scalaproject.vault.util;
+package xyz.lunify.vault.util;
 
 import org.junit.Test;
 

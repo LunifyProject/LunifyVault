@@ -6,7 +6,7 @@
 //
 // Please see the included LICENSE file for more information.
 
-package io.scalaproject.vault;
+package xyz.lunify.vault;
 
 import android.content.SharedPreferences;
 

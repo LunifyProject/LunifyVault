@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault;
+package xyz.lunify.vault;
 
 
 import android.app.Application;
@@ -29,8 +29,8 @@ import android.content.res.Configuration;
 
 import androidx.annotation.NonNull;
 
-import io.scalaproject.vault.model.NetworkType;
-import io.scalaproject.vault.util.LocaleHelper;
+import xyz.lunify.vault.model.NetworkType;
+import xyz.lunify.vault.util.LocaleHelper;
 
 import org.acra.ACRA;
 import org.acra.annotation.AcraCore;

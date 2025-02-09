@@ -1,4 +1,4 @@
-package io.scalaproject.vault.util;
+package xyz.lunify.vault.util;
 
 import android.app.KeyguardManager;
 import android.content.Context;

@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault;
+package xyz.lunify.vault;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -51,15 +51,15 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import io.scalaproject.vault.data.NodeInfo;
-import io.scalaproject.vault.layout.NodeInfoAdapter;
-import io.scalaproject.vault.layout.WalletInfoAdapter;
-import io.scalaproject.vault.model.WalletManager;
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.util.KeyStoreHelper;
-import io.scalaproject.vault.util.LegacyStorageHelper;
-import io.scalaproject.vault.util.Notice;
-import io.scalaproject.vault.widget.Toolbar;
+import xyz.lunify.vault.data.NodeInfo;
+import xyz.lunify.vault.layout.NodeInfoAdapter;
+import xyz.lunify.vault.layout.WalletInfoAdapter;
+import xyz.lunify.vault.model.WalletManager;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.util.KeyStoreHelper;
+import xyz.lunify.vault.util.LegacyStorageHelper;
+import xyz.lunify.vault.util.Notice;
+import xyz.lunify.vault.widget.Toolbar;
 
 import java.io.File;
 import java.util.ArrayList;

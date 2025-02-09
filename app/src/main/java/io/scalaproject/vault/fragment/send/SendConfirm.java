@@ -19,9 +19,9 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.fragment.send;
+package xyz.lunify.vault.fragment.send;
 
-import io.scalaproject.vault.model.PendingTransaction;
+import xyz.lunify.vault.model.PendingTransaction;
 
 interface SendConfirm {
     void sendFailed(String errorText);

@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.xlato.network;
+package xyz.lunify.vault.xlato.network;
 
 import org.json.JSONObject;
 

@@ -19,12 +19,12 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.service.exchange.kraken;
+package xyz.lunify.vault.service.exchange.kraken;
 
 import androidx.annotation.NonNull;
 
-import io.scalaproject.vault.service.exchange.api.ExchangeException;
-import io.scalaproject.vault.service.exchange.api.ExchangeRate;
+import xyz.lunify.vault.service.exchange.api.ExchangeException;
+import xyz.lunify.vault.service.exchange.api.ExchangeRate;
 
 import org.json.JSONArray;
 import org.json.JSONException;

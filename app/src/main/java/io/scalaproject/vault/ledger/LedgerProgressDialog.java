@@ -1,11 +1,11 @@
-package io.scalaproject.vault.ledger;
+package xyz.lunify.vault.ledger;
 
 import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
 
-import io.scalaproject.vault.R;
-import io.scalaproject.vault.dialog.ProgressDialog;
+import xyz.lunify.vault.R;
+import xyz.lunify.vault.dialog.ProgressDialog;
 
 import timber.log.Timber;
 

@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.util;
+package xyz.lunify.vault.util;
 
 import org.junit.Rule;
 import org.junit.Test;

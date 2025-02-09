@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.fragment.send;
+package xyz.lunify.vault.fragment.send;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -43,22 +43,22 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-import io.scalaproject.vault.Config;
-import io.scalaproject.vault.OnBackPressedListener;
-import io.scalaproject.vault.OnUriScannedListener;
-import io.scalaproject.vault.R;
-import io.scalaproject.vault.WalletActivity;
-import io.scalaproject.vault.data.BarcodeData;
-import io.scalaproject.vault.data.PendingTx;
-import io.scalaproject.vault.data.TxData;
-import io.scalaproject.vault.data.TxDataBtc;
-import io.scalaproject.vault.data.UserNotes;
-import io.scalaproject.vault.layout.SpendViewPager;
-import io.scalaproject.vault.model.PendingTransaction;
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.util.Notice;
-import io.scalaproject.vault.widget.DotBar;
-import io.scalaproject.vault.widget.Toolbar;
+import xyz.lunify.vault.Config;
+import xyz.lunify.vault.OnBackPressedListener;
+import xyz.lunify.vault.OnUriScannedListener;
+import xyz.lunify.vault.R;
+import xyz.lunify.vault.WalletActivity;
+import xyz.lunify.vault.data.BarcodeData;
+import xyz.lunify.vault.data.PendingTx;
+import xyz.lunify.vault.data.TxData;
+import xyz.lunify.vault.data.TxDataBtc;
+import xyz.lunify.vault.data.UserNotes;
+import xyz.lunify.vault.layout.SpendViewPager;
+import xyz.lunify.vault.model.PendingTransaction;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.util.Notice;
+import xyz.lunify.vault.widget.DotBar;
+import xyz.lunify.vault.widget.Toolbar;
 
 import java.lang.ref.WeakReference;
 import java.util.Objects;

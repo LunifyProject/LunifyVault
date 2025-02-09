@@ -19,14 +19,14 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.data;
+package xyz.lunify.vault.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import androidx.annotation.NonNull;
 
-import io.scalaproject.vault.model.PendingTransaction;
+import xyz.lunify.vault.model.PendingTransaction;
 
 // https://stackoverflow.com/questions/2139134/how-to-send-an-object-from-one-android-activity-to-another-using-intents
 public class TxData implements Parcelable {

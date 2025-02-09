@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.layout;
+package xyz.lunify.vault.layout;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -35,8 +35,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import io.scalaproject.vault.R;
-import io.scalaproject.vault.data.NodeInfo;
+import xyz.lunify.vault.R;
+import xyz.lunify.vault.data.NodeInfo;
 
 import java.net.HttpURLConnection;
 import java.text.SimpleDateFormat;

@@ -20,7 +20,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.util;
+package xyz.lunify.vault.util;
 
 import android.annotation.TargetApi;
 import android.content.Context;

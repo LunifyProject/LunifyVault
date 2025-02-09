@@ -19,18 +19,18 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.xlato.network;
+package xyz.lunify.vault.xlato.network;
 
 import androidx.annotation.NonNull;
 
-import io.scalaproject.vault.util.OkHttpHelper;
-import io.scalaproject.vault.xlato.XlaToError;
-import io.scalaproject.vault.xlato.XlaToException;
-import io.scalaproject.vault.xlato.api.CreateOrder;
-import io.scalaproject.vault.xlato.api.QueryOrderParameters;
-import io.scalaproject.vault.xlato.api.QueryOrderStatus;
-import io.scalaproject.vault.xlato.api.XlaToApi;
-import io.scalaproject.vault.xlato.api.XlaToCallback;
+import xyz.lunify.vault.util.OkHttpHelper;
+import xyz.lunify.vault.xlato.XlaToError;
+import xyz.lunify.vault.xlato.XlaToException;
+import xyz.lunify.vault.xlato.api.CreateOrder;
+import xyz.lunify.vault.xlato.api.QueryOrderParameters;
+import xyz.lunify.vault.xlato.api.QueryOrderStatus;
+import xyz.lunify.vault.xlato.api.XlaToApi;
+import xyz.lunify.vault.xlato.api.XlaToCallback;
 
 import org.json.JSONException;
 import org.json.JSONObject;

@@ -21,11 +21,11 @@
 
 // Specs from https://openalias.org/
 
-package io.scalaproject.vault.util;
+package xyz.lunify.vault.util;
 
 import android.os.AsyncTask;
 
-import io.scalaproject.vault.data.BarcodeData;
+import xyz.lunify.vault.data.BarcodeData;
 
 import org.jitsi.dnssec.validator.ValidatingResolver;
 import org.xbill.DNS.DClass;

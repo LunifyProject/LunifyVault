@@ -1,4 +1,4 @@
-package io.scalaproject.vault;
+package xyz.lunify.vault;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.layout;
+package xyz.lunify.vault.layout;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -34,8 +34,8 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import io.scalaproject.vault.R;
-import io.scalaproject.vault.model.WalletManager;
+import xyz.lunify.vault.R;
+import xyz.lunify.vault.model.WalletManager;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -45,7 +45,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
 
-import io.scalaproject.vault.util.Helper;
+import xyz.lunify.vault.util.Helper;
 import timber.log.Timber;
 
 public class WalletInfoAdapter extends RecyclerView.Adapter<WalletInfoAdapter.ViewHolder> {

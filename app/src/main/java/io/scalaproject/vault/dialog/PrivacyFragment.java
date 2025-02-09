@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.dialog;
+package xyz.lunify.vault.dialog;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -40,7 +40,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.util.Objects;
 
-import io.scalaproject.vault.R;
+import xyz.lunify.vault.R;
 
 public class PrivacyFragment extends DialogFragment {
     static final String TAG = "PrivacyFragment";

@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault;
+package xyz.lunify.vault;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -43,12 +43,12 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import io.scalaproject.vault.model.TransactionInfo;
-import io.scalaproject.vault.model.Transfer;
-import io.scalaproject.vault.model.Wallet;
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.data.UserNotes;
-import io.scalaproject.vault.widget.Toolbar;
+import xyz.lunify.vault.model.TransactionInfo;
+import xyz.lunify.vault.model.Transfer;
+import xyz.lunify.vault.model.Wallet;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.data.UserNotes;
+import xyz.lunify.vault.widget.Toolbar;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

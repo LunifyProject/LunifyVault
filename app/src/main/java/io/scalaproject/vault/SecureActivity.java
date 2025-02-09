@@ -19,15 +19,15 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault;
+package xyz.lunify.vault;
 
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.util.LocaleHelper;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.util.LocaleHelper;
 
 import static android.view.WindowManager.LayoutParams;
 

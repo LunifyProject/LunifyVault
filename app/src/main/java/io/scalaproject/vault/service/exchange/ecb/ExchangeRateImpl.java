@@ -19,11 +19,11 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.service.exchange.ecb;
+package xyz.lunify.vault.service.exchange.ecb;
 
 import androidx.annotation.NonNull;
 
-import io.scalaproject.vault.service.exchange.api.ExchangeRate;
+import xyz.lunify.vault.service.exchange.api.ExchangeRate;
 
 import java.util.Date;
 

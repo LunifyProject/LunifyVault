@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.service;
+package xyz.lunify.vault.service;
 
 import android.Manifest;
 import android.app.Notification;
@@ -45,15 +45,15 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-import io.scalaproject.vault.R;
-import io.scalaproject.vault.WalletActivity;
-import io.scalaproject.vault.data.TxData;
-import io.scalaproject.vault.model.PendingTransaction;
-import io.scalaproject.vault.model.Wallet;
-import io.scalaproject.vault.model.WalletListener;
-import io.scalaproject.vault.model.WalletManager;
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.util.LocaleHelper;
+import xyz.lunify.vault.R;
+import xyz.lunify.vault.WalletActivity;
+import xyz.lunify.vault.data.TxData;
+import xyz.lunify.vault.model.PendingTransaction;
+import xyz.lunify.vault.model.Wallet;
+import xyz.lunify.vault.model.WalletListener;
+import xyz.lunify.vault.model.WalletManager;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.util.LocaleHelper;
 
 import timber.log.Timber;
 

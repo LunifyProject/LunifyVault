@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     defaultConfig {
-        applicationId "io.scalaproject.vault"
+        applicationId "xyz.lunify.vault"
         buildToolsVersion = '34.0.0'
         compileSdk 34
         minSdk 23
@@ -91,7 +91,7 @@ android {
 
     // Enumerate translated locales
     def availableLocales = ["en"]
-    namespace 'io.scalaproject.vault'
+    namespace 'xyz.lunify.vault'
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17

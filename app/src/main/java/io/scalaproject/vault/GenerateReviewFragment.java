@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault;
+package xyz.lunify.vault;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -54,16 +54,16 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import io.scalaproject.vault.ledger.Ledger;
-import io.scalaproject.vault.ledger.LedgerProgressDialog;
-import io.scalaproject.vault.model.NetworkType;
-import io.scalaproject.vault.model.Wallet;
-import io.scalaproject.vault.model.WalletManager;
-import io.scalaproject.vault.util.FingerprintHelper;
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.util.KeyStoreHelper;
-import io.scalaproject.vault.util.ScalaThreadPoolExecutor;
-import io.scalaproject.vault.widget.Toolbar;
+import xyz.lunify.vault.ledger.Ledger;
+import xyz.lunify.vault.ledger.LedgerProgressDialog;
+import xyz.lunify.vault.model.NetworkType;
+import xyz.lunify.vault.model.Wallet;
+import xyz.lunify.vault.model.WalletManager;
+import xyz.lunify.vault.util.FingerprintHelper;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.util.KeyStoreHelper;
+import xyz.lunify.vault.util.ScalaThreadPoolExecutor;
+import xyz.lunify.vault.widget.Toolbar;
 
 import java.text.NumberFormat;
 import java.util.Objects;

@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault;
+package xyz.lunify.vault;
 
 import android.annotation.SuppressLint;
 import android.content.ComponentName;
@@ -55,22 +55,22 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import io.scalaproject.vault.data.BarcodeData;
-import io.scalaproject.vault.data.Contact;
-import io.scalaproject.vault.data.TxData;
-import io.scalaproject.vault.data.UserNotes;
-import io.scalaproject.vault.dialog.CreditsFragment;
-import io.scalaproject.vault.dialog.HelpFragment;
-import io.scalaproject.vault.fragment.send.SendAddressWizardFragment;
-import io.scalaproject.vault.fragment.send.SendFragment;
-import io.scalaproject.vault.ledger.LedgerProgressDialog;
-import io.scalaproject.vault.model.PendingTransaction;
-import io.scalaproject.vault.model.TransactionInfo;
-import io.scalaproject.vault.model.Wallet;
-import io.scalaproject.vault.service.WalletService;
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.util.ScalaThreadPoolExecutor;
-import io.scalaproject.vault.widget.Toolbar;
+import xyz.lunify.vault.data.BarcodeData;
+import xyz.lunify.vault.data.Contact;
+import xyz.lunify.vault.data.TxData;
+import xyz.lunify.vault.data.UserNotes;
+import xyz.lunify.vault.dialog.CreditsFragment;
+import xyz.lunify.vault.dialog.HelpFragment;
+import xyz.lunify.vault.fragment.send.SendAddressWizardFragment;
+import xyz.lunify.vault.fragment.send.SendFragment;
+import xyz.lunify.vault.ledger.LedgerProgressDialog;
+import xyz.lunify.vault.model.PendingTransaction;
+import xyz.lunify.vault.model.TransactionInfo;
+import xyz.lunify.vault.model.Wallet;
+import xyz.lunify.vault.service.WalletService;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.util.ScalaThreadPoolExecutor;
+import xyz.lunify.vault.widget.Toolbar;
 
 import java.util.ArrayList;
 import java.util.HashSet;

@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault;
+package xyz.lunify.vault;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -56,11 +56,11 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import io.scalaproject.vault.data.Contact;
-import io.scalaproject.vault.layout.ContactInfoAdapter;
-import io.scalaproject.vault.model.Wallet;
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.widget.Toolbar;
+import xyz.lunify.vault.data.Contact;
+import xyz.lunify.vault.layout.ContactInfoAdapter;
+import xyz.lunify.vault.model.Wallet;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.widget.Toolbar;
 
 import java.io.File;
 import java.io.IOException;

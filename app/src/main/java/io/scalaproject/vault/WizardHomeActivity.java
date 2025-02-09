@@ -2,7 +2,7 @@
 //
 // Please see the included LICENSE file for more information.
 
-package io.scalaproject.vault;
+package xyz.lunify.vault;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import io.scalaproject.vault.dialog.PrivacyFragment;
+import xyz.lunify.vault.dialog.PrivacyFragment;
 import timber.log.Timber;
 
 public class WizardHomeActivity extends BaseActivity

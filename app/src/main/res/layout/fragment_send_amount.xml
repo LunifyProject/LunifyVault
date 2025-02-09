@@ -38,7 +38,7 @@
             android:visibility="visible" />
     </RelativeLayout>
 
-    <io.scalaproject.vault.widget.ExchangeEditText
+    <xyz.lunify.vault.widget.ExchangeEditText
         android:id="@+id/etAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

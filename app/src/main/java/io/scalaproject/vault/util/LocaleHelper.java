@@ -1,11 +1,11 @@
-package io.scalaproject.vault.util;
+package xyz.lunify.vault.util;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.preference.PreferenceManager;
 
-import io.scalaproject.vault.R;
+import xyz.lunify.vault.R;
 
 import java.util.ArrayList;
 import java.util.Locale;

@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.fragment.send;
+package xyz.lunify.vault.fragment.send;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -28,12 +28,12 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import io.scalaproject.vault.R;
-import io.scalaproject.vault.data.BarcodeData;
-import io.scalaproject.vault.data.TxData;
-import io.scalaproject.vault.model.Wallet;
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.widget.ExchangeEditText;
+import xyz.lunify.vault.R;
+import xyz.lunify.vault.data.BarcodeData;
+import xyz.lunify.vault.data.TxData;
+import xyz.lunify.vault.model.Wallet;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.widget.ExchangeEditText;
 
 import timber.log.Timber;
 

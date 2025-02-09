@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.widget;
+package xyz.lunify.vault.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -28,7 +28,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import io.scalaproject.vault.R;
+import xyz.lunify.vault.R;
 
 public class SendProgressView extends LinearLayout {
 

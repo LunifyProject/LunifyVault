@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault;
+package xyz.lunify.vault;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -63,14 +63,14 @@ import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
-import io.scalaproject.vault.data.BarcodeData;
-import io.scalaproject.vault.ledger.LedgerProgressDialog;
-import io.scalaproject.vault.model.Wallet;
-import io.scalaproject.vault.model.WalletManager;
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.util.ScalaThreadPoolExecutor;
-import io.scalaproject.vault.widget.ExchangeView;
-import io.scalaproject.vault.widget.Toolbar;
+import xyz.lunify.vault.data.BarcodeData;
+import xyz.lunify.vault.ledger.LedgerProgressDialog;
+import xyz.lunify.vault.model.Wallet;
+import xyz.lunify.vault.model.WalletManager;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.util.ScalaThreadPoolExecutor;
+import xyz.lunify.vault.widget.ExchangeView;
+import xyz.lunify.vault.widget.Toolbar;
 
 import java.io.File;
 import java.io.FileOutputStream;

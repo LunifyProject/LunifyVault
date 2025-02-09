@@ -23,7 +23,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.util.ledger;
+package xyz.lunify.vault.util.ledger;
 
 import io.theromus.sha.Keccak;
 import io.theromus.sha.Parameters;

@@ -21,7 +21,7 @@
 
 // https://stackoverflow.com/questions/2126717/android-autocompletetextview-show-suggestions-when-no-text-entered
 
-package io.scalaproject.vault.widget;
+package xyz.lunify.vault.widget;
 
 import android.content.Context;
 import android.graphics.Rect;

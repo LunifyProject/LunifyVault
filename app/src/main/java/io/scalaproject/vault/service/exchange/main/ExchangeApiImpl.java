@@ -19,16 +19,16 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.service.exchange.main;
+package xyz.lunify.vault.service.exchange.main;
 
 import android.util.Log;
 import androidx.annotation.NonNull;
 
-import io.scalaproject.vault.service.exchange.api.ExchangeApi;
-import io.scalaproject.vault.service.exchange.api.ExchangeCallback;
-import io.scalaproject.vault.service.exchange.api.ExchangeException;
-import io.scalaproject.vault.service.exchange.api.ExchangeRate;
-import io.scalaproject.vault.util.Helper;
+import xyz.lunify.vault.service.exchange.api.ExchangeApi;
+import xyz.lunify.vault.service.exchange.api.ExchangeCallback;
+import xyz.lunify.vault.service.exchange.api.ExchangeException;
+import xyz.lunify.vault.service.exchange.api.ExchangeRate;
+import xyz.lunify.vault.util.Helper;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -128,7 +128,7 @@ public class ExchangeApiImpl implements ExchangeApi {
             // This need clean and optimize --Vv - O.o
             final String quote = Helper.BASE_CRYPTO.equals(baseCurrency) ? quoteCurrency : baseCurrency;
             // now we get from ecb the selected coin
-            final ExchangeApi ecbApi = new io.scalaproject.vault.service.exchange.ecb.ExchangeApiImpl(okHttpClient);
+            final ExchangeApi ecbApi = new xyz.lunify.vault.service.exchange.ecb.ExchangeApiImpl(okHttpClient);
             ecbApi.queryExchangeRate(BASE_FIAT, quote, new ExchangeCallback() {
                 @Override
                 public void onSuccess(final ExchangeRate ecbRate) {
@@ -137,7 +137,7 @@ public class ExchangeApiImpl implements ExchangeApi {
                     if (!quote.equals(quoteCurrency)) rate = 1.0d / rate;
                     Timber.d("rate = %f", rate);
 
-                    final ExchangeRate exchangeRate = new io.scalaproject.vault.service.exchange.main.ExchangeRateImpl(baseCurrency, quoteCurrency, rate);
+                    final ExchangeRate exchangeRate = new xyz.lunify.vault.service.exchange.main.ExchangeRateImpl(baseCurrency, quoteCurrency, rate);
                     callback.onSuccess(exchangeRate);
                 }
 

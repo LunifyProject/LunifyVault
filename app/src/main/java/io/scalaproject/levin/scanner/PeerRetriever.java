@@ -26,8 +26,8 @@ import io.scalaproject.levin.data.Section;
 import io.scalaproject.levin.util.HexHelper;
 import io.scalaproject.levin.util.LittleEndianDataInputStream;
 import io.scalaproject.levin.util.LittleEndianDataOutputStream;
-import io.scalaproject.vault.data.NodeInfo;
-import io.scalaproject.vault.util.Helper;
+import xyz.lunify.vault.data.NodeInfo;
+import xyz.lunify.vault.util.Helper;
 
 import java.io.DataInput;
 import java.io.DataOutput;

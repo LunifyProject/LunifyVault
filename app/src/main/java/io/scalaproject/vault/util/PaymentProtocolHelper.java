@@ -21,13 +21,13 @@
 
 // Specs from https://openalias.org/
 
-package io.scalaproject.vault.util;
+package xyz.lunify.vault.util;
 
-import io.scalaproject.vault.data.BarcodeData;
-import io.scalaproject.vault.xlato.api.CreateOrder;
-import io.scalaproject.vault.xlato.api.XlaToApi;
-import io.scalaproject.vault.xlato.api.XlaToCallback;
-import io.scalaproject.vault.xlato.network.XlaToApiImpl;
+import xyz.lunify.vault.data.BarcodeData;
+import xyz.lunify.vault.xlato.api.CreateOrder;
+import xyz.lunify.vault.xlato.api.XlaToApi;
+import xyz.lunify.vault.xlato.api.XlaToCallback;
+import xyz.lunify.vault.xlato.network.XlaToApiImpl;
 
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;

@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.util;
+package xyz.lunify.vault.util;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -66,11 +66,11 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.TextView;
 
-import io.scalaproject.vault.BuildConfig;
-import io.scalaproject.vault.R;
-import io.scalaproject.vault.model.NetworkType;
-import io.scalaproject.vault.model.WalletManager;
-import io.scalaproject.vault.service.exchange.api.ExchangeApi;
+import xyz.lunify.vault.BuildConfig;
+import xyz.lunify.vault.R;
+import xyz.lunify.vault.model.NetworkType;
+import xyz.lunify.vault.model.WalletManager;
+import xyz.lunify.vault.service.exchange.api.ExchangeApi;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -643,7 +643,7 @@ public class Helper {
 
     static public ExchangeApi getExchangeApi() {
         // This returns ecb first?
-        return new io.scalaproject.vault.service.exchange.main.ExchangeApiImpl(OkHttpHelper.getOkHttpClient());
+        return new xyz.lunify.vault.service.exchange.main.ExchangeApiImpl(OkHttpHelper.getOkHttpClient());
     }
 
     public interface Action {

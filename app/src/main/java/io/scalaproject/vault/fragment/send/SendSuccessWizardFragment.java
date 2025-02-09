@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.fragment.send;
+package xyz.lunify.vault.fragment.send;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -35,11 +35,11 @@ import android.widget.Toast;
 
 import java.util.Objects;
 
-import io.scalaproject.vault.R;
-import io.scalaproject.vault.data.PendingTx;
-import io.scalaproject.vault.data.TxData;
-import io.scalaproject.vault.model.Wallet;
-import io.scalaproject.vault.util.Helper;
+import xyz.lunify.vault.R;
+import xyz.lunify.vault.data.PendingTx;
+import xyz.lunify.vault.data.TxData;
+import xyz.lunify.vault.model.Wallet;
+import xyz.lunify.vault.util.Helper;
 
 import timber.log.Timber;
 

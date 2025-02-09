@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.model;
+package xyz.lunify.vault.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

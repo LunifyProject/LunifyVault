@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault;
+package xyz.lunify.vault;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -53,14 +53,14 @@ import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 
-import io.scalaproject.vault.model.Wallet;
-import io.scalaproject.vault.model.WalletManager;
-import io.scalaproject.vault.util.FingerprintHelper;
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.util.KeyStoreHelper;
-import io.scalaproject.vault.util.RestoreHeight;
-import io.scalaproject.vault.util.ledger.Scala;
-import io.scalaproject.vault.widget.Toolbar;
+import xyz.lunify.vault.model.Wallet;
+import xyz.lunify.vault.model.WalletManager;
+import xyz.lunify.vault.util.FingerprintHelper;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.util.KeyStoreHelper;
+import xyz.lunify.vault.util.RestoreHeight;
+import xyz.lunify.vault.util.ledger.Scala;
+import xyz.lunify.vault.widget.Toolbar;
 import com.nulabinc.zxcvbn.Strength;
 import com.nulabinc.zxcvbn.Zxcvbn;
 

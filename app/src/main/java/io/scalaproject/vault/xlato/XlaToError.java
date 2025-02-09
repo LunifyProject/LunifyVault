@@ -19,11 +19,11 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.xlato;
+package xyz.lunify.vault.xlato;
 
 import androidx.annotation.NonNull;
 
-import io.scalaproject.vault.R;
+import xyz.lunify.vault.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;

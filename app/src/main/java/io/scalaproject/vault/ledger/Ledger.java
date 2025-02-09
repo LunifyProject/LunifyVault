@@ -18,7 +18,7 @@
  ********************************************************************************
  */
 
-package io.scalaproject.vault.ledger;
+package xyz.lunify.vault.ledger;
 
 import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbManager;
@@ -26,9 +26,9 @@ import android.hardware.usb.UsbManager;
 import io.btchip.BTChipException;
 import io.btchip.comm.BTChipTransport;
 import io.btchip.comm.android.BTChipTransportAndroidHID;
-import io.scalaproject.vault.BuildConfig;
-import io.scalaproject.vault.model.WalletManager;
-import io.scalaproject.vault.util.Helper;
+import xyz.lunify.vault.BuildConfig;
+import xyz.lunify.vault.model.WalletManager;
+import xyz.lunify.vault.util.Helper;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

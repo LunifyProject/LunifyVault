@@ -21,7 +21,7 @@
 
 // based on https://github.com/marcokstephen/StepProgressBar
 
-package io.scalaproject.vault.widget;
+package xyz.lunify.vault.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -32,7 +32,7 @@ import android.view.View;
 
 import androidx.annotation.NonNull;
 
-import io.scalaproject.vault.R;
+import xyz.lunify.vault.R;
 
 import timber.log.Timber;
 

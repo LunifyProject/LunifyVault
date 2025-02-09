@@ -21,7 +21,7 @@
 
 // based on from https://stackoverflow.com/a/45325876 (which did not work for me)
 
-package io.scalaproject.vault.widget;
+package xyz.lunify.vault.widget;
 
 import android.content.Context;
 import com.google.android.material.textfield.TextInputLayout;

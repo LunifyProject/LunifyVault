@@ -19,9 +19,9 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.util;
+package xyz.lunify.vault.util;
 
-import io.scalaproject.vault.data.BarcodeData;
+import xyz.lunify.vault.data.BarcodeData;
 
 import org.junit.Rule;
 import org.junit.Test;

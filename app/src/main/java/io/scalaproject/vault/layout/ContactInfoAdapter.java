@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.layout;
+package xyz.lunify.vault.layout;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -34,9 +34,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import io.scalaproject.vault.R;
-import io.scalaproject.vault.data.Contact;
-import io.scalaproject.vault.util.Helper;
+import xyz.lunify.vault.R;
+import xyz.lunify.vault.data.Contact;
+import xyz.lunify.vault.util.Helper;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault;
+package xyz.lunify.vault;
 
 import android.annotation.SuppressLint;
 import android.app.PendingIntent;
@@ -64,25 +64,25 @@ import org.acra.ACRA;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import io.scalaproject.vault.data.Node;
-import io.scalaproject.vault.data.NodeInfo;
-import io.scalaproject.vault.dialog.AboutFragment;
-import io.scalaproject.vault.dialog.CreditsFragment;
-import io.scalaproject.vault.dialog.HelpFragment;
-import io.scalaproject.vault.dialog.PrivacyFragment;
-import io.scalaproject.vault.ledger.Ledger;
-import io.scalaproject.vault.ledger.LedgerProgressDialog;
-import io.scalaproject.vault.model.NetworkType;
-import io.scalaproject.vault.model.Wallet;
-import io.scalaproject.vault.model.WalletManager;
-import io.scalaproject.vault.service.WalletService;
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.util.KeyStoreHelper;
-import io.scalaproject.vault.util.LocaleHelper;
-import io.scalaproject.vault.util.Notice;
-import io.scalaproject.vault.util.ScalaThreadPoolExecutor;
-import io.scalaproject.vault.widget.Toolbar;
-import io.scalaproject.vault.util.LegacyStorageHelper;
+import xyz.lunify.vault.data.Node;
+import xyz.lunify.vault.data.NodeInfo;
+import xyz.lunify.vault.dialog.AboutFragment;
+import xyz.lunify.vault.dialog.CreditsFragment;
+import xyz.lunify.vault.dialog.HelpFragment;
+import xyz.lunify.vault.dialog.PrivacyFragment;
+import xyz.lunify.vault.ledger.Ledger;
+import xyz.lunify.vault.ledger.LedgerProgressDialog;
+import xyz.lunify.vault.model.NetworkType;
+import xyz.lunify.vault.model.Wallet;
+import xyz.lunify.vault.model.WalletManager;
+import xyz.lunify.vault.service.WalletService;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.util.KeyStoreHelper;
+import xyz.lunify.vault.util.LocaleHelper;
+import xyz.lunify.vault.util.Notice;
+import xyz.lunify.vault.util.ScalaThreadPoolExecutor;
+import xyz.lunify.vault.widget.Toolbar;
+import xyz.lunify.vault.util.LegacyStorageHelper;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -1431,7 +1431,7 @@ public class LoginActivity extends BaseActivity
 
     // USB Stuff - (Ledger)
 
-    private static final String ACTION_USB_PERMISSION = "io.scalaproject.vault.USB_PERMISSION";
+    private static final String ACTION_USB_PERMISSION = "xyz.lunify.vault.USB_PERMISSION";
 
     @SuppressLint("UnspecifiedRegisterReceiverFlag")
     void attachLedger() {

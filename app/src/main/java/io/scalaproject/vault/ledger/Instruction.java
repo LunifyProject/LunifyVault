@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.ledger;
+package xyz.lunify.vault.ledger;
 
 public enum Instruction {
 

@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.fragment.send;
+package xyz.lunify.vault.fragment.send;
 
 import android.os.Bundle;
 import android.text.Html;
@@ -30,20 +30,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import io.scalaproject.vault.R;
-import io.scalaproject.vault.data.BarcodeData;
-import io.scalaproject.vault.data.TxDataBtc;
-import io.scalaproject.vault.model.Wallet;
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.util.OkHttpHelper;
-import io.scalaproject.vault.widget.ExchangeOtherEditText;
-import io.scalaproject.vault.widget.SendProgressView;
-import io.scalaproject.vault.xlato.XlaToError;
-import io.scalaproject.vault.xlato.XlaToException;
-import io.scalaproject.vault.xlato.api.QueryOrderParameters;
-import io.scalaproject.vault.xlato.api.XlaToApi;
-import io.scalaproject.vault.xlato.api.XlaToCallback;
-import io.scalaproject.vault.xlato.network.XlaToApiImpl;
+import xyz.lunify.vault.R;
+import xyz.lunify.vault.data.BarcodeData;
+import xyz.lunify.vault.data.TxDataBtc;
+import xyz.lunify.vault.model.Wallet;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.util.OkHttpHelper;
+import xyz.lunify.vault.widget.ExchangeOtherEditText;
+import xyz.lunify.vault.widget.SendProgressView;
+import xyz.lunify.vault.xlato.XlaToError;
+import xyz.lunify.vault.xlato.XlaToException;
+import xyz.lunify.vault.xlato.api.QueryOrderParameters;
+import xyz.lunify.vault.xlato.api.XlaToApi;
+import xyz.lunify.vault.xlato.api.XlaToCallback;
+import xyz.lunify.vault.xlato.network.XlaToApiImpl;
 
 import java.text.NumberFormat;
 import java.util.Locale;

@@ -1,4 +1,4 @@
-package io.scalaproject.vault;
+package xyz.lunify.vault;
 
 import android.content.Context;
 import android.os.Handler;
@@ -8,10 +8,10 @@ import android.util.Log;
 
 import androidx.annotation.CallSuper;
 
-import io.scalaproject.vault.data.BarcodeData;
-import io.scalaproject.vault.dialog.ProgressDialog;
-import io.scalaproject.vault.ledger.Ledger;
-import io.scalaproject.vault.ledger.LedgerProgressDialog;
+import xyz.lunify.vault.data.BarcodeData;
+import xyz.lunify.vault.dialog.ProgressDialog;
+import xyz.lunify.vault.ledger.Ledger;
+import xyz.lunify.vault.ledger.LedgerProgressDialog;
 
 
 import timber.log.Timber;

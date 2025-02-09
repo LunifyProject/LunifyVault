@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault;
+package xyz.lunify.vault;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -50,16 +50,16 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import com.github.brnunes.swipeablerecyclerview.SwipeableRecyclerViewTouchListener;
 
-import io.scalaproject.vault.data.Contact;
-import io.scalaproject.vault.layout.TransactionInfoAdapter;
-import io.scalaproject.vault.model.TransactionInfo;
-import io.scalaproject.vault.model.Wallet;
-import io.scalaproject.vault.model.WalletManager;
-import io.scalaproject.vault.service.exchange.api.ExchangeApi;
-import io.scalaproject.vault.service.exchange.api.ExchangeCallback;
-import io.scalaproject.vault.service.exchange.api.ExchangeRate;
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.widget.Toolbar;
+import xyz.lunify.vault.data.Contact;
+import xyz.lunify.vault.layout.TransactionInfoAdapter;
+import xyz.lunify.vault.model.TransactionInfo;
+import xyz.lunify.vault.model.Wallet;
+import xyz.lunify.vault.model.WalletManager;
+import xyz.lunify.vault.service.exchange.api.ExchangeApi;
+import xyz.lunify.vault.service.exchange.api.ExchangeCallback;
+import xyz.lunify.vault.service.exchange.api.ExchangeRate;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.widget.Toolbar;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;

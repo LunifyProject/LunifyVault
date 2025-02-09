@@ -1,4 +1,4 @@
-package io.scalaproject.vault.dialog;
+package xyz.lunify.vault.dialog;
 
 /*
  * Copyright (C) 2007 The Android Open Source Project
@@ -32,9 +32,9 @@ import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import io.scalaproject.vault.BuildConfig;
-import io.scalaproject.vault.R;
-import io.scalaproject.vault.util.Helper;
+import xyz.lunify.vault.BuildConfig;
+import xyz.lunify.vault.R;
+import xyz.lunify.vault.util.Helper;
 
 import java.util.Locale;
 import java.util.Objects;

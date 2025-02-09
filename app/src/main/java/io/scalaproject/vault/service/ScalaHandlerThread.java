@@ -20,7 +20,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.service;
+package xyz.lunify.vault.service;
 
 import android.os.Handler;
 import android.os.Looper;

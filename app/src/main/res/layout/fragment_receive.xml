@@ -83,7 +83,7 @@
 
         </LinearLayout>
 
-        <io.scalaproject.vault.widget.ExchangeView
+        <xyz.lunify.vault.widget.ExchangeView
             android:id="@+id/evAmount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

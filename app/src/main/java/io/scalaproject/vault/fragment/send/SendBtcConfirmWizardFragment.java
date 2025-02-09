@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.fragment.send;
+package xyz.lunify.vault.fragment.send;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -42,21 +42,21 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import io.scalaproject.vault.R;
-import io.scalaproject.vault.data.TxData;
-import io.scalaproject.vault.data.TxDataBtc;
-import io.scalaproject.vault.model.PendingTransaction;
-import io.scalaproject.vault.model.Wallet;
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.util.OkHttpHelper;
-import io.scalaproject.vault.widget.SendProgressView;
-import io.scalaproject.vault.xlato.XlaToError;
-import io.scalaproject.vault.xlato.XlaToException;
-import io.scalaproject.vault.xlato.api.CreateOrder;
-import io.scalaproject.vault.xlato.api.QueryOrderStatus;
-import io.scalaproject.vault.xlato.api.XlaToApi;
-import io.scalaproject.vault.xlato.api.XlaToCallback;
-import io.scalaproject.vault.xlato.network.XlaToApiImpl;
+import xyz.lunify.vault.R;
+import xyz.lunify.vault.data.TxData;
+import xyz.lunify.vault.data.TxDataBtc;
+import xyz.lunify.vault.model.PendingTransaction;
+import xyz.lunify.vault.model.Wallet;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.util.OkHttpHelper;
+import xyz.lunify.vault.widget.SendProgressView;
+import xyz.lunify.vault.xlato.XlaToError;
+import xyz.lunify.vault.xlato.XlaToException;
+import xyz.lunify.vault.xlato.api.CreateOrder;
+import xyz.lunify.vault.xlato.api.QueryOrderStatus;
+import xyz.lunify.vault.xlato.api.XlaToApi;
+import xyz.lunify.vault.xlato.api.XlaToCallback;
+import xyz.lunify.vault.xlato.network.XlaToApiImpl;
 
 import java.text.NumberFormat;
 import java.util.Locale;

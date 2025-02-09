@@ -19,12 +19,12 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.model;
+package xyz.lunify.vault.model;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import io.scalaproject.vault.data.TxData;
+import xyz.lunify.vault.data.TxData;
 
 import java.io.File;
 import java.text.SimpleDateFormat;

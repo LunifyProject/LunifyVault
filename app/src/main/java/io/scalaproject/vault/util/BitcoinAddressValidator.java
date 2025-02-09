@@ -19,12 +19,12 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.util;
+package xyz.lunify.vault.util;
 
 // mostly based on https://rosettacode.org/wiki/Bitcoin/address_validation#Java
 
-import io.scalaproject.vault.model.NetworkType;
-import io.scalaproject.vault.model.WalletManager;
+import xyz.lunify.vault.model.NetworkType;
+import xyz.lunify.vault.model.WalletManager;
 
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;

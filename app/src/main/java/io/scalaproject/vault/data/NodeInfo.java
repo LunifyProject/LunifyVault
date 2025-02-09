@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.data;
+package xyz.lunify.vault.data;
 
 import androidx.annotation.NonNull;
 
@@ -30,7 +30,7 @@ import com.burgstaller.okhttp.digest.Credentials;
 import com.burgstaller.okhttp.digest.DigestAuthenticator;
 import io.scalaproject.levin.scanner.Dispatcher;
 import io.scalaproject.levin.scanner.LevinPeer;
-import io.scalaproject.vault.util.OkHttpHelper;
+import xyz.lunify.vault.util.OkHttpHelper;
 
 import org.json.JSONException;
 import org.json.JSONObject;

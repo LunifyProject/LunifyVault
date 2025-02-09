@@ -19,12 +19,12 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.model;
+package xyz.lunify.vault.model;
 
-import io.scalaproject.vault.ScalaVaultApplication;
-import io.scalaproject.vault.data.Node;
-import io.scalaproject.vault.ledger.Ledger;
-import io.scalaproject.vault.util.RestoreHeight;
+import xyz.lunify.vault.ScalaVaultApplication;
+import xyz.lunify.vault.data.Node;
+import xyz.lunify.vault.ledger.Ledger;
+import xyz.lunify.vault.util.RestoreHeight;
 
 import java.io.BufferedReader;
 import java.io.File;

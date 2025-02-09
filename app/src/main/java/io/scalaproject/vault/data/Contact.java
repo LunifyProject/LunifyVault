@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.data;
+package xyz.lunify.vault.data;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -30,7 +30,7 @@ import androidx.annotation.NonNull;
 import java.io.ByteArrayOutputStream;
 import java.util.Comparator;
 
-import io.scalaproject.vault.util.Helper;
+import xyz.lunify.vault.util.Helper;
 import timber.log.Timber;
 
 public class Contact {

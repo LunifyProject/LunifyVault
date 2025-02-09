@@ -19,9 +19,9 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.data;
+package xyz.lunify.vault.data;
 
-import io.scalaproject.vault.xlato.api.QueryOrderStatus;
+import xyz.lunify.vault.xlato.api.QueryOrderStatus;
 
 import java.util.Objects;
 import java.util.regex.Matcher;

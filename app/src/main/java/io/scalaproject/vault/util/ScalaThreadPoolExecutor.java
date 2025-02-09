@@ -19,9 +19,9 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.util;
+package xyz.lunify.vault.util;
 
-import io.scalaproject.vault.service.ScalaHandlerThread;
+import xyz.lunify.vault.service.ScalaHandlerThread;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Executor;

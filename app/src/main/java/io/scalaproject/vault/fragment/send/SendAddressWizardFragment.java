@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.fragment.send;
+package xyz.lunify.vault.fragment.send;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -51,21 +51,21 @@ import com.unstoppabledomains.resolution.DomainResolution;
 import com.unstoppabledomains.resolution.Resolution;
 import com.unstoppabledomains.resolution.naming.service.NamingServiceType;
 
-import io.scalaproject.vault.AddressBookFragment;
-import io.scalaproject.vault.Config;
-import io.scalaproject.vault.R;
-import io.scalaproject.vault.data.BarcodeData;
-import io.scalaproject.vault.data.TxData;
-import io.scalaproject.vault.data.TxDataBtc;
-import io.scalaproject.vault.data.UserNotes;
-import io.scalaproject.vault.model.PendingTransaction;
-import io.scalaproject.vault.model.Wallet;
-import io.scalaproject.vault.util.BitcoinAddressValidator;
-import io.scalaproject.vault.util.Helper;
-import io.scalaproject.vault.util.OpenAliasHelper;
-import io.scalaproject.vault.util.PaymentProtocolHelper;
-import io.scalaproject.vault.xlato.XlaToError;
-import io.scalaproject.vault.xlato.XlaToException;
+import xyz.lunify.vault.AddressBookFragment;
+import xyz.lunify.vault.Config;
+import xyz.lunify.vault.R;
+import xyz.lunify.vault.data.BarcodeData;
+import xyz.lunify.vault.data.TxData;
+import xyz.lunify.vault.data.TxDataBtc;
+import xyz.lunify.vault.data.UserNotes;
+import xyz.lunify.vault.model.PendingTransaction;
+import xyz.lunify.vault.model.Wallet;
+import xyz.lunify.vault.util.BitcoinAddressValidator;
+import xyz.lunify.vault.util.Helper;
+import xyz.lunify.vault.util.OpenAliasHelper;
+import xyz.lunify.vault.util.PaymentProtocolHelper;
+import xyz.lunify.vault.xlato.XlaToError;
+import xyz.lunify.vault.xlato.XlaToException;
 
 import java.util.Map;
 import java.util.Objects;

@@ -19,14 +19,14 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.data;
+package xyz.lunify.vault.data;
 
 import android.os.Build;
 
 import androidx.annotation.NonNull;
 
-import io.scalaproject.vault.model.NetworkType;
-import io.scalaproject.vault.model.WalletManager;
+import xyz.lunify.vault.model.NetworkType;
+import xyz.lunify.vault.model.WalletManager;
 
 import java.io.UnsupportedEncodingException;
 import java.net.InetAddress;

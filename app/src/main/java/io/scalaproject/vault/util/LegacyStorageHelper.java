@@ -20,7 +20,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.util;
+package xyz.lunify.vault.util;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -30,8 +30,8 @@ import android.content.pm.PackageManager;
 import android.os.Environment;
 import android.preference.PreferenceManager;
 
-import io.scalaproject.vault.BuildConfig;
-import io.scalaproject.vault.model.WalletManager;
+import xyz.lunify.vault.BuildConfig;
+import xyz.lunify.vault.model.WalletManager;
 
 import java.io.BufferedReader;
 import java.io.File;

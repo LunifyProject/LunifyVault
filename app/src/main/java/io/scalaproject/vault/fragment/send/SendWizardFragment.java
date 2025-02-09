@@ -19,11 +19,11 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.fragment.send;
+package xyz.lunify.vault.fragment.send;
 
 import androidx.fragment.app.Fragment;
 
-import io.scalaproject.vault.layout.SpendViewPager;
+import xyz.lunify.vault.layout.SpendViewPager;
 
 abstract public class SendWizardFragment extends Fragment
         implements SpendViewPager.OnValidateFieldsListener {

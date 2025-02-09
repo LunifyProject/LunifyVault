@@ -21,7 +21,7 @@
 
 // based on https://code.tutsplus.com/tutorials/creating-compound-views-on-android--cms-22889
 
-package io.scalaproject.vault.widget;
+package xyz.lunify.vault.widget;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -33,7 +33,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import io.scalaproject.vault.R;
+import xyz.lunify.vault.R;
 import timber.log.Timber;
 
 public class Toolbar extends androidx.appcompat.widget.Toolbar {

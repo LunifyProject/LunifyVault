@@ -19,9 +19,9 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.data;
+package xyz.lunify.vault.data;
 
-import io.scalaproject.vault.model.PendingTransaction;
+import xyz.lunify.vault.model.PendingTransaction;
 
 public class PendingTx {
     final public PendingTransaction.Status status;

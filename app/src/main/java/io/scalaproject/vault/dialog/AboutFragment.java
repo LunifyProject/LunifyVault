@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.dialog;
+package xyz.lunify.vault.dialog;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -38,8 +38,8 @@ import android.widget.TextView;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import io.scalaproject.vault.BuildConfig;
-import io.scalaproject.vault.R;
+import xyz.lunify.vault.BuildConfig;
+import xyz.lunify.vault.R;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.layout;
+package xyz.lunify.vault.layout;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -27,7 +27,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
-import io.scalaproject.vault.fragment.send.SendFragment;
+import xyz.lunify.vault.fragment.send.SendFragment;
 
 public class SpendViewPager extends ViewPager {
 

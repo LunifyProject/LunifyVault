@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.util;
+package xyz.lunify.vault.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -32,8 +32,8 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import io.scalaproject.vault.R;
-import io.scalaproject.vault.dialog.HelpFragment;
+import xyz.lunify.vault.R;
+import xyz.lunify.vault.dialog.HelpFragment;
 
 import java.util.ArrayList;
 import java.util.List;

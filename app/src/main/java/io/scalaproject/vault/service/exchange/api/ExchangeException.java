@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.service.exchange.api;
+package xyz.lunify.vault.service.exchange.api;
 
 public class ExchangeException extends Exception {
     private final int code;

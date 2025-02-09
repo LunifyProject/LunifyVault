@@ -19,7 +19,7 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-package io.scalaproject.vault.xlato;
+package xyz.lunify.vault.xlato;
 
 public class XlaToException extends Exception {
     private final int code;
