@@ -123,7 +123,7 @@ android {
                         .replace(".", ".")
                         .replace("(", "-")
                         .replace(")", "")
-                outputFileName = "$rootProject.ext.apkName-" + v + "_" + abiName + ".apk"
+                outputFileName = "$rootProject.ext.apkName-v" + v + "_" + abiName + ".apk"
         }
     }
 }
