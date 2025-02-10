@@ -81,13 +81,13 @@ android {
         abi {
             enable true
             reset()
-            include 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+            include 'armeabi-v7a', 'arm64-v8a', 'x86_64'
             universalApk true
         }
     }
 
     // Map for the version code that gives each ABI a value.
-    def abiCodes = ['armeabi-v7a': 1, 'arm64-v8a': 2, 'x86': 3, 'x86_64': 4]
+    def abiCodes = ['armeabi-v7a': 1, 'arm64-v8a': 2, 'x86_64': 4]
 
     // Enumerate translated locales
     def availableLocales = ["en"]
