@@ -96,7 +96,7 @@ import timber.log.Timber;
 public class Helper {
     static public final String NOCRAZYPASS_FLAGFILE = ".nocrazypass";
 
-    static public final String BASE_CRYPTO = "XLA";
+    static public final String BASE_CRYPTO = "LFI";
 
     static private final String WALLET_DIR = "wallets";
     static private final String LUNIFY_DIR = "lunify";
