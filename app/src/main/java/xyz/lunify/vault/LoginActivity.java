@@ -101,24 +101,13 @@ public class LoginActivity extends BaseActivity
         ReceiveFragment.Listener, NodeFragment.Listener {
     private static final String GENERATE_STACK = "gen";
 
-    static private final String DEFAULT_NODES_REPOSITORY = "https://raw.githubusercontent.com/scala-network/ScalaVault/master/app.json";
-
-    // USAGE: The GitHub raw file might not be available in some countries, so the IPFS option
-    //        is a fallback. When the DEFAULT_NODES_REPOSITORY file is modified, we need to upload the new file
-    //        to the IPNS gateway as well.
-    static private final String IPNS_NAME = "node-list.scala.network";
-    static private final String[] NODES_REPOSITORY_IPNS_GATEWAYS = {
-            "https://cloudflare-ipfs.com/ipns/",
-            "https://ipfs.io/ipns/",
-            "https://gateway.ipfs.io/ipns/",
-            "https://dweb.link/ipns/"
-    };
+    static private final String DEFAULT_NODES_REPOSITORY = "https://raw.githubusercontent.com/LunifyProject/Lunify/master/app.json";
 
     static private final String DEFAULT_NODE = "{\n" +
             "\"nodes\": [\n" +
             "{\n" +
-            "\"host\": \"remote.one.scala.network\",\n" +
-            "\"port\": \"11812\"\n" +
+            "\"host\": \"lunify.xyz\",\n" +
+            "\"port\": \"25252\"\n" +
             "} ]\n" +
             "}";
 
