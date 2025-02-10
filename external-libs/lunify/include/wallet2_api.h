@@ -43,7 +43,7 @@
 #include <cstdint>
 
 //  Public interface for libwallet library
-namespace scala {
+namespace lunify {
 
 enum NetworkType : uint8_t {
     MAINNET = 0,
