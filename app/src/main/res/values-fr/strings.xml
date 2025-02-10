@@ -441,7 +441,7 @@
     <string name="wallet_address">Adresse du portefeuille</string>
     <string name="subaddresses">Sous-adresses</string>
     <string name="message_exchange_success">Prix de la devise mis à jour</string>
-    <string name="splashcreen_check_network" translatable="false">Vérification du réseau…</string>
+    <string name="splashcreen_check_network" translatable="false">Vérification du réseau</string>
     <string name="splashcreen_check_network_success" translatable="false">Connecté à Internet, accès à Lunify Vault</string>
     <string name="splashcreen_check_network_failure" translatable="false">Cette application nécessite une connexion réseau pour fonctionner. Veuillez vérifier votre connexion Internet et réessayer…</string>
 

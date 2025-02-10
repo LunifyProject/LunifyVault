@@ -443,7 +443,7 @@
     <string name="wallet_address">Адрес кошелька</string>
     <string name="subaddresses">Подадреса</string>
     <string name="message_exchange_success">Цена валюты обновлена</string>
-    <string name="splashcreen_check_network">Проверка сети…</string>
+    <string name="splashcreen_check_network">Проверка сети</string>
     <string name="splashcreen_check_network_success">Подключено к интернету, доступ к Lunify Vault</string>
     <string name="splashcreen_check_network_failure">Для работы этого приложения требуется подключение к сети. Пожалуйста, проверьте свое интернет-соединение и попробуйте снова…</string>
 

@@ -439,7 +439,7 @@
     <string name="wallet_address">Indirizzo del Portafoglio</string>
     <string name="subaddresses">Sottoindirizzi</string>
     <string name="message_exchange_success">Prezzo della valuta aggiornato</string>
-    <string name="splashcreen_check_network">Verifica Rete…</string>
+    <string name="splashcreen_check_network">Verifica Rete</string>
     <string name="splashcreen_check_network_success">Connesso a Internet, accesso a Lunify Vault</string>
     <string name="splashcreen_check_network_failure">Questa app richiede una connessione di rete per funzionare. Per favore controlla la tua connessione Internet e riprova…</string>
 

@@ -432,7 +432,7 @@
     <string name="wallet_address">Plånboksadress</string>
     <string name="subaddresses">Underadresser</string>
     <string name="message_exchange_success">Valutakurs uppdaterad</string>
-    <string name="splashcreen_check_network">Kontrollerar Nätverk…</string>
+    <string name="splashcreen_check_network">Kontrollerar Nätverk</string>
     <string name="splashcreen_check_network_success">Ansluten till internet, får åtkomst till Lunify Vault</string>
     <string name="splashcreen_check_network_failure">Den här appen kräver nätverksanslutning för att fungera. Kontrollera din internetanslutning och försök igen…</string>
 

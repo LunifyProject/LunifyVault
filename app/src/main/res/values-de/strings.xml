@@ -442,7 +442,7 @@
     <string name="wallet_address">Wallet-Adresse</string>
     <string name="subaddresses">Subadressen</string>
     <string name="message_exchange_success">Währungskurs aktualisiert</string>
-    <string name="splashcreen_check_network">Netzwerk überprüfen…</string>
+    <string name="splashcreen_check_network">Netzwerk überprüfen</string>
     <string name="splashcreen_check_network_success">Mit dem Internet verbunden, Zugriff auf Lunify Vault</string>
     <string name="splashcreen_check_network_failure">Diese App benötigt eine Netzwerkverbindung, um zu funktionieren. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut…</string>
 </resources>

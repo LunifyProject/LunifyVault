@@ -438,7 +438,7 @@
     <string name="wallet_address">Adreça del Moneder</string>
     <string name="subaddresses">Subadreçes</string>
     <string name="message_exchange_success">Preu de la moneda actualitzat</string>
-    <string name="splashcreen_check_network">Verificant Xarxa…</string>
+    <string name="splashcreen_check_network">Verificant Xarxa</string>
     <string name="splashcreen_check_network_success">Connectat a Internet, accedint a Lunify Vault</string>
     <string name="splashcreen_check_network_failure">Aquesta aplicació requereix connexió a la xarxa per funcionar. Si us plau, verifica la teva connexió a Internet i torna-ho a provar…</string>
 
