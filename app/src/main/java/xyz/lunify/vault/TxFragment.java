@@ -84,22 +84,11 @@ public class TxFragment extends Fragment {
     private TextView tvTxTransfers;
     private TextView etTxNotes;
 
-    // XLATO stuff
-    private View cvxlaTo;
-    private TextView tvTxxlaToKey;
-    private TextView tvDestinationBtc;
-    private TextView tvTxAmountBtc;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_tx_info, container, false);
-
-        cvxlaTo = view.findViewById(R.id.cvxlaTo);
-        tvTxxlaToKey = view.findViewById(R.id.tvTxxlaToKey);
-        tvDestinationBtc = view.findViewById(R.id.tvDestinationBtc);
-        tvTxAmountBtc = view.findViewById(R.id.tvTxAmountBtc);
 
         tvAccount = view.findViewById(R.id.tvAccount);
         tvAddress = view.findViewById(R.id.tvAddress);
@@ -121,14 +110,6 @@ public class TxFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 activityCallback.onBackPressed();
-            }
-        });
-
-        tvTxxlaToKey.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Helper.clipBoardCopy(requireActivity(), getString(R.string.label_copy_xlatokey), tvTxxlaToKey.getText().toString());
-                Toast.makeText(getActivity(), getString(R.string.message_copy_xlatokey), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -315,19 +296,6 @@ public class TxFragment extends Fragment {
         tvTxTransfers.setText(sb.toString());
         tvDestination.setText(dstSb.toString());
         this.info = info;
-        showBtcInfo();
-    }
-
-    @SuppressLint("SetTextI18n")
-    void showBtcInfo() {
-        if (userNotes.xlatoKey != null) {
-            cvxlaTo.setVisibility(View.VISIBLE);
-            tvTxxlaToKey.setText(userNotes.xlatoKey);
-            tvDestinationBtc.setText(userNotes.xlatoDestination);
-            tvTxAmountBtc.setText(userNotes.xlatoAmount + " BTC");
-        } else {
-            cvxlaTo.setVisibility(View.GONE);
-        }
     }
 
     @Override

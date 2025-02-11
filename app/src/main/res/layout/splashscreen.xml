@@ -11,8 +11,8 @@
 		android:id="@+id/splashscreen"
 		android:layout_width="wrap_content"
 		android:layout_height="100dp"
-		android:contentDescription="@string/lunify_logo"
-		android:src="@mipmap/ic_logo_colors"/>
+		android:contentDescription="@string/about_version"
+		android:src="@drawable/ic_lunify_logo_b" />
 
 	<TextView
 		android:id="@+id/textView"

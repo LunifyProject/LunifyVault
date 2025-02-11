@@ -129,8 +129,8 @@ public class ReceiveFragment extends Fragment {
         bCopyAddress.setOnClickListener(v -> copyAddress());
         enableCopyAddress(false);
 
-        evAmount.setOnNewAmountListener(xla -> {
-            Timber.d("new amount = %s", xla);
+        evAmount.setOnNewAmountListener(lfi -> {
+            Timber.d("new amount = %s", lfi);
             generateQr();
         });
 
@@ -160,7 +160,7 @@ public class ReceiveFragment extends Fragment {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                clearQR();
+                generateQr();
             }
 
             @Override
@@ -450,21 +450,20 @@ public class ReceiveFragment extends Fragment {
         Timber.d("GENQR");
         String address = tvAddress.getText().toString();
         String notes = Objects.requireNonNull(etNotes.getEditText()).getText().toString();
-        String xlaAmount = evAmount.getAmount();
-        Timber.d("%s/%s/%s", xlaAmount, notes, address);
-        if ((xlaAmount == null) || !Wallet.isAddressValid(address)) {
+        String lfiAmount = evAmount.getAmount();
+        Timber.d("%s/%s/%s", lfiAmount, notes, address);
+        if ((lfiAmount == null) || !Wallet.isAddressValid(address)) {
             clearQR();
             Timber.d("CLEARQR");
             return;
         }
-        bcData = new BarcodeData(BarcodeData.Asset.XLA, address, null, notes, xlaAmount);
+        bcData = new BarcodeData(BarcodeData.Asset.LFI, address, null, notes, lfiAmount);
         int size = Math.max(ivQrCode.getWidth(), ivQrCode.getHeight());
         Bitmap qr = generate(bcData.getUriString(), size, size);
         if (qr != null) {
             setQR(qr);
             Timber.d("SETQR");
             etDummy.requestFocus();
-            Helper.hideKeyboard(getActivity());
         }
     }
 

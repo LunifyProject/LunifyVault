@@ -377,15 +377,6 @@ public class SendFragment extends Fragment
                     default ->
                             throw new IllegalArgumentException("no such send position(" + position + ")");
                 };
-            } else if (mode == Mode.BTC) {
-                return switch (position) {
-                    case POS_ADDRESS -> SendAddressWizardFragment.newInstance(SendFragment.this);
-                    case POS_AMOUNT -> SendBtcAmountWizardFragment.newInstance(SendFragment.this);
-                    case POS_CONFIRM -> SendBtcConfirmWizardFragment.newInstance(SendFragment.this);
-                    case POS_SUCCESS -> SendBtcSuccessWizardFragment.newInstance(SendFragment.this);
-                    default ->
-                            throw new IllegalArgumentException("no such send position(" + position + ")");
-                };
             } else {
                 throw new IllegalStateException("Unknown mode!");
             }
@@ -560,7 +551,7 @@ public class SendFragment extends Fragment
     }
 
     // xla.to info box
-    private static final String PREF_SHOW_XLATO_ENABLED = "info_xlato_enabled_send";
+    private static final String PREF_SHOW_XLATO_ENABLED = "info_lfito_enabled_send";
 
     boolean showxlatoEnabled = true;
 

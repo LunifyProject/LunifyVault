@@ -31,29 +31,29 @@
 
     <string name="label_receive_info_gen_qr_code">Premi aquí per mostrar codi QR</string>
 
-    <string name="info_xlato_enabled">Pagament amb BTC habilitat, premi aquí per més informació.</string>
+    <string name="info_lfito_enabled">Pagament amb BTC habilitat, premi aquí per més informació.</string>
     <string name="info_ledger_enabled">Ledger habilitat, premi aquí per més informació.</string>
 
-    <string name="info_xlato"><![CDATA[
+    <string name="info_lfito"><![CDATA[
         <b>Heu introduït una adreça de Bitcoin.</b><br/>
         <i>Està a punt d\'enviar XLA i el destinatari rebrà BTC a través del servei <b>XLA.TO</b> service.</i>
     ]]></string>
 
-    <string name="info_send_xlato_success_order_label">Ordre XLA.TO</string>
+    <string name="info_send_lfito_success_order_label">Ordre XLA.TO</string>
 
-    <string name="info_send_xlato_success_btc">%1$s BTC</string>
+    <string name="info_send_lfito_success_btc">%1$s BTC</string>
 
-    <string name="info_send_xlato_paid">Confirmació Pendent</string>
-    <string name="info_send_xlato_unpaid">Pagament Pendent</string>
-    <string name="info_send_xlato_error">Error de XLA.TO (%1$s)</string>
-    <string name="info_send_xlato_sent">BTC Enviats!</string>
-    <string name="info_send_xlato_query">Consultant &#8230;</string>
+    <string name="info_send_lfito_paid">Confirmació Pendent</string>
+    <string name="info_send_lfito_unpaid">Pagament Pendent</string>
+    <string name="info_send_lfito_error">Error de XLA.TO (%1$s)</string>
+    <string name="info_send_lfito_sent">BTC Enviats!</string>
+    <string name="info_send_lfito_query">Consultant &#8230;</string>
 
-    <string name="info_send_xlato_parms"><![CDATA[
+    <string name="info_send_lfito_parms"><![CDATA[
         <b>You can send %1$s &#8212; %2$s BTC</b>.<br/>
         <i><b>XLA.TO</b> està oferint una tasa de canvi de <b>%3$s BTC</b> <u>en aquest moment</u></i>.
     ]]></string>
-    <string name="info_send_xlato_zeroconf"><![CDATA[
+    <string name="info_send_lfito_zeroconf"><![CDATA[
         <i>Quantitats fins a <b>%1$s BTC</b> seran enviats <u>a l\'instant</u>!</i>
     ]]></string>
 
@@ -62,14 +62,14 @@
     <string name="info_paymentid_integrated">&#x2714; ID de pagment integrat</string>
     <string name="info_prepare_tx">Preparant la seva transacció</string>
 
-    <string name="label_send_progress_xlato_create">Creant ordre XLA.TO</string>
-    <string name="label_send_progress_xlato_query">Consultant ordre XLA.TO</string>
+    <string name="label_send_progress_lfito_create">Creant ordre XLA.TO</string>
+    <string name="label_send_progress_lfito_query">Consultant ordre XLA.TO</string>
     <string name="label_send_progress_create_tx">Preparant transacció Lunify</string>
 
     <string name="label_send_progress_queryparms">Consultant paràmetres XLA.TO</string>
 
-    <string name="label_generic_xlato_error">ERROR XLA.TO</string>
-    <string name="text_generic_xlato_error">Codi: %1$d</string>
+    <string name="label_generic_lfito_error">ERROR XLA.TO</string>
+    <string name="text_generic_lfito_error">Codi: %1$d</string>
 
     <string name="text_retry">Premi aquí per tornar-ho a intentar</string>
     <string name="text_noretry_lunify">Vatua l\'olla! Sembla ser que estem encallats!</string>
@@ -78,9 +78,9 @@
     <string name="text_send_btc_amount">%1$s BTC = %2$s XLA</string>
     <string name="text_send_btc_rate">(Canvi: %1$s BTC/XLA)</string>
 
-    <string name="label_send_btc_xlato_info">Visita xla.to per suport i seguiment</string>
-    <string name="label_send_btc_xlato_key_lb">Clau secreta\nXLA.TO</string>
-    <string name="label_send_btc_xlato_key">Clau secreta XLA.TO</string>
+    <string name="label_send_btc_lfito_info">Visita xla.to per suport i seguiment</string>
+    <string name="label_send_btc_lfito_key_lb">Clau secreta\nXLA.TO</string>
+    <string name="label_send_btc_lfito_key">Clau secreta XLA.TO</string>
     <string name="label_send_btc_address">Adreça BTC de destí</string>
     <string name="label_send_btc_amount">Quantitat</string>
 
@@ -117,7 +117,7 @@
 
     <string name="status_transaction_failed">Transacció fallida: %1$s</string>
 
-    <string name="send_xlato_timeout">Has esperat massa temps, estaquirot!</string>
+    <string name="send_lfito_timeout">Has esperat massa temps, estaquirot!</string>
 
     <string name="service_busy">Encara estic ocupat amb el teu últim portamonedes &#8230;</string>
 
@@ -141,7 +141,7 @@
     <string name="label_wallet_receive">Rebre</string>
     <string name="label_wallet_send">Enviar</string>
 
-    <string name="xla_unconfirmed_amount">%1$s XLA sense confirmar</string>
+    <string name="lfi_unconfirmed_amount">%1$s LFI sense confirmar</string>
 
     <string name="service_description">Servei de Lunify Vault</string>
 
@@ -155,9 +155,9 @@
 
     <string name="label_copy_viewkey">Clau de visualització</string>
     <string name="label_copy_address">Adreça Pública</string>
-    <string name="label_copy_xlatokey">Clau de XLA.TO</string>
+    <string name="label_copy_lfitokey">Clau de XLA.TO</string>
     <string name="message_copy_viewkey">Clau de visualització copiada al porta-retalls!</string>
-    <string name="message_copy_xlatokey">Clau de XLA.TO copiada al porta-retalls!</string>
+    <string name="message_copy_lfitokey">Clau de XLA.TO copiada al porta-retalls!</string>
     <string name="message_copy_address">Adreça del portamonedes copiada al porta-retalls!</string>
     <string name="message_copy_txid">ID de transacció copiada al porta-retalls!</string>
     <string name="message_nocopy">S\'ha inhabilitat la funció de copiar per raons de seguretat!</string>
@@ -215,7 +215,7 @@
     <string name="generate_check_address">Introduïu una adreça vàlida</string>
     <string name="generate_check_mnemonic">Introduïu la vostra llavor de 25 paraules</string>
 
-    <string name="send_amount_btc_xla">%1$s (indicatiu)</string>
+    <string name="send_amount_btc_lfi">%1$s (indicatiu)</string>
 
     <string name="send_paymentid_hint">ID de pagament (opcional)</string>
     <string name="send_amount_hint">0.00</string>
@@ -370,10 +370,10 @@
     <string name="send_address_bip70">S\'ha resolt el pagament URI &#x2714;</string>
     <string name="send_address_hint">Receptor</string>
 
-    <string name="xlato_error_001">XLA.TO fora de línia - intenti-ho més tard</string>
-    <string name="xlato_error_004">Quantitat de BTC fora dels límits</string>
-    <string name="xlato_error_010">URL de pagament no vàlida o obsoleta</string>
-    <string name="xlato_error_012">Massa peticions</string>
+    <string name="lfito_error_001">XLA.TO fora de línia - intenti-ho més tard</string>
+    <string name="lfito_error_004">Quantitat de BTC fora dels límits</string>
+    <string name="lfito_error_010">URL de pagament no vàlida o obsoleta</string>
+    <string name="lfito_error_012">Massa peticions</string>
 
     <string name="street_sweep_amount">TOT!</string>
 

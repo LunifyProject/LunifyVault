@@ -30,30 +30,30 @@
 
     <string name="label_receive_info_gen_qr_code">Нажмите для использования QR-кода</string>
 
-    <string name="info_xlato_enabled">Доступны переводы в BTC, нажмите для доп. информации</string>
+    <string name="info_lfito_enabled">Доступны переводы в BTC, нажмите для доп. информации</string>
     <string name="info_ledger_enabled">Доступен Ledger, нажмите для доп. информации</string>
 
-    <string name="info_xlato"><![CDATA[
+    <string name="info_lfito"><![CDATA[
         <b>Вы ввели Bitcoin адрес.</b><br/>
         <i>Отправляйте XLA, получатель получит BTC, используя сервис XLA.TO</i>
     ]]></string>
 
-    <string name="info_send_xlato_success_order_label">Заказ XLA.TO</string>
+    <string name="info_send_lfito_success_order_label">Заказ XLA.TO</string>
 
-    <string name="info_send_xlato_success_btc">%1$s BTC</string>
+    <string name="info_send_lfito_success_btc">%1$s BTC</string>
 
 
-    <string name="info_send_xlato_paid">Ожидание подтверждения</string>
-    <string name="info_send_xlato_unpaid">Ожидание платежа</string>
-    <string name="info_send_xlato_error">Ошибка XLA.TO (%1$s)</string>
-    <string name="info_send_xlato_sent">BTC успешно отправлены!</string>
-    <string name="info_send_xlato_query">Запрос &#8230;</string>
+    <string name="info_send_lfito_paid">Ожидание подтверждения</string>
+    <string name="info_send_lfito_unpaid">Ожидание платежа</string>
+    <string name="info_send_lfito_error">Ошибка XLA.TO (%1$s)</string>
+    <string name="info_send_lfito_sent">BTC успешно отправлены!</string>
+    <string name="info_send_lfito_query">Запрос &#8230;</string>
 
-    <string name="info_send_xlato_parms"><![CDATA[
+    <string name="info_send_lfito_parms"><![CDATA[
         <b>Вы можете отправить %1$s &#8212; %2$s BTC</b>.<br/>
         <i><b>XLA.TO</b> устанавливает курс обмена <b>%3$s BTC</b> <u>в данный момент</u></i>.
     ]]></string>
-    <string name="info_send_xlato_zeroconf"><![CDATA[
+    <string name="info_send_lfito_zeroconf"><![CDATA[
         <i>Сумма до <b>%1$s BTC</b> будет отправлена <u>немедленно</u>!</i>
     ]]></string>
 
@@ -62,14 +62,14 @@
     <string name="info_paymentid_integrated">&#x2714; Интегрированный ID платежа</string>
     <string name="info_prepare_tx">Подготовка транзакции</string>
 
-    <string name="label_send_progress_xlato_create">Создание заказа XLA.TO</string>
-    <string name="label_send_progress_xlato_query">Запрос заказа XLA.TO</string>
+    <string name="label_send_progress_lfito_create">Создание заказа XLA.TO</string>
+    <string name="label_send_progress_lfito_query">Запрос заказа XLA.TO</string>
     <string name="label_send_progress_create_tx">Подготовка транзакции Lunify</string>
 
     <string name="label_send_progress_queryparms">Запрос параметров XLA.TO</string>
 
-    <string name="label_generic_xlato_error">XLA.TO ОШИБКА</string>
-    <string name="text_generic_xlato_error">Код: %1$d</string>
+    <string name="label_generic_lfito_error">XLA.TO ОШИБКА</string>
+    <string name="text_generic_lfito_error">Код: %1$d</string>
 
     <string name="text_retry">Нажмите, чтобы повторить попытку</string>
     <string name="text_noretry_lunify">Теперь мы застряли здесь!</string>
@@ -78,9 +78,9 @@
     <string name="text_send_btc_amount">%1$s BTC = %2$s XLA</string>
     <string name="text_send_btc_rate">(Курс: %1$s BTC/XLA)</string>
 
-    <string name="label_send_btc_xlato_info">Посетите xla.to для получения помощи &amp;</string>
-    <string name="label_send_btc_xlato_key_lb">Секретный ключ\nXLA.TO</string>
-    <string name="label_send_btc_xlato_key">XLA.TO секретный ключ</string>
+    <string name="label_send_btc_lfito_info">Посетите xla.to для получения помощи &amp;</string>
+    <string name="label_send_btc_lfito_key_lb">Секретный ключ\nXLA.TO</string>
+    <string name="label_send_btc_lfito_key">XLA.TO секретный ключ</string>
     <string name="label_send_btc_address">Адрес получателя BTC</string>
     <string name="label_send_btc_amount">Сумма</string>
 
@@ -115,7 +115,7 @@
 
     <string name="status_transaction_failed">Ошибка транзакции: %1$s</string>
 
-    <string name="send_xlato_timeout">Ты слишком долго ждал, мой друг!</string>
+    <string name="send_lfito_timeout">Ты слишком долго ждал, мой друг!</string>
 
     <string name="service_busy">Я все еще занят твоим кошельком &#8230;</string>
 
@@ -139,7 +139,7 @@
     <string name="label_wallet_receive">Получить</string>
     <string name="label_wallet_send">Передать</string>
 
-    <string name="xla_unconfirmed_amount">%1$s XLA неподтвержденно</string>
+    <string name="lfi_unconfirmed_amount">%1$s LFI неподтвержденно</string>
 
     <string name="service_description">Служба Lunify Vault</string>
 
@@ -153,9 +153,9 @@
 
     <string name="label_copy_viewkey">Ключ просмотра</string>
     <string name="label_copy_address">Публичный адрес</string>
-    <string name="label_copy_xlatokey">XLA.TO ключ</string>
+    <string name="label_copy_lfitokey">XLA.TO ключ</string>
     <string name="message_copy_viewkey">Ключ просмотра скопирован в буфер обмена!</string>
-    <string name="message_copy_xlatokey">Ключ XLA.TO скопирован в буфер обмена!</string>
+    <string name="message_copy_lfitokey">Ключ XLA.TO скопирован в буфер обмена!</string>
     <string name="message_copy_address">Адрес кошелька скопирован в буфер обмена!</string>
     <string name="message_copy_txid">ID транзакции копирован в буфер обмена!</string>
     <string name="message_nocopy">Копирование недоступно по соображениям безопасности!</string>
@@ -212,7 +212,7 @@
     <string name="generate_check_address">Введите действующий адрес</string>
     <string name="generate_check_mnemonic">Введите вашу мнемоническую фразу</string>
 
-    <string name="send_amount_btc_xla">%1$s (приблизительно)</string>
+    <string name="send_amount_btc_lfi">%1$s (приблизительно)</string>
 
     <string name="send_paymentid_hint">ID платежа (необязательно)</string>
     <string name="send_amount_hint">0.00</string>
@@ -375,10 +375,10 @@
     <!-- please verify this means "Receiver" or "Recipient" as in "Receiver in the transaction" -->
     <string name="send_address_hint">Получатель</string>
 
-    <string name="xlato_error_001">XLA.TO недоступен - повторите попытку позже</string>
-    <string name="xlato_error_004">Сумма BTC выходит за доступные пределы</string>
-    <string name="xlato_error_010">Неверный или устаревший платежный URL</string>
-    <string name="xlato_error_012">Превышен лимит запросов</string>
+    <string name="lfito_error_001">XLA.TO недоступен - повторите попытку позже</string>
+    <string name="lfito_error_004">Сумма BTC выходит за доступные пределы</string>
+    <string name="lfito_error_010">Неверный или устаревший платежный URL</string>
+    <string name="lfito_error_012">Превышен лимит запросов</string>
 
     <string name="street_sweep_amount">ВСЕ!</string> <!-- as in: "everything in the account" = "all the money" -->
 

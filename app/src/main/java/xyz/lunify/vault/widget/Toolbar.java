@@ -144,7 +144,7 @@ public class Toolbar extends androidx.appcompat.widget.Toolbar {
                 break;
             case BUTTON_CREDITS:
                 Timber.d("BUTTON_CREDITS");
-                bMainLogo.setBackground(getResources().getDrawable(R.mipmap.ic_logo_colors));
+                bMainLogo.setBackground(getResources().getDrawable(R.drawable.ic_logo_colors));
                 //bCredits.setText(R.string.label_credits);
                 bMainLogo.setVisibility(View.VISIBLE);
                 break;
@@ -157,7 +157,7 @@ public class Toolbar extends androidx.appcompat.widget.Toolbar {
             case BUTTON_NONE:
             default:
                 Timber.d("BUTTON_NONE");
-                bMainLogo.setBackground(getResources().getDrawable(R.mipmap.ic_logo_colors));
+                bMainLogo.setBackground(getResources().getDrawable(R.drawable.ic_logo_colors));
                 //bCredits.setText(null);
                 bMainLogo.setVisibility(View.INVISIBLE);
         }

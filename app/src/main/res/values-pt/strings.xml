@@ -30,29 +30,29 @@
 
     <string name="label_receive_info_gen_qr_code">Toca para código QR</string>
 
-    <string name="info_xlato_enabled">Pagamento em BTC activado, toca para mais informação.</string>
+    <string name="info_lfito_enabled">Pagamento em BTC activado, toca para mais informação.</string>
     <string name="info_ledger_enabled">Ledger activa, toca para mais informação.</string>
 
-    <string name="info_xlato"><![CDATA[
+    <string name="info_lfito"><![CDATA[
         <b>Introduziu um endereço Bitcoin.</b><br/>
         <i>Vai enviar em XLA e o destinatário vai receber BTC através do serviço <b>XLA.TO</b></i>
     ]]></string>
 
-    <string name="info_send_xlato_success_order_label">XLA.TO Order</string>
+    <string name="info_send_lfito_success_order_label">XLA.TO Order</string>
 
-    <string name="info_send_xlato_success_btc">%1$s BTC</string>
+    <string name="info_send_lfito_success_btc">%1$s BTC</string>
 
-    <string name="info_send_xlato_paid">Confirmação Pendente</string>
-    <string name="info_send_xlato_unpaid">Pagamento Pendente</string>
-    <string name="info_send_xlato_error">Erro XLA.TO (%1$s)</string>
-    <string name="info_send_xlato_sent">BTC Enviadas!</string>
-    <string name="info_send_xlato_query">A comunicar &#8230;</string>
+    <string name="info_send_lfito_paid">Confirmação Pendente</string>
+    <string name="info_send_lfito_unpaid">Pagamento Pendente</string>
+    <string name="info_send_lfito_error">Erro XLA.TO (%1$s)</string>
+    <string name="info_send_lfito_sent">BTC Enviadas!</string>
+    <string name="info_send_lfito_query">A comunicar &#8230;</string>
 
-    <string name="info_send_xlato_parms"><![CDATA[
+    <string name="info_send_lfito_parms"><![CDATA[
         <b>Pode enviar %1$s &#8212; %2$s BTC</b>.<br/>
         <i><b>XLA.TO</b> está com uma taxa de conversão de <b>%3$s BTC</b> <u>neste momento</u></i>.
     ]]></string>
-    <string name="info_send_xlato_zeroconf"><![CDATA[
+    <string name="info_send_lfito_zeroconf"><![CDATA[
         <i>Quantidades até <b>%1$s BTC</b> serão enviadas <u>instantaneament</u>!</i>
     ]]></string>
 
@@ -61,14 +61,14 @@
     <string name="info_paymentid_integrated">&#x2714; ID do pagamento integrado</string>
     <string name="info_prepare_tx">A preparar a transacção</string>
 
-    <string name="label_send_progress_xlato_create">A criar um pedido XLA.TO</string>
-    <string name="label_send_progress_xlato_query">A actualizar o pedido XLA.TO</string>
+    <string name="label_send_progress_lfito_create">A criar um pedido XLA.TO</string>
+    <string name="label_send_progress_lfito_query">A actualizar o pedido XLA.TO</string>
     <string name="label_send_progress_create_tx">A preparar a transacção Lunify</string>
 
     <string name="label_send_progress_queryparms">A obter os parâmetros xla.to</string>
 
-    <string name="label_generic_xlato_error">ERRO XLA.TO</string>
-    <string name="text_generic_xlato_error">Código: %1$d</string>
+    <string name="label_generic_lfito_error">ERRO XLA.TO</string>
+    <string name="text_generic_lfito_error">Código: %1$d</string>
 
     <string name="text_retry">Toca para voltar a tentar</string>
     <string name="text_noretry_lunify">Agora estamos emperrados aqui!</string>
@@ -77,9 +77,9 @@
     <string name="text_send_btc_amount">%1$s BTC = %2$s XLA</string>
     <string name="text_send_btc_rate">(Rácio: %1$s BTC/XLA)</string>
 
-    <string name="label_send_btc_xlato_info">Vai a xla.to para suporte &amp; seguimento</string>
-    <string name="label_send_btc_xlato_key_lb">Chave secreta\nXLA.TO</string>
-    <string name="label_send_btc_xlato_key">XLA.TO Chave secreta</string>
+    <string name="label_send_btc_lfito_info">Vai a xla.to para suporte &amp; seguimento</string>
+    <string name="label_send_btc_lfito_key_lb">Chave secreta\nXLA.TO</string>
+    <string name="label_send_btc_lfito_key">XLA.TO Chave secreta</string>
     <string name="label_send_btc_address">Endereço BTC de destino</string>
     <string name="label_send_btc_amount">Quantidade</string>
 
@@ -114,7 +114,7 @@
 
     <string name="status_transaction_failed">Transacção falhou: %1$s</string>
 
-    <string name="send_xlato_timeout">Já esperaste demasiado tempo!</string>
+    <string name="send_lfito_timeout">Já esperaste demasiado tempo!</string>
 
     <string name="service_busy">Ainda estou ocupado com a tua última carteira &#8230;</string>
 
@@ -136,7 +136,7 @@
     <string name="label_wallet_receive">Receber</string>
     <string name="label_wallet_send">Enviar</string>
 
-    <string name="xla_unconfirmed_amount">%1$s XLA não confirmado</string>
+    <string name="lfi_unconfirmed_amount">%1$s LFI não confirmado</string>
 
     <string name="service_description">Serviço Lunify Vault</string>
 
@@ -150,9 +150,9 @@
 
     <string name="label_copy_viewkey">Ver chave</string>
     <string name="label_copy_address">Endereço público</string>
-    <string name="label_copy_xlatokey">Chave XLA.TO</string>
+    <string name="label_copy_lfitokey">Chave XLA.TO</string>
     <string name="message_copy_viewkey">Chave de visualização copiada para a área de transferência</string>
-    <string name="message_copy_xlatokey">Chave XLA.TO copiada para a área de transferência!</string>
+    <string name="message_copy_lfitokey">Chave XLA.TO copiada para a área de transferência!</string>
     <string name="message_copy_address">Endereço da carteira copiado para a área de transferência!</string>
     <string name="message_copy_txid">ID da transacção copiado para a área de transferência!</string>
     <string name="message_nocopy">Copiar está desactivo por razões de segurança!</string>
@@ -211,7 +211,7 @@
     <string name="generate_check_address">Introduz um endereço válido</string>
     <string name="generate_check_mnemonic">Introduz a semente de 25 palavras</string>
 
-    <string name="send_amount_btc_xla">%1$s (indicativo)</string>
+    <string name="send_amount_btc_lfi">%1$s (indicativo)</string>
 
     <string name="send_paymentid_hint">ID do pagamento (opcional)</string>
     <string name="send_amount_hint">0.00</string>
@@ -379,10 +379,10 @@
     <string name="send_address_bip70">Pagemento URI &#x2714; resolvido</string>
     <string name="send_address_hint">Receptor</string>
 
-    <string name="xlato_error_001">XLA.TO offline - tenta mais tarde</string>
-    <string name="xlato_error_004">Montante de BTC fora dos limites</string>
-    <string name="xlato_error_010">URL de pagamento invalido ou fora de prazo</string>
-    <string name="xlato_error_012">Demasiadas solicitações</string>
+    <string name="lfito_error_001">XLA.TO offline - tenta mais tarde</string>
+    <string name="lfito_error_004">Montante de BTC fora dos limites</string>
+    <string name="lfito_error_010">URL de pagamento invalido ou fora de prazo</string>
+    <string name="lfito_error_012">Demasiadas solicitações</string>
 
     <string name="street_sweep_amount">A TOTALIDADE!</string> <!-- as in: "everything in the account" = "all the money" -->
 

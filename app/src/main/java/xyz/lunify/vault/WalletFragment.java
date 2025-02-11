@@ -272,7 +272,7 @@ public class WalletFragment extends Fragment
         if (!activityCallback.isStealthMode() && unconfirmedAmount > 0.0) {
             tvUnconfirmedAmount.setVisibility(View.VISIBLE);
             String unconfirmed = Helper.getFormattedAmount(unconfirmedAmount, true);
-            tvUnconfirmedAmount.setText(getResources().getString(R.string.xla_unconfirmed_amount, unconfirmed));
+            tvUnconfirmedAmount.setText(getResources().getString(R.string.lfi_unconfirmed_amount, unconfirmed));
         } else {
             tvUnconfirmedAmount.setVisibility(View.GONE);
         }

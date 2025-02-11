@@ -23,7 +23,7 @@
             android:layout_alignParentStart="true"
             android:layout_toStartOf="@id/ibSweep"
             android:gravity="center"
-            tools:text="Balance: 70.19 XLA" />
+            tools:text="Balance: 70.19 LFI" />
 
         <ImageButton
             android:id="@+id/ibSweep"

@@ -21,8 +21,6 @@
 
 package xyz.lunify.vault.data;
 
-import xyz.lunify.vault.xlato.api.QueryOrderStatus;
-
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -53,19 +51,6 @@ public class UserNotes {
 
     public void setNote(String newNote) {
         note = Objects.requireNonNullElse(newNote, "");
-        txNotes = buildTxNote();
-    }
-
-    public void setxlatoStatus(QueryOrderStatus xlatoStatus) {
-        if (xlatoStatus != null) {
-            xlatoKey = xlatoStatus.getUuid();
-            xlatoAmount = String.valueOf(xlatoStatus.getBtcAmount());
-            xlatoDestination = xlatoStatus.getBtcDestAddress();
-        } else {
-            xlatoKey = null;
-            xlatoAmount = null;
-            xlatoDestination = null;
-        }
         txNotes = buildTxNote();
     }
 

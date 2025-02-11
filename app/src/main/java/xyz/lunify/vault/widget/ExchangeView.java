@@ -56,6 +56,7 @@ import java.util.Locale;
 import java.util.Objects;
 
 import timber.log.Timber;
+import android.util.Log;
 
 public class ExchangeView extends LinearLayout {
     String xlaAmount = null;
@@ -72,6 +73,7 @@ public class ExchangeView extends LinearLayout {
         if (onNewAmountListener != null) {
             onNewAmountListener.onNewAmount(xla);
         }
+        
     }
 
     public void setAmount(String xlaAmount) {
@@ -235,6 +237,7 @@ public class ExchangeView extends LinearLayout {
             public void afterTextChanged(Editable editable) {
                 etAmount.setError(null);
                 clearAmounts();
+                doExchange();
             }
 
             @Override
