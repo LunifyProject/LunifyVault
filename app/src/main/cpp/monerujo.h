@@ -19,8 +19,8 @@
  *
  * Please see the included LICENSE file for more information.*/
 
-#ifndef XLAWALLET_WALLET_LIB_H
-#define XLAWALLET_WALLET_LIB_H
+#ifndef LFIWALLET_WALLET_LIB_H
+#define LFIWALLET_WALLET_LIB_H
 
 #include <jni.h>
 
@@ -81,4 +81,4 @@ inline void slow_hash_broken(const void *data, char *hash, int variant) {
 }
 #endif
 
-#endif //XLAWALLET_WALLET_LIB_H
+#endif //LFIWALLET_WALLET_LIB_H
