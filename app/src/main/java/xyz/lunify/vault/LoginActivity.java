@@ -1170,47 +1170,6 @@ public class LoginActivity extends BaseActivity
         }
     }
 
-    public void onChangeLocale() {
-        final ArrayList<Locale> availableLocales = LocaleHelper.getAvailableLocales(LoginActivity.this);
-        String[] localeDisplayName = new String[1 + availableLocales.size()];
-
-        Collections.sort(availableLocales, (locale1, locale2) -> {
-            String localeString1 = LocaleHelper.getDisplayName(locale1, true);
-            String localeString2 = LocaleHelper.getDisplayName(locale2, true);
-            return localeString1.compareTo(localeString2);
-        });
-
-        localeDisplayName[0] = getString(R.string.language_system_default);
-        for (int i = 1; i < localeDisplayName.length; i++) {
-            Locale locale = availableLocales.get(i - 1);
-            localeDisplayName[i] = LocaleHelper.getDisplayName(locale, true);
-        }
-
-        int currentLocaleIndex = 0;
-        String currentLocaleName = LocaleHelper.getLocale(LoginActivity.this);
-        if (!currentLocaleName.isEmpty()) {
-            Locale currentLocale = Locale.forLanguageTag(currentLocaleName);
-            String currentLocalizedString = LocaleHelper.getDisplayName(currentLocale, true);
-            currentLocaleIndex = Arrays.asList(localeDisplayName).indexOf(currentLocalizedString);
-        }
-
-        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(LoginActivity.this, R.style.MaterialAlertDialogCustom);
-        builder.setTitle(getString(R.string.menu_language));
-        builder.setSingleChoiceItems(localeDisplayName, currentLocaleIndex, new DialogInterface.OnClickListener() {
-            @SuppressLint("UnsafeIntentLaunch")
-            @Override
-            public void onClick(DialogInterface dialog, int i) {
-                dialog.dismiss();
-
-                LocaleHelper.setLocale(LoginActivity.this,
-                        (i == 0) ? "" : availableLocales.get(i - 1).toLanguageTag());
-                startActivity(getIntent().addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
-            }
-        });
-
-        builder.show();
-    }
-
     @Override
     public void onBackPressed() {
         Fragment f = getSupportFragmentManager().findFragmentById(R.id.fragment_container);
@@ -1281,10 +1240,6 @@ public class LoginActivity extends BaseActivity
             }
             case R.id.action_privacy_policy -> {
                 PrivacyFragment.display(getSupportFragmentManager());
-                yield true;
-            }
-            case R.id.action_language -> {
-                onChangeLocale();
                 yield true;
             }
             case R.id.action_nodes -> {

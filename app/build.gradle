@@ -23,7 +23,7 @@ android {
             //noinspection ChromeOsAbiSupport
             abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86_64'
         }
-        resourceConfigurations += ['en', 'fr', 'de', 'el', 'eo', 'es', 'et', 'hu', 'it', 'ja', 'nb', 'nl', 'pt', 'pt-rBR', 'ro', 'ru', 'sk', 'sr', 'sv', 'uk', 'zh-rCN', 'zh-rTW']
+        resourceConfigurations += ['en']
         signingConfig signingConfigs.debug
         proguardFiles 'proguard-rules.pro'
     }

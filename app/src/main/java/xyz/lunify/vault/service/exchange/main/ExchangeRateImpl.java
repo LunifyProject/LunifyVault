@@ -70,7 +70,7 @@ class ExchangeRateImpl implements ExchangeRate {
         try {
             // Current API provides BTC, LTC, USD, EUR
             // Uppercase provides general info, lowercase provides price
-            baseCurrency = "XLA";
+            baseCurrency = "LFI";
             quoteCurrency = "EUR";
             // for now is dirty fix... but works.
 /*

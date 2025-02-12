@@ -205,7 +205,7 @@ public class Helper {
     }
 
     static public String getFormattedAmount(double amount, boolean isCrypto) {
-        // at this point selection is XLA in case of error
+        // at this point selection is LFI in case of error
         String displayB;
         if (isCrypto) {
             if (amount >= 0) {
@@ -337,16 +337,6 @@ public class Helper {
             }
         }
         return ShakeAnimation;
-    }
-
-    // Domain xla.to don't exist can be register
-    // TODO Fix this function
-    static public HttpUrl getxlaToBaseUrl() {
-        if ((WalletManager.getInstance() == null) || (WalletManager.getInstance().getNetworkType() != NetworkType.NetworkType_Mainnet)) {
-            return HttpUrl.parse("https://test.xla.to/api/v3/xla2btc/");
-        } else {
-            return HttpUrl.parse("https://xla.to/api/v3/xla2btc/");
-        }
     }
 
     private final static char[] HexArray = "0123456789ABCDEF".toCharArray();

@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            tools:text="XLATO-ERROR-001" />
+            tools:text="LFITO-ERROR-001" />
 
         <TextView
             android:id="@+id/tvMessage"

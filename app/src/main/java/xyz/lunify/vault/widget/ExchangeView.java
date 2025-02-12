@@ -59,8 +59,8 @@ import timber.log.Timber;
 import android.util.Log;
 
 public class ExchangeView extends LinearLayout {
-    String xlaAmount = null;
-    String notxlaAmount = null;
+    String lfiAmount = null;
+    String notlfiAmount = null;
 
     public void enable(boolean enable) {
         etAmount.setEnabled(enable);
@@ -68,30 +68,30 @@ public class ExchangeView extends LinearLayout {
         sCurrencyB.setEnabled(enable);
     }
 
-    void setxla(String xla) {
-        xlaAmount = xla;
+    void setlfi(String lfi) {
+        lfiAmount = lfi;
         if (onNewAmountListener != null) {
-            onNewAmountListener.onNewAmount(xla);
+            onNewAmountListener.onNewAmount(lfi);
         }
         
     }
 
-    public void setAmount(String xlaAmount) {
-        if (xlaAmount != null) {
+    public void setAmount(String lfiAmount) {
+        if (lfiAmount != null) {
             setCurrencyA(0);
-            Objects.requireNonNull(etAmount.getEditText()).setText(xlaAmount);
-            setxla(xlaAmount);
-            this.notxlaAmount = null;
+            Objects.requireNonNull(etAmount.getEditText()).setText(lfiAmount);
+            setlfi(lfiAmount);
+            this.notlfiAmount = null;
             doExchange();
         } else {
-            setxla(null);
-            this.notxlaAmount = null;
+            setlfi(null);
+            this.notlfiAmount = null;
             tvAmountB.setText("--");
         }
     }
 
     public String getAmount() {
-        return xlaAmount;
+        return lfiAmount;
     }
 
     public void setError(String msg) {
@@ -186,7 +186,7 @@ public class ExchangeView extends LinearLayout {
         sCurrencyA.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                if (position != 0) { // if not XLA, select XLA on other
+                if (position != 0) { // if not LFI, select LFI on other
                     sCurrencyB.setSelection(0, true);
                 }
                 doExchange();
@@ -202,7 +202,7 @@ public class ExchangeView extends LinearLayout {
         sCurrencyB.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(final AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                if (position != 0) { // if not XLA, select XLA on other
+                if (position != 0) { // if not LFI, select LFI on other
                     sCurrencyA.setSelection(0, true);
                 }
                 parentView.post(() -> ((TextView) parentView.getChildAt(0)).setTextColor(getResources().getColor(R.color.lunifyGray)));
@@ -252,8 +252,8 @@ public class ExchangeView extends LinearLayout {
         });
     }
 
-    final static double MAX_AMOUNT_XLA = 10000000;
-    final static double MAX_AMOUNT_NOTXLA = 100000000;
+    final static double MAX_AMOUNT_LFI = 10000000;
+    final static double MAX_AMOUNT_NOTLFI = 100000000;
 
     public boolean checkEnteredAmount() {
         boolean ok = true;
@@ -262,7 +262,7 @@ public class ExchangeView extends LinearLayout {
         if (!amountEntry.isEmpty()) {
             try {
                 double a = Double.parseDouble(amountEntry);
-                double maxAmount = (getCurrencyA() == 0) ? MAX_AMOUNT_XLA : MAX_AMOUNT_NOTXLA;
+                double maxAmount = (getCurrencyA() == 0) ? MAX_AMOUNT_LFI : MAX_AMOUNT_NOTLFI;
                 if (a > (maxAmount)) {
                     etAmount.setError(getResources().
                             getString(R.string.receive_amount_too_big,
@@ -305,10 +305,10 @@ public class ExchangeView extends LinearLayout {
     }
 
     private void clearAmounts() {
-        if ((xlaAmount != null) || (notxlaAmount != null)) {
+        if ((lfiAmount != null) || (notlfiAmount != null)) {
             tvAmountB.setText("--");
-            setxla(null);
-            notxlaAmount = null;
+            setlfi(null);
+            notlfiAmount = null;
         }
     }
 
@@ -336,27 +336,27 @@ public class ExchangeView extends LinearLayout {
 
     public void exchange(double rate) {
         if (getCurrencyA() == 0) {
-            if (xlaAmount == null) return;
-            if (!xlaAmount.isEmpty() && (rate > 0)) {
-                double amountB = rate * Double.parseDouble(xlaAmount);
-                notxlaAmount = Helper.getFormattedAmount(amountB, getCurrencyB() == 0);
+            if (lfiAmount == null) return;
+            if (!lfiAmount.isEmpty() && (rate > 0)) {
+                double amountB = rate * Double.parseDouble(lfiAmount);
+                notlfiAmount = Helper.getFormattedAmount(amountB, getCurrencyB() == 0);
             } else {
-                notxlaAmount = "";
+                notlfiAmount = "";
             }
-            tvAmountB.setText(notxlaAmount);
+            tvAmountB.setText(notlfiAmount);
         } else if (getCurrencyB() == 0) {
-            if (notxlaAmount == null) return;
-            if (!notxlaAmount.isEmpty() && (rate > 0)) {
-                double amountB = rate * Double.parseDouble(notxlaAmount);
-                setxla(Helper.getFormattedAmount(amountB, true));
+            if (notlfiAmount == null) return;
+            if (!notlfiAmount.isEmpty() && (rate > 0)) {
+                double amountB = rate * Double.parseDouble(notlfiAmount);
+                setlfi(Helper.getFormattedAmount(amountB, true));
             } else {
-                setxla("");
+                setlfi("");
             }
-            tvAmountB.setText(xlaAmount);
-        } else { // no XLA currency - cannot happen!
-            Timber.e("No XLA currency!");
-            setxla(null);
-            notxlaAmount = null;
+            tvAmountB.setText(lfiAmount);
+        } else { // no LFI currency - cannot happen!
+            Timber.e("No LFI currency!");
+            setlfi(null);
+            notlfiAmount = null;
             return;
         }
     }
@@ -370,30 +370,30 @@ public class ExchangeView extends LinearLayout {
                 if (getCurrencyA() == 0) {
                     // sanitize the input
                     cleanAmount = Helper.getDisplayAmount(Wallet.getAmountFromString(enteredAmount));
-                    setxla(cleanAmount);
-                    notxlaAmount = null;
+                    setlfi(cleanAmount);
+                    notlfiAmount = null;
                     Timber.d("cleanAmount = %s", cleanAmount);
                 } else if (getCurrencyB() == 0) { // we use B & 0 here for the else below ...
                     // sanitize the input
                     double amountA = Double.parseDouble(enteredAmount);
                     cleanAmount = String.format(Locale.US, "%.2f", amountA);
-                    setxla(null);
-                    notxlaAmount = cleanAmount;
-                } else { // no XLA currency - cannot happen!
-                    Timber.e("No XLA currency!");
-                    setxla(null);
-                    notxlaAmount = null;
+                    setlfi(null);
+                    notlfiAmount = cleanAmount;
+                } else { // no LFI currency - cannot happen!
+                    Timber.e("No LFI currency!");
+                    setlfi(null);
+                    notlfiAmount = null;
                     return false;
                 }
                 Timber.d("prepareExchange() %s", cleanAmount);
             } else {
-                setxla("");
-                notxlaAmount = "";
+                setlfi("");
+                notlfiAmount = "";
             }
             return true;
         } else {
-            setxla(null);
-            notxlaAmount = null;
+            setlfi(null);
+            notlfiAmount = null;
             return false;
         }
     }
@@ -442,7 +442,7 @@ public class ExchangeView extends LinearLayout {
 
     // Hooks
     public interface OnNewAmountListener {
-        void onNewAmount(String xla);
+        void onNewAmount(String lfi);
     }
 
     OnNewAmountListener onNewAmountListener;

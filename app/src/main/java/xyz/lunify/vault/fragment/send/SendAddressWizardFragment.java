@@ -54,7 +54,6 @@ import xyz.lunify.vault.Config;
 import xyz.lunify.vault.R;
 import xyz.lunify.vault.data.BarcodeData;
 import xyz.lunify.vault.data.TxData;
-import xyz.lunify.vault.data.TxDataBtc;
 import xyz.lunify.vault.data.UserNotes;
 import xyz.lunify.vault.model.PendingTransaction;
 import xyz.lunify.vault.model.Wallet;
@@ -150,11 +149,11 @@ public class SendAddressWizardFragment extends SendWizardFragment {
                     Timber.d("isIntegratedAddress");
                     etAddress.setError(getString(R.string.info_paymentid_integrated));
                     tvPaymentIdIntegrated.setVisibility(View.VISIBLE);
-                    sendListener.setMode(SendFragment.Mode.XLA);
+                    sendListener.setMode(SendFragment.Mode.LFI);
                 } else {
                     Timber.d("isStandardAddress or other");
                     tvPaymentIdIntegrated.setVisibility(View.INVISIBLE);
-                    sendListener.setMode(SendFragment.Mode.XLA);
+                    sendListener.setMode(SendFragment.Mode.LFI);
                 }
             }
 
@@ -252,7 +251,7 @@ public class SendAddressWizardFragment extends SendWizardFragment {
         etAddress.setError(getString(R.string.send_address_resolve_ud));
         new Thread(() -> {
                 try {
-                    address[0] = resolution.getAddress(udString, "xla");
+                    address[0] = resolution.getAddress(udString, "lfi");
                     domainIsUD[0] = true;
                 } catch (NamingServiceException e) {
                     Timber.d(e.getLocalizedMessage());
@@ -328,21 +327,8 @@ public class SendAddressWizardFragment extends SendWizardFragment {
 
         if (sendListener != null) {
             TxData txData = sendListener.getTxData();
-            if (txData instanceof TxDataBtc) {
-                if (resolvedPP != null) {
-                    // take the value from the field nonetheless as this is what the user sees
-                    // (in case we have a bug somewhere)
-                    ((TxDataBtc) txData).setBip70(Objects.requireNonNull(etAddress.getEditText()).getText().toString());
-                    ((TxDataBtc) txData).setBtcAddress(null);
-                } else {
-                    ((TxDataBtc) txData).setBtcAddress(Objects.requireNonNull(etAddress.getEditText()).getText().toString());
-                    ((TxDataBtc) txData).setBip70(null);
-                }
-                txData.setDestinationAddress(null);
-            } else {
-                txData.setDestinationAddress(Objects.requireNonNull(etAddress.getEditText()).getText().toString());
-            }
 
+            txData.setDestinationAddress(Objects.requireNonNull(etAddress.getEditText()).getText().toString());
             txData.setUserNotes(new UserNotes(Objects.requireNonNull(etNotes.getEditText()).getText().toString()));
             txData.setPriority(PendingTransaction.Priority.Priority_Default);
             txData.setMixin(SendFragment.MIXIN);

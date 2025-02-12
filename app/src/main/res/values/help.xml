@@ -162,7 +162,7 @@
         <p>This is the public address of the wallet you are sending Lunify to, you can copy this from
         your clipboard, scan a QR code or enter it manually. Make sure you triple check this to
         ensure you aren’t sending coins to the wrong address.</p>
-        <p>In addition to using an XLA address, you can also use
+        <p>In addition to using an LFI address, you can also use
         <ul>
             <li>an ENS domain</li>
             <li>an Unstoppable Domains domain</li>
@@ -171,34 +171,6 @@
         <p>You can use a Payment ID to identify the reason you sent Lunify between two parties. This
         is fully optional and private. For example it can allow a business to reconcile your
         transaction with an item you bought.</p>
-    ]]></string>
-
-    <string name="help_xlato"><![CDATA[
-        <h1>Sending BTC</h1>
-        <h2>XLA.TO</h2>
-        <p>XLA.TO is a third party service which acts as an exchange from Lunify to Bitcoin.
-        We use the XLA.TO API to integrate Bitcoin payments into Lunify Vault. Please check out
-        https://xla.to and decide for yourself if this is something you want to use. The Lunify Vault
-        Team is not associated with XLA.TO and cannot help you with their service.</p>
-        <h2>XLA.TO Exchange Rate<h2>
-        <p>On the \"Amount\" screen you will be shown the current parameters of the XLA.TO service. These
-        include the current exchange rate as well as upper and lower BTC limits. Note that this
-        rate is not guaranteed at this point. You will also see
-        the amount up to which the BTC transaction will be executed instantly without waiting for
-        XLA confirmations (see the XLA.TO FAQ for more details). Please note, that XLA.TO does
-        not charge extra fees - how cool is that?</p>
-        <h2>XLA.TO Order<h2>
-        <p>On the \"Confirm\" screen, you will see the actual XLA.TO order. This order is valid for
-        a limited time - you may notice a countdown on the \"Spend\" button. The exchange rate may
-        be different to the indicative one shown on previous screens.</p>
-        <h2>XLA.TO Secret Key<h2>
-        <p>Since Lunify Vault only handles the Lunify part of your transaction your XLA.TO secret key
-        can be used to track the Bitcoin part of your order on the XLA.TO homepage.</p>
-        <p>Please note, that this secret key is only valid for 24 hours after the transaction is
-        started!</p>
-        <h2>XLA.TO Countdown!</h2>
-        <p>Once the countdown reaches zero, you need to get a new quote from XLA.TO by going back to the
-        previous step and then coming back to the \"Confirm\" screen.</p>
     ]]></string>
 
     <string name="help_wallet"><![CDATA[

@@ -28,21 +28,21 @@ import java.util.regex.Pattern;
 public class UserNotes {
     public String txNotes = "";
     public String note = "";
-    public String xlatoKey = null;
-    public String xlatoAmount = null; // could be a double - but we are not doing any calculations
-    public String xlatoDestination = null;
+    public String lfitoKey = null;
+    public String lfitoAmount = null; // could be a double - but we are not doing any calculations
+    public String lfitoDestination = null;
 
     public UserNotes(final String txNotes) {
         if (txNotes == null) {
             return;
         }
         this.txNotes = txNotes;
-        Pattern p = Pattern.compile("^\\{(xlato-\\w{6}),([0-9.]*)BTC,(\\w*)\\} ?(.*)");
+        Pattern p = Pattern.compile("^\\{(lfito-\\w{6}),([0-9.]*)BTC,(\\w*)\\} ?(.*)");
         Matcher m = p.matcher(txNotes);
         if (m.find()) {
-            xlatoKey = m.group(1);
-            xlatoAmount = m.group(2);
-            xlatoDestination = m.group(3);
+            lfitoKey = m.group(1);
+            lfitoAmount = m.group(2);
+            lfitoDestination = m.group(3);
             note = m.group(4);
         } else {
             note = txNotes;
@@ -56,15 +56,15 @@ public class UserNotes {
 
     private String buildTxNote() {
         StringBuilder sb = new StringBuilder();
-        if (xlatoKey != null) {
-            if ((xlatoAmount == null) || (xlatoDestination == null))
+        if (lfitoKey != null) {
+            if ((lfitoAmount == null) || (lfitoDestination == null))
                 throw new IllegalArgumentException("Broken notes");
             sb.append("{");
-            sb.append(xlatoKey);
+            sb.append(lfitoKey);
             sb.append(",");
-            sb.append(xlatoAmount);
+            sb.append(lfitoAmount);
             sb.append("BTC,");
-            sb.append(xlatoDestination);
+            sb.append(lfitoDestination);
             sb.append("}");
             if ((note != null) && (!note.isEmpty()))
                 sb.append(" ");

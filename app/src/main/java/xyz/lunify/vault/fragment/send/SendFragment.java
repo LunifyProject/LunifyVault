@@ -51,7 +51,6 @@ import xyz.lunify.vault.WalletActivity;
 import xyz.lunify.vault.data.BarcodeData;
 import xyz.lunify.vault.data.PendingTx;
 import xyz.lunify.vault.data.TxData;
-import xyz.lunify.vault.data.TxDataBtc;
 import xyz.lunify.vault.data.UserNotes;
 import xyz.lunify.vault.layout.SpendViewPager;
 import xyz.lunify.vault.model.PendingTransaction;
@@ -287,21 +286,18 @@ public class SendFragment extends Fragment
     }
 
     enum Mode {
-        XLA, BTC
+        LFI
     }
 
-    Mode mode = Mode.XLA;
+    Mode mode = Mode.LFI;
 
     @Override
     public void setMode(Mode aMode) {
         if (mode != aMode) {
             mode = aMode;
             switch (aMode) {
-                case XLA:
+                case LFI:
                     txData = new TxData();
-                    break;
-                case BTC:
-                    txData = new TxDataBtc();
                     break;
                 default:
                     throw new IllegalArgumentException("Mode " + String.valueOf(aMode) + " unknown!");
@@ -368,7 +364,7 @@ public class SendFragment extends Fragment
         public SendWizardFragment getItem(int position) {
             Timber.d("getItem(%d) CREATE", position);
             Timber.d("Mode=%s", mode.toString());
-            if (mode == Mode.XLA) {
+            if (mode == Mode.LFI) {
                 return switch (position) {
                     case POS_ADDRESS -> SendAddressWizardFragment.newInstance(SendFragment.this);
                     case POS_AMOUNT -> SendAmountWizardFragment.newInstance(SendFragment.this);
@@ -548,21 +544,6 @@ public class SendFragment extends Fragment
     public void onCreateOptionsMenu(@NonNull Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.send_menu, menu);
         super.onCreateOptionsMenu(menu, inflater);
-    }
-
-    // xla.to info box
-    private static final String PREF_SHOW_XLATO_ENABLED = "info_lfito_enabled_send";
-
-    boolean showxlatoEnabled = true;
-
-    void loadPrefs() {
-        String enabled = Config.read("PREF_SHOW_XLATO_ENABLED");
-        showxlatoEnabled = !(enabled.isEmpty() || enabled.equals("0"));
-
-    }
-
-    void savexlaToPrefs() {
-        Config.write("PREF_SHOW_XLATO_ENABLED", showxlatoEnabled ? "1" : "0");
     }
 
 }

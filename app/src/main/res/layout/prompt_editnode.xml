@@ -38,7 +38,7 @@
                     android:inputType="text"
                     android:maxLines="1"
                     android:textAlignment="textStart"
-                    tools:text="node.supportxla.com" />
+                    tools:text="" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -78,7 +78,7 @@
                 android:inputType="text"
                 android:maxLines="1"
                 android:textAlignment="textStart"
-                tools:text="supportxla" />
+                tools:text="supportlfi" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout

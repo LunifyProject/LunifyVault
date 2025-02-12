@@ -280,13 +280,13 @@ public class WalletFragment extends Fragment
 
     void updateBalance() {
         if (isExchanging) return; // wait for exchange to finish - it will fire this itself then.
-        // at this point selection is XLA in case of error
+        // at this point selection is LFI in case of error
         String displayB;
         double amountA = Helper.getDecimalAmount(unlockedBalance).doubleValue();
-        if (!Helper.BASE_CRYPTO.equals(balanceCurrency)) { // not XLA
+        if (!Helper.BASE_CRYPTO.equals(balanceCurrency)) { // not LFI
             double amountB = amountA * balanceRate;
             displayB = Helper.getFormattedAmount(amountB, false);
-        } else { // XLA
+        } else { // LFI
             displayB = Helper.getFormattedAmount(amountA, true);
         }
         showBalance(displayB);
@@ -298,12 +298,12 @@ public class WalletFragment extends Fragment
     private final ExchangeApi exchangeApi = Helper.getExchangeApi();
 
     void refreshBalance() {
-        double unconfirmedxla = Helper.getDecimalAmount(balance - unlockedBalance).doubleValue();
-        showUnconfirmed(unconfirmedxla);
-        if (sCurrency.getSelectedItemPosition() == 0) { // XLA
-            double amountxla = Helper.getDecimalAmount(unlockedBalance).doubleValue();
-            showBalance(Helper.getFormattedAmount(amountxla, true));
-        } else { // not XLA
+        double unconfirmedlfi = Helper.getDecimalAmount(balance - unlockedBalance).doubleValue();
+        showUnconfirmed(unconfirmedlfi);
+        if (sCurrency.getSelectedItemPosition() == 0) { // LFI
+            double amountlfi = Helper.getDecimalAmount(unlockedBalance).doubleValue();
+            showBalance(Helper.getFormattedAmount(amountlfi, true));
+        } else { // not LFI
             String currency = (String) sCurrency.getSelectedItem();
             Timber.d(currency);
             if (!currency.equals(balanceCurrency) || (balanceRate <= 0)) {
@@ -346,9 +346,9 @@ public class WalletFragment extends Fragment
     }
 
     public void exchangeFailed() {
-        sCurrency.setSelection(0, true); // default to XLA
-        double amountxla = Helper.getDecimalAmount(unlockedBalance).doubleValue();
-        showBalance(Helper.getFormattedAmount(amountxla, true));
+        sCurrency.setSelection(0, true); // default to LFI
+        double amountlfi = Helper.getDecimalAmount(unlockedBalance).doubleValue();
+        showBalance(Helper.getFormattedAmount(amountlfi, true));
         hideExchanging();
     }
 
@@ -356,7 +356,7 @@ public class WalletFragment extends Fragment
     public void exchange(final ExchangeRate exchangeRate) {
         hideExchanging();
         if (!Helper.BASE_CRYPTO.equals(exchangeRate.getBaseCurrency())) {
-            Timber.e("Not XLA");
+            Timber.e("Not LFI");
             sCurrency.setSelection(0, true);
             balanceCurrency = Helper.BASE_CRYPTO;
             balanceRate = 1.0;

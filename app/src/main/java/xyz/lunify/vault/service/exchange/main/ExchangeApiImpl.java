@@ -44,7 +44,7 @@ import timber.log.Timber;
 
 public class ExchangeApiImpl implements ExchangeApi {
     static public final String BASE_FIAT = "EUR";
-    static public final String BASE_CRYPTO = "XLA";
+    static public final String BASE_CRYPTO = "LFI";
     static public double rate = 1.0;
     static public String baseCurrency = Helper.BASE_CRYPTO;
     static public String quoteCurrency = "USD";
@@ -88,7 +88,7 @@ public class ExchangeApiImpl implements ExchangeApi {
         final HttpUrl url = baseUrl.newBuilder().addQueryParameter("pair", baseCurrency + (quoteCurrency.equals("BTC") ? "XBT" : quoteCurrency)).build();
         final Request httpRequest = createHttpRequest(url);
 
-        // Try to get XLA API for prices in format json
+        // Try to get LFI API for prices in format json
         okHttpClient.newCall(httpRequest).enqueue(new okhttp3.Callback() {
             @Override
             public void onFailure(@NonNull final Call call, @NonNull final IOException ex) {

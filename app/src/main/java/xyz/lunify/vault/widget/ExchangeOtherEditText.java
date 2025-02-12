@@ -42,12 +42,12 @@ import timber.log.Timber;
 
 public class ExchangeOtherEditText extends ExchangeEditText {
     /*
-        all exchanges are done through XLA
+        all exchanges are done through LFI
         baseCurrency is the native currency
      */
 
-    String baseCurrency = null; // not XLA
-    private double exchangeRate = 0; // baseCurrency to XLA
+    String baseCurrency = null; // not LFI
+    private double exchangeRate = 0; // baseCurrency to LFI
 
     public void setExchangeRate(double rate) {
         exchangeRate = rate;
@@ -125,7 +125,7 @@ public class ExchangeOtherEditText extends ExchangeEditText {
 
         Timber.d("execExchange(%s, %s)", currencyA, currencyB);
 
-        // first deal with XLA/baseCurrency & baseCurrency/XLA
+        // first deal with LFI/baseCurrency & baseCurrency/LFI
 
         if (currencyA.equals(Helper.BASE_CRYPTO) && (currencyB.equals(baseCurrency))) {
             localExchange(currencyA, currencyB, 1.0d / exchangeRate);
@@ -136,7 +136,7 @@ public class ExchangeOtherEditText extends ExchangeEditText {
             return;
         }
 
-        // next, deal with XLA/baseCurrency
+        // next, deal with LFI/baseCurrency
 
         if (currencyA.equals(baseCurrency)) {
             queryExchangeRate(Helper.BASE_CRYPTO, currencyB, exchangeRate, true);

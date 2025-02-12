@@ -63,7 +63,7 @@ class ExchangeRateImpl implements ExchangeRate {
     }
 
     ExchangeRateImpl(final JSONObject jsonObject, final boolean swapAssets) throws JSONException, ExchangeException {
-        this.baseCurrency = "XLA";
+        this.baseCurrency = "LFI";
         this.quoteCurrency = "EUR";
         this.rate = 1.0;
         return;
