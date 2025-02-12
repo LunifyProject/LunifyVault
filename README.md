@@ -11,25 +11,16 @@ A secure and light weight wallet to store your Lunify coins on any Android devic
 * Subaddress Support
 * Stealth Mode
 * QR Code Scanning
-* Automatic Price Conversion to other Currencies
 * Easy to use UI
 
 ## Credits
-* Forked from [monerujo](https://github.com/m2049r/xmrwallet)
+* Forked from [ScalaVault](https://github.com/scala-network/ScalaVault)
 
 ## Contacts
 * [Website](https://lunify.xyz/)
 * [hello@lunify.xyz](mailto:hello@lunify.xyz)
 * [Discord](https://discord.gg/djAFVvy)
-* [Telegram](https://t.me/scalaofficial)
 * [Twitter](https://twitter.com/scalahq)
 
 # License
-
-See [LICENSE](https://github.com/LunifyProject/LunifyVault/blob/main/LICENSE).
-
-# Sponsors
-
-Core development funding and/or some supporting services are also graciously provided by sponsors:
-
-[<img width="150" src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png"/>](https://www.jetbrains.com/)
+See [LICENSE](https://github.com/LunifyProject/LunifyVault/blob/main/LICENSE)
