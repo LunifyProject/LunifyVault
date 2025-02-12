@@ -101,7 +101,7 @@ public class LoginActivity extends BaseActivity
         ReceiveFragment.Listener, NodeFragment.Listener {
     private static final String GENERATE_STACK = "gen";
 
-    static private final String DEFAULT_NODES_REPOSITORY = "https://raw.githubusercontent.com/LunifyProject/Lunify/master/app.json";
+    static private final String DEFAULT_NODES_REPOSITORY = "https://raw.githubusercontent.com/LunifyProject/LunifyVault/refs/heads/main/app.json";
 
     static private final String DEFAULT_NODE = "{\n" +
             "\"nodes\": [\n" +
@@ -237,7 +237,6 @@ public class LoginActivity extends BaseActivity
 
     public void loadDefaultNodes() {
         defaultNodes.clear();
-        showProgressDialog(R.string.about_version);
         String jsonString = "";
         Timber.tag("loadDefaultNodes").d("loadDefaultNodes start");
         // Load Pools data from the GitHub repository by default
@@ -263,11 +262,11 @@ public class LoginActivity extends BaseActivity
 
                 if(node.has("host") && node.has("port")) {
                     addNode(node.getString("host") + ":" + node.getString("port"));
-                    //setNode(NodeInfo.fromString(node.getString("host") + ":" + node.getString("port")));
+                    setNode(NodeInfo.fromString(node.getString("host") + ":" + node.getString("port")));
                 }
             }
         } catch (JSONException e) {
-            //e.printStackTrace();
+            e.printStackTrace();
         }
         Timber.tag("loadDefaultNodes").d("loadDefaultNodes end");
     }
