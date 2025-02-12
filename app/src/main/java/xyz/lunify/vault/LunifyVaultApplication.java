@@ -32,6 +32,8 @@ import androidx.annotation.NonNull;
 import xyz.lunify.vault.model.NetworkType;
 import xyz.lunify.vault.util.LocaleHelper;
 
+import timber.log.Timber;
+
 public class LunifyVaultApplication extends Application {
     @Override
     public void onCreate() {
@@ -39,9 +41,9 @@ public class LunifyVaultApplication extends Application {
         SharedPreferences preferences = getSharedPreferences(getPackageName() + "_preferences", MODE_PRIVATE);
         Config.initialize(preferences);
 
-        /*if (BuildConfig.DEBUG) {
+        if (BuildConfig.DEBUG) {
             Timber.plant(new Timber.DebugTree());
-        }*/
+        }
     }
 
     @Override
