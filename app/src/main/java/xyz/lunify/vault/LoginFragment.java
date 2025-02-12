@@ -461,6 +461,7 @@ public class LoginFragment extends Fragment implements WalletInfoAdapter.OnInter
             activityCallback.showProgressDialog(R.string.connection_remote_daemon);
 
             activityCallback.setNode(null);
+            activityCallback.loadNodesWithNetwork();
         }
 
         @Override
