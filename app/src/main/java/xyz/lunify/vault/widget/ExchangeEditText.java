@@ -347,7 +347,7 @@ public class ExchangeEditText extends LinearLayout {
         try {
             double amount = Double.parseDouble(enteredAmount);
             if (amount >= 0) {
-                return String.format(Locale.US, "%.2f", amount);
+                return String.format(Locale.US, "%.8f", amount);
             } else {
                 return null;
             }

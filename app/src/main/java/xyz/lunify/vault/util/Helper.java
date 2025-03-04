@@ -186,7 +186,7 @@ public class Helper {
     }
 
     static public BigDecimal getDecimalAmount(long amount) {
-        return new BigDecimal(amount).scaleByPowerOfTen(-2);
+        return new BigDecimal(amount).scaleByPowerOfTen(-8);
     }
 
     static public String getDisplayAmount(long amount) {
@@ -195,12 +195,12 @@ public class Helper {
 
     static public String getDisplayAmount(long amount, int maxDecimals) {
         // a Java bug does not strip zeros properly if the value is 0
-        if (amount == 0) return "0.00";
+        if (amount == 0) return "0.00000000";
         BigDecimal d = getDecimalAmount(amount)
                 .setScale(maxDecimals, RoundingMode.HALF_UP)
                 .stripTrailingZeros();
-        if (d.scale() < 2)
-            d = d.setScale(2, RoundingMode.UNNECESSARY);
+        if (d.scale() < 8)
+            d = d.setScale(8, RoundingMode.UNNECESSARY);
         return d.toPlainString();
     }
 
@@ -209,12 +209,12 @@ public class Helper {
         String displayB;
         if (isCrypto) {
             if (amount >= 0) {
-                displayB = String.format(Locale.US, "%,.2f", amount);
+                displayB = String.format(Locale.US, "%,.8f", amount);
             } else {
                 displayB = null;
             }
         } else { // not crypto
-            displayB = String.format(Locale.US, "%,.2f", amount);
+            displayB = String.format(Locale.US, "%,.8f", amount);
         }
         return displayB;
     }
@@ -222,7 +222,7 @@ public class Helper {
     // min 2 significant digits after decimal point
     static public String getFormattedAmount(double amount) {
         if ((amount >= 1.0d) || (amount == 0))
-            return String.format(Locale.US, "%,.2f", amount);
+            return String.format(Locale.US, "%,.8f", amount);
         else { // amount < 1
             int decimals = 1 - (int) Math.floor(Math.log10(amount));
             if (decimals < 2) decimals = 2;

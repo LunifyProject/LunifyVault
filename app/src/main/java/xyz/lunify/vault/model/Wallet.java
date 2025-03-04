@@ -264,7 +264,7 @@ public class Wallet {
     }
 
     public static String getDisplayAmount(long amount) {
-        return String.format(Locale.US, "%,.2f", (1.0 * amount / 100000000L));
+        return String.format(Locale.US, "%,.8f", (1.0 * amount / 100000000L));
     }
 
     public static native long getAmountFromString(String amount);

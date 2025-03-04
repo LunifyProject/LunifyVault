@@ -376,7 +376,7 @@ public class ExchangeView extends LinearLayout {
                 } else if (getCurrencyB() == 0) { // we use B & 0 here for the else below ...
                     // sanitize the input
                     double amountA = Double.parseDouble(enteredAmount);
-                    cleanAmount = String.format(Locale.US, "%.2f", amountA);
+                    cleanAmount = String.format(Locale.US, "%.8f", amountA);
                     setlfi(null);
                     notlfiAmount = cleanAmount;
                 } else { // no LFI currency - cannot happen!
