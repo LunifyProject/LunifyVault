@@ -252,8 +252,8 @@ public class ExchangeView extends LinearLayout {
         });
     }
 
-    final static double MAX_AMOUNT_LFI = 10000000;
-    final static double MAX_AMOUNT_NOTLFI = 100000000;
+    final static double MAX_AMOUNT_LFI = 2500000000000000;
+    final static double MAX_AMOUNT_NOTLFI = 2500000000000000;
 
     public boolean checkEnteredAmount() {
         boolean ok = true;
