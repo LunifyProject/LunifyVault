@@ -1,0 +1,12 @@
+{
+    "nodes": [
+        {
+            "host": "lunify.xyz",
+            "port": "25252"
+        },
+        {
+            "host": "lunify.xyz",
+            "port": "25262"
+        }
+    ]
+}
