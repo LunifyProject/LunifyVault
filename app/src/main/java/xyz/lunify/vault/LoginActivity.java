@@ -101,8 +101,6 @@ public class LoginActivity extends BaseActivity
         ReceiveFragment.Listener, NodeFragment.Listener {
     private static final String GENERATE_STACK = "gen";
 
-    static private final String DEFAULT_NODES_REPOSITORY = "https://raw.githubusercontent.com/LunifyProject/LunifyVault/refs/heads/main/app.json";
-
     static private final String DEFAULT_NODE = "{\n" +
             "\"nodes\": [\n" +
             "{\n" +
@@ -239,19 +237,11 @@ public class LoginActivity extends BaseActivity
         defaultNodes.clear();
         String jsonString = "";
         Timber.tag("loadDefaultNodes").d("loadDefaultNodes start");
-        // Load Pools data from the GitHub repository by default
-        if(Helper.isURLReachable(DEFAULT_NODES_REPOSITORY))
-            jsonString  = Helper.fetchJSON(DEFAULT_NODES_REPOSITORY);
-        Timber.tag("loadDefaultNodes").d("loadDefaultNodes from GitHub");
-
+        
         // None of the URL can be reached. Load default data but don't cache it.
-        if(jsonString.isEmpty()) {
-            useDefaultNode = true;
-            jsonString = DEFAULT_NODE;
-            Timber.tag("loadDefaultNodes").d("loadDefaultNodes from default");
-        } else {
-            useDefaultNode = false;
-        }
+        useDefaultNode = true;
+        jsonString = DEFAULT_NODE;
+        Timber.tag("loadDefaultNodes").d("loadDefaultNodes from default");
 
         try {
             JSONObject data = new JSONObject(jsonString);
